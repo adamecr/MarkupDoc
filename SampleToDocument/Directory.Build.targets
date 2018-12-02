@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
+
+  <Target Name="GenerateMarkupDoc"  AfterTargets="Build" Condition="'$(MarkupDocGenerate)'=='true'">
+    <PropertyGroup>
+      <_MarkupDocLastExitCode />
+    </PropertyGroup>
+    <Message Text="Generating the markup documentation..." />
+    <Exec Command='"$(MarkupDocPath)" "$(MSBuildProjectFullPath)" -p:Output.Target="$(MarkupDocTarget)" -p:MicrosoftApi.LocalDocDir="$(MarkupDocLocalMsDocDir)"'
+          EchoOff="false" StandardErrorImportance="low" StandardOutputImportance="low"
+          ConsoleToMSBuild="false" ContinueOnError="true" WorkingDirectory="$(MSBuildProjectDirectory)">
+      <Output TaskParameter="ExitCode" PropertyName="_MarkupDocLastExitCode" />
+    </Exec>
+    <Warning Text="Could not generate the markup documentation" Condition="'$(_MarkupDocLastExitCode)' != '0'" />
+    <Message Text="Generated the markup documentation" />
+  </Target>
+  
+</Project>

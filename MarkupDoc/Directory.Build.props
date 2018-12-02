@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <MarkupDocPath>$(MSBuildProjectDirectory)/../binaries/MarkupDoc.exe</MarkupDocPath>
+    <MarkupDocGenerate>true</MarkupDocGenerate>
+    <MarkupDocTarget>$(MSBuildProjectDirectory)/../doc/MarkupDoc</MarkupDocTarget>
+    <MarkupDocLocalMsDocDir>X:/_DEV/_dotnet-api-docs/dotnet-api-docs</MarkupDocLocalMsDocDir>
+  </PropertyGroup>
+
+</Project>

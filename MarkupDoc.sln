@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkupDoc", "MarkupDoc\MarkupDoc.csproj", "{59090B5D-23C0-4E51-BDF7-D534F39CC506}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleToDocument", "SampleToDocument\SampleToDocument.csproj", "{7918513B-574A-4397-B869-AAF6EC023150}"
+	ProjectSection(ProjectDependencies) = postProject
+		{59090B5D-23C0-4E51-BDF7-D534F39CC506} = {59090B5D-23C0-4E51-BDF7-D534F39CC506}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample2", "Sample2\Sample2.csproj", "{7558793E-F3ED-4949-BD00-ECDC83DD5DD2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{59090B5D-23C0-4E51-BDF7-D534F39CC506} = {59090B5D-23C0-4E51-BDF7-D534F39CC506}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{04F6A094-46BD-4E8F-862B-7021CB84238C}"
+	ProjectSection(SolutionItems) = preProject
+		changelog.md = changelog.md
+		license.txt = license.txt
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59090B5D-23C0-4E51-BDF7-D534F39CC506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59090B5D-23C0-4E51-BDF7-D534F39CC506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59090B5D-23C0-4E51-BDF7-D534F39CC506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59090B5D-23C0-4E51-BDF7-D534F39CC506}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7918513B-574A-4397-B869-AAF6EC023150}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7918513B-574A-4397-B869-AAF6EC023150}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7918513B-574A-4397-B869-AAF6EC023150}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7918513B-574A-4397-B869-AAF6EC023150}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7558793E-F3ED-4949-BD00-ECDC83DD5DD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7558793E-F3ED-4949-BD00-ECDC83DD5DD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7558793E-F3ED-4949-BD00-ECDC83DD5DD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7558793E-F3ED-4949-BD00-ECDC83DD5DD2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {513A3BFE-D276-4926-B074-1140F6E6CC59}
+	EndGlobalSection
+EndGlobal

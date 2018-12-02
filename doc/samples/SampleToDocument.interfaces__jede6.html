@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sample documentation</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css" >
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js" ></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<style>
+body { color: #24292e;font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;font-size: 16px;line-height: 1.5; word-wrap: break-word;margin: 20px;}
+h1 {font-size: 2em;}
+h2 {font-size: 1.5em;}
+h2 {font-size: 1.25em;}
+h4 {font-size: 1.25em;}
+h1, h2 {border-bottom: 1px solid #eaecef; padding-bottom: .3em;}
+h1, h2, h3,  h4{font-weight: 600;line-height: 1.25;margin-bottom: 16px;margin-top: 24px;}
+blockquote, ol, p, pre, table, ul {margin-bottom: 16px;margin-top: 0;}
+a{color: #0366d6;text-decoration: none;}
+a:hover{text-decoration: underline;}
+a.link-external:hover{text-decoration: underline; color:gray;}
+pre code {border: 0;display: inline;line-height: inherit;margin: 2px;overflow: visible;padding: 5px ;word-wrap: normal;}
+pre>code {font-size: 100%;white-space: pre;word-break: normal;padding: 0px}
+code {border-radius: 3px;}
+code, pre {font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;}
+pre {background-color: #f6f8fa;border-radius: 3px;font-size: 85%;line-height: 1.45;overflow: auto;padding: 0px;word-wrap: normal;}
+table {display: block;overflow: auto;width: 100%;border-collapse: collapse;border-spacing: 0;border-color: grey;}
+table tr {background-color: #fff;border-top: 1px solid #c6cbd1;}
+table tr:nth-child(2n) {background-color: #f6f8fa;}
+table td, table th {border: 1px solid #dfe2e5;padding: 6px 13px;}
+dl {display: grid; grid-template-columns: max-content auto; margin: 5px;}
+p+dl {margin-top: -15px;}
+dt {grid-column-start: 1;}
+dd {grid-column-start: 2;}
+</style>
+</head>
+<body>
+
+<h1>  Sample documentation </h1>
+<h2>  <a id="n-sampletodocument.interfaces__jede6" ></a>  SampleToDocument.interfaces Namespace </h2>
+<p>Namespace for checking the interface documentation</p>
+<h3>  Classes </h3>
+<table><tr><th>Name</th><th>Modifier</th><th>Summary</th></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.interfacecontainer__131wgyo" >InterfaceContainer</a></td><td>public</td><td>Class containing nested interfaces</td></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.interfacecontainer2__1hzrrci" >InterfaceContainer2</a></td><td>public</td><td>Class containing nested interfaces with hiding</td></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.withi6and7__t2wi77" >WithI6And7</a></td><td>public</td><td>Class implementing <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface6__yh7ora" >IInterface6</a> and <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface7__yh7or9" >IInterface7</a> . As there are the members with same signature, the explicit implementation must be used.</td></tr>
+</table>
+<p> </p>
+<h3>  Interfaces </h3>
+<table><tr><th>Name</th><th>Modifier</th><th>Summary</th></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface1__yh7orf" >IInterface1</a></td><td>internal abstract</td><td>Empty interface to be &quot;inherited&quot; elsewhere</td></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface2__yh7ore" >IInterface2</a></td><td>internal abstract</td><td>Another empty interface to be &quot;inherited&quot; elsewhere</td></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface3__yh7ord" >IInterface3</a></td><td>internal abstract</td><td>Interface &quot;inheriting&quot; <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface1__yh7orf" >IInterface1</a></td></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface4-3__1m9u4l" >IInterface4&lt;X,Y,Z&gt;</a></td><td>public abstract</td><td>Generic interface with variant type parameters</td></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface5-3__1m9u5i" >IInterface5&lt;X,Y,Z&gt;</a></td><td>public abstract</td><td>Generic interface  with variant type parameters &quot;inheriting&quot; from <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface4-3__1m9u4l" >IInterface4&lt;X,Y,Z&gt;</a> . The interface also has the attributes</td></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface6__yh7ora" >IInterface6</a></td><td>internal abstract</td><td>Interface &quot;inheriting&quot; from <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface1__yh7orf" >IInterface1</a> and <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface2__yh7ore" >IInterface2</a> . It declares property <a href="SampleToDocument.interfaces__jede6.html#p-sampletodocument.interfaces.iinterface6.name__10x4aa5" >Name</a> and method <a href="SampleToDocument.interfaces__jede6.html#m-sampletodocument.interfaces.iinterface6.setname_system.string___1nc7icd" >SetName(string)</a></td></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface7__yh7or9" >IInterface7</a></td><td>internal abstract</td><td>Interface declares property <a href="SampleToDocument.interfaces__jede6.html#p-sampletodocument.interfaces.iinterface7.name__10x49ce" >Name</a> and methods <a href="SampleToDocument.interfaces__jede6.html#m-sampletodocument.interfaces.iinterface7.setname_system.string___28gg5a" >SetName(string)</a> and <a href="SampleToDocument.interfaces__jede6.html#m-sampletodocument.interfaces.iinterface7.clearname_system.string___12s0437" >ClearName(string)</a></td></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.interfacecontainer.inestedinterface1__60nqlw" >InterfaceContainer.INestedInterface1</a></td><td>private abstract</td><td>Private nested interface</td></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.interfacecontainer.inestedinterface2__1ydo091" >InterfaceContainer.INestedInterface2</a></td><td>protected abstract</td><td>Protected nested interface</td></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.interfacecontainer.inestedinterface3__p8ykdm" >InterfaceContainer.INestedInterface3</a></td><td>public abstract</td><td>Public nested interface</td></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.interfacecontainer.inestedinterface4__ikus1n" >InterfaceContainer.INestedInterface4</a></td><td>internal abstract</td><td>Internal nested interface</td></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.interfacecontainer2.inestedinterface1__1xr0rtm" >InterfaceContainer2.INestedInterface1</a></td><td>private abstract</td><td>Private nested interface</td></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.interfacecontainer2.inestedinterface2__1xr0rtn" >InterfaceContainer2.INestedInterface2</a></td><td>protected abstract</td><td>Protected nested interface with new</td></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.interfacecontainer2.inestedinterface3__1xr0rto" >InterfaceContainer2.INestedInterface3</a></td><td>public abstract</td><td>Public nested interface with new</td></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.interfacecontainer2.inestedinterface4__1xr0rth" >InterfaceContainer2.INestedInterface4</a></td><td>internal abstract</td><td>Internal nested interface with new</td></tr>
+</table>
+<p> </p>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="t-sampletodocument.interfaces.interfacecontainer__131wgyo" ></a>  InterfaceContainer Class </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument</small></p>
+<p>Class containing nested interfaces</p>
+<pre><code class="csharp">public class InterfaceContainer</code></pre>
+<p>Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" class="link-external" target="_blank" >object</a><br />
+</p>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="t-sampletodocument.interfaces.interfacecontainer2__1hzrrci" ></a>  InterfaceContainer2 Class </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument</small></p>
+<p>Class containing nested interfaces with hiding</p>
+<pre><code class="csharp">public class InterfaceContainer2 : InterfaceContainer</code></pre>
+<p>Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" class="link-external" target="_blank" >object</a> -&gt; <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.interfacecontainer__131wgyo" >SampleToDocument.interfaces.InterfaceContainer</a><br />
+</p>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="t-sampletodocument.interfaces.withi6and7__t2wi77" ></a>  WithI6And7 Class </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument</small></p>
+<p>Class implementing <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface6__yh7ora" >IInterface6</a> and <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface7__yh7or9" >IInterface7</a> . As there are the members with same signature, the explicit implementation must be used.</p>
+<pre><code class="csharp">public class WithI6And7 : IInterface6, IInterface7</code></pre>
+<p>Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" class="link-external" target="_blank" >object</a><br />
+Implements: <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface6__yh7ora" >SampleToDocument.interfaces.IInterface6</a>, <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface1__yh7orf" >SampleToDocument.interfaces.IInterface1</a>, <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface2__yh7ore" >SampleToDocument.interfaces.IInterface2</a>, <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface7__yh7or9" >SampleToDocument.interfaces.IInterface7</a></p>
+<h3>  Properties </h3>
+<table><tr><th>Name</th><th>Modifier</th><th>Summary</th></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#p-sampletodocument.interfaces.withi6and7.sampletodocument-interfaces-iinterface6-name__9npr8j" >SampleToDocument.interfaces.IInterface6.Name</a></td><td>private</td><td>Explicit implementation of <a href="SampleToDocument.interfaces__jede6.html#p-sampletodocument.interfaces.iinterface6.name__10x4aa5" >Name</a></td></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#p-sampletodocument.interfaces.withi6and7.sampletodocument-interfaces-iinterface7-name__1ax31oo" >SampleToDocument.interfaces.IInterface7.Name</a></td><td>private</td><td>Explicit implementation of <a href="SampleToDocument.interfaces__jede6.html#p-sampletodocument.interfaces.iinterface7.name__10x49ce" >Name</a></td></tr>
+</table>
+<p> </p>
+<h3>  Methods </h3>
+<table><tr><th>Name</th><th>Modifier</th><th>Summary</th></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#m-sampletodocument.interfaces.withi6and7.clearname_system.string___8os06p" >ClearName(string)</a></td><td>public</td><td>Implicit implementation of <a href="SampleToDocument.interfaces__jede6.html#m-sampletodocument.interfaces.iinterface7.clearname_system.string___12s0437" >ClearName(string)</a></td></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#m-sampletodocument.interfaces.withi6and7.sampletodocument-interfaces-iinterface6-setname_system.string___1oc7c13" >SampleToDocument.interfaces.IInterface6.SetName(string)</a></td><td>private</td><td>Explicit implementation of <a href="SampleToDocument.interfaces__jede6.html#m-sampletodocument.interfaces.iinterface6.setname_system.string___1nc7icd" >SetName(string)</a></td></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#m-sampletodocument.interfaces.withi6and7.sampletodocument-interfaces-iinterface7-setname_system.string___1l4bcte" >SampleToDocument.interfaces.IInterface7.SetName(string)</a></td><td>private</td><td>Explicit implementation of <a href="SampleToDocument.interfaces__jede6.html#m-sampletodocument.interfaces.iinterface7.setname_system.string___28gg5a" >SetName(string)</a></td></tr>
+</table>
+<p> </p>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="p-sampletodocument.interfaces.withi6and7.sampletodocument-interfaces-iinterface6-name__9npr8j" ></a>  WithI6And7.SampleToDocument.interfaces.IInterface6.Name Property </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument<br />
+Type: <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.withi6and7__t2wi77" >WithI6And7</a></small></p>
+<p>Explicit implementation of <a href="SampleToDocument.interfaces__jede6.html#p-sampletodocument.interfaces.iinterface6.name__10x4aa5" >Name</a></p>
+<pre><code class="csharp">private string SampleToDocument.interfaces.IInterface6.Name { get; }</code></pre>
+<p><strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a></dt><dd></dd></dl></p>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="p-sampletodocument.interfaces.withi6and7.sampletodocument-interfaces-iinterface7-name__1ax31oo" ></a>  WithI6And7.SampleToDocument.interfaces.IInterface7.Name Property </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument<br />
+Type: <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.withi6and7__t2wi77" >WithI6And7</a></small></p>
+<p>Explicit implementation of <a href="SampleToDocument.interfaces__jede6.html#p-sampletodocument.interfaces.iinterface7.name__10x49ce" >Name</a></p>
+<pre><code class="csharp">private string SampleToDocument.interfaces.IInterface7.Name { get; }</code></pre>
+<p><strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a></dt><dd></dd></dl></p>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="m-sampletodocument.interfaces.withi6and7.clearname_system.string___8os06p" ></a>  WithI6And7.ClearName(string) Title </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument<br />
+Type: <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.withi6and7__t2wi77" >WithI6And7</a></small></p>
+<p>Implicit implementation of <a href="SampleToDocument.interfaces__jede6.html#m-sampletodocument.interfaces.iinterface7.clearname_system.string___12s0437" >ClearName(string)</a></p>
+<pre><code class="csharp">public void ClearName(string name)</code></pre>
+<strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a> <strong>name</strong></dt><dd></dd></dl>
+<p><strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" class="link-external" target="_blank" >void</a></dt><dd></dd></dl></p>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="m-sampletodocument.interfaces.withi6and7.sampletodocument-interfaces-iinterface6-setname_system.string___1oc7c13" ></a>  WithI6And7.SampleToDocument.interfaces.IInterface6.SetName(string) Title </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument<br />
+Type: <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.withi6and7__t2wi77" >WithI6And7</a></small></p>
+<p>Explicit implementation of <a href="SampleToDocument.interfaces__jede6.html#m-sampletodocument.interfaces.iinterface6.setname_system.string___1nc7icd" >SetName(string)</a></p>
+<pre><code class="csharp">private void SampleToDocument.interfaces.IInterface6.SetName(string name)</code></pre>
+<strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a> <strong>name</strong></dt><dd></dd></dl>
+<p><strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" class="link-external" target="_blank" >void</a></dt><dd></dd></dl></p>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="m-sampletodocument.interfaces.withi6and7.sampletodocument-interfaces-iinterface7-setname_system.string___1l4bcte" ></a>  WithI6And7.SampleToDocument.interfaces.IInterface7.SetName(string) Title </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument<br />
+Type: <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.withi6and7__t2wi77" >WithI6And7</a></small></p>
+<p>Explicit implementation of <a href="SampleToDocument.interfaces__jede6.html#m-sampletodocument.interfaces.iinterface7.setname_system.string___28gg5a" >SetName(string)</a></p>
+<pre><code class="csharp">private void SampleToDocument.interfaces.IInterface7.SetName(string name)</code></pre>
+<strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a> <strong>name</strong></dt><dd></dd></dl>
+<p><strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" class="link-external" target="_blank" >void</a></dt><dd></dd></dl></p>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="t-sampletodocument.interfaces.iinterface1__yh7orf" ></a>  IInterface1 Interface </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument</small></p>
+<p>Empty interface to be &quot;inherited&quot; elsewhere</p>
+<pre><code class="csharp">internal interface IInterface1</code></pre>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="t-sampletodocument.interfaces.iinterface2__yh7ore" ></a>  IInterface2 Interface </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument</small></p>
+<p>Another empty interface to be &quot;inherited&quot; elsewhere</p>
+<pre><code class="csharp">internal interface IInterface2</code></pre>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="t-sampletodocument.interfaces.iinterface3__yh7ord" ></a>  IInterface3 Interface </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument</small></p>
+<p>Interface &quot;inheriting&quot; <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface1__yh7orf" >IInterface1</a></p>
+<pre><code class="csharp">internal interface IInterface3 : IInterface1</code></pre>
+<p>Implements: <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface1__yh7orf" >SampleToDocument.interfaces.IInterface1</a></p>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="t-sampletodocument.interfaces.iinterface4-3__1m9u4l" ></a>  IInterface4&lt;X,Y,Z&gt; Interface </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument</small></p>
+<p>Generic interface with variant type parameters</p>
+<pre><code class="csharp">public interface IInterface4&lt;out X, in Y, Z&gt;</code></pre>
+<strong>Type parameters</strong><dl><dt><strong>X</strong></dt><dd>This is the &quot;out&quot; type parameter</dd><dt><strong>Y</strong></dt><dd>This is the &quot;in&quot; type parameter</dd><dt><strong>Z</strong></dt><dd>This is the type parameter without variance</dd></dl>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="t-sampletodocument.interfaces.iinterface5-3__1m9u5i" ></a>  IInterface5&lt;X,Y,Z&gt; Interface </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument</small></p>
+<p>Generic interface  with variant type parameters &quot;inheriting&quot; from <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface4-3__1m9u4l" >IInterface4&lt;X,Y,Z&gt;</a> . The interface also has the attributes</p>
+<pre><code class="csharp">[Category(&quot;Interface&quot;)]
+[Browsable(false)]
+[TypeConverter(typeof(string))]
+public interface IInterface5&lt;out X, [Category(&quot;TypeParam&quot;)] in Y, Z&gt; : IInterface4&lt;Z,Z,Z&gt;</code></pre>
+<strong>Type parameters</strong><dl><dt><strong>X</strong></dt><dd>This is the &quot;out&quot; type parameter</dd><dt><strong>Y</strong></dt><dd>This is the &quot;in&quot; type parameter. Has the attribute</dd><dt><strong>Z</strong></dt><dd>This is the type parameter without variance</dd></dl>
+<p>Attributes: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.categoryattribute" class="link-external" target="_blank" >System.ComponentModel.CategoryAttribute</a>, <a href="https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.browsableattribute" class="link-external" target="_blank" >System.ComponentModel.BrowsableAttribute</a>, <a href="https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.typeconverterattribute" class="link-external" target="_blank" >System.ComponentModel.TypeConverterAttribute</a><br />
+Implements: <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface4-3__1m9u4l" >SampleToDocument.interfaces.IInterface4&lt;Z,Z,Z&gt;</a></p>
+<h3>  Remarks </h3>
+<p>The <strong>Z</strong> type parameter is mapped to all type parameters if <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface4-3__1m9u4l" >IInterface4&lt;X,Y,Z&gt;</a></p>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="t-sampletodocument.interfaces.iinterface6__yh7ora" ></a>  IInterface6 Interface </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument</small></p>
+<p>Interface &quot;inheriting&quot; from <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface1__yh7orf" >IInterface1</a> and <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface2__yh7ore" >IInterface2</a> . It declares property <a href="SampleToDocument.interfaces__jede6.html#p-sampletodocument.interfaces.iinterface6.name__10x4aa5" >Name</a> and method <a href="SampleToDocument.interfaces__jede6.html#m-sampletodocument.interfaces.iinterface6.setname_system.string___1nc7icd" >SetName(string)</a></p>
+<pre><code class="csharp">internal interface IInterface6 : IInterface1, IInterface2</code></pre>
+<p>Implements: <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface1__yh7orf" >SampleToDocument.interfaces.IInterface1</a>, <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface2__yh7ore" >SampleToDocument.interfaces.IInterface2</a></p>
+<h3>  Properties </h3>
+<table><tr><th>Name</th><th>Modifier</th><th>Summary</th></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#p-sampletodocument.interfaces.iinterface6.name__10x4aa5" >Name</a></td><td>public abstract</td><td></td></tr>
+</table>
+<p> </p>
+<h3>  Methods </h3>
+<table><tr><th>Name</th><th>Modifier</th><th>Summary</th></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#m-sampletodocument.interfaces.iinterface6.setname_system.string___1nc7icd" >SetName(string)</a></td><td>public abstract</td><td></td></tr>
+</table>
+<p> </p>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="p-sampletodocument.interfaces.iinterface6.name__10x4aa5" ></a>  IInterface6.Name Property </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument<br />
+Type: <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface6__yh7ora" >IInterface6</a></small></p>
+<pre><code class="csharp">public abstract string Name { get; }</code></pre>
+<p><strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a></dt><dd></dd></dl></p>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="m-sampletodocument.interfaces.iinterface6.setname_system.string___1nc7icd" ></a>  IInterface6.SetName(string) Title </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument<br />
+Type: <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface6__yh7ora" >IInterface6</a></small></p>
+<pre><code class="csharp">public abstract void SetName(string name)</code></pre>
+<strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a> <strong>name</strong></dt><dd></dd></dl>
+<p><strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" class="link-external" target="_blank" >void</a></dt><dd></dd></dl></p>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="t-sampletodocument.interfaces.iinterface7__yh7or9" ></a>  IInterface7 Interface </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument</small></p>
+<p>Interface declares property <a href="SampleToDocument.interfaces__jede6.html#p-sampletodocument.interfaces.iinterface7.name__10x49ce" >Name</a> and methods <a href="SampleToDocument.interfaces__jede6.html#m-sampletodocument.interfaces.iinterface7.setname_system.string___28gg5a" >SetName(string)</a> and <a href="SampleToDocument.interfaces__jede6.html#m-sampletodocument.interfaces.iinterface7.clearname_system.string___12s0437" >ClearName(string)</a></p>
+<pre><code class="csharp">internal interface IInterface7</code></pre>
+<h3>  Properties </h3>
+<table><tr><th>Name</th><th>Modifier</th><th>Summary</th></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#p-sampletodocument.interfaces.iinterface7.name__10x49ce" >Name</a></td><td>public abstract</td><td></td></tr>
+</table>
+<p> </p>
+<h3>  Methods </h3>
+<table><tr><th>Name</th><th>Modifier</th><th>Summary</th></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#m-sampletodocument.interfaces.iinterface7.clearname_system.string___12s0437" >ClearName(string)</a></td><td>public abstract</td><td></td></tr>
+<tr><td><a href="SampleToDocument.interfaces__jede6.html#m-sampletodocument.interfaces.iinterface7.setname_system.string___28gg5a" >SetName(string)</a></td><td>public abstract</td><td></td></tr>
+</table>
+<p> </p>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="p-sampletodocument.interfaces.iinterface7.name__10x49ce" ></a>  IInterface7.Name Property </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument<br />
+Type: <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface7__yh7or9" >IInterface7</a></small></p>
+<pre><code class="csharp">public abstract string Name { get; }</code></pre>
+<p><strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a></dt><dd></dd></dl></p>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="m-sampletodocument.interfaces.iinterface7.clearname_system.string___12s0437" ></a>  IInterface7.ClearName(string) Title </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument<br />
+Type: <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface7__yh7or9" >IInterface7</a></small></p>
+<pre><code class="csharp">public abstract void ClearName(string name)</code></pre>
+<strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a> <strong>name</strong></dt><dd></dd></dl>
+<p><strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" class="link-external" target="_blank" >void</a></dt><dd></dd></dl></p>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="m-sampletodocument.interfaces.iinterface7.setname_system.string___28gg5a" ></a>  IInterface7.SetName(string) Title </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument<br />
+Type: <a href="SampleToDocument.interfaces__jede6.html#t-sampletodocument.interfaces.iinterface7__yh7or9" >IInterface7</a></small></p>
+<pre><code class="csharp">public abstract void SetName(string name)</code></pre>
+<strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a> <strong>name</strong></dt><dd></dd></dl>
+<p><strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" class="link-external" target="_blank" >void</a></dt><dd></dd></dl></p>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="t-sampletodocument.interfaces.interfacecontainer.inestedinterface1__60nqlw" ></a>  InterfaceContainer.INestedInterface1 Interface </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument</small></p>
+<p>Private nested interface</p>
+<pre><code class="csharp">private interface InterfaceContainer.INestedInterface1</code></pre>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="t-sampletodocument.interfaces.interfacecontainer.inestedinterface2__1ydo091" ></a>  InterfaceContainer.INestedInterface2 Interface </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument</small></p>
+<p>Protected nested interface</p>
+<pre><code class="csharp">protected interface InterfaceContainer.INestedInterface2</code></pre>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="t-sampletodocument.interfaces.interfacecontainer.inestedinterface3__p8ykdm" ></a>  InterfaceContainer.INestedInterface3 Interface </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument</small></p>
+<p>Public nested interface</p>
+<pre><code class="csharp">public interface InterfaceContainer.INestedInterface3</code></pre>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="t-sampletodocument.interfaces.interfacecontainer.inestedinterface4__ikus1n" ></a>  InterfaceContainer.INestedInterface4 Interface </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument</small></p>
+<p>Internal nested interface</p>
+<pre><code class="csharp">internal interface InterfaceContainer.INestedInterface4</code></pre>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="t-sampletodocument.interfaces.interfacecontainer2.inestedinterface1__1xr0rtm" ></a>  InterfaceContainer2.INestedInterface1 Interface </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument</small></p>
+<p>Private nested interface</p>
+<pre><code class="csharp">private interface InterfaceContainer2.INestedInterface1</code></pre>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="t-sampletodocument.interfaces.interfacecontainer2.inestedinterface2__1xr0rtn" ></a>  InterfaceContainer2.INestedInterface2 Interface </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument</small></p>
+<p>Protected nested interface with new</p>
+<pre><code class="csharp">protected new interface InterfaceContainer2.INestedInterface2</code></pre>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="t-sampletodocument.interfaces.interfacecontainer2.inestedinterface3__1xr0rto" ></a>  InterfaceContainer2.INestedInterface3 Interface </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument</small></p>
+<p>Public nested interface with new</p>
+<pre><code class="csharp">public new interface InterfaceContainer2.INestedInterface3</code></pre>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="t-sampletodocument.interfaces.interfacecontainer2.inestedinterface4__1xr0rth" ></a>  InterfaceContainer2.INestedInterface4 Interface </h2>
+<p><small>Namespace: <a href="SampleToDocument.interfaces__jede6.html#n-sampletodocument.interfaces__jede6" >SampleToDocument.interfaces</a><br />
+Assembly: SampleToDocument</small></p>
+<p>Internal nested interface with new</p>
+<pre><code class="csharp">internal new interface InterfaceContainer2.INestedInterface4</code></pre>
+<p>Go to <a href="SampleToDocument.html#namespace-list" >namespaces</a> or <a href="SampleToDocument.html#type-list" >types</a></p>
+<p> </p>
+</body></html>
