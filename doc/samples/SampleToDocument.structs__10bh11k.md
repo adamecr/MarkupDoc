@@ -55,7 +55,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.structs.struct5.struct5innerclass__1qw38xi" />  Struct5.Struct5InnerClass Class ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: structs\Samples.cs</small>
 
 
 Inner class implementing [IInterface3](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface3__yh7ord)
@@ -78,7 +79,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.structs.structcontainer__164zcao" />  StructContainer Class ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: structs\Samples.cs</small>
 
 
 Class containing structures
@@ -90,6 +92,7 @@ public class StructContainer
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Derived: [SampleToDocument.structs.StructContainer2](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.structcontainer2__16k210y)           
 
 
 
@@ -101,7 +104,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.structs.structcontainer2__16k210y" />  StructContainer2 Class ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: structs\Samples.cs</small>
 
 
 Class containing structures with members hiding
@@ -124,7 +128,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.structs.struct5.struct5delegate__1d6vyt1" />  Struct5.Struct5Delegate Delegate ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: structs\Samples.cs</small>
 
 
 Struct delegate
@@ -151,7 +156,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.structs.struct1__19a8vpw" />  Struct1 Struct ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: structs\Samples.cs</small>
 
 
 Empty structure
@@ -174,7 +180,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.structs.struct2__5jfuh" />  Struct2 Struct ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: structs\Samples.cs</small>
 
 
 Empty structure with attribute, implementing [IInterface1](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface1__yh7orf)
@@ -199,7 +206,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.structs.struct3__q1y1y6" />  Struct3 Struct ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: structs\Samples.cs</small>
 
 
 Empty structure implementing [IInterface2](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface2__yh7ore) and [IInterface3](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface3__yh7ord)
@@ -222,7 +230,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.structs.struct4__1lufx5n" />  Struct4 Struct ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: structs\Samples.cs</small>
 
 
 Structure implementing <a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1" target="_blank" >System.Collections.Generic.IEnumerable`1</a>
@@ -247,16 +256,26 @@ Implements: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.collecti
  
 
 
+###  Explicit Interface Implementations ###
+
+ | Name | Modifier | Summary | 
+ | ------ | ---------- | --------- | 
+ | [System.Collections.IEnumerable.GetEnumerator()](SampleToDocument.structs__10bh11k.md#m-sampletodocument.structs.struct4.system-collections-ienumerable-getenumerator__qf62q0) | private | Explicit implementation of <a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable.getenumerator#System_Collections_IEnumerable_GetEnumerator" target="_blank" >System.Collections.IEnumerable.GetEnumerator</a> | 
+
+ 
+
+
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
 
 
  
 
 
-##  <a id="m-sampletodocument.structs.struct4.getenumerator__1dlfx9y" />  Struct4.GetEnumerator() Title ##
+##  <a id="m-sampletodocument.structs.struct4.getenumerator__1dlfx9y" />  Struct4.GetEnumerator() Method ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
 Assembly: SampleToDocument           
-Type: [Struct4](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct4__1lufx5n)</small>
+Type: [Struct4](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct4__1lufx5n)           
+Sources: structs\Samples.cs</small>
 
 
 Implementation of <a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1.getenumerator#System_Collections_Generic_IEnumerable_1_GetEnumerator" target="_blank" >System.Collections.Generic.IEnumerable`1.GetEnumerator</a>
@@ -267,7 +286,7 @@ Implementation of <a href="https://docs.microsoft.com/en-us/dotnet/api/system.co
 public IEnumerator<SampleToDocument.structs.Struct4> GetEnumerator()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerator-1" target="_blank" >IEnumerator&lt;SampleToDocument.structs.Struct4&gt;</a></dt><dd></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerator-1" target="_blank" >IEnumerator&lt;SampleToDocument.structs.Struct4&gt;</a></dt><dd></dd></dl>Implements: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1.getenumerator#System_Collections_Generic_IEnumerable_1_GetEnumerator" target="_blank" >Generic.IEnumerable.GetEnumerator</a>
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -276,10 +295,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.structs.struct4.system-collections-ienumerable-getenumerator__qf62q0" />  Struct4.System.Collections.IEnumerable.GetEnumerator() Title ##
+##  <a id="m-sampletodocument.structs.struct4.system-collections-ienumerable-getenumerator__qf62q0" />  Struct4.System.Collections.IEnumerable.GetEnumerator() Method ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
 Assembly: SampleToDocument           
-Type: [Struct4](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct4__1lufx5n)</small>
+Type: [Struct4](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct4__1lufx5n)           
+Sources: structs\Samples.cs</small>
 
 
 Explicit implementation of <a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable.getenumerator#System_Collections_IEnumerable_GetEnumerator" target="_blank" >System.Collections.IEnumerable.GetEnumerator</a>
@@ -290,7 +310,7 @@ Explicit implementation of <a href="https://docs.microsoft.com/en-us/dotnet/api/
 private IEnumerator System.Collections.IEnumerable.GetEnumerator()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerator" target="_blank" >IEnumerator</a></dt><dd></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerator" target="_blank" >IEnumerator</a></dt><dd></dd></dl>Implements: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable.getenumerator#System_Collections_IEnumerable_GetEnumerator" target="_blank" >Collections.IEnumerable.GetEnumerator</a>
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -301,7 +321,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.structs.struct5__cpqha8" />  Struct5 Struct ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: structs\Samples.cs</small>
 
 
 Struct containing some members
@@ -362,7 +383,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.structs.struct5.struct5property__13ia1kl" />  Struct5.Struct5Property Property ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
 Assembly: SampleToDocument           
-Type: [Struct5](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct5__cpqha8)</small>
+Type: [Struct5](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct5__cpqha8)           
+Sources: structs\Samples.cs</small>
 
 
 Struct property
@@ -385,7 +407,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.structs.struct5.item_system.int32___qftm7d" />  Struct5.this[int] Indexer ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
 Assembly: SampleToDocument           
-Type: [Struct5](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct5__cpqha8)</small>
+Type: [Struct5](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct5__cpqha8)           
+Sources: structs\Samples.cs</small>
 
 
 Struct indexer
@@ -406,10 +429,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.structs.struct5.struct5method__1k2erlm" />  Struct5.Struct5Method() Title ##
+##  <a id="m-sampletodocument.structs.struct5.struct5method__1k2erlm" />  Struct5.Struct5Method() Method ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
 Assembly: SampleToDocument           
-Type: [Struct5](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct5__cpqha8)</small>
+Type: [Struct5](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct5__cpqha8)           
+Sources: structs\Samples.cs</small>
 
 
 Struct method
@@ -429,10 +453,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.structs.struct5.tostring__1x0ct2j" />  Struct5.ToString() Title ##
+##  <a id="m-sampletodocument.structs.struct5.tostring__1x0ct2j" />  Struct5.ToString() Method ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
 Assembly: SampleToDocument           
-Type: [Struct5](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct5__cpqha8)</small>
+Type: [Struct5](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct5__cpqha8)           
+Sources: structs\Samples.cs</small>
 
 
 Even the struct can have overrides (of <a href="https://docs.microsoft.com/en-us/dotnet/api/system.valuetype" target="_blank" >System.ValueType</a> )
@@ -443,7 +468,7 @@ Even the struct can have overrides (of <a href="https://docs.microsoft.com/en-us
 public override string ToString()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>Overrides: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.valuetype.tostring#System_ValueType_ToString" target="_blank" >ValueType.ToString</a>
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -452,10 +477,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.structs.struct5.op_unaryplus_sampletodocument.structs.struct5___1ee1cg3" />  Struct5.Plus(Struct5) Title ##
+##  <a id="m-sampletodocument.structs.struct5.op_unaryplus_sampletodocument.structs.struct5___1ee1cg3" />  Struct5.Plus(Struct5) Operator ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
 Assembly: SampleToDocument           
-Type: [Struct5](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct5__cpqha8)</small>
+Type: [Struct5](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct5__cpqha8)           
+Sources: structs\Samples.cs</small>
 
 
 Struct operator
@@ -478,7 +504,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.structs.struct5.struct5inner1__10qyyxd" />  Struct5.Struct5Inner1 Struct ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: structs\Samples.cs</small>
 
 
 Inner struct implementing [IInterface3](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface3__yh7ord)
@@ -501,7 +528,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.structs.struct5.struct5inner2__17f2r9c" />  Struct5.Struct5Inner2 Struct ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: structs\Samples.cs</small>
 
 
 Private inner struct
@@ -524,7 +552,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.structs.struct5.struct5inner3__hio55n" />  Struct5.Struct5Inner3 Struct ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: structs\Samples.cs</small>
 
 
 Internal inner struct
@@ -547,7 +576,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.structs.structcontainer.structcontainerinner1__172mwnl" />  StructContainer.StructContainerInner1 Struct ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: structs\Samples.cs</small>
 
 
 Public inner struct
@@ -570,7 +600,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.structs.structcontainer.structcontainerinner2__1dqqozk" />  StructContainer.StructContainerInner2 Struct ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: structs\Samples.cs</small>
 
 
 Private inner struct
@@ -593,7 +624,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.structs.structcontainer.structcontainerinner3__nuc2vv" />  StructContainer.StructContainerInner3 Struct ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: structs\Samples.cs</small>
 
 
 Internal inner struct
@@ -616,7 +648,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.structs.structcontainer.structcontainerinner4__10ej4bm" />  StructContainer.StructContainerInner4 Struct ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: structs\Samples.cs</small>
 
 
 Protected inner struct
@@ -639,7 +672,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.structs.structcontainer2.structcontainerinner1__1xdz5pj" />  StructContainer2.StructContainerInner1 Struct ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: structs\Samples.cs</small>
 
 
 Public inner struct with new
@@ -662,7 +696,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.structs.structcontainer2.structcontainerinner2__1xdz5pi" />  StructContainer2.StructContainerInner2 Struct ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: structs\Samples.cs</small>
 
 
 Private inner struct
@@ -685,7 +720,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.structs.structcontainer2.structcontainerinner3__1xdz5ph" />  StructContainer2.StructContainerInner3 Struct ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: structs\Samples.cs</small>
 
 
 Internal inner struct with new
@@ -708,7 +744,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.structs.structcontainer2.structcontainerinner4__1xdz5pg" />  StructContainer2.StructContainerInner4 Struct ##
 <small>Namespace: [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: structs\Samples.cs</small>
 
 
 Protected inner struct with new

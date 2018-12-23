@@ -92,7 +92,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummy__17uv97j" />  Dummy Class ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Dummy class with the mixture of members
@@ -104,6 +105,7 @@ public class Dummy
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Derived: [SampleToDocument.x_complex.Dummy2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy2__1mdq43x), [SampleToDocument.x_complex.Dummy3](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3__1mdq43y), [SampleToDocument.x_complex.Dummy3.InnerDummy34](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy34__1to1rzj)           
 
 
 
@@ -154,7 +156,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.x_complex.dummy.ab__o1y5zw" />  Dummy.Ab Field ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy__17uv97j)</small>
+Type: [Dummy](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy__17uv97j)           
+Sources: x_complex\Samples.cs</small>
 
 
 This is the <a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >System.String</a> field
@@ -177,7 +180,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.dummy.aa__gzwwr5" />  Dummy.Aa Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy__17uv97j)</small>
+Type: [Dummy](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy__17uv97j)           
+Sources: x_complex\Samples.cs</small>
 
 
 This is the property with getter and setter
@@ -200,7 +204,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.dummy.e__i8wvfg" />  Dummy.E Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy__17uv97j)</small>
+Type: [Dummy](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy__17uv97j)           
+Sources: x_complex\Samples.cs</small>
 
 
 <em>Sample2.RefClass</em> is in another assembly
@@ -220,10 +225,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummy.c__10xopwv" />  Dummy.C() Title ##
+##  <a id="m-sampletodocument.x_complex.dummy.c__10xopwv" />  Dummy.C() Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy__17uv97j)</small>
+Type: [Dummy](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy__17uv97j)           
+Sources: x_complex\Samples.cs</small>
 
 
 This is totally empty method
@@ -247,10 +253,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummy.d__1dhvrcm" />  Dummy.D() Title ##
+##  <a id="m-sampletodocument.x_complex.dummy.d__1dhvrcm" />  Dummy.D() Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy__17uv97j)</small>
+Type: [Dummy](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy__17uv97j)           
+Sources: x_complex\Samples.cs</small>
 
 
 This is also an empty method, but it&#39;s virtual
@@ -288,10 +295,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummy.functionasync--1_system.int32___ypdn2t" />  Dummy.FunctionAsync&lt;T&gt;(int) Title ##
+##  <a id="m-sampletodocument.x_complex.dummy.functionasync--1_system.int32___ypdn2t" />  Dummy.FunctionAsync&lt;T&gt;(int) Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy__17uv97j)</small>
+Type: [Dummy](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy__17uv97j)           
+Sources: x_complex\Samples.cs</small>
 
 
 Async method with a bit more complicated signature
@@ -313,10 +321,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummy.methodasync__10dck8t" />  Dummy.MethodAsync() Title ##
+##  <a id="m-sampletodocument.x_complex.dummy.methodasync__10dck8t" />  Dummy.MethodAsync() Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy__17uv97j)</small>
+Type: [Dummy](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy__17uv97j)           
+Sources: x_complex\Samples.cs</small>
 
 
 Simple async method
@@ -336,10 +345,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummy.tostring__1oy64ju" />  Dummy.ToString() Title ##
+##  <a id="m-sampletodocument.x_complex.dummy.tostring__1oy64ju" />  Dummy.ToString() Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy__17uv97j)</small>
+Type: [Dummy](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy__17uv97j)           
+Sources: x_complex\Samples.cs</small>
 
 
 Overrides the <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring#System_Object_ToString" target="_blank" >System.Object.ToString</a> method
@@ -350,7 +360,7 @@ Overrides the <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object
 public override string ToString()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Returns [Ab](SampleToDocument.x_complex__updp6r.md#f-sampletodocument.x_complex.dummy.ab__o1y5zw) field</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Returns [Ab](SampleToDocument.x_complex__updp6r.md#f-sampletodocument.x_complex.dummy.ab__o1y5zw) field</dd></dl>Overrides: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring#System_Object_ToString" target="_blank" >object.ToString</a>
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -361,7 +371,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummy2__1mdq43x" />  Dummy2 Class ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Another test class. This one inherits from [Dummy](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy__17uv97j)
@@ -373,6 +384,7 @@ public class Dummy2 : Dummy
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a> -&gt; [SampleToDocument.x_complex.Dummy](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy__17uv97j)           
+Derived: [SampleToDocument.x_complex.Dummy3.InnerDummy32](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy32__dv8js5)           
 
 
 
@@ -414,7 +426,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.dummy2.bb__125100f" />  Dummy2.Bb Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy2__1mdq43x)</small>
+Type: [Dummy2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy2__1mdq43x)           
+Sources: x_complex\Samples.cs</small>
 
 
 Property with getter
@@ -437,7 +450,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="e-sampletodocument.x_complex.dummy2.evt__1rq8v79" />  Dummy2.Evt Event ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy2__1mdq43x)</small>
+Type: [Dummy2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy2__1mdq43x)           
+Sources: x_complex\Samples.cs</small>
 
 
 Event using the class level handler delegate
@@ -460,7 +474,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="e-sampletodocument.x_complex.dummy2.evt1__1soag80" />  Dummy2.Evt1 Event ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy2__1mdq43x)</small>
+Type: [Dummy2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy2__1mdq43x)           
+Sources: x_complex\Samples.cs</small>
 
 
 Just and event using the namespace level handler delegate
@@ -480,10 +495,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummy2.d__1j0bfuo" />  Dummy2.D() Title ##
+##  <a id="m-sampletodocument.x_complex.dummy2.d__1j0bfuo" />  Dummy2.D() Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy2__1mdq43x)</small>
+Type: [Dummy2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy2__1mdq43x)           
+Sources: x_complex\Samples.cs</small>
 
 
 Method override
@@ -494,7 +510,7 @@ Method override
 public override void D()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" target="_blank" >void</a></dt><dd></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" target="_blank" >void</a></dt><dd></dd></dl>Overrides: [Dummy.D()](SampleToDocument.x_complex__updp6r.md#m-sampletodocument.x_complex.dummy.d__1dhvrcm)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -503,10 +519,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummy2.e__1j0bfun" />  Dummy2.E() Title ##
+##  <a id="m-sampletodocument.x_complex.dummy2.e__1j0bfun" />  Dummy2.E() Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy2__1mdq43x)</small>
+Type: [Dummy2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy2__1mdq43x)           
+Sources: x_complex\Samples.cs</small>
 
 
 Very empty method, should have new modifier, but has none
@@ -528,7 +545,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummy3__1mdq43y" />  Dummy3 Class ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 The class having a lot of attributes and some nested members
@@ -557,7 +575,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummy3.innerdummy31__1mzxznk" />  Dummy3.InnerDummy31 Class ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Nested empty class
@@ -580,7 +599,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummy3.innerdummy32__dv8js5" />  Dummy3.InnerDummy32 Class ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Nested class inheriting from [Dummy2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy2__1mdq43x)
@@ -603,7 +623,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummy3.innerdummy33__13rn5vu" />  Dummy3.InnerDummy33 Class ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Nested class implementing the [interface IDummy1](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.idummy1__12xqhwn)
@@ -646,7 +667,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.dummy3.innerdummy33.prop1__qp7w1g" />  Dummy3.InnerDummy33.Prop1 Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy3.InnerDummy33](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy33__13rn5vu)</small>
+Type: [Dummy3.InnerDummy33](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy33__13rn5vu)           
+Sources: x_complex\Samples.cs</small>
 
 
 Implements the [Prop2](SampleToDocument.x_complex__updp6r.md#p-sampletodocument.x_complex.idummy1.prop2__92gr72)
@@ -657,7 +679,7 @@ Implements the [Prop2](SampleToDocument.x_complex__updp6r.md#p-sampletodocument.
 public string Prop1 { get; }
 ```
 
-<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>Implements: [IDummy1.Prop1](SampleToDocument.x_complex__updp6r.md#p-sampletodocument.x_complex.idummy1.prop1__fqkjj1)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -669,7 +691,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.dummy3.innerdummy33.prop2__1glmi55" />  Dummy3.InnerDummy33.Prop2 Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy3.InnerDummy33](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy33__13rn5vu)</small>
+Type: [Dummy3.InnerDummy33](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy33__13rn5vu)           
+Sources: x_complex\Samples.cs</small>
 
 
 Implements the [Prop2](SampleToDocument.x_complex__updp6r.md#p-sampletodocument.x_complex.idummy1.prop2__92gr72)
@@ -680,7 +703,7 @@ Implements the [Prop2](SampleToDocument.x_complex__updp6r.md#p-sampletodocument.
 public string Prop2 { get; set; }
 ```
 
-<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>Implements: [IDummy1.Prop2](SampleToDocument.x_complex__updp6r.md#p-sampletodocument.x_complex.idummy1.prop2__92gr72)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -689,10 +712,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummy3.innerdummy33.met1__9hcaq2" />  Dummy3.InnerDummy33.Met1() Title ##
+##  <a id="m-sampletodocument.x_complex.dummy3.innerdummy33.met1__9hcaq2" />  Dummy3.InnerDummy33.Met1() Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy3.InnerDummy33](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy33__13rn5vu)</small>
+Type: [Dummy3.InnerDummy33](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy33__13rn5vu)           
+Sources: x_complex\Samples.cs</small>
 
 
 Implements the interface method [Met1()](SampleToDocument.x_complex__updp6r.md#m-sampletodocument.x_complex.idummy1.met1__1x9dx61)
@@ -703,7 +727,7 @@ Implements the interface method [Met1()](SampleToDocument.x_complex__updp6r.md#m
 public string Met1()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>Implements: [IDummy1.Met1()](SampleToDocument.x_complex__updp6r.md#m-sampletodocument.x_complex.idummy1.met1__1x9dx61)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -714,7 +738,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummy3.innerdummy33.doubleinnerdummy33__d0nm11" />  Dummy3.InnerDummy33.DoubleInnerDummy33 Class ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Nested class in nested class
@@ -737,7 +762,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummy3.innerdummy34__1to1rzj" />  Dummy3.InnerDummy34 Class ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Nested class inheriting from [Dummy](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy__17uv97j) and implementing two interfaces
@@ -781,7 +807,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.dummy3.innerdummy34.prop1__1mxblb9" />  Dummy3.InnerDummy34.Prop1 Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy3.InnerDummy34](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy34__1to1rzj)</small>
+Type: [Dummy3.InnerDummy34](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy34__1to1rzj)           
+Sources: x_complex\Samples.cs</small>
 
 
 
@@ -789,7 +816,7 @@ Type: [Dummy3.InnerDummy34](SampleToDocument.x_complex__updp6r.md#t-sampletodocu
 public string Prop1 { get; }
 ```
 
-<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>Implements: [IDummy1.Prop1](SampleToDocument.x_complex__updp6r.md#p-sampletodocument.x_complex.idummy1.prop1__fqkjj1)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -801,7 +828,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.dummy3.innerdummy34.prop2__x0wz7k" />  Dummy3.InnerDummy34.Prop2 Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy3.InnerDummy34](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy34__1to1rzj)</small>
+Type: [Dummy3.InnerDummy34](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy34__1to1rzj)           
+Sources: x_complex\Samples.cs</small>
 
 
 
@@ -809,7 +837,7 @@ Type: [Dummy3.InnerDummy34](SampleToDocument.x_complex__updp6r.md#t-sampletodocu
 public string Prop2 { get; set; }
 ```
 
-<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>Implements: [IDummy1.Prop2](SampleToDocument.x_complex__updp6r.md#p-sampletodocument.x_complex.idummy1.prop2__92gr72)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -818,10 +846,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummy3.innerdummy34.met1__1umgb21" />  Dummy3.InnerDummy34.Met1() Title ##
+##  <a id="m-sampletodocument.x_complex.dummy3.innerdummy34.met1__1umgb21" />  Dummy3.InnerDummy34.Met1() Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy3.InnerDummy34](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy34__1to1rzj)</small>
+Type: [Dummy3.InnerDummy34](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy34__1to1rzj)           
+Sources: x_complex\Samples.cs</small>
 
 
 
@@ -829,7 +858,7 @@ Type: [Dummy3.InnerDummy34](SampleToDocument.x_complex__updp6r.md#t-sampletodocu
 public string Met1()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>Implements: [IDummy1.Met1()](SampleToDocument.x_complex__updp6r.md#m-sampletodocument.x_complex.idummy1.met1__1x9dx61)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -838,10 +867,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummy3.innerdummy34.met2__1umgb24" />  Dummy3.InnerDummy34.Met2() Title ##
+##  <a id="m-sampletodocument.x_complex.dummy3.innerdummy34.met2__1umgb24" />  Dummy3.InnerDummy34.Met2() Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy3.InnerDummy34](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy34__1to1rzj)</small>
+Type: [Dummy3.InnerDummy34](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy34__1to1rzj)           
+Sources: x_complex\Samples.cs</small>
 
 
 
@@ -849,7 +879,7 @@ Type: [Dummy3.InnerDummy34](SampleToDocument.x_complex__updp6r.md#t-sampletodocu
 public string Met2()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>Implements: [IDummy2.Met2()](SampleToDocument.x_complex__updp6r.md#m-sampletodocument.x_complex.idummy2.met2__1t8l2l5)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -860,7 +890,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummy3.innerdummy35__kjcc44" />  Dummy3.InnerDummy35 Class ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Nested class implementing two interfaces with method having the same signature, so the explicit implementation needs to be used
@@ -885,16 +916,27 @@ Implements: [SampleToDocument.x_complex.IDummy2](SampleToDocument.x_complex__upd
  
 
 
+###  Explicit Interface Implementations ###
+
+ | Name | Modifier | Summary | 
+ | ------ | ---------- | --------- | 
+ | [SampleToDocument.x_complex.Dummy3.IInnerDummy3.Met2()](SampleToDocument.x_complex__updp6r.md#m-sampletodocument.x_complex.dummy3.innerdummy35.sampletodocument-x_complex-dummy3-iinnerdummy3-met2__1a70slh) | private | Implementation of [Met2()](SampleToDocument.x_complex__updp6r.md#m-sampletodocument.x_complex.dummy3.iinnerdummy3.met2__1o4au1f) | 
+ | [SampleToDocument.x_complex.IDummy2.Met2()](SampleToDocument.x_complex__updp6r.md#m-sampletodocument.x_complex.dummy3.innerdummy35.sampletodocument-x_complex-idummy2-met2__19fz6cy) | private | Implementation of [Met2()](SampleToDocument.x_complex__updp6r.md#m-sampletodocument.x_complex.idummy2.met2__1t8l2l5) | 
+
+ 
+
+
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
 
 
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummy3.innerdummy35.sampletodocument-x_complex-dummy3-iinnerdummy3-met2__1a70slh" />  Dummy3.InnerDummy35.SampleToDocument.x_complex.Dummy3.IInnerDummy3.Met2() Title ##
+##  <a id="m-sampletodocument.x_complex.dummy3.innerdummy35.sampletodocument-x_complex-dummy3-iinnerdummy3-met2__1a70slh" />  Dummy3.InnerDummy35.SampleToDocument.x_complex.Dummy3.IInnerDummy3.Met2() Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy3.InnerDummy35](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy35__kjcc44)</small>
+Type: [Dummy3.InnerDummy35](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy35__kjcc44)           
+Sources: x_complex\Samples.cs</small>
 
 
 Implementation of [Met2()](SampleToDocument.x_complex__updp6r.md#m-sampletodocument.x_complex.dummy3.iinnerdummy3.met2__1o4au1f)
@@ -905,7 +947,7 @@ Implementation of [Met2()](SampleToDocument.x_complex__updp6r.md#m-sampletodocum
 private string SampleToDocument.x_complex.Dummy3.IInnerDummy3.Met2()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>Implements: [Dummy3.IInnerDummy3.Met2()](SampleToDocument.x_complex__updp6r.md#m-sampletodocument.x_complex.dummy3.iinnerdummy3.met2__1o4au1f)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -914,10 +956,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummy3.innerdummy35.sampletodocument-x_complex-idummy2-met2__19fz6cy" />  Dummy3.InnerDummy35.SampleToDocument.x_complex.IDummy2.Met2() Title ##
+##  <a id="m-sampletodocument.x_complex.dummy3.innerdummy35.sampletodocument-x_complex-idummy2-met2__19fz6cy" />  Dummy3.InnerDummy35.SampleToDocument.x_complex.IDummy2.Met2() Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy3.InnerDummy35](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy35__kjcc44)</small>
+Type: [Dummy3.InnerDummy35](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy35__kjcc44)           
+Sources: x_complex\Samples.cs</small>
 
 
 Implementation of [Met2()](SampleToDocument.x_complex__updp6r.md#m-sampletodocument.x_complex.idummy2.met2__1t8l2l5)
@@ -928,7 +971,7 @@ Implementation of [Met2()](SampleToDocument.x_complex__updp6r.md#m-sampletodocum
 private string SampleToDocument.x_complex.IDummy2.Met2()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Should return some string</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Should return some string</dd></dl>Implements: [IDummy2.Met2()](SampleToDocument.x_complex__updp6r.md#m-sampletodocument.x_complex.idummy2.met2__1t8l2l5)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -939,7 +982,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummyattribute__9eikv7" />  DummyAttribute Class ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Some attribute to play with
@@ -972,10 +1016,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummyattribute.-ctor__pcu4cp" />  DummyAttribute.DummyAttribute() Title ##
+##  <a id="m-sampletodocument.x_complex.dummyattribute.-ctor__pcu4cp" />  DummyAttribute.DummyAttribute() Constructor ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyAttribute](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummyattribute__9eikv7)</small>
+Type: [DummyAttribute](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummyattribute__9eikv7)           
+Sources: x_complex\Samples.cs</small>
 
 
 CTOR without parameters
@@ -992,10 +1037,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummyattribute.-ctor_system.string___j8ob1w" />  DummyAttribute.DummyAttribute(string) Title ##
+##  <a id="m-sampletodocument.x_complex.dummyattribute.-ctor_system.string___j8ob1w" />  DummyAttribute.DummyAttribute(string) Constructor ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyAttribute](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummyattribute__9eikv7)</small>
+Type: [DummyAttribute](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummyattribute__9eikv7)           
+Sources: x_complex\Samples.cs</small>
 
 
 CTOR with parameter
@@ -1015,7 +1061,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummygen1-1__1wbbxbz" />  DummyGen1&lt;T&gt; Class ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Generic class
@@ -1028,6 +1075,7 @@ public class DummyGen1<T>
 
 <strong>Type parameters</strong><dl><dt><strong>T</strong></dt><dd>Single type parameter</dd></dl>
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Derived: [SampleToDocument.x_complex.DummyGen3&lt;T,U&gt;.DummyGen4](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen3-2.dummygen4__puxvdc)           
 
 
 
@@ -1059,7 +1107,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.dummygen1-1.prop1__12dxcd9" />  DummyGen1&lt;T&gt;.Prop1 Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyGen1&lt;T&gt;](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen1-1__1wbbxbz)</small>
+Type: [DummyGen1&lt;T&gt;](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen1-1__1wbbxbz)           
+Sources: x_complex\Samples.cs</small>
 
 
 Generic property
@@ -1079,10 +1128,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummygen1-1.genmethod--1_--0-system.string___16648z9" />  DummyGen1&lt;T&gt;.GenMethod&lt;T&gt;(DummyGen1&lt;T&gt;.T, string) Title ##
+##  <a id="m-sampletodocument.x_complex.dummygen1-1.genmethod--1_--0-system.string___16648z9" />  DummyGen1&lt;T&gt;.GenMethod&lt;T&gt;(DummyGen1&lt;T&gt;.T, string) Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyGen1&lt;T&gt;](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen1-1__1wbbxbz)</small>
+Type: [DummyGen1&lt;T&gt;](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen1-1__1wbbxbz)           
+Sources: x_complex\Samples.cs</small>
 
 
 Virtual generic method
@@ -1104,10 +1154,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummygen1-1.genmethod2_-0-system.string___oqxpao" />  DummyGen1&lt;T&gt;.GenMethod2(DummyGen1&lt;T&gt;.T, string) Title ##
+##  <a id="m-sampletodocument.x_complex.dummygen1-1.genmethod2_-0-system.string___oqxpao" />  DummyGen1&lt;T&gt;.GenMethod2(DummyGen1&lt;T&gt;.T, string) Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyGen1&lt;T&gt;](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen1-1__1wbbxbz)</small>
+Type: [DummyGen1&lt;T&gt;](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen1-1__1wbbxbz)           
+Sources: x_complex\Samples.cs</small>
 
 
 Virtual method with generic parameter and return value
@@ -1130,7 +1181,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummygen2__17gqznd" />  DummyGen2 Class ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Class with generic method
@@ -1160,10 +1212,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummygen2.genmethod--1_--0-system.string___1a42ri3" />  DummyGen2.GenMethod&lt;T&gt;(DummyGen2.T, string) Title ##
+##  <a id="m-sampletodocument.x_complex.dummygen2.genmethod--1_--0-system.string___1a42ri3" />  DummyGen2.GenMethod&lt;T&gt;(DummyGen2.T, string) Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyGen2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen2__17gqznd)</small>
+Type: [DummyGen2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen2__17gqznd)           
+Sources: x_complex\Samples.cs</small>
 
 
 Generic method
@@ -1187,7 +1240,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummygen3-2__1b30ilg" />  DummyGen3&lt;T,U&gt; Class ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Generic class with nested class
@@ -1202,6 +1256,7 @@ public class DummyGen3<T, U>
 
 <strong>Type parameters</strong><dl><dt><strong>T</strong></dt><dd></dd><dt><strong>U</strong></dt><dd></dd></dl>
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Derived: [SampleToDocument.x_complex.DummyGen5&lt;T,U&gt;](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen5-2__dai2f6), [SampleToDocument.x_complex.DummyGen4&lt;X&gt;](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen4-1__8yfvrs)           
 
 
 
@@ -1234,7 +1289,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.dummygen3-2.prop1__d513du" />  DummyGen3&lt;T,U&gt;.Prop1 Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyGen3&lt;T,U&gt;](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen3-2__1b30ilg)</small>
+Type: [DummyGen3&lt;T,U&gt;](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen3-2__1b30ilg)           
+Sources: x_complex\Samples.cs</small>
 
 
 
@@ -1254,7 +1310,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.dummygen3-2.prop2__6gxb1v" />  DummyGen3&lt;T,U&gt;.Prop2 Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyGen3&lt;T,U&gt;](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen3-2__1b30ilg)</small>
+Type: [DummyGen3&lt;T,U&gt;](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen3-2__1b30ilg)           
+Sources: x_complex\Samples.cs</small>
 
 
 
@@ -1271,10 +1328,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummygen3-2.genmethod_-0-system.string___17ayhvt" />  DummyGen3&lt;T,U&gt;.GenMethod(DummyGen3&lt;T,U&gt;.T, string) Title ##
+##  <a id="m-sampletodocument.x_complex.dummygen3-2.genmethod_-0-system.string___17ayhvt" />  DummyGen3&lt;T,U&gt;.GenMethod(DummyGen3&lt;T,U&gt;.T, string) Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyGen3&lt;T,U&gt;](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen3-2__1b30ilg)</small>
+Type: [DummyGen3&lt;T,U&gt;](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen3-2__1b30ilg)           
+Sources: x_complex\Samples.cs</small>
 
 
 
@@ -1292,10 +1350,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummygen3-2.genmethod--1_--0-system.string___mz3z2y" />  DummyGen3&lt;T,U&gt;.GenMethod&lt;T&gt;(DummyGen3&lt;T,U&gt;.T, string) Title ##
+##  <a id="m-sampletodocument.x_complex.dummygen3-2.genmethod--1_--0-system.string___mz3z2y" />  DummyGen3&lt;T,U&gt;.GenMethod&lt;T&gt;(DummyGen3&lt;T,U&gt;.T, string) Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyGen3&lt;T,U&gt;](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen3-2__1b30ilg)</small>
+Type: [DummyGen3&lt;T,U&gt;](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen3-2__1b30ilg)           
+Sources: x_complex\Samples.cs</small>
 
 
 
@@ -1316,7 +1375,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummygen3-2.dummygen4__puxvdc" />  DummyGen3&lt;T,U&gt;.DummyGen4 Class ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Nested class inheriting from generic class
@@ -1348,10 +1408,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummygen3-2.dummygen4.genmethod--1_--0-system.boolean___1snz7tr" />  DummyGen3&lt;T,U&gt;.DummyGen4.GenMethod&lt;T&gt;(DummyGen3&lt;T,U&gt;.DummyGen4.T, bool) Title ##
+##  <a id="m-sampletodocument.x_complex.dummygen3-2.dummygen4.genmethod--1_--0-system.boolean___1snz7tr" />  DummyGen3&lt;T,U&gt;.DummyGen4.GenMethod&lt;T&gt;(DummyGen3&lt;T,U&gt;.DummyGen4.T, bool) Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyGen3&lt;T,U&gt;.DummyGen4](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen3-2.dummygen4__puxvdc)</small>
+Type: [DummyGen3&lt;T,U&gt;.DummyGen4](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen3-2.dummygen4__puxvdc)           
+Sources: x_complex\Samples.cs</small>
 
 
 Generic method with type param constraint
@@ -1373,10 +1434,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummygen3-2.dummygen4.genmethod--1_--0-system.string___1cgrgge" />  DummyGen3&lt;T,U&gt;.DummyGen4.GenMethod&lt;U&gt;(DummyGen3&lt;T,U&gt;.DummyGen4.U, string) Title ##
+##  <a id="m-sampletodocument.x_complex.dummygen3-2.dummygen4.genmethod--1_--0-system.string___1cgrgge" />  DummyGen3&lt;T,U&gt;.DummyGen4.GenMethod&lt;U&gt;(DummyGen3&lt;T,U&gt;.DummyGen4.U, string) Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyGen3&lt;T,U&gt;.DummyGen4](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen3-2.dummygen4__puxvdc)</small>
+Type: [DummyGen3&lt;T,U&gt;.DummyGen4](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen3-2.dummygen4__puxvdc)           
+Sources: x_complex\Samples.cs</small>
 
 
 Override generic method
@@ -1389,7 +1451,7 @@ public override DummyGen3<T,U>.DummyGen4.U GenMethod<U>(DummyGen3<T,U>.DummyGen4
 
 <strong>Type parameters</strong><dl><dt><strong>U</strong></dt><dd></dd></dl>
 <strong>Method parameters</strong><dl><dt>SampleToDocument.x_complex.DummyGen3&lt;T,U&gt;.DummyGen4.U <strong>v</strong></dt><dd></dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>a</strong></dt><dd></dd></dl>
-<strong>Return value</strong><dl><dt>SampleToDocument.x_complex.DummyGen3&lt;T,U&gt;.DummyGen4.U</dt><dd></dd></dl>
+<strong>Return value</strong><dl><dt>SampleToDocument.x_complex.DummyGen3&lt;T,U&gt;.DummyGen4.U</dt><dd></dd></dl>Overrides: [DummyGen1&lt;T&gt;.GenMethod&lt;T&gt;(DummyGen1&lt;T&gt;.T, string)](SampleToDocument.x_complex__updp6r.md#m-sampletodocument.x_complex.dummygen1-1.genmethod--1_--0-system.string___16648z9)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -1398,10 +1460,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummygen3-2.dummygen4.genmethod2_system.string-system.string___g37pz" />  DummyGen3&lt;T,U&gt;.DummyGen4.GenMethod2(string, string) Title ##
+##  <a id="m-sampletodocument.x_complex.dummygen3-2.dummygen4.genmethod2_system.string-system.string___g37pz" />  DummyGen3&lt;T,U&gt;.DummyGen4.GenMethod2(string, string) Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyGen3&lt;T,U&gt;.DummyGen4](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen3-2.dummygen4__puxvdc)</small>
+Type: [DummyGen3&lt;T,U&gt;.DummyGen4](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen3-2.dummygen4__puxvdc)           
+Sources: x_complex\Samples.cs</small>
 
 
 Overrides generic method with concrete type
@@ -1413,7 +1476,7 @@ public override string GenMethod2(string v, string a)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>v</strong></dt><dd></dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>a</strong></dt><dd></dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>Overrides: [DummyGen1&lt;T&gt;.GenMethod2(DummyGen1&lt;T&gt;.T, string)](SampleToDocument.x_complex__updp6r.md#m-sampletodocument.x_complex.dummygen1-1.genmethod2_-0-system.string___oqxpao)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -1424,7 +1487,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummygen4-1__8yfvrs" />  DummyGen4&lt;X&gt; Class ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Generic class sample
@@ -1448,7 +1512,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummygen5-2__dai2f6" />  DummyGen5&lt;T,U&gt; Class ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Generic class with two type parameters having constraints. Inheriting from [DummyGen3&lt;T,U&gt;](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummygen3-2__1b30ilg)
@@ -1474,7 +1539,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummylib__1o3pwtg" />  DummyLib Class ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Dummy class for testing It just do nothing, but contains <a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >System.String</a> constants and [DummyLib2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib2__y4kkou) fields but no <a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1" target="_blank" >System.Collections.Generic.List`1</a> is used at all
@@ -1488,6 +1554,7 @@ public class DummyLib
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Derived: [SampleToDocument.x_complex.DummyLib3](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib3__1o0z6sj)           
 
 
 
@@ -1570,7 +1637,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.x_complex.dummylib.fielda__e5ozor" />  DummyLib.FieldA Field ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)</small>
+Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)           
+Sources: x_complex\Samples.cs</small>
 
 
 Simple field
@@ -1593,7 +1661,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.x_complex.dummylib.fieldb__1naefk6" />  DummyLib.FieldB Field ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)</small>
+Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)           
+Sources: x_complex\Samples.cs</small>
 
 
 Public field of [DummyLib2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib2__y4kkou)
@@ -1616,7 +1685,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.x_complex.dummylib.fieldc__xdztgh" />  DummyLib.FieldC Field ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)</small>
+Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)           
+Sources: x_complex\Samples.cs</small>
 
 
 Protected field with default value
@@ -1639,7 +1709,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.x_complex.dummylib.fieldd__7hl7cs" />  DummyLib.FieldD Field ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)</small>
+Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)           
+Sources: x_complex\Samples.cs</small>
 
 
 Read only field
@@ -1662,7 +1733,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.x_complex.dummylib.fielde__1gman87" />  DummyLib.FieldE Field ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)</small>
+Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)           
+Sources: x_complex\Samples.cs</small>
 
 
 Static field
@@ -1685,7 +1757,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.x_complex.dummylib.flagcons__itywk9" />  DummyLib.FlagCons Constant ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)</small>
+Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)           
+Sources: x_complex\Samples.cs</small>
 
 
 Protected const `FlagCons = DummyLibEnum2.A | DummyLibEnum2.C` .
@@ -1708,7 +1781,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.x_complex.dummylib.intcons__16qais0" />  DummyLib.IntCons Constant ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)</small>
+Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)           
+Sources: x_complex\Samples.cs</small>
 
 
 Private const =12
@@ -1731,7 +1805,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.x_complex.dummylib.stringcons__1xarn8c" />  DummyLib.StringCons Constant ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)</small>
+Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)           
+Sources: x_complex\Samples.cs</small>
 
 
 Public const &quot;ttttt&quot;
@@ -1754,7 +1829,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.dummylib.propa__1p86wqa" />  DummyLib.PropA Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)</small>
+Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)           
+Sources: x_complex\Samples.cs</small>
 
 
 Property
@@ -1777,7 +1853,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.dummylib.propb__1p86wq9" />  DummyLib.PropB Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)</small>
+Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)           
+Sources: x_complex\Samples.cs</small>
 
 
 Property with getter only
@@ -1800,7 +1877,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.dummylib.propd__1p86wqf" />  DummyLib.PropD Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)</small>
+Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)           
+Sources: x_complex\Samples.cs</small>
 
 
 Public property with private setter
@@ -1823,7 +1901,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.dummylib.prope__1p86wqe" />  DummyLib.PropE Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)</small>
+Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)           
+Sources: x_complex\Samples.cs</small>
 
 
 Internal property with simplified getter
@@ -1846,7 +1925,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.dummylib.propf__1p86wqd" />  DummyLib.PropF Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)</small>
+Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)           
+Sources: x_complex\Samples.cs</small>
 
 
 Static property with getter and setter
@@ -1869,7 +1949,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.dummylib.propg__1p86wqc" />  DummyLib.PropG Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)</small>
+Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)           
+Sources: x_complex\Samples.cs</small>
 
 
 Virtual property with getter and setter
@@ -1892,7 +1973,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.dummylib.proph__1p86wq3" />  DummyLib.PropH Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)</small>
+Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)           
+Sources: x_complex\Samples.cs</small>
 
 
 Virtual property with getter and setter
@@ -1915,7 +1997,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.dummylib.propi__1p86wq2" />  DummyLib.PropI Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)</small>
+Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)           
+Sources: x_complex\Samples.cs</small>
 
 
 Virtual property with getter and setter
@@ -1935,10 +2018,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummylib.-cctor__j8uxf5" />  DummyLib.DummyLib() Title ##
+##  <a id="m-sampletodocument.x_complex.dummylib.-cctor__j8uxf5" />  DummyLib.DummyLib() Constructor ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)</small>
+Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)           
+Sources: x_complex\Samples.cs</small>
 
 
 Static CTOR
@@ -1955,10 +2039,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummylib.-ctor__g475hm" />  DummyLib.DummyLib() Title ##
+##  <a id="m-sampletodocument.x_complex.dummylib.-ctor__g475hm" />  DummyLib.DummyLib() Constructor ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)</small>
+Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)           
+Sources: x_complex\Samples.cs</small>
 
 
 CTOR without parameters
@@ -1975,10 +2060,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummylib.-ctor_system.string___17kwlad" />  DummyLib.DummyLib(string) Title ##
+##  <a id="m-sampletodocument.x_complex.dummylib.-ctor_system.string___17kwlad" />  DummyLib.DummyLib(string) Constructor ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)</small>
+Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)           
+Sources: x_complex\Samples.cs</small>
 
 
 CTOR with parameter
@@ -1996,10 +2082,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummylib.-ctor_system.string-system.int32___1nmlir0" />  DummyLib.DummyLib(string, int) Title ##
+##  <a id="m-sampletodocument.x_complex.dummylib.-ctor_system.string-system.int32___1nmlir0" />  DummyLib.DummyLib(string, int) Constructor ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)</small>
+Type: [DummyLib](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib__1o3pwtg)           
+Sources: x_complex\Samples.cs</small>
 
 
 Protected method
@@ -2019,7 +2106,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummylib2__y4kkou" />  DummyLib2 Class ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Empty class
@@ -2042,7 +2130,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummylib3__1o0z6sj" />  DummyLib3 Class ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Class inheriting from DummyLib and having two attributes
@@ -2079,7 +2168,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.dummylib3.proph__l75ipk" />  DummyLib3.PropH Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLib3](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib3__1o0z6sj)</small>
+Type: [DummyLib3](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib3__1o0z6sj)           
+Sources: x_complex\Samples.cs</small>
 
 
 Override property
@@ -2090,7 +2180,7 @@ Override property
 public override int PropH { get; set; }
 ```
 
-<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" target="_blank" >int</a></dt><dd></dd></dl>
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" target="_blank" >int</a></dt><dd></dd></dl>Overrides: [DummyLib.PropH](SampleToDocument.x_complex__updp6r.md#p-sampletodocument.x_complex.dummylib.proph__1p86wq3)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -2102,7 +2192,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.dummylib3.propi__1b3k4t9" />  DummyLib3.PropI Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLib3](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib3__1o0z6sj)</small>
+Type: [DummyLib3](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylib3__1o0z6sj)           
+Sources: x_complex\Samples.cs</small>
 
 
 Sealed override property
@@ -2113,7 +2204,7 @@ Sealed override property
 public sealed override int PropI { get; set; }
 ```
 
-<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" target="_blank" >int</a></dt><dd></dd></dl>
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" target="_blank" >int</a></dt><dd></dd></dl>Overrides: [DummyLib.PropI](SampleToDocument.x_complex__updp6r.md#p-sampletodocument.x_complex.dummylib.propi__1p86wq2)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -2124,7 +2215,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummy3.iinnerdummy3__xcpwj4" />  Dummy3.IInnerDummy3 Interface ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Nested interface
@@ -2134,6 +2226,10 @@ Nested interface
 ```csharp
 public interface Dummy3.IInnerDummy3
 ```
+
+Implemented by: [SampleToDocument.x_complex.Dummy3.InnerDummy35](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy35__kjcc44)           
+
+
 
 ###  Methods ###
 
@@ -2150,10 +2246,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummy3.iinnerdummy3.met2__1o4au1f" />  Dummy3.IInnerDummy3.Met2() Title ##
+##  <a id="m-sampletodocument.x_complex.dummy3.iinnerdummy3.met2__1o4au1f" />  Dummy3.IInnerDummy3.Met2() Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy3.IInnerDummy3](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.iinnerdummy3__xcpwj4)</small>
+Type: [Dummy3.IInnerDummy3](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.iinnerdummy3__xcpwj4)           
+Sources: x_complex\Samples.cs</small>
 
 
 
@@ -2172,7 +2269,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.idummy1__12xqhwn" />  IDummy1 Interface ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Some interface
@@ -2182,6 +2280,10 @@ Some interface
 ```csharp
 public interface IDummy1
 ```
+
+Implemented by: [SampleToDocument.x_complex.Dummy3.InnerDummy33](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy33__13rn5vu), [SampleToDocument.x_complex.Dummy3.InnerDummy34](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy34__1to1rzj)           
+
+
 
 ###  Properties ###
 
@@ -2211,7 +2313,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.idummy1.prop1__fqkjj1" />  IDummy1.Prop1 Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [IDummy1](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.idummy1__12xqhwn)</small>
+Type: [IDummy1](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.idummy1__12xqhwn)           
+Sources: x_complex\Samples.cs</small>
 
 
 Property with getter
@@ -2234,7 +2337,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.idummy1.prop2__92gr72" />  IDummy1.Prop2 Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [IDummy1](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.idummy1__12xqhwn)</small>
+Type: [IDummy1](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.idummy1__12xqhwn)           
+Sources: x_complex\Samples.cs</small>
 
 
 Property with getter and setter
@@ -2254,10 +2358,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.idummy1.met1__1x9dx61" />  IDummy1.Met1() Title ##
+##  <a id="m-sampletodocument.x_complex.idummy1.met1__1x9dx61" />  IDummy1.Met1() Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [IDummy1](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.idummy1__12xqhwn)</small>
+Type: [IDummy1](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.idummy1__12xqhwn)           
+Sources: x_complex\Samples.cs</small>
 
 
 Method w/o parameters
@@ -2279,7 +2384,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.idummy2__1su540c" />  IDummy2 Interface ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Another interface
@@ -2289,6 +2395,10 @@ Another interface
 ```csharp
 public interface IDummy2
 ```
+
+Implemented by: [SampleToDocument.x_complex.Dummy3.InnerDummy34](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy34__1to1rzj), [SampleToDocument.x_complex.Dummy3.InnerDummy35](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.innerdummy35__kjcc44)           
+
+
 
 ###  Methods ###
 
@@ -2305,10 +2415,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.idummy2.met2__1t8l2l5" />  IDummy2.Met2() Title ##
+##  <a id="m-sampletodocument.x_complex.idummy2.met2__1t8l2l5" />  IDummy2.Met2() Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [IDummy2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.idummy2__1su540c)</small>
+Type: [IDummy2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.idummy2__1su540c)           
+Sources: x_complex\Samples.cs</small>
 
 
 Very simple method
@@ -2330,7 +2441,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.idummy3__jpfo4x" />  IDummy3 Interface ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 An empty interface
@@ -2341,6 +2453,10 @@ An empty interface
 public interface IDummy3
 ```
 
+Implemented by: [SampleToDocument.x_complex.Dummy3](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3__1mdq43y)           
+
+
+
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
 
 
@@ -2349,7 +2465,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummy2.dummy2delegate__5swm14" />  Dummy2.Dummy2Delegate Delegate ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Class level delegate, looks like event handler
@@ -2376,7 +2493,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummy2.nsdelegate3__15qyzy" />  Dummy2.NsDelegate3 Delegate ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Private class level delegate.
@@ -2411,7 +2529,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.nsdelegate1__14pgxym" />  NsDelegate1 Delegate ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Void returning public delegate within the namespace
@@ -2438,7 +2557,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.nsdelegate2__1ulvk2b" />  NsDelegate2 Delegate ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Namespace level delegate without explicit access modifier
@@ -2465,7 +2585,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummystruct__1t8mm44" />  DummyStruct Struct ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Structure with events, property and method
@@ -2517,7 +2638,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.x_complex.dummystruct.bb__1v33s3a" />  DummyStruct.Bb Property ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyStruct](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummystruct__1t8mm44)</small>
+Type: [DummyStruct](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummystruct__1t8mm44)           
+Sources: x_complex\Samples.cs</small>
 
 
 Property
@@ -2540,7 +2662,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="e-sampletodocument.x_complex.dummystruct.evt__7zlfnm" />  DummyStruct.Evt Event ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyStruct](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummystruct__1t8mm44)</small>
+Type: [DummyStruct](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummystruct__1t8mm44)           
+Sources: x_complex\Samples.cs</small>
 
 
 Event using the class level handler delegate from another type (class)
@@ -2563,7 +2686,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="e-sampletodocument.x_complex.dummystruct.evt1__62ete9" />  DummyStruct.Evt1 Event ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyStruct](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummystruct__1t8mm44)</small>
+Type: [DummyStruct](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummystruct__1t8mm44)           
+Sources: x_complex\Samples.cs</small>
 
 
 Just and event using the namespace level handler delegate
@@ -2583,10 +2707,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.x_complex.dummystruct.e__1pcho4c" />  DummyStruct.E() Title ##
+##  <a id="m-sampletodocument.x_complex.dummystruct.e__1pcho4c" />  DummyStruct.E() Method ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyStruct](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummystruct__1t8mm44)</small>
+Type: [DummyStruct](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummystruct__1t8mm44)           
+Sources: x_complex\Samples.cs</small>
 
 
 Methods
@@ -2608,7 +2733,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummystruct2__187e3q" />  DummyStruct2 Struct ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Some struct
@@ -2646,7 +2772,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.x_complex.dummystruct2.a__1y5evcb" />  DummyStruct2.A Field ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyStruct2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummystruct2__187e3q)</small>
+Type: [DummyStruct2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummystruct2__187e3q)           
+Sources: x_complex\Samples.cs</small>
 
 
 The first field
@@ -2669,7 +2796,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.x_complex.dummystruct2.b__1y5evcc" />  DummyStruct2.B Field ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyStruct2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummystruct2__187e3q)</small>
+Type: [DummyStruct2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummystruct2__187e3q)           
+Sources: x_complex\Samples.cs</small>
 
 
 The second field
@@ -2701,7 +2829,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummy3.dummy3innerenum1__1hxlywl" />  Dummy3.Dummy3InnerEnum1 Enum ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Nested enum
@@ -2736,7 +2865,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.x_complex.dummy3.dummy3innerenum1.x__191frsp" />  Dummy3.Dummy3InnerEnum1.X Constant ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy3.Dummy3InnerEnum1](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.dummy3innerenum1__1hxlywl)</small>
+Type: [Dummy3.Dummy3InnerEnum1](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.dummy3innerenum1__1hxlywl)           
+Sources: x_complex\Samples.cs</small>
 
 
 
@@ -2756,7 +2886,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.x_complex.dummy3.dummy3innerenum1.y__1yxudwe" />  Dummy3.Dummy3InnerEnum1.Y Constant ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy3.Dummy3InnerEnum1](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.dummy3innerenum1__1hxlywl)</small>
+Type: [Dummy3.Dummy3InnerEnum1](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.dummy3innerenum1__1hxlywl)           
+Sources: x_complex\Samples.cs</small>
 
 
 
@@ -2776,7 +2907,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.x_complex.dummy3.dummy3innerenum1.z__1s9qlkf" />  Dummy3.Dummy3InnerEnum1.Z Constant ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [Dummy3.Dummy3InnerEnum1](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.dummy3innerenum1__1hxlywl)</small>
+Type: [Dummy3.Dummy3InnerEnum1](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy3.dummy3innerenum1__1hxlywl)           
+Sources: x_complex\Samples.cs</small>
 
 
 
@@ -2795,7 +2927,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummyenum1__gjxo4l" />  DummyEnum1 Enum ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Simple enum
@@ -2830,7 +2963,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.x_complex.dummyenum1.a__iv6ujw" />  DummyEnum1.A Constant ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyEnum1](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummyenum1__gjxo4l)</small>
+Type: [DummyEnum1](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummyenum1__gjxo4l)           
+Sources: x_complex\Samples.cs</small>
 
 
 Value A
@@ -2853,7 +2987,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.x_complex.dummyenum1.b__iv6ujz" />  DummyEnum1.B Constant ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyEnum1](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummyenum1__gjxo4l)</small>
+Type: [DummyEnum1](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummyenum1__gjxo4l)           
+Sources: x_complex\Samples.cs</small>
 
 
 
@@ -2873,7 +3008,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.x_complex.dummyenum1.c__iv6ujy" />  DummyEnum1.C Constant ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyEnum1](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummyenum1__gjxo4l)</small>
+Type: [DummyEnum1](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummyenum1__gjxo4l)           
+Sources: x_complex\Samples.cs</small>
 
 
 Value C
@@ -2895,7 +3031,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummylibenum__1opzatz" />  DummyLibEnum Enum ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Enum with two values
@@ -2929,7 +3066,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.x_complex.dummylibenum.first__qyymdd" />  DummyLibEnum.First Constant ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLibEnum](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylibenum__1opzatz)</small>
+Type: [DummyLibEnum](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylibenum__1opzatz)           
+Sources: x_complex\Samples.cs</small>
 
 
 The first item
@@ -2960,7 +3098,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.x_complex.dummylibenum.second__1tyzn9f" />  DummyLibEnum.Second Constant ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLibEnum](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylibenum__1opzatz)</small>
+Type: [DummyLibEnum](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylibenum__1opzatz)           
+Sources: x_complex\Samples.cs</small>
 
 
 Second item
@@ -2982,7 +3121,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.x_complex.dummylibenum2__1ojbr81" />  DummyLibEnum2 Enum ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: x_complex\Samples.cs</small>
 
 
 Enum with explicit values, base on <a href="https://docs.microsoft.com/en-us/dotnet/api/system.byte" target="_blank" >System.Byte</a> . Having <a href="https://docs.microsoft.com/en-us/dotnet/api/system.flagsattribute" target="_blank" >System.FlagsAttribute</a>
@@ -3019,7 +3159,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.x_complex.dummylibenum2.a__19cl74i" />  DummyLibEnum2.A Constant ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLibEnum2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylibenum2__1ojbr81)</small>
+Type: [DummyLibEnum2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylibenum2__1ojbr81)           
+Sources: x_complex\Samples.cs</small>
 
 
 Value 4
@@ -3042,7 +3183,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.x_complex.dummylibenum2.b__12ohesj" />  DummyLibEnum2.B Constant ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLibEnum2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylibenum2__1ojbr81)</small>
+Type: [DummyLibEnum2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylibenum2__1ojbr81)           
+Sources: x_complex\Samples.cs</small>
 
 
 
@@ -3062,7 +3204,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.x_complex.dummylibenum2.c__1skw0w8" />  DummyLibEnum2.C Constant ##
 <small>Namespace: [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r)           
 Assembly: SampleToDocument           
-Type: [DummyLibEnum2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylibenum2__1ojbr81)</small>
+Type: [DummyLibEnum2](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummylibenum2__1ojbr81)           
+Sources: x_complex\Samples.cs</small>
 
 
 

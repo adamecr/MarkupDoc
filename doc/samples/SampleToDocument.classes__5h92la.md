@@ -35,7 +35,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.testclass1__dhztj1" />  TestClass1 Class ##
 <small>Namespace: [SampleToDocument.classes](SampleToDocument.classes__5h92la.md#n-sampletodocument.classes__5h92la)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\Samples.cs</small>
 
 
 Basic test class
@@ -47,6 +48,7 @@ public class TestClass1
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Derived: [SampleToDocument.classes.TestInternalClass](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testinternalclass__1q1aqqf)           
 
 
 
@@ -91,7 +93,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.classes.testclass1.dyn1__1mursbj" />  TestClass1.dyn1 Field ##
 <small>Namespace: [SampleToDocument.classes](SampleToDocument.classes__5h92la.md#n-sampletodocument.classes__5h92la)           
 Assembly: SampleToDocument           
-Type: [TestClass1](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testclass1__dhztj1)</small>
+Type: [TestClass1](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testclass1__dhztj1)           
+Sources: classes\Samples.cs</small>
 
 
 Readonly dynamic field with default value (not a constant)
@@ -114,7 +117,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.classes.testclass1.dyn2__dq2bok" />  TestClass1.Dyn2 Field ##
 <small>Namespace: [SampleToDocument.classes](SampleToDocument.classes__5h92la.md#n-sampletodocument.classes__5h92la)           
 Assembly: SampleToDocument           
-Type: [TestClass1](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testclass1__dhztj1)</small>
+Type: [TestClass1](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testclass1__dhztj1)           
+Sources: classes\Samples.cs</small>
 
 
 Dynamic field with default value
@@ -137,7 +141,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.classes.testclass1.str__1usyqzu" />  TestClass1.Str Field ##
 <small>Namespace: [SampleToDocument.classes](SampleToDocument.classes__5h92la.md#n-sampletodocument.classes__5h92la)           
 Assembly: SampleToDocument           
-Type: [TestClass1](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testclass1__dhztj1)</small>
+Type: [TestClass1](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testclass1__dhztj1)           
+Sources: classes\Samples.cs</small>
 
 
 
@@ -156,7 +161,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.testclass2__dhztj0" />  TestClass2 Class ##
 <small>Namespace: [SampleToDocument.classes](SampleToDocument.classes__5h92la.md#n-sampletodocument.classes__5h92la)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\Samples.cs</small>
 
 
 Class with inner classes
@@ -168,6 +174,7 @@ public class TestClass2
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Derived: [SampleToDocument.classes.TestClass3](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testclass3__dhztiz)           
 
 
 
@@ -179,7 +186,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.testclass2.testinnerclass__4s3772" />  TestClass2.TestInnerClass Class ##
 <small>Namespace: [SampleToDocument.classes](SampleToDocument.classes__5h92la.md#n-sampletodocument.classes__5h92la)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\Samples.cs</small>
 
 
 Nested class
@@ -191,6 +199,7 @@ public class TestClass2.TestInnerClass
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Derived: [SampleToDocument.classes.TestClass5.Test5InnerClass1](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testclass5.test5innerclass1__saj6gl)           
 
 
 
@@ -202,7 +211,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.testclass2.testinnerprotectedclass__mk9dbs" />  TestClass2.TestInnerProtectedClass Class ##
 <small>Namespace: [SampleToDocument.classes](SampleToDocument.classes__5h92la.md#n-sampletodocument.classes__5h92la)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\Samples.cs</small>
 
 
 Nested protected class
@@ -225,7 +235,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.testclass3__dhztiz" />  TestClass3 Class ##
 <small>Namespace: [SampleToDocument.classes](SampleToDocument.classes__5h92la.md#n-sampletodocument.classes__5h92la)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\Samples.cs</small>
 
 
 Class inheriting from [TestClass2](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testclass2__dhztj0)
@@ -237,6 +248,7 @@ public class TestClass3 : TestClass2
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a> -&gt; [SampleToDocument.classes.TestClass2](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testclass2__dhztj0)           
+Derived: [SampleToDocument.classes.TestClass5](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testclass5__dhztix), [SampleToDocument.classes.TestClass5.Test5InnerClass3](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testclass5.test5innerclass3__1biu08b)           
 
 
 
@@ -248,7 +260,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.testclass3.testinnerclass__n90o0f" />  TestClass3.TestInnerClass Class ##
 <small>Namespace: [SampleToDocument.classes](SampleToDocument.classes__5h92la.md#n-sampletodocument.classes__5h92la)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\Samples.cs</small>
 
 
 Nested class with new
@@ -260,6 +273,7 @@ public new class TestClass3.TestInnerClass
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Derived: [SampleToDocument.classes.TestClass4](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testclass4__dhztiy), [SampleToDocument.classes.TestClass5.Test5InnerClass2](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testclass5.test5innerclass2__lmfe4m)           
 
 
 
@@ -271,7 +285,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.testclass3.testsealedinner__1uhxpkr" />  TestClass3.TestSealedInner Class ##
 <small>Namespace: [SampleToDocument.classes](SampleToDocument.classes__5h92la.md#n-sampletodocument.classes__5h92la)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\Samples.cs</small>
 
 
 Protected sealed nested class
@@ -294,7 +309,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.testclass4__dhztiy" />  TestClass4 Class ##
 <small>Namespace: [SampleToDocument.classes](SampleToDocument.classes__5h92la.md#n-sampletodocument.classes__5h92la)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\Samples.cs</small>
 
 
 Class inheriting from nested class [TestClass3.TestInnerClass](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testclass3.testinnerclass__n90o0f)
@@ -317,7 +333,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.testclass5__dhztix" />  TestClass5 Class ##
 <small>Namespace: [SampleToDocument.classes](SampleToDocument.classes__5h92la.md#n-sampletodocument.classes__5h92la)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\Samples.cs</small>
 
 
 Class inheriting from [TestClass3](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testclass3__dhztiz)
@@ -340,7 +357,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.testclass5.test5innerclass1__saj6gl" />  TestClass5.Test5InnerClass1 Class ##
 <small>Namespace: [SampleToDocument.classes](SampleToDocument.classes__5h92la.md#n-sampletodocument.classes__5h92la)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\Samples.cs</small>
 
 
 Nested class inheriting from [TestClass2.TestInnerClass](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testclass2.testinnerclass__4s3772)
@@ -363,7 +381,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.testclass5.test5innerclass2__lmfe4m" />  TestClass5.Test5InnerClass2 Class ##
 <small>Namespace: [SampleToDocument.classes](SampleToDocument.classes__5h92la.md#n-sampletodocument.classes__5h92la)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\Samples.cs</small>
 
 
 Nested class inheriting from [TestClass3.TestInnerClass](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testclass3.testinnerclass__n90o0f)
@@ -386,7 +405,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.testclass5.test5innerclass3__1biu08b" />  TestClass5.Test5InnerClass3 Class ##
 <small>Namespace: [SampleToDocument.classes](SampleToDocument.classes__5h92la.md#n-sampletodocument.classes__5h92la)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\Samples.cs</small>
 
 
 Nested class inheriting from [TestClass3](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testclass3__dhztiz)
@@ -409,7 +429,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.testinternalclass__1q1aqqf" />  TestInternalClass Class ##
 <small>Namespace: [SampleToDocument.classes](SampleToDocument.classes__5h92la.md#n-sampletodocument.classes__5h92la)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\Samples.cs</small>
 
 
 Internal class inheriting from [TestClass1](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testclass1__dhztj1)
@@ -432,7 +453,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.testpartialclass__w5xcuv" />  TestPartialClass Class ##
 <small>Namespace: [SampleToDocument.classes](SampleToDocument.classes__5h92la.md#n-sampletodocument.classes__5h92la)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\Samples.cs, classes\Samples.cs</small>
 
 
 Partial class - part 1
@@ -466,7 +488,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.classes.testpartialclass.a__nrxgyi" />  TestPartialClass.a Field ##
 <small>Namespace: [SampleToDocument.classes](SampleToDocument.classes__5h92la.md#n-sampletodocument.classes__5h92la)           
 Assembly: SampleToDocument           
-Type: [TestPartialClass](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testpartialclass__w5xcuv)</small>
+Type: [TestPartialClass](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testpartialclass__w5xcuv)           
+Sources: classes\Samples.cs</small>
 
 
 
@@ -486,7 +509,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.classes.testpartialclass.b__nrxgyh" />  TestPartialClass.b Field ##
 <small>Namespace: [SampleToDocument.classes](SampleToDocument.classes__5h92la.md#n-sampletodocument.classes__5h92la)           
 Assembly: SampleToDocument           
-Type: [TestPartialClass](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testpartialclass__w5xcuv)</small>
+Type: [TestPartialClass](SampleToDocument.classes__5h92la.md#t-sampletodocument.classes.testpartialclass__w5xcuv)           
+Sources: classes\Samples.cs</small>
 
 
 
@@ -505,7 +529,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.testsealedclass__1tby6cm" />  TestSealedClass Class ##
 <small>Namespace: [SampleToDocument.classes](SampleToDocument.classes__5h92la.md#n-sampletodocument.classes__5h92la)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\Samples.cs</small>
 
 
 Sealed class
@@ -528,7 +553,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.teststaticclass__t01750" />  TestStaticClass Class ##
 <small>Namespace: [SampleToDocument.classes](SampleToDocument.classes__5h92la.md#n-sampletodocument.classes__5h92la)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\Samples.cs</small>
 
 
 Static class

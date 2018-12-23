@@ -49,7 +49,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.methods.testcrossns__1uxgtm1" />  TestCrossNs Class ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: methods\Samples.cs</small>
 
 
 Class to check the cross namespace links
@@ -68,7 +69,7 @@ Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object"
 
  | Name | Modifier | Summary | 
  | ------ | ---------- | --------- | 
- | [Property1](SampleToDocument.methods__1rdi08w.md#p-sampletodocument.methods.testcrossns.property1__mpv6v1) | public |  | 
+ | [Property1](SampleToDocument.methods__1rdi08w.md#p-sampletodocument.methods.testcrossns.property1__mpv6v1) | public | Test `string` property with complex XML documentation comments | 
 
  
 
@@ -91,7 +92,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.methods.testcrossns.property1__mpv6v1" />  TestCrossNs.Property1 Property ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestCrossNs](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testcrossns__1uxgtm1)</small>
+Type: [TestCrossNs](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testcrossns__1uxgtm1)           
+Sources: methods\Samples.cs</small>
+
+
+Test `string` property with complex XML documentation comments
 
 
 
@@ -99,7 +104,83 @@ Type: [TestCrossNs](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.meth
 public override string Property1 { get; set; }
 ```
 
-<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Value has no meaning here, it&#39;s just to test the output</dd></dl>Overrides: [PropertyContainer1.Property1](SampleToDocument.property__izv70z.md#p-sampletodocument.property.propertycontainer1.property1__9j3ac)
+
+
+###  Example ###
+So assign it to something like 
+```csharp
+    Property1="abcd";
+```
+ or even work with `b` property. Will try something  like `if(b>4) { b=6;}` that should be put inline 
+```csharp
+    var a="abcd";
+    Property1=a;
+    int b=5;
+    if(b>4)
+      { b=6;}
+```
+
+
+
+###  Remarks ###
+The property is here just for testing 
+
+
+ - Item 1.
+ - Item 2.
+           
+
+
+ split 
+
+
+1. Item 1.
+2. Item 2.
+           
+
+
+ split 
+
+
+ - <strong>b1</strong> - Item 1. with link to [Property5](SampleToDocument.property__izv70z.md#p-sampletodocument.property.propertycontainer1.property5__12q4qts)
+ - <strong>b2</strong>
+           
+
+
+ 
+
+
+1. <strong>n1</strong> - Item 1.
+2. <strong>n2</strong> - Item 2.
+           
+
+
+ split 
+
+
+ | Term | Description | 
+ | ------ | ------------- | 
+ |  | Item 1. | 
+ |  | Item 2. | 
+ | t3 | Item 3. | 
+ | t4 |  | 
+
+
+
+ split 
+
+
+ | term | description | 
+ | ------ | ------------- | 
+ |  | Item 1. | 
+ |  | Item 2. with link to <a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >System.String</a> | 
+ | t3 | Item 3. | 
+ | t4 |  | 
+
+
+
+
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -108,10 +189,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testcrossns.something__c5h40o" />  TestCrossNs.Something() Title ##
+##  <a id="m-sampletodocument.methods.testcrossns.something__c5h40o" />  TestCrossNs.Something() Method ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestCrossNs](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testcrossns__1uxgtm1)</small>
+Type: [TestCrossNs](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testcrossns__1uxgtm1)           
+Sources: methods\Samples.cs</small>
 
 
 Just try to cross ns link [PropertyContainer1](SampleToDocument.property__izv70z.md#t-sampletodocument.property.propertycontainer1__memkkq)
@@ -141,7 +223,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.methods.testevents1__10b8k7c" />  TestEvents1 Class ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: methods\Samples.cs</small>
 
 
 Class containing the events with different types of event handler delegates
@@ -179,7 +262,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="e-sampletodocument.methods.testevents1.event1__1pa2iea" />  TestEvents1.Event1 Event ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestEvents1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents1__10b8k7c)</small>
+Type: [TestEvents1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents1__10b8k7c)           
+Sources: methods\Samples.cs</small>
 
 
 
@@ -199,7 +283,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="e-sampletodocument.methods.testevents1.event2__1pa2ie9" />  TestEvents1.Event2 Event ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestEvents1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents1__10b8k7c)</small>
+Type: [TestEvents1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents1__10b8k7c)           
+Sources: methods\Samples.cs</small>
 
 
 
@@ -219,7 +304,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="e-sampletodocument.methods.testevents1.event3__1pa2ie8" />  TestEvents1.Event3 Event ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestEvents1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents1__10b8k7c)</small>
+Type: [TestEvents1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents1__10b8k7c)           
+Sources: methods\Samples.cs</small>
 
 
 
@@ -239,7 +325,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="e-sampletodocument.methods.testevents1.event4__1pa2ie7" />  TestEvents1.Event4 Event ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestEvents1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents1__10b8k7c)</small>
+Type: [TestEvents1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents1__10b8k7c)           
+Sources: methods\Samples.cs</small>
 
 
 
@@ -259,7 +346,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="e-sampletodocument.methods.testevents1.event5__1pa2ie6" />  TestEvents1.Event5 Event ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestEvents1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents1__10b8k7c)</small>
+Type: [TestEvents1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents1__10b8k7c)           
+Sources: methods\Samples.cs</small>
 
 
 
@@ -279,7 +367,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="e-sampletodocument.methods.testevents1.event6__1pa2ie5" />  TestEvents1.Event6 Event ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestEvents1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents1__10b8k7c)</small>
+Type: [TestEvents1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents1__10b8k7c)           
+Sources: methods\Samples.cs</small>
 
 
 
@@ -298,7 +387,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.methods.testevents2__16zccjb" />  TestEvents2 Class ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: methods\Samples.cs</small>
 
 
 Abstract class containing the events
@@ -310,6 +400,7 @@ public abstract class TestEvents2
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Derived: [SampleToDocument.methods.TestEvents3](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents3__h2xqfm)           
 
 
 
@@ -335,7 +426,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="e-sampletodocument.methods.testevents2.event1__xj2wdt" />  TestEvents2.Event1 Event ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestEvents2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents2__16zccjb)</small>
+Type: [TestEvents2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents2__16zccjb)           
+Sources: methods\Samples.cs</small>
 
 
 Internal abstract event
@@ -358,7 +450,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="e-sampletodocument.methods.testevents2.event2__xj2wds" />  TestEvents2.Event2 Event ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestEvents2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents2__16zccjb)</small>
+Type: [TestEvents2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents2__16zccjb)           
+Sources: methods\Samples.cs</small>
 
 
 Protected abstract event
@@ -381,7 +474,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="e-sampletodocument.methods.testevents2.event3__xj2wdr" />  TestEvents2.Event3 Event ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestEvents2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents2__16zccjb)</small>
+Type: [TestEvents2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents2__16zccjb)           
+Sources: methods\Samples.cs</small>
 
 
 Protected virtual event
@@ -404,7 +498,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="e-sampletodocument.methods.testevents2.event4__xj2wdq" />  TestEvents2.Event4 Event ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestEvents2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents2__16zccjb)</small>
+Type: [TestEvents2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents2__16zccjb)           
+Sources: methods\Samples.cs</small>
 
 
 Protected event
@@ -427,7 +522,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="e-sampletodocument.methods.testevents2.event5__xj2wdp" />  TestEvents2.Event5 Event ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestEvents2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents2__16zccjb)</small>
+Type: [TestEvents2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents2__16zccjb)           
+Sources: methods\Samples.cs</small>
 
 
 Protected static event
@@ -449,7 +545,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.methods.testevents3__h2xqfm" />  TestEvents3 Class ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: methods\Samples.cs</small>
 
 
 Class containing the events, inheriting [TestEvents2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents2__16zccjb)
@@ -485,7 +582,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="e-sampletodocument.methods.testevents3.event1__16wkv1o" />  TestEvents3.Event1 Event ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestEvents3](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents3__h2xqfm)</small>
+Type: [TestEvents3](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents3__h2xqfm)           
+Sources: methods\Samples.cs</small>
 
 
 Override of abstract event. Custom accessors (add and remove)
@@ -496,7 +594,7 @@ Override of abstract event. Custom accessors (add and remove)
 internal override EventHandler Event1 { add; remove; }
 ```
 
-<strong>Event handler</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.eventhandler" target="_blank" >System.EventHandler</a></dt><dd></dd></dl>
+<strong>Event handler</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.eventhandler" target="_blank" >System.EventHandler</a></dt><dd></dd></dl>Overrides: [TestEvents2.Event1](SampleToDocument.methods__1rdi08w.md#e-sampletodocument.methods.testevents2.event1__xj2wdt)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -508,7 +606,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="e-sampletodocument.methods.testevents3.event2__16wkv1n" />  TestEvents3.Event2 Event ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestEvents3](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents3__h2xqfm)</small>
+Type: [TestEvents3](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents3__h2xqfm)           
+Sources: methods\Samples.cs</small>
 
 
 Override of abstract event
@@ -519,7 +618,7 @@ Override of abstract event
 protected override EventHandler Event2
 ```
 
-<strong>Event handler</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.eventhandler" target="_blank" >System.EventHandler</a></dt><dd></dd></dl>
+<strong>Event handler</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.eventhandler" target="_blank" >System.EventHandler</a></dt><dd></dd></dl>Overrides: [TestEvents2.Event2](SampleToDocument.methods__1rdi08w.md#e-sampletodocument.methods.testevents2.event2__xj2wds)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -531,7 +630,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="e-sampletodocument.methods.testevents3.event3__16wkv1m" />  TestEvents3.Event3 Event ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestEvents3](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents3__h2xqfm)</small>
+Type: [TestEvents3](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents3__h2xqfm)           
+Sources: methods\Samples.cs</small>
 
 
 Override of virtual event
@@ -542,7 +642,7 @@ Override of virtual event
 protected override EventHandler Event3
 ```
 
-<strong>Event handler</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.eventhandler" target="_blank" >System.EventHandler</a></dt><dd></dd></dl>
+<strong>Event handler</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.eventhandler" target="_blank" >System.EventHandler</a></dt><dd></dd></dl>Overrides: [TestEvents2.Event3](SampleToDocument.methods__1rdi08w.md#e-sampletodocument.methods.testevents2.event3__xj2wdr)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -554,7 +654,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="e-sampletodocument.methods.testevents3.event4__16wkv1l" />  TestEvents3.Event4 Event ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestEvents3](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents3__h2xqfm)</small>
+Type: [TestEvents3](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testevents3__h2xqfm)           
+Sources: methods\Samples.cs</small>
 
 
 Event with new
@@ -576,7 +677,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.methods.testmethods1__99zc63" />  TestMethods1 Class ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: methods\Samples.cs</small>
 
 
 Class with methods with complex params, also having CTOR and destructor
@@ -588,6 +690,7 @@ public class TestMethods1
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Derived: [SampleToDocument.methods.TestMethods2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods2__99zc60)           
 
 
 
@@ -671,7 +774,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.methods.testmethods1.ci__6ss31" />  TestMethods1.Ci Constant ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)</small>
+Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)           
+Sources: methods\Samples.cs</small>
 
 
 
@@ -691,7 +795,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.methods.testmethods1.field5__1lqfrh0" />  TestMethods1.Field5 Field ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)</small>
+Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)           
+Sources: methods\Samples.cs</small>
 
 
 Simple field to check hiding in [TestMethods2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods2__99zc60)
@@ -714,7 +819,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.methods.testmethods1.staticfld__1p149b9" />  TestMethods1.StaticFld Field ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)</small>
+Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)           
+Sources: methods\Samples.cs</small>
 
 
 Some static field
@@ -737,7 +843,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.methods.testmethods1.x__1ocn8tz" />  TestMethods1.x Field ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)</small>
+Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)           
+Sources: methods\Samples.cs</small>
 
 
 Just some private field
@@ -760,7 +867,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.methods.testmethods1.property5__1svwbg7" />  TestMethods1.Property5 Property ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)</small>
+Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)           
+Sources: methods\Samples.cs</small>
 
 
 Simple property to check hiding in [TestMethods2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods2__99zc60)
@@ -783,7 +891,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.methods.testmethods1.item_system.int32-___17no23m" />  TestMethods1.this[int] Indexer ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)</small>
+Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)           
+Sources: methods\Samples.cs</small>
 
 
 Indexer
@@ -804,10 +913,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testmethods1.-ctor__1nz4td" />  TestMethods1.TestMethods1() Title ##
+##  <a id="m-sampletodocument.methods.testmethods1.-ctor__1nz4td" />  TestMethods1.TestMethods1() Constructor ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)</small>
+Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)           
+Sources: methods\Samples.cs</small>
 
 
 Protected CTOR
@@ -824,10 +934,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testmethods1.-cctor__1it0xkk" />  TestMethods1.TestMethods1() Title ##
+##  <a id="m-sampletodocument.methods.testmethods1.-cctor__1it0xkk" />  TestMethods1.TestMethods1() Constructor ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)</small>
+Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)           
+Sources: methods\Samples.cs</small>
 
 
 Static CTOR
@@ -844,10 +955,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testmethods1.-ctor_system.int32-system.string-system.string___glklwx" />  TestMethods1.TestMethods1(int, string, string) Title ##
+##  <a id="m-sampletodocument.methods.testmethods1.-ctor_system.int32-system.string-system.string___glklwx" />  TestMethods1.TestMethods1(int, string, string) Constructor ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)</small>
+Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)           
+Sources: methods\Samples.cs</small>
 
 
 CTOR with parameters
@@ -865,10 +977,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testmethods1.finalize__1vwh4f2" />  TestMethods1.~TestMethods1() Title ##
+##  <a id="m-sampletodocument.methods.testmethods1.finalize__1vwh4f2" />  TestMethods1.~TestMethods1() Destructor ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)</small>
+Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)           
+Sources: methods\Samples.cs</small>
 
 
 Destructor
@@ -885,10 +998,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testmethods1.method1--1_system.int32--system.int32--system.int32--system.int32--system.decimal-system.boolean-system.nullable_system.boolean_-system.string-system.object---0-system.int32_____9yghh" />  TestMethods1.Method1&lt;T&gt;(int, int, int, int, decimal, bool, bool?, string, object, TestMethods1.T, int[]) Title ##
+##  <a id="m-sampletodocument.methods.testmethods1.method1--1_system.int32--system.int32--system.int32--system.int32--system.decimal-system.boolean-system.nullable_system.boolean_-system.string-system.object---0-system.int32_____9yghh" />  TestMethods1.Method1&lt;T&gt;(int, int, int, int, decimal, bool, bool?, string, object, TestMethods1.T, int[]) Method ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)</small>
+Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)           
+Sources: methods\Samples.cs</small>
 
 
 Generic method with different kind of parameters
@@ -910,10 +1024,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testmethods1.method2--1_system.int32-system.double-system.double-system.decimal-system.single-system.int32-system.int32-system.boolean-system.nullable_system.boolean_-system.string-sampletodocument.methods.testmethods1.testenum-sampletodocument.methods.testmethods1-system.object-system.object-system.collections.generic.list_--0_---0___1wbkwoz" />  TestMethods1.Method2&lt;T&gt;(int, double, double, decimal, float, int, int, bool, bool?, string, TestMethods1.TestEnum, TestMethods1, object, object, List&lt;T&gt;, TestMethods1.T) Title ##
+##  <a id="m-sampletodocument.methods.testmethods1.method2--1_system.int32-system.double-system.double-system.decimal-system.single-system.int32-system.int32-system.boolean-system.nullable_system.boolean_-system.string-sampletodocument.methods.testmethods1.testenum-sampletodocument.methods.testmethods1-system.object-system.object-system.collections.generic.list_--0_---0___1wbkwoz" />  TestMethods1.Method2&lt;T&gt;(int, double, double, decimal, float, int, int, bool, bool?, string, TestMethods1.TestEnum, TestMethods1, object, object, List&lt;T&gt;, TestMethods1.T) Method ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)</small>
+Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)           
+Sources: methods\Samples.cs</small>
 
 
 Generic method with different kind of parameters with default values
@@ -935,10 +1050,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testmethods1.method3__2nl9ju" />  TestMethods1.Method3() Title ##
+##  <a id="m-sampletodocument.methods.testmethods1.method3__2nl9ju" />  TestMethods1.Method3() Method ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)</small>
+Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)           
+Sources: methods\Samples.cs</small>
 
 
 Method with `ref readonly` return type
@@ -958,10 +1074,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testmethods1.method4__2nl9jn" />  TestMethods1.Method4() Title ##
+##  <a id="m-sampletodocument.methods.testmethods1.method4__2nl9jn" />  TestMethods1.Method4() Method ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)</small>
+Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)           
+Sources: methods\Samples.cs</small>
 
 
 Method with `ref` return type
@@ -981,10 +1098,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testmethods1.method5__2nl9jo" />  TestMethods1.Method5() Title ##
+##  <a id="m-sampletodocument.methods.testmethods1.method5__2nl9jo" />  TestMethods1.Method5() Method ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)</small>
+Type: [TestMethods1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1__99zc63)           
+Sources: methods\Samples.cs</small>
 
 
 Simple method to check hiding in [TestMethods2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods2__99zc60)
@@ -1006,7 +1124,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.methods.testmethods2__99zc60" />  TestMethods2 Class ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: methods\Samples.cs</small>
 
 
 Class to check hiding (new keyword)
@@ -1057,7 +1176,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.methods.testmethods2.field5__1lqgj3n" />  TestMethods2.Field5 Field ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods2__99zc60)</small>
+Type: [TestMethods2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods2__99zc60)           
+Sources: methods\Samples.cs</small>
 
 
 Simple field with hide
@@ -1080,7 +1200,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.methods.testmethods2.property5__1r0tkgq" />  TestMethods2.Property5 Property ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods2__99zc60)</small>
+Type: [TestMethods2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods2__99zc60)           
+Sources: methods\Samples.cs</small>
 
 
 Simple property with hide
@@ -1100,10 +1221,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testmethods2.method5__2k3o7p" />  TestMethods2.Method5() Title ##
+##  <a id="m-sampletodocument.methods.testmethods2.method5__2k3o7p" />  TestMethods2.Method5() Method ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods2__99zc60)</small>
+Type: [TestMethods2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods2__99zc60)           
+Sources: methods\Samples.cs</small>
 
 
 Simple method with hide
@@ -1125,7 +1247,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.methods.testmethods2ext__14jmomd" />  TestMethods2Ext Class ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: methods\Samples.cs</small>
 
 
 Extensions class for [TestMethods2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods2__99zc60)
@@ -1156,10 +1279,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testmethods2ext.extensionmethod1_sampletodocument.methods.testmethods2___2n8zny" />  TestMethods2Ext.ExtensionMethod1(TestMethods2) Title ##
+##  <a id="m-sampletodocument.methods.testmethods2ext.extensionmethod1_sampletodocument.methods.testmethods2___2n8zny" />  TestMethods2Ext.ExtensionMethod1(TestMethods2) Method ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods2Ext](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods2ext__14jmomd)</small>
+Type: [TestMethods2Ext](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods2ext__14jmomd)           
+Sources: methods\Samples.cs</small>
 
 
 Extension method for [TestMethods2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods2__99zc60)
@@ -1180,10 +1304,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testmethods2ext.extensionmethod2_sampletodocument.methods.testmethods2-system.int32___ss4ht4" />  TestMethods2Ext.ExtensionMethod2(TestMethods2, int) Title ##
+##  <a id="m-sampletodocument.methods.testmethods2ext.extensionmethod2_sampletodocument.methods.testmethods2-system.int32___ss4ht4" />  TestMethods2Ext.ExtensionMethod2(TestMethods2, int) Method ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods2Ext](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods2ext__14jmomd)</small>
+Type: [TestMethods2Ext](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods2ext__14jmomd)           
+Sources: methods\Samples.cs</small>
 
 
 Extension method for [TestMethods2](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods2__99zc60)
@@ -1206,7 +1331,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.methods.testoperators1__rwo9k0" />  TestOperators1 Class ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: methods\Samples.cs</small>
 
 
 Class containing the bunch of the operators
@@ -1279,7 +1405,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.methods.testoperators1.name__1mqtaq1" />  TestOperators1.Name Property ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 Property `Name` - to check the correct links for the &quot;same&quot; name just with different case
@@ -1302,7 +1429,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.methods.testoperators1.name__1mqtap5" />  TestOperators1.NaMe Property ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 Property `NaMe` - to check the correct links for the &quot;same&quot; name just with different case
@@ -1322,10 +1450,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.name--1__glw9qd" />  TestOperators1.NamE&lt;T&gt;() Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.name--1__glw9qd" />  TestOperators1.NamE&lt;T&gt;() Method ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 Method `NamE<T>` - to check the correct links for the &quot;same&quot; name just with different case
@@ -1346,10 +1475,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.name--1__11fugsl" />  TestOperators1.NAme&lt;T&gt;() Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.name--1__11fugsl" />  TestOperators1.NAme&lt;T&gt;() Method ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 Method `NAme<T>` - to check the correct links for the &quot;same&quot; name just with different case
@@ -1370,10 +1500,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.op_bitwiseor_sampletodocument.methods.testoperators1-sampletodocument.methods.testoperators1___1pigfro" />  TestOperators1.BitwiseOr(TestOperators1, TestOperators1) Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.op_bitwiseor_sampletodocument.methods.testoperators1-sampletodocument.methods.testoperators1___1pigfro" />  TestOperators1.BitwiseOr(TestOperators1, TestOperators1) Operator ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 Binary OR operator
@@ -1394,10 +1525,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.op_equality_sampletodocument.methods.testoperators1-system.int32___1qwgzf5" />  TestOperators1.Equals(TestOperators1, int) Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.op_equality_sampletodocument.methods.testoperators1-system.int32___1qwgzf5" />  TestOperators1.Equals(TestOperators1, int) Operator ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 Equal operator with different signature
@@ -1418,10 +1550,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.op_equality_sampletodocument.methods.testoperators1-sampletodocument.methods.testoperators1___180e7q4" />  TestOperators1.Equals(TestOperators1, TestOperators1) Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.op_equality_sampletodocument.methods.testoperators1-sampletodocument.methods.testoperators1___180e7q4" />  TestOperators1.Equals(TestOperators1, TestOperators1) Operator ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 Equal operator
@@ -1442,10 +1575,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.op_false_sampletodocument.methods.testoperators1___12v9r5h" />  TestOperators1.False(TestOperators1) Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.op_false_sampletodocument.methods.testoperators1___12v9r5h" />  TestOperators1.False(TestOperators1) Operator ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 False operator
@@ -1466,10 +1600,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.op_greaterthanorequal_sampletodocument.methods.testoperators1-system.int32___odjjex" />  TestOperators1.GreaterThanOrEqual(TestOperators1, int) Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.op_greaterthanorequal_sampletodocument.methods.testoperators1-system.int32___odjjex" />  TestOperators1.GreaterThanOrEqual(TestOperators1, int) Operator ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 Greater of equal operator
@@ -1490,10 +1625,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.op_increment_sampletodocument.methods.testoperators1___1exsd5h" />  TestOperators1.Increment(TestOperators1) Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.op_increment_sampletodocument.methods.testoperators1___1exsd5h" />  TestOperators1.Increment(TestOperators1) Operator ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 &quot;Plus plus&quot; operator
@@ -1514,10 +1650,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.op_lessthanorequal_sampletodocument.methods.testoperators1-system.int32___1jncnpo" />  TestOperators1.LessThanOrEqual(TestOperators1, int) Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.op_lessthanorequal_sampletodocument.methods.testoperators1-system.int32___1jncnpo" />  TestOperators1.LessThanOrEqual(TestOperators1, int) Operator ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 Less or equal operator
@@ -1538,10 +1675,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.op_unarynegation_sampletodocument.methods.testoperators1___5mg8t2" />  TestOperators1.Negate(TestOperators1) Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.op_unarynegation_sampletodocument.methods.testoperators1___5mg8t2" />  TestOperators1.Negate(TestOperators1) Operator ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 Unary minus operator
@@ -1562,10 +1700,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.op_inequality_sampletodocument.methods.testoperators1-system.int32___1q5qdsw" />  TestOperators1.NotEquals(TestOperators1, int) Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.op_inequality_sampletodocument.methods.testoperators1-system.int32___1q5qdsw" />  TestOperators1.NotEquals(TestOperators1, int) Operator ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 Not equal operator with different signature
@@ -1586,10 +1725,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.op_inequality_sampletodocument.methods.testoperators1-sampletodocument.methods.testoperators1___1b6i9y9" />  TestOperators1.NotEquals(TestOperators1, TestOperators1) Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.op_inequality_sampletodocument.methods.testoperators1-sampletodocument.methods.testoperators1___1b6i9y9" />  TestOperators1.NotEquals(TestOperators1, TestOperators1) Operator ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 Not equal operator
@@ -1610,10 +1750,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.op_unaryplus_sampletodocument.methods.testoperators1___1nra96v" />  TestOperators1.Plus(TestOperators1) Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.op_unaryplus_sampletodocument.methods.testoperators1___1nra96v" />  TestOperators1.Plus(TestOperators1) Operator ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 Plus operator
@@ -1634,10 +1775,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.op_subtraction_sampletodocument.methods.testoperators1-system.int32___nidxsx" />  TestOperators1.Subtract(TestOperators1, int) Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.op_subtraction_sampletodocument.methods.testoperators1-system.int32___nidxsx" />  TestOperators1.Subtract(TestOperators1, int) Operator ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 Binary minus operator
@@ -1658,10 +1800,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.op_true_sampletodocument.methods.testoperators1___oft4t0" />  TestOperators1.True(TestOperators1) Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.op_true_sampletodocument.methods.testoperators1___oft4t0" />  TestOperators1.True(TestOperators1) Operator ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 True operator
@@ -1682,10 +1825,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.op_implicit_system.boolean_dtorsampletodocument.methods.testoperators1__q06r12" />  TestOperators1.From(bool) Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.op_implicit_system.boolean_dtorsampletodocument.methods.testoperators1__q06r12" />  TestOperators1.From(bool) Conversion ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 Implicit conversion <a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >System.Boolean</a> to [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)
@@ -1706,10 +1850,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.op_explicit_system.exception_dtorsampletodocument.methods.testoperators1__1cdfgce" />  TestOperators1.From(Exception) Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.op_explicit_system.exception_dtorsampletodocument.methods.testoperators1__1cdfgce" />  TestOperators1.From(Exception) Conversion ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 Explicit conversion <a href="https://docs.microsoft.com/en-us/dotnet/api/system.exception" target="_blank" >System.Exception</a> to [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)
@@ -1730,10 +1875,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.op_explicit_sampletodocument.methods.testoperators1_dtorsystem.boolean__xs3j9r" />  TestOperators1.ToBool(TestOperators1) Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.op_explicit_sampletodocument.methods.testoperators1_dtorsystem.boolean__xs3j9r" />  TestOperators1.ToBool(TestOperators1) Conversion ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 Explicit conversion [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0) to <a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >System.Boolean</a>
@@ -1754,10 +1900,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.op_explicit_sampletodocument.methods.testoperators1_dtorsystem.exception__1snedqk" />  TestOperators1.ToException(TestOperators1) Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.op_explicit_sampletodocument.methods.testoperators1_dtorsystem.exception__1snedqk" />  TestOperators1.ToException(TestOperators1) Conversion ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 Explicit conversion [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0) to <a href="https://docs.microsoft.com/en-us/dotnet/api/system.exception" target="_blank" >System.Exception</a>
@@ -1778,10 +1925,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.op_implicit_sampletodocument.methods.testoperators1_dtorsystem.char__ukjxve" />  TestOperators1.ToChar(TestOperators1) Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.op_implicit_sampletodocument.methods.testoperators1_dtorsystem.char__ukjxve" />  TestOperators1.ToChar(TestOperators1) Conversion ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 Implicit conversion [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0) to <a href="https://docs.microsoft.com/en-us/dotnet/api/system.char" target="_blank" >System.Char</a>
@@ -1802,10 +1950,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.op_explicit_sampletodocument.methods.testoperators1_dtorsystem.int32__1n4t6t5" />  TestOperators1.ToInt(TestOperators1) Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.op_explicit_sampletodocument.methods.testoperators1_dtorsystem.int32__1n4t6t5" />  TestOperators1.ToInt(TestOperators1) Conversion ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 Explicit conversion [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0) to <a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" target="_blank" >System.Int32</a>
@@ -1826,10 +1975,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.op_explicit_sampletodocument.methods.testoperators1_dtorsystem.collections.generic.list_system.string___1bs9b5h" />  TestOperators1.ToList(TestOperators1) Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.op_explicit_sampletodocument.methods.testoperators1_dtorsystem.collections.generic.list_system.string___1bs9b5h" />  TestOperators1.ToList(TestOperators1) Conversion ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 Explicit conversion [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0) to <a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1" target="_blank" >System.Collections.Generic.List`1</a>
@@ -1850,10 +2000,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.methods.testoperators1.op_explicit_sampletodocument.methods.testoperators1_dtorsystem.collections.generic.list_system.int32___90hpbm" />  TestOperators1.ToList(TestOperators1) Title ##
+##  <a id="m-sampletodocument.methods.testoperators1.op_explicit_sampletodocument.methods.testoperators1_dtorsystem.collections.generic.list_system.int32___90hpbm" />  TestOperators1.ToList(TestOperators1) Conversion ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)</small>
+Type: [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0)           
+Sources: methods\Samples.cs</small>
 
 
 Explicit conversion [TestOperators1](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testoperators1__rwo9k0) to <a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1" target="_blank" >System.Collections.Generic.List`1</a>
@@ -1876,7 +2027,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.methods.testevents1.event2eventhandler__f9px58" />  TestEvents1.Event2EventHandler Delegate ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: methods\Samples.cs</small>
 
 
 
@@ -1900,7 +2052,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.methods.testevents1.event3handler-1__15qd1e6" />  TestEvents1.Event3Handler&lt;TEventArgs&gt; Delegate ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: methods\Samples.cs</small>
 
 
 
@@ -1925,7 +2078,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.methods.testevents1.event4handler__1dmpg0m" />  TestEvents1.Event4Handler Delegate ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: methods\Samples.cs</small>
 
 
 
@@ -1948,7 +2102,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.methods.testevents1.event5handler__1dmorhz" />  TestEvents1.Event5Handler Delegate ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: methods\Samples.cs</small>
 
 
 
@@ -1971,7 +2126,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.methods.testevents2.event4handler__1q0ijad" />  TestEvents2.Event4Handler Delegate ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: methods\Samples.cs</small>
 
 
 Protected delegate
@@ -1997,7 +2153,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.methods.testmethods1.testenum__10kckfc" />  TestMethods1.TestEnum Enum ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: methods\Samples.cs</small>
 
 
 
@@ -2029,7 +2186,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.methods.testmethods1.testenum.first__5it2li" />  TestMethods1.TestEnum.First Constant ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods1.TestEnum](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1.testenum__10kckfc)</small>
+Type: [TestMethods1.TestEnum](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1.testenum__10kckfc)           
+Sources: methods\Samples.cs</small>
 
 
 
@@ -2049,7 +2207,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.methods.testmethods1.testenum.second__u4llu0" />  TestMethods1.TestEnum.Second Constant ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods1.TestEnum](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1.testenum__10kckfc)</small>
+Type: [TestMethods1.TestEnum](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1.testenum__10kckfc)           
+Sources: methods\Samples.cs</small>
 
 
 
@@ -2069,7 +2228,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.methods.testmethods1.testenum.third__1ge19sz" />  TestMethods1.TestEnum.Third Constant ##
 <small>Namespace: [SampleToDocument.methods](SampleToDocument.methods__1rdi08w.md#n-sampletodocument.methods__1rdi08w)           
 Assembly: SampleToDocument           
-Type: [TestMethods1.TestEnum](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1.testenum__10kckfc)</small>
+Type: [TestMethods1.TestEnum](SampleToDocument.methods__1rdi08w.md#t-sampletodocument.methods.testmethods1.testenum__10kckfc)           
+Sources: methods\Samples.cs</small>
 
 
 

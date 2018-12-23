@@ -126,6 +126,9 @@ namespace net.adamec.dev.markupdoc.XmlDocumentation
                         case "item": //list item
                             retVal = new ListItem(element);
                             break;
+                        case "inheritdoc": 
+                            retVal = new Inheritdoc(element);
+                            break;
                         default:
                             retVal = new ModelElement(element);
                             break;

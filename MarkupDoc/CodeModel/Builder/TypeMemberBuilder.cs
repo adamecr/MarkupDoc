@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Microsoft.CodeAnalysis;
 
 namespace net.adamec.dev.markupdoc.CodeModel.Builder
 {
@@ -54,6 +55,16 @@ namespace net.adamec.dev.markupdoc.CodeModel.Builder
         /// List of all type content members (fields, properties, methods, events)
         /// </summary>
         public List<TypeContentMemberBuilder> ContentMembers { get; } = new List<TypeContentMemberBuilder>();
+
+        /// <summary>
+        /// Dictionary of  interface member implementation by interface member (key=interface member symbol, value=implementation member symbol)
+        /// </summary>
+        public Dictionary<ISymbol, ISymbol> InterfaceImplementationsByInterfaceMember { get; }=new Dictionary<ISymbol, ISymbol>();
+
+        /// <summary>
+        /// Dictionary of implemented interface members by implementation member (key=implementation member symbol, value=interface member symbol)
+        /// </summary>
+        public Dictionary<ISymbol, IReadOnlyList<ISymbol>> InterfaceMembersByInterfaceImplementation { get; } = new Dictionary<ISymbol, IReadOnlyList<ISymbol>>();
 
     }
 }

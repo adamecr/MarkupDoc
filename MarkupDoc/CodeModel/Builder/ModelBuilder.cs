@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Build.Locator;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.MSBuild;
+using net.adamec.dev.markupdoc.AddOns;
 using net.adamec.dev.markupdoc.Utils;
 using net.adamec.dev.markupdoc.Utils.Extensions;
 using net.adamec.dev.markupdoc.XmlDocumentation;
@@ -22,8 +24,9 @@ namespace net.adamec.dev.markupdoc.CodeModel.Builder
         /// Builds a code model for C# project
         /// </summary>
         /// <param name="projectFile">Project file full path</param>
+        /// <param name="addOns">Optional list of add-ons</param>
         /// <returns>Code model root (async)</returns>
-        public static async Task<RootMember> BuildFromProjectSourcesAsync(string projectFile)
+        public static async Task<RootMember> BuildFromProjectSourcesAsync(string projectFile, IEnumerable<IAddOn> addOns)
         {
             RootMember root;
             var rootBuilder = new RootMemberBuilder();
@@ -38,8 +41,10 @@ namespace net.adamec.dev.markupdoc.CodeModel.Builder
 
                 //Build the code model
                 Console.WriteLine("Building the code model...");
+                rootBuilder.ProjectRootDir = new FileInfo(projectFile).DirectoryName;
+                rootBuilder.CompilationFiles = compilation.SyntaxTrees.Select(st => st.FilePath).ToList();
                 Build(assemblySymbol, rootBuilder, null, null, null, 0);
-                root = new RootMember(rootBuilder);
+                root = new RootMember(rootBuilder,addOns);
                 Console.WriteLine("Code model build");
 
                 Console.WriteLine("Closing the workspace...");
@@ -63,34 +68,42 @@ namespace net.adamec.dev.markupdoc.CodeModel.Builder
             TypeMemberBuilder type, int level)
         {
             Console.WriteLine($"{new string(' ', level)}Checking the {symbol.Kind}: {symbol.Name}");
-            switch (symbol)
+            try
             {
-                case IAssemblySymbol assemblySymbol:
-                    BuildAssembly(assemblySymbol, root, level);
-                    break;
+                switch (symbol)
+                {
+                    case IAssemblySymbol assemblySymbol:
+                        BuildAssembly(assemblySymbol, root, level);
+                        break;
 
-                case INamespaceSymbol namespaceSymbol:
-                    BuildNamespace(namespaceSymbol, root, assembly, level);
-                    break;
+                    case INamespaceSymbol namespaceSymbol:
+                        BuildNamespace(namespaceSymbol, root, assembly, level);
+                        break;
 
-                case INamedTypeSymbol typeSymbol:
-                    BuildType(typeSymbol, root, assembly, ns, type, level);
-                    break;
+                    case INamedTypeSymbol typeSymbol:
+                        BuildType(typeSymbol, root, assembly, ns, type, level);
+                        break;
 
-                case IFieldSymbol fieldSymbol:
-                    BuildField(fieldSymbol, root, type, level);
-                    break;
+                    case IFieldSymbol fieldSymbol:
+                        BuildField(fieldSymbol, root, type, level);
+                        break;
 
-                case IPropertySymbol propertySymbol:
-                    BuildProperty(propertySymbol, root, type, level);
-                    break;
+                    case IPropertySymbol propertySymbol:
+                        BuildProperty(propertySymbol, root, type, level);
+                        break;
 
-                case IMethodSymbol methodSymbol:
-                    BuildMethod(methodSymbol, root, type, level);
-                    break;
-                case IEventSymbol eventSymbol:
-                    BuildEvent(eventSymbol, root, type, level);
-                    break;
+                    case IMethodSymbol methodSymbol:
+                        BuildMethod(methodSymbol, root, type, level);
+                        break;
+                    case IEventSymbol eventSymbol:
+                        BuildEvent(eventSymbol, root, type, level);
+                        break;
+                }
+            }
+            catch (Exception exception)
+            {
+                ConsoleUtils.WriteErr($"{new string(' ', level)}Exception '{exception.Message}' while processing {symbol.Kind}: {symbol.Name}");
+                throw;
             }
         }
 
@@ -181,11 +194,15 @@ namespace net.adamec.dev.markupdoc.CodeModel.Builder
         {
             if (symbol.IsImplicitlyDeclared) return;
             if (symbol.GetAttributes().Any(a => a.AttributeClassString() == "System.Runtime.CompilerServices.CompilerGeneratedAttribute")) return;
+            if (symbol.Name.Contains("NuProps"))
+            {
 
+            }
             var t = new TypeMemberBuilder()
             {
                 Name = type == null ? symbol.Name : $"{type.Name}.{symbol.Name}",
                 Symbol = symbol,
+                SourceFiles = symbol.DeclaringSyntaxReferences.Select(dsr=>dsr.SyntaxTree.FilePath).ToList(),
                 DocumentationId = symbol.GetDocumentationCommentId(),
                 DocumentationXml = symbol.GetDocumentationCommentXml(),
                 Documentation = Documentation.Read(symbol.GetDocumentationCommentXml()),
@@ -217,6 +234,29 @@ namespace net.adamec.dev.markupdoc.CodeModel.Builder
             {
                 //includes the inherited
                 t.AllInterfacesTypeRefs = typeAllInterfaces.Select(i => TypeRef.GetOrCreate(i, root)).ToList();
+                foreach (var implementedInterface in typeAllInterfaces)
+                {
+                    var interfaceMembers = implementedInterface.GetMembers();
+                    if (interfaceMembers == null) continue;
+
+                    foreach (var interfaceMember in interfaceMembers.Where(
+                        im=>im.Kind==SymbolKind.Event ||
+                            im.Kind==SymbolKind.Property ||
+                            im.Kind== SymbolKind.Method ))
+                    {
+                        var implementationMember = symbol.FindImplementationForInterfaceMember(interfaceMember);
+                        if (implementationMember == null) continue;
+
+                        t.InterfaceImplementationsByInterfaceMember.Add(interfaceMember,implementationMember);
+
+                        if (!t.InterfaceMembersByInterfaceImplementation.TryGetValue(implementationMember,out var interfaceMemberList))
+                        {
+                            interfaceMemberList=new List<ISymbol>();
+                            t.InterfaceMembersByInterfaceImplementation.Add(implementationMember, interfaceMemberList);
+                        }
+                        ((List<ISymbol>)interfaceMemberList).Add(interfaceMember);
+                    }
+                }
             }
 
             //Get the attributes
@@ -264,6 +304,7 @@ namespace net.adamec.dev.markupdoc.CodeModel.Builder
                 Name = symbol.Name,
                 NameBase = symbol.Name,
                 Symbol = symbol,
+                SourceFiles = symbol.DeclaringSyntaxReferences.Select(dsr => dsr.SyntaxTree.FilePath).ToList(),
                 DocumentationId = symbol.GetDocumentationCommentId(),
                 DocumentationXml = symbol.GetDocumentationCommentXml(),
                 Documentation = Documentation.Read(symbol.GetDocumentationCommentXml()),
@@ -306,6 +347,7 @@ namespace net.adamec.dev.markupdoc.CodeModel.Builder
                 Name = symbol.Name,
                 NameBase = symbol.Name.Replace("[]", ""),
                 Symbol = symbol,
+                SourceFiles = symbol.DeclaringSyntaxReferences.Select(dsr => dsr.SyntaxTree.FilePath).ToList(),
                 DocumentationId = symbol.GetDocumentationCommentId(),
                 DocumentationXml = symbol.GetDocumentationCommentXml(),
                 Documentation = Documentation.Read(symbol.GetDocumentationCommentXml()),
@@ -320,7 +362,12 @@ namespace net.adamec.dev.markupdoc.CodeModel.Builder
                 IsWriteOnly = symbol.IsWriteOnly,
                 IsIndexer = symbol.IsIndexer,
                 TypeRef = TypeRef.GetOrCreate(symbol.Type, root),
-                IsNew = symbol.GetIsNew()
+                IsNew = symbol.GetIsNew(),
+                OverridesSymbol = symbol.OverriddenProperty,
+                ExplicitInterfaceImplementationMemberSymbol =
+                    symbol.ExplicitInterfaceImplementations != null && symbol.ExplicitInterfaceImplementations.Length > 0
+                        ? symbol.ExplicitInterfaceImplementations[0]
+                        : null
             };
 
             var propertyModifier = ModifierEnumExtensions.Modifier(symbol.DeclaredAccessibility);
@@ -371,6 +418,7 @@ namespace net.adamec.dev.markupdoc.CodeModel.Builder
                 NameBase = symbol.Name,
                 OperatorCSharpSymbol = symbol.GetOperatorCSharpSymbol(),
                 Symbol = symbol,
+                SourceFiles = symbol.DeclaringSyntaxReferences.Select(dsr => dsr.SyntaxTree.FilePath).ToList(),
                 DocumentationId = symbol.GetDocumentationCommentId(),
                 DocumentationXml = symbol.GetDocumentationCommentXml(),
                 Documentation = Documentation.Read(symbol.GetDocumentationCommentXml()),
@@ -391,7 +439,12 @@ namespace net.adamec.dev.markupdoc.CodeModel.Builder
                 RefKind = (RefKindEnum)symbol.RefKind,
                 ReturnTypeRef = TypeRef.GetOrCreate(symbol.ReturnType, root),
                 MethodKind = (MethodKindEnum)symbol.MethodKind,
-                IsNew = symbol.GetIsNew()
+                IsNew = symbol.GetIsNew(),
+                OverridesSymbol = symbol.OverriddenMethod,
+                ExplicitInterfaceImplementationMemberSymbol =
+                    symbol.ExplicitInterfaceImplementations!=null && symbol.ExplicitInterfaceImplementations.Length>0
+                        ?symbol.ExplicitInterfaceImplementations[0]
+                        :null
             };
 
             if (m.IsConstructor || m.IsDestructor)
@@ -442,6 +495,7 @@ namespace net.adamec.dev.markupdoc.CodeModel.Builder
                 Name = symbol.Name,
                 NameBase = symbol.Name,
                 Symbol = symbol,
+                SourceFiles = symbol.DeclaringSyntaxReferences.Select(dsr => dsr.SyntaxTree.FilePath).ToList(),
                 DocumentationId = symbol.GetDocumentationCommentId(),
                 DocumentationXml = symbol.GetDocumentationCommentXml(),
                 Documentation = Documentation.Read(symbol.GetDocumentationCommentXml()),
@@ -454,7 +508,12 @@ namespace net.adamec.dev.markupdoc.CodeModel.Builder
                 IsVirtual = symbol.IsVirtual,
                 HasExplicitAddAndRemove = !symbol.AddMethod.IsImplicitlyDeclared && !symbol.RemoveMethod.IsImplicitlyDeclared,
                 TypeRef = TypeRef.GetOrCreate(symbol.Type, root),
-                IsNew = symbol.GetIsNew()
+                IsNew = symbol.GetIsNew(),
+                OverridesSymbol = symbol.OverriddenEvent,
+                ExplicitInterfaceImplementationMemberSymbol =
+                    symbol.ExplicitInterfaceImplementations != null && symbol.ExplicitInterfaceImplementations.Length > 0
+                        ? symbol.ExplicitInterfaceImplementations[0]
+                        : null
             };
 
             e.SetAttributes(root);

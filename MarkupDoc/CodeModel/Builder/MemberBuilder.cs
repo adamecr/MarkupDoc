@@ -11,6 +11,10 @@ namespace net.adamec.dev.markupdoc.CodeModel.Builder
     public abstract class MemberBuilder
     {
         /// <summary>
+        /// Source file defining the symbol
+        /// </summary>
+        public List<string> SourceFiles { get; set; }
+        /// <summary>
         /// Name of the member as presented in generated output
         /// </summary>
         public string Name { get; set; }

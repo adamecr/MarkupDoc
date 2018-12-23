@@ -4,6 +4,9 @@
  | Name | Summary | 
  | ------ | --------- | 
  | [net.adamec.dev.markupdoc](#n-net.adamec.dev.markupdoc__1d9f9qh) | Main application namespace. Contains [Program](#t-net.adamec.dev.markupdoc.program__cagybt) and [Application](#t-net.adamec.dev.markupdoc.application__s1pcmn) classes | 
+ | [net.adamec.dev.markupdoc.AddOns](#n-net.adamec.dev.markupdoc.addons__16pxlok) |  | 
+ | [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc) |  | 
+ | [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb) |  | 
  | [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55) | Code model related classes | 
  | [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa) | Code model builder classes | 
  | [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv) | Markup composition related classes | 
@@ -36,6 +39,7 @@
  | [FieldMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder__1jrcush) | public | Class | Builder for [FieldMember](#t-net.adamec.dev.markupdoc.codemodel.fieldmember__tbd84z) | 
  | [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj) | public | Class | HTML markup provider | 
  | [IMethodSymbolExtensionsForOperators](#t-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators__8jmpz0) | public static | Class | Extension methods for <em>Microsoft.CodeAnalysis.IMethodSymbol</em> related to the operators | 
+ | [Inheritdoc](#t-net.adamec.dev.markupdoc.xmldocumentation.inheritdoc__khqjp9) | public | Class | Class representing the `inheritdoc` element of XML Documentation Comments | 
  | [IsNewUtils](#t-net.adamec.dev.markupdoc.utils.isnewutils__slf3x) | public static | Class | Helpers to get the access to internal ISymbol.IsNew property | 
  | [List](#t-net.adamec.dev.markupdoc.xmldocumentation.list__zvsh5a) | public | Class | Class representing &lt;list&gt; element of XML Documentation  Comments | 
  | [ListItem](#t-net.adamec.dev.markupdoc.xmldocumentation.listitem__bk21cn) | public | Class | Class representing &lt;item&gt; and &lt;listheader&gt; elements of XML Documentation Comments | 
@@ -60,6 +64,8 @@
  | [MsApiDocOptions](#t-net.adamec.dev.markupdoc.msapidoc.msapidocoptions__19hrssn) | public | Class | Configuration class for [MsApiDocEngine](#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx) | 
  | [NamespaceMember](#t-net.adamec.dev.markupdoc.codemodel.namespacemember__ja97li) | public | Class | Represents a namespace within the code model | 
  | [NamespaceMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.namespacememberbuilder__1a79nrm) | public | Class | Builder for [NamespaceMember](#t-net.adamec.dev.markupdoc.codemodel.namespacemember__ja97li) | 
+ | [NuProps](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni) | public | Class | Metadata defining the source-only NuGet packages generated from the source code using the customized build process | 
+ | [NuProps.NuPropUsing](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.nupropusing__oshg6w) | public | Class | Metadata from &lt;NuProp.Using id = &quot;&quot; version=&quot;&quot;/&gt; XML documentation comment | 
  | [OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6) | public | Class | Output configuration | 
  | [Para](#t-net.adamec.dev.markupdoc.xmldocumentation.para__1no80es) | public | Class | Class representing &lt;para&gt; element of XML Documentation Comments | 
  | [Param](#t-net.adamec.dev.markupdoc.xmldocumentation.param__7q99qf) | public | Class | Class representing &lt;param&gt; element of XML Documentation  Comments | 
@@ -74,6 +80,7 @@
  | [RootMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad) | public | Class | Builder for [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj) | 
  | [See](#t-net.adamec.dev.markupdoc.xmldocumentation.see__12himun) | public | Class | Class representing &lt;see&gt; element of XML Documentation Comments | 
  | [SeeAlso](#t-net.adamec.dev.markupdoc.xmldocumentation.seealso__1fkiu46) | public | Class | Class representing &lt;seealso&gt; element of XML Documentation Comments | 
+ | [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc) | public | Class | Output generator add-on for documenting the source-only packages | 
  | [StringExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.stringextensions__1jm6pgz) | public static | Class | Extension methods for <a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >System.String</a> | 
  | [Summary](#t-net.adamec.dev.markupdoc.xmldocumentation.summary__mrutjy) | public | Class | Class representing &lt;summary&gt; element of XML Documentation Comments | 
  | [Text](#t-net.adamec.dev.markupdoc.xmldocumentation.text__1xsey9h) | public | Class | Class representing text node (content) of XML Documentation Comments | 
@@ -89,6 +96,7 @@
  | [TypeParamRef](#t-net.adamec.dev.markupdoc.xmldocumentation.typeparamref__qcu1eo) | public | Class | Class representing &lt;typeparamref&gt; element of XML Documentation Comments | 
  | [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm) | public | Class | Type reference - used to hold the reference to the type from the commented code as we as the referenced/used types. There is only single TypeRef for a type even if used on multiple &quot;places&quot; | 
  | [Value](#t-net.adamec.dev.markupdoc.xmldocumentation.value__sil3tn) | public | Class | Class representing &lt;value&gt; element of XML Documentation  Comments | 
+ | [IAddOn](#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt) | public abstract | Interface | Output add-on interface. Add-on is a functionality extending the output generator at defined extension points. Implementing class must have a constructor with single [OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6) parameter. | 
  | [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) | public abstract | Interface | Markup provider interface | 
  | [IMarkupWriter](#t-net.adamec.dev.markupdoc.markup.imarkupwriter__14znp75) | public abstract | Interface | Interface of the markup output writer | 
  | [INonWritableWriter](#t-net.adamec.dev.markupdoc.markup.inonwritablewriter__1ortihg) | public abstract | Interface | Non writable interface of the output writer | 
@@ -96,6 +104,7 @@
  | [MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0) | public | Enum | Possible member kinds | 
  | [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9) | public | Enum | Possible kinds of method symbols | 
  | [ModifierEnum](#t-net.adamec.dev.markupdoc.codemodel.modifierenum__1xbpfel) | public | Enum | Possible access modifiers | 
+ | [NuProps.IncludesTypeEnum](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.includestypeenum__10jptjg) | public | Enum | Definition of the additional files to include into the source-only package | 
  | [RefKindEnum](#t-net.adamec.dev.markupdoc.codemodel.refkindenum__q0ecx7) | public | Enum | Possible reference parameter kinds | 
  | [SplitTypeEnum](#t-net.adamec.dev.markupdoc.codemodel.splittypeenum__1fx14km) | public | Enum | Possible split definitions | 
  | [TypeKindEnum](#t-net.adamec.dev.markupdoc.codemodel.typekindenum__1aridgm) | public | Enum | Possible kinds of type symbol | 
@@ -128,7 +137,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.application__s1pcmn" />  Application Class ##
 <small>Namespace: [net.adamec.dev.markupdoc](#n-net.adamec.dev.markupdoc__1d9f9qh)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Application.cs</small>
 
 
 Main application class - encapsulates the documentation building logic
@@ -165,6 +175,7 @@ Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object"
 
  | Name | Modifier | Summary | 
  | ------ | ---------- | --------- | 
+ | [GetAddOns()](#m-net.adamec.dev.markupdoc.application.getaddons__koi41d) | protected | Initialize add-ons | 
  | [RunAsync(string)](#m-net.adamec.dev.markupdoc.application.runasync_system.string___1ym8d3g) | public | Runs the documentation building logic | 
 
  
@@ -179,7 +190,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.application.outputoptions__66qbpi" />  Application.OutputOptions Property ##
 <small>Namespace: [net.adamec.dev.markupdoc](#n-net.adamec.dev.markupdoc__1d9f9qh)           
 Assembly: MarkupDoc           
-Type: [Application](#t-net.adamec.dev.markupdoc.application__s1pcmn)</small>
+Type: [Application](#t-net.adamec.dev.markupdoc.application__s1pcmn)           
+Sources: Application.cs</small>
 
 
 Output configuration
@@ -199,10 +211,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.application.-ctor_net.adamec.dev.markupdoc.options.outputoptions___7a5mu0" />  Application.Application(OutputOptions) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.application.-ctor_net.adamec.dev.markupdoc.options.outputoptions___7a5mu0" />  Application.Application(OutputOptions) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc](#n-net.adamec.dev.markupdoc__1d9f9qh)           
 Assembly: MarkupDoc           
-Type: [Application](#t-net.adamec.dev.markupdoc.application__s1pcmn)</small>
+Type: [Application](#t-net.adamec.dev.markupdoc.application__s1pcmn)           
+Sources: Application.cs</small>
 
 
 CTOR with output configuration
@@ -220,10 +233,35 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.application.runasync_system.string___1ym8d3g" />  Application.RunAsync(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.application.getaddons__koi41d" />  Application.GetAddOns() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc](#n-net.adamec.dev.markupdoc__1d9f9qh)           
 Assembly: MarkupDoc           
-Type: [Application](#t-net.adamec.dev.markupdoc.application__s1pcmn)</small>
+Type: [Application](#t-net.adamec.dev.markupdoc.application__s1pcmn)           
+Sources: Application.cs</small>
+
+
+Initialize add-ons
+
+
+
+```csharp
+protected virtual IEnumerable<net.adamec.dev.markupdoc.AddOns.IAddOn> GetAddOns()
+```
+
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1" target="_blank" >IEnumerable&lt;net.adamec.dev.markupdoc.AddOns.IAddOn&gt;</a></dt><dd>List of add-ons to be used</dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.application.runasync_system.string___1ym8d3g" />  Application.RunAsync(string) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc](#n-net.adamec.dev.markupdoc__1d9f9qh)           
+Assembly: MarkupDoc           
+Type: [Application](#t-net.adamec.dev.markupdoc.application__s1pcmn)           
+Sources: Application.cs</small>
 
 
 Runs the documentation building logic
@@ -246,7 +284,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.program__cagybt" />  Program Class ##
 <small>Namespace: [net.adamec.dev.markupdoc](#n-net.adamec.dev.markupdoc__1d9f9qh)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Program.cs</small>
 
 
 Main program entry class
@@ -289,7 +328,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.program.defaultconfigfile__1hwhxfi" />  Program.DefaultConfigFile Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc](#n-net.adamec.dev.markupdoc__1d9f9qh)           
 Assembly: MarkupDoc           
-Type: [Program](#t-net.adamec.dev.markupdoc.program__cagybt)</small>
+Type: [Program](#t-net.adamec.dev.markupdoc.program__cagybt)           
+Sources: Program.cs</small>
 
 
 Default configuration file name
@@ -309,10 +349,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.program.help__hbeo67" />  Program.Help() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.program.help__hbeo67" />  Program.Help() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc](#n-net.adamec.dev.markupdoc__1d9f9qh)           
 Assembly: MarkupDoc           
-Type: [Program](#t-net.adamec.dev.markupdoc.program__cagybt)</small>
+Type: [Program](#t-net.adamec.dev.markupdoc.program__cagybt)           
+Sources: Program.cs</small>
 
 
 Writes the help to console
@@ -332,10 +373,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.program.main_system.string_____1nu6hy8" />  Program.Main(string[]) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.program.main_system.string_____1nu6hy8" />  Program.Main(string[]) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc](#n-net.adamec.dev.markupdoc__1d9f9qh)           
 Assembly: MarkupDoc           
-Type: [Program](#t-net.adamec.dev.markupdoc.program__cagybt)</small>
+Type: [Program](#t-net.adamec.dev.markupdoc.program__cagybt)           
+Sources: Program.cs</small>
 
 
 Main console application entry point
@@ -348,6 +390,1580 @@ private static async Task<int> Main(string[] args)
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string[]</a> <strong>args</strong></dt><dd>Command line arguments</dd></dl>
 <strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1" target="_blank" >System.Threading.Tasks.Task&lt;int&gt;</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="n-net.adamec.dev.markupdoc.addons__16pxlok" />  net.adamec.dev.markupdoc.AddOns Namespace ##
+###  Interfaces ###
+
+ | Name | Modifier | Summary | 
+ | ------ | ---------- | --------- | 
+ | [IAddOn](#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt) | public abstract | Output add-on interface. Add-on is a functionality extending the output generator at defined extension points. Implementing class must have a constructor with single [OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6) parameter. | 
+
+ 
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt" />  IAddOn Interface ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns](#n-net.adamec.dev.markupdoc.addons__16pxlok)           
+Assembly: MarkupDoc           
+Sources: AddOns\IAddOn.cs</small>
+
+
+Output add-on interface. Add-on is a functionality extending the output generator at defined extension points. Implementing class must have a constructor with single [OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6) parameter.
+
+
+
+```csharp
+public interface IAddOn
+```
+
+Implemented by: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc)           
+
+
+
+###  Remarks ###
+One instance per application run is created at [GetAddOns()](#m-net.adamec.dev.markupdoc.application.getaddons__koi41d) when a master switch in configuration `Output.EnableAddOns` is on (false by default) Add-on: 
+
+
+ - <strong>Can extend the code model root data</strong> - when [PriorityRootData](#p-net.adamec.dev.markupdoc.addons.iaddon.priorityrootdata__4lkjzb) &gt; 0
+ - <strong>Can extend the index page</strong> - when [PriorityIndexPage](#p-net.adamec.dev.markupdoc.addons.iaddon.priorityindexpage__fkoqdy) &gt; 0
+ - <strong>Can generate own pages</strong> - when [PriorityOwnPages](#p-net.adamec.dev.markupdoc.addons.iaddon.priorityownpages__1169buv) &gt; 0
+ - <strong>Can extend &quot;standard&quot; pages&#39; header</strong> - when [PriorityPageHeader](#p-net.adamec.dev.markupdoc.addons.iaddon.prioritypageheader__szfdw1) &gt; 0
+ - <strong>Can extend &quot;standard&quot; pages&#39; body</strong> - when [PriorityPageBody](#p-net.adamec.dev.markupdoc.addons.iaddon.prioritypagebody__18im5wk) &gt; 0
+ - <strong>Can extend &quot;standard&quot; pages&#39; footer</strong> - when [PriorityPageFooter](#p-net.adamec.dev.markupdoc.addons.iaddon.prioritypagefooter__1l39gdz) &gt; 0
+           
+
+
+ The add-ons are applied in the order given by priority defined for each extension point within the add-on.
+
+
+###  Properties ###
+
+ | Name | Modifier | Summary | 
+ | ------ | ---------- | --------- | 
+ | [PriorityIndexPage](#p-net.adamec.dev.markupdoc.addons.iaddon.priorityindexpage__fkoqdy) | public abstract | Add-on priority for generating the add-on output to the (main) index page. Value &lt;1 means no output generated by add-on | 
+ | [PriorityOwnPages](#p-net.adamec.dev.markupdoc.addons.iaddon.priorityownpages__1169buv) | public abstract | Add-on priority for generating the add-on output pages. Value &lt;1 means no output generated by add-on | 
+ | [PriorityPageBody](#p-net.adamec.dev.markupdoc.addons.iaddon.prioritypagebody__18im5wk) | public abstract | Add-on priority for generating the add-on output to header of code model member page body. Value &lt;1 means no output generated by add-on | 
+ | [PriorityPageFooter](#p-net.adamec.dev.markupdoc.addons.iaddon.prioritypagefooter__1l39gdz) | public abstract | Add-on priority for generating the add-on output to header of code model member page footer. Value &lt;1 means no output generated by add-on | 
+ | [PriorityPageHeader](#p-net.adamec.dev.markupdoc.addons.iaddon.prioritypageheader__szfdw1) | public abstract | Add-on priority for generating the add-on output to header of code model member page header. Value &lt;1 means no output generated by add-on | 
+ | [PriorityRootData](#p-net.adamec.dev.markupdoc.addons.iaddon.priorityrootdata__4lkjzb) | public abstract | Add-on priority for processing the add-on data as a part of [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj) constructor. Value &lt;1 means no processing | 
+
+ 
+
+
+###  Methods ###
+
+ | Name | Modifier | Summary | 
+ | ------ | ---------- | --------- | 
+ | [ProcessRootData(RootMember, RootMemberBuilder)](#m-net.adamec.dev.markupdoc.addons.iaddon.processrootdata_net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder___1jgzllk) | public abstract | Let the add-on to prepare it&#39;s own data as a part of [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj) constructor. | 
+ | [WriteIndexAsync(RootMember, IMarkupProvider)](#m-net.adamec.dev.markupdoc.addons.iaddon.writeindexasync_net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.markup.imarkupprovider___14kxt04) | public abstract | Writes to the index (main) page of the code model | 
+ | [WriteOwnPagesAsync(RootMember, IMarkupProvider, MarkupGenerator)](#m-net.adamec.dev.markupdoc.addons.iaddon.writeownpagesasync_net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.markup.markupgenerator___ybiauk) | public abstract | Writes the add-on pages into the output | 
+ | [WritePageBodyAsync(Member, IMarkupProvider)](#m-net.adamec.dev.markupdoc.addons.iaddon.writepagebodyasync_net.adamec.dev.markupdoc.codemodel.member-net.adamec.dev.markupdoc.markup.imarkupprovider___2dwln1) | public abstract | Writes the body fro the code model member | 
+ | [WritePageFooter(string, IMarkupProvider)](#m-net.adamec.dev.markupdoc.addons.iaddon.writepagefooter_system.string-net.adamec.dev.markupdoc.markup.imarkupprovider___osl86z) | public abstract | Writes the footer for the code model member page | 
+ | [WritePageHeader(Member, IMarkupProvider)](#m-net.adamec.dev.markupdoc.addons.iaddon.writepageheader_net.adamec.dev.markupdoc.codemodel.member-net.adamec.dev.markupdoc.markup.imarkupprovider___1ml9iti) | public abstract | Writes the header for the code model member page | 
+
+ 
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.iaddon.priorityindexpage__fkoqdy" />  IAddOn.PriorityIndexPage Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns](#n-net.adamec.dev.markupdoc.addons__16pxlok)           
+Assembly: MarkupDoc           
+Type: [IAddOn](#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt)           
+Sources: AddOns\IAddOn.cs</small>
+
+
+Add-on priority for generating the add-on output to the (main) index page. Value &lt;1 means no output generated by add-on
+
+
+
+```csharp
+public abstract int PriorityIndexPage { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" target="_blank" >int</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.iaddon.priorityownpages__1169buv" />  IAddOn.PriorityOwnPages Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns](#n-net.adamec.dev.markupdoc.addons__16pxlok)           
+Assembly: MarkupDoc           
+Type: [IAddOn](#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt)           
+Sources: AddOns\IAddOn.cs</small>
+
+
+Add-on priority for generating the add-on output pages. Value &lt;1 means no output generated by add-on
+
+
+
+```csharp
+public abstract int PriorityOwnPages { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" target="_blank" >int</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.iaddon.prioritypagebody__18im5wk" />  IAddOn.PriorityPageBody Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns](#n-net.adamec.dev.markupdoc.addons__16pxlok)           
+Assembly: MarkupDoc           
+Type: [IAddOn](#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt)           
+Sources: AddOns\IAddOn.cs</small>
+
+
+Add-on priority for generating the add-on output to header of code model member page body. Value &lt;1 means no output generated by add-on
+
+
+
+```csharp
+public abstract int PriorityPageBody { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" target="_blank" >int</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.iaddon.prioritypagefooter__1l39gdz" />  IAddOn.PriorityPageFooter Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns](#n-net.adamec.dev.markupdoc.addons__16pxlok)           
+Assembly: MarkupDoc           
+Type: [IAddOn](#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt)           
+Sources: AddOns\IAddOn.cs</small>
+
+
+Add-on priority for generating the add-on output to header of code model member page footer. Value &lt;1 means no output generated by add-on
+
+
+
+```csharp
+public abstract int PriorityPageFooter { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" target="_blank" >int</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.iaddon.prioritypageheader__szfdw1" />  IAddOn.PriorityPageHeader Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns](#n-net.adamec.dev.markupdoc.addons__16pxlok)           
+Assembly: MarkupDoc           
+Type: [IAddOn](#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt)           
+Sources: AddOns\IAddOn.cs</small>
+
+
+Add-on priority for generating the add-on output to header of code model member page header. Value &lt;1 means no output generated by add-on
+
+
+
+```csharp
+public abstract int PriorityPageHeader { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" target="_blank" >int</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.iaddon.priorityrootdata__4lkjzb" />  IAddOn.PriorityRootData Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns](#n-net.adamec.dev.markupdoc.addons__16pxlok)           
+Assembly: MarkupDoc           
+Type: [IAddOn](#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt)           
+Sources: AddOns\IAddOn.cs</small>
+
+
+Add-on priority for processing the add-on data as a part of [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj) constructor. Value &lt;1 means no processing
+
+
+
+```csharp
+public abstract int PriorityRootData { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" target="_blank" >int</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.addons.iaddon.processrootdata_net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder___1jgzllk" />  IAddOn.ProcessRootData(RootMember, RootMemberBuilder) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns](#n-net.adamec.dev.markupdoc.addons__16pxlok)           
+Assembly: MarkupDoc           
+Type: [IAddOn](#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt)           
+Sources: AddOns\IAddOn.cs</small>
+
+
+Let the add-on to prepare it&#39;s own data as a part of [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj) constructor.
+
+
+
+```csharp
+public abstract void ProcessRootData(RootMember root, RootMemberBuilder builder)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj) <strong>root</strong></dt><dd>Code model root</dd><dt>[net.adamec.dev.markupdoc.CodeModel.Builder.RootMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad) <strong>builder</strong></dt><dd>Code model buildel root</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" target="_blank" >void</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.addons.iaddon.writeindexasync_net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.markup.imarkupprovider___14kxt04" />  IAddOn.WriteIndexAsync(RootMember, IMarkupProvider) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns](#n-net.adamec.dev.markupdoc.addons__16pxlok)           
+Assembly: MarkupDoc           
+Type: [IAddOn](#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt)           
+Sources: AddOns\IAddOn.cs</small>
+
+
+Writes to the index (main) page of the code model
+
+
+
+```csharp
+public abstract Task<bool> WriteIndexAsync(RootMember root, IMarkupProvider markup)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj) <strong>root</strong></dt><dd>Code model root</dd><dt>[net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) <strong>markup</strong></dt><dd>Markup provider</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1" target="_blank" >System.Threading.Tasks.Task&lt;bool&gt;</a></dt><dd>True when any output has been generated</dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.addons.iaddon.writeownpagesasync_net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.markup.markupgenerator___ybiauk" />  IAddOn.WriteOwnPagesAsync(RootMember, IMarkupProvider, MarkupGenerator) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns](#n-net.adamec.dev.markupdoc.addons__16pxlok)           
+Assembly: MarkupDoc           
+Type: [IAddOn](#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt)           
+Sources: AddOns\IAddOn.cs</small>
+
+
+Writes the add-on pages into the output
+
+
+
+```csharp
+public abstract Task WriteOwnPagesAsync(RootMember root, IMarkupProvider markup, MarkupGenerator generator)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj) <strong>root</strong></dt><dd>Code model root</dd><dt>[net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) <strong>markup</strong></dt><dd>Markup provider</dd><dt>[net.adamec.dev.markupdoc.Markup.MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36) <strong>generator</strong></dt><dd>Markup generator</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.addons.iaddon.writepagebodyasync_net.adamec.dev.markupdoc.codemodel.member-net.adamec.dev.markupdoc.markup.imarkupprovider___2dwln1" />  IAddOn.WritePageBodyAsync(Member, IMarkupProvider) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns](#n-net.adamec.dev.markupdoc.addons__16pxlok)           
+Assembly: MarkupDoc           
+Type: [IAddOn](#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt)           
+Sources: AddOns\IAddOn.cs</small>
+
+
+Writes the body fro the code model member
+
+
+
+```csharp
+public abstract Task WritePageBodyAsync(Member member, IMarkupProvider markup)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Member being documented</dd><dt>[net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) <strong>markup</strong></dt><dd>Markup provider</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.addons.iaddon.writepagefooter_system.string-net.adamec.dev.markupdoc.markup.imarkupprovider___osl86z" />  IAddOn.WritePageFooter(string, IMarkupProvider) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns](#n-net.adamec.dev.markupdoc.addons__16pxlok)           
+Assembly: MarkupDoc           
+Type: [IAddOn](#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt)           
+Sources: AddOns\IAddOn.cs</small>
+
+
+Writes the footer for the code model member page
+
+
+
+```csharp
+public abstract string WritePageFooter(string baseFileName, IMarkupProvider markup)
+```
+
+<strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>baseFileName</strong></dt><dd>Name of the main file</dd><dt>[net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) <strong>markup</strong></dt><dd>Markup provider</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>String to be added to the footer</dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.addons.iaddon.writepageheader_net.adamec.dev.markupdoc.codemodel.member-net.adamec.dev.markupdoc.markup.imarkupprovider___1ml9iti" />  IAddOn.WritePageHeader(Member, IMarkupProvider) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns](#n-net.adamec.dev.markupdoc.addons__16pxlok)           
+Assembly: MarkupDoc           
+Type: [IAddOn](#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt)           
+Sources: AddOns\IAddOn.cs</small>
+
+
+Writes the header for the code model member page
+
+
+
+```csharp
+public abstract string WritePageHeader(Member member, IMarkupProvider markup)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Member being documented</dd><dt>[net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) <strong>markup</strong></dt><dd>Markup provider</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>String to be added to the header text builder</dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc" />  net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages Namespace ##
+###  Classes ###
+
+ | Name | Modifier | Summary | 
+ | ------ | ---------- | --------- | 
+ | [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc) | public | Output generator add-on for documenting the source-only packages | 
+
+ 
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc" />  SourceOnlyPackagesAddOn Class ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc)           
+Assembly: MarkupDoc           
+Sources: AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs</small>
+
+
+Output generator add-on for documenting the source-only packages
+
+
+
+```csharp
+public class SourceOnlyPackagesAddOn : IAddOn
+```
+
+Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Implements: [net.adamec.dev.markupdoc.AddOns.IAddOn](#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt)
+
+
+###  Properties ###
+
+ | Name | Modifier | Summary | 
+ | ------ | ---------- | --------- | 
+ | [MembersBySourceOnlyPackage](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.membersbysourceonlypackage__1adzoi3) | public | Dictionary of members by source-only package | 
+ | [OutputOptions](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.outputoptions__m9qdcv) | public | Output configuration | 
+ | [PriorityIndexPage](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.priorityindexpage__cb2qij) | public | Add-on priority for generating the add-on output to the (main) index page. SourceOnlyPackagesAddOn priority is 1 | 
+ | [PriorityOwnPages](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.priorityownpages__1oy009u) | public | Add-on priority for generating the add-on output pages. SourceOnlyPackagesAddOn priority is 1 | 
+ | [PriorityPageBody](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.prioritypagebody__16j72yl) | public | Add-on priority for generating the add-on output to header of code model member page body. SourceOnlyPackagesAddOn priority is 0, so no output will be generator to member page body | 
+ | [PriorityPageFooter](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.prioritypagefooter__fitshq) | public | Add-on priority for generating the add-on output to header of code model member page footer. SourceOnlyPackagesAddOn priority is 1 | 
+ | [PriorityPageHeader](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.prioritypageheader__1mg3vbo) | public | Add-on priority for generating the add-on output to header of code model member page header. SourceOnlyPackagesAddOn priority is 1 | 
+ | [PriorityRootData](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.priorityrootdata__2mehaa) | public | Add-on priority for processing the add-on data as a part of [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj) constructor. SourceOnlyPackagesAddOn priority is 1 | 
+ | [SourceOnlyPackages](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.sourceonlypackages__1f513zg) | public | List of source-only packages&#39; properties | 
+ | [SourceOnlyPackagesByMember](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.sourceonlypackagesbymember__1r7c7w7) | public | Dictionary of source-only packages by member | 
+
+ 
+
+
+###  Constructors ###
+
+ | Name | Modifier | Summary | 
+ | ------ | ---------- | --------- | 
+ | [SourceOnlyPackagesAddOn(OutputOptions)](#m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.-ctor_net.adamec.dev.markupdoc.options.outputoptions___1q1qldr) | public | CTOR - initialize add-on | 
+
+ 
+
+
+###  Methods ###
+
+ | Name | Modifier | Summary | 
+ | ------ | ---------- | --------- | 
+ | [GetPackageAnchor(NuProps)](#m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.getpackageanchor_net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops___1yt89gd) | private | Returns the anchor for given <em>package</em> within the package page(s) file. | 
+ | [GetPackagePageFileName(NuProps)](#m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.getpackagepagefilename_net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops___1qi6ozu) | private | Returns the name of the generated file (without extension) for <em>package</em> when the split by type is set, so the all package pages are generated into dedicated files. | 
+ | [GetPackagePagesFileName()](#m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.getpackagepagesfilename__mn773q) | private | Returns the name of the generated file (without extension) when the split by namespace is set, so the all package pages are generated into single file. | 
+ | [Link(string, NuProps, IMarkupProvider)](#m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.link_system.string-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops-net.adamec.dev.markupdoc.markup.imarkupprovider___l32orz) | private | Creates the link to the <em>package</em> page | 
+ | [ProcessRootData(RootMember, RootMemberBuilder)](#m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.processrootdata_net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder___1p5upxv) | public | Let the add-on to prepare it&#39;s own data as a part of [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj) constructor. | 
+ | [WriteIndexAsync(RootMember, IMarkupProvider)](#m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.writeindexasync_net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.markup.imarkupprovider___o6kmu1) | public | Writes the table of all source-only packages within the code model into the output | 
+ | [WriteOwnPagesAsync(RootMember, IMarkupProvider, MarkupGenerator)](#m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.writeownpagesasync_net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.markup.markupgenerator___1vx2jwv) | public | Writes the source-only packages pages into the output | 
+ | [WritePageBodyAsync(Member, IMarkupProvider)](#m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.writepagebodyasync_net.adamec.dev.markupdoc.codemodel.member-net.adamec.dev.markupdoc.markup.imarkupprovider___1dohgqa) | public | Writes the body fro the code model member | 
+ | [WritePageFooter(string, IMarkupProvider)](#m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.writepagefooter_system.string-net.adamec.dev.markupdoc.markup.imarkupprovider___1lzl24g) | public | Writes to the footer for the code model member page | 
+ | [WritePageHeader(Member, IMarkupProvider)](#m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.writepageheader_net.adamec.dev.markupdoc.codemodel.member-net.adamec.dev.markupdoc.markup.imarkupprovider___1jqz5xb) | public | Writes the header for the code model member | 
+
+ 
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.membersbysourceonlypackage__1adzoi3" />  SourceOnlyPackagesAddOn.MembersBySourceOnlyPackage Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc)           
+Assembly: MarkupDoc           
+Type: [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc)           
+Sources: AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs</small>
+
+
+Dictionary of members by source-only package
+
+
+
+```csharp
+public IReadOnlyDictionary<net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model.NuProps,List<net.adamec.dev.markupdoc.CodeModel.Member>> MembersBySourceOnlyPackage { get; private set; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlydictionary-2" target="_blank" >System.Collections.Generic.IReadOnlyDictionary&lt;net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model.NuProps,List&lt;net.adamec.dev.markupdoc.CodeModel.Member&gt;&gt;</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.outputoptions__m9qdcv" />  SourceOnlyPackagesAddOn.OutputOptions Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc)           
+Assembly: MarkupDoc           
+Type: [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc)           
+Sources: AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs</small>
+
+
+Output configuration
+
+
+
+```csharp
+public OutputOptions OutputOptions { get; }
+```
+
+<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.Options.OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6)</dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.priorityindexpage__cb2qij" />  SourceOnlyPackagesAddOn.PriorityIndexPage Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc)           
+Assembly: MarkupDoc           
+Type: [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc)           
+Sources: AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs</small>
+
+
+Add-on priority for generating the add-on output to the (main) index page. SourceOnlyPackagesAddOn priority is 1
+
+
+
+```csharp
+public int PriorityIndexPage { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" target="_blank" >int</a></dt><dd></dd></dl>Implements: [IAddOn.PriorityIndexPage](#p-net.adamec.dev.markupdoc.addons.iaddon.priorityindexpage__fkoqdy)
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.priorityownpages__1oy009u" />  SourceOnlyPackagesAddOn.PriorityOwnPages Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc)           
+Assembly: MarkupDoc           
+Type: [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc)           
+Sources: AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs</small>
+
+
+Add-on priority for generating the add-on output pages. SourceOnlyPackagesAddOn priority is 1
+
+
+
+```csharp
+public int PriorityOwnPages { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" target="_blank" >int</a></dt><dd></dd></dl>Implements: [IAddOn.PriorityOwnPages](#p-net.adamec.dev.markupdoc.addons.iaddon.priorityownpages__1169buv)
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.prioritypagebody__16j72yl" />  SourceOnlyPackagesAddOn.PriorityPageBody Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc)           
+Assembly: MarkupDoc           
+Type: [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc)           
+Sources: AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs</small>
+
+
+Add-on priority for generating the add-on output to header of code model member page body. SourceOnlyPackagesAddOn priority is 0, so no output will be generator to member page body
+
+
+
+```csharp
+public int PriorityPageBody { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" target="_blank" >int</a></dt><dd></dd></dl>Implements: [IAddOn.PriorityPageBody](#p-net.adamec.dev.markupdoc.addons.iaddon.prioritypagebody__18im5wk)
+
+
+###  Remarks ###
+[WritePageBodyAsync(Member, IMarkupProvider)](#m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.writepagebodyasync_net.adamec.dev.markupdoc.codemodel.member-net.adamec.dev.markupdoc.markup.imarkupprovider___1dohgqa) method is used as a sample only. It&#39;s not called as the [PriorityPageBody](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.prioritypagebody__16j72yl) is zero
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.prioritypagefooter__fitshq" />  SourceOnlyPackagesAddOn.PriorityPageFooter Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc)           
+Assembly: MarkupDoc           
+Type: [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc)           
+Sources: AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs</small>
+
+
+Add-on priority for generating the add-on output to header of code model member page footer. SourceOnlyPackagesAddOn priority is 1
+
+
+
+```csharp
+public int PriorityPageFooter { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" target="_blank" >int</a></dt><dd></dd></dl>Implements: [IAddOn.PriorityPageFooter](#p-net.adamec.dev.markupdoc.addons.iaddon.prioritypagefooter__1l39gdz)
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.prioritypageheader__1mg3vbo" />  SourceOnlyPackagesAddOn.PriorityPageHeader Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc)           
+Assembly: MarkupDoc           
+Type: [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc)           
+Sources: AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs</small>
+
+
+Add-on priority for generating the add-on output to header of code model member page header. SourceOnlyPackagesAddOn priority is 1
+
+
+
+```csharp
+public int PriorityPageHeader { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" target="_blank" >int</a></dt><dd></dd></dl>Implements: [IAddOn.PriorityPageHeader](#p-net.adamec.dev.markupdoc.addons.iaddon.prioritypageheader__szfdw1)
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.priorityrootdata__2mehaa" />  SourceOnlyPackagesAddOn.PriorityRootData Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc)           
+Assembly: MarkupDoc           
+Type: [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc)           
+Sources: AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs</small>
+
+
+Add-on priority for processing the add-on data as a part of [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj) constructor. SourceOnlyPackagesAddOn priority is 1
+
+
+
+```csharp
+public int PriorityRootData { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" target="_blank" >int</a></dt><dd></dd></dl>Implements: [IAddOn.PriorityRootData](#p-net.adamec.dev.markupdoc.addons.iaddon.priorityrootdata__4lkjzb)
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.sourceonlypackages__1f513zg" />  SourceOnlyPackagesAddOn.SourceOnlyPackages Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc)           
+Assembly: MarkupDoc           
+Type: [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc)           
+Sources: AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs</small>
+
+
+List of source-only packages&#39; properties
+
+
+
+```csharp
+public IReadOnlyList<net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model.NuProps> SourceOnlyPackages { get; private set; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlylist-1" target="_blank" >IReadOnlyList&lt;net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model.NuProps&gt;</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.sourceonlypackagesbymember__1r7c7w7" />  SourceOnlyPackagesAddOn.SourceOnlyPackagesByMember Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc)           
+Assembly: MarkupDoc           
+Type: [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc)           
+Sources: AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs</small>
+
+
+Dictionary of source-only packages by member
+
+
+
+```csharp
+public IReadOnlyDictionary<net.adamec.dev.markupdoc.CodeModel.Member,List<net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model.NuProps>> SourceOnlyPackagesByMember { get; private set; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlydictionary-2" target="_blank" >System.Collections.Generic.IReadOnlyDictionary&lt;net.adamec.dev.markupdoc.CodeModel.Member,List&lt;net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model.NuProps&gt;&gt;</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.-ctor_net.adamec.dev.markupdoc.options.outputoptions___1q1qldr" />  SourceOnlyPackagesAddOn.SourceOnlyPackagesAddOn(OutputOptions) Constructor ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc)           
+Assembly: MarkupDoc           
+Type: [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc)           
+Sources: AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs</small>
+
+
+CTOR - initialize add-on
+
+
+
+```csharp
+public SourceOnlyPackagesAddOn(OutputOptions outputOptions)
+```
+
+<strong>Constructor parameters</strong><dl><dt>[net.adamec.dev.markupdoc.Options.OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6) <strong>outputOptions</strong></dt><dd>Output options</dd></dl>
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.getpackageanchor_net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops___1yt89gd" />  SourceOnlyPackagesAddOn.GetPackageAnchor(NuProps) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc)           
+Assembly: MarkupDoc           
+Type: [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc)           
+Sources: AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs</small>
+
+
+Returns the anchor for given <em>package</em> within the package page(s) file.
+
+
+
+```csharp
+private string GetPackageAnchor(NuProps package)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model.NuProps](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni) <strong>package</strong></dt><dd>Package metadata</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Anchor for given <em>package</em> within the package page(s) file</dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.getpackagepagefilename_net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops___1qi6ozu" />  SourceOnlyPackagesAddOn.GetPackagePageFileName(NuProps) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc)           
+Assembly: MarkupDoc           
+Type: [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc)           
+Sources: AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs</small>
+
+
+Returns the name of the generated file (without extension) for <em>package</em> when the split by type is set, so the all package pages are generated into dedicated files.
+
+
+
+```csharp
+private string GetPackagePageFileName(NuProps package)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model.NuProps](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni) <strong>package</strong></dt><dd>Package metadata</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>The name of the generated file (without extension) when the split by namespace is set, so the all package pages are generated into dedicated files</dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.getpackagepagesfilename__mn773q" />  SourceOnlyPackagesAddOn.GetPackagePagesFileName() Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc)           
+Assembly: MarkupDoc           
+Type: [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc)           
+Sources: AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs</small>
+
+
+Returns the name of the generated file (without extension) when the split by namespace is set, so the all package pages are generated into single file.
+
+
+
+```csharp
+private string GetPackagePagesFileName()
+```
+
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>The name of the generated file (without extension) when the split by namespace is set, so the all package pages are generated into single file</dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.link_system.string-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops-net.adamec.dev.markupdoc.markup.imarkupprovider___l32orz" />  SourceOnlyPackagesAddOn.Link(string, NuProps, IMarkupProvider) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc)           
+Assembly: MarkupDoc           
+Type: [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc)           
+Sources: AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs</small>
+
+
+Creates the link to the <em>package</em> page
+
+
+
+```csharp
+private string Link(string text, NuProps package, IMarkupProvider markup)
+```
+
+<strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Link text</dd><dt>[net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model.NuProps](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni) <strong>package</strong></dt><dd>Package metadata</dd><dt>[net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) <strong>markup</strong></dt><dd>Markup provider</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup with the link to the</dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.processrootdata_net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder___1p5upxv" />  SourceOnlyPackagesAddOn.ProcessRootData(RootMember, RootMemberBuilder) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc)           
+Assembly: MarkupDoc           
+Type: [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc)           
+Sources: AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs</small>
+
+
+Let the add-on to prepare it&#39;s own data as a part of [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj) constructor.
+
+
+
+```csharp
+public void ProcessRootData(RootMember root, RootMemberBuilder builder)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj) <strong>root</strong></dt><dd>Code model root</dd><dt>[net.adamec.dev.markupdoc.CodeModel.Builder.RootMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad) <strong>builder</strong></dt><dd>Code model buildel root</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" target="_blank" >void</a></dt><dd></dd></dl>Implements: [IAddOn.ProcessRootData(RootMember, RootMemberBuilder)](#m-net.adamec.dev.markupdoc.addons.iaddon.processrootdata_net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder___1jgzllk)
+
+
+###  Remarks ###
+The add-on checks all compilation files for the &lt;NuProp.xxx&gt; comments with source-only package metadata and builds the list of source-only packages and the indexes between the packages and code model members.
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.writeindexasync_net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.markup.imarkupprovider___o6kmu1" />  SourceOnlyPackagesAddOn.WriteIndexAsync(RootMember, IMarkupProvider) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc)           
+Assembly: MarkupDoc           
+Type: [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc)           
+Sources: AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs</small>
+
+
+Writes the table of all source-only packages within the code model into the output
+
+
+
+```csharp
+public async Task<bool> WriteIndexAsync(RootMember root, IMarkupProvider markup)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj) <strong>root</strong></dt><dd>Code model root</dd><dt>[net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) <strong>markup</strong></dt><dd>Markup provider</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1" target="_blank" >System.Threading.Tasks.Task&lt;bool&gt;</a></dt><dd>True when any output has been generated</dd></dl>Implements: [IAddOn.WriteIndexAsync(RootMember, IMarkupProvider)](#m-net.adamec.dev.markupdoc.addons.iaddon.writeindexasync_net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.markup.imarkupprovider___14kxt04)
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.writeownpagesasync_net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.markup.markupgenerator___1vx2jwv" />  SourceOnlyPackagesAddOn.WriteOwnPagesAsync(RootMember, IMarkupProvider, MarkupGenerator) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc)           
+Assembly: MarkupDoc           
+Type: [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc)           
+Sources: AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs</small>
+
+
+Writes the source-only packages pages into the output
+
+
+
+```csharp
+public async Task WriteOwnPagesAsync(RootMember root, IMarkupProvider markup, MarkupGenerator generator)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj) <strong>root</strong></dt><dd>Code model root</dd><dt>[net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) <strong>markup</strong></dt><dd>Markup provider</dd><dt>[net.adamec.dev.markupdoc.Markup.MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36) <strong>generator</strong></dt><dd>Markup generator</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IAddOn.WriteOwnPagesAsync(RootMember, IMarkupProvider, MarkupGenerator)](#m-net.adamec.dev.markupdoc.addons.iaddon.writeownpagesasync_net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.markup.markupgenerator___ybiauk)
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.writepagebodyasync_net.adamec.dev.markupdoc.codemodel.member-net.adamec.dev.markupdoc.markup.imarkupprovider___1dohgqa" />  SourceOnlyPackagesAddOn.WritePageBodyAsync(Member, IMarkupProvider) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc)           
+Assembly: MarkupDoc           
+Type: [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc)           
+Sources: AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs</small>
+
+
+Writes the body fro the code model member
+
+
+
+```csharp
+public async Task WritePageBodyAsync(Member member, IMarkupProvider markup)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Member being documented</dd><dt>[net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) <strong>markup</strong></dt><dd>Markup provider</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IAddOn.WritePageBodyAsync(Member, IMarkupProvider)](#m-net.adamec.dev.markupdoc.addons.iaddon.writepagebodyasync_net.adamec.dev.markupdoc.codemodel.member-net.adamec.dev.markupdoc.markup.imarkupprovider___2dwln1)
+
+
+###  Remarks ###
+This method is used as a sample only. It&#39;s not called as the [PriorityPageBody](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.prioritypagebody__16j72yl) is zero
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.writepagefooter_system.string-net.adamec.dev.markupdoc.markup.imarkupprovider___1lzl24g" />  SourceOnlyPackagesAddOn.WritePageFooter(string, IMarkupProvider) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc)           
+Assembly: MarkupDoc           
+Type: [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc)           
+Sources: AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs</small>
+
+
+Writes to the footer for the code model member page
+
+
+
+```csharp
+public string WritePageFooter(string baseFileName, IMarkupProvider markup)
+```
+
+<strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>baseFileName</strong></dt><dd>Name of the main file</dd><dt>[net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) <strong>markup</strong></dt><dd>Markup provider</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>String to be added to the footer</dd></dl>Implements: [IAddOn.WritePageFooter(string, IMarkupProvider)](#m-net.adamec.dev.markupdoc.addons.iaddon.writepagefooter_system.string-net.adamec.dev.markupdoc.markup.imarkupprovider___osl86z)
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon.writepageheader_net.adamec.dev.markupdoc.codemodel.member-net.adamec.dev.markupdoc.markup.imarkupprovider___1jqz5xb" />  SourceOnlyPackagesAddOn.WritePageHeader(Member, IMarkupProvider) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages__vacqgc)           
+Assembly: MarkupDoc           
+Type: [SourceOnlyPackagesAddOn](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc)           
+Sources: AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs</small>
+
+
+Writes the header for the code model member
+
+
+
+```csharp
+public string WritePageHeader(Member member, IMarkupProvider markup)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Member being documented</dd><dt>[net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) <strong>markup</strong></dt><dd>Markup provider</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>String to be added to the header text builder</dd></dl>Implements: [IAddOn.WritePageHeader(Member, IMarkupProvider)](#m-net.adamec.dev.markupdoc.addons.iaddon.writepageheader_net.adamec.dev.markupdoc.codemodel.member-net.adamec.dev.markupdoc.markup.imarkupprovider___1ml9iti)
+
+
+###  Remarks ###
+Writes source-only packages list if available
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb" />  net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model Namespace ##
+###  Classes ###
+
+ | Name | Modifier | Summary | 
+ | ------ | ---------- | --------- | 
+ | [NuProps](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni) | public | Metadata defining the source-only NuGet packages generated from the source code using the customized build process | 
+ | [NuProps.NuPropUsing](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.nupropusing__oshg6w) | public | Metadata from &lt;NuProp.Using id = &quot;&quot; version=&quot;&quot;/&gt; XML documentation comment | 
+
+ 
+
+
+###  Enums ###
+
+ | Name | Modifier | Summary | 
+ | ------ | ---------- | --------- | 
+ | [NuProps.IncludesTypeEnum](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.includestypeenum__10jptjg) | public | Definition of the additional files to include into the source-only package | 
+
+ 
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni" />  NuProps Class ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb)           
+Assembly: MarkupDoc           
+Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small>
+
+
+Metadata defining the source-only NuGet packages generated from the source code using the customized build process
+
+
+
+```csharp
+public class NuProps
+```
+
+Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+
+
+
+###  Remarks ###
+Source-only NuGet packages contain just the source code that is added to the project the package is added to. The package is created from the (partial) class or classes in the project folder based on the metadata provided as special XML Documentation Comments. 
+
+
+ - <strong>&lt;NuProp.Id&gt;&lt;/NuProp.Id&gt;</strong> - package ID (mandatory)
+ - <strong>&lt;NuProp.Version&gt;&lt;/NuProp.Version&gt;</strong> - package version base (major.minor.patch) - optional
+ - <strong>&lt;NuProp.Description&gt;&lt;/NuProp.Description&gt;</strong> - package description (optional)
+ - <strong>&lt;NuProp.Tags&gt;&lt;/NuProp.Tags&gt;</strong> - package tags (optional)
+ - <strong>&lt;NuProp.Includes type = &quot;&quot;  /&gt;</strong> - file includes (optional). If type=&quot;Folder&quot;, the package will include all compile files in folder, if type=&quot;FolderRecursive&quot; the subfolders will be also included
+ - <strong>&lt;NuProp.Using id = &quot;&quot; version=&quot;&quot;/&gt;</strong> - package imports (optional). Version is optional
+ - <strong>&lt;NuProp.Needs id=&quot;&quot; /&gt;</strong> - &quot;external&quot; imports needed (optional) - not included in package, just info when consuming!!!
+           
+
+
+
+
+
+###  Properties ###
+
+ | Name | Modifier | Summary | 
+ | ------ | ---------- | --------- | 
+ | [DeclaringFile](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.declaringfile__11s348v) | public | Full path to the file declaring the source-only package (containing the package metadata as &lt;NuProp.xxxx/&gt; XML documentation comments | 
+ | [ExternalReferences](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.externalreferences__1cpn3h1) | public | List of external references (NuGet package dependencies) that are not declared in the package, but the consumer has to include | 
+ | [HasNuProps](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.hasnuprops__17gaag3) | public | Master flag whether the [NuProps](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni) class containts the valid metadata for source-only package | 
+ | [IncludesType](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.includestype__zb9t6r) | public | Definition of the additional files to include into the source-only package | 
+ | [PackageDescription](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.packagedescription__o0pb0m) | public | Optional description of the package | 
+ | [PackageFiles](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.packagefiles__deuupz) | public | List of all files to be included into the source-only package | 
+ | [PackageId](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.packageid__4tnxdb) | public | Unique ID of the package | 
+ | [PackageTags](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.packagetags__ioqk03) | public | Optional package tags divided by space | 
+ | [PackageVersion](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.packageversion__fcxdho) | public | Optional version of the package. | 
+ | [Usings](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.usings__f9kpil) | public | List of the dependencied that are to be declared within the package | 
+
+ 
+
+
+###  Constructors ###
+
+ | Name | Modifier | Summary | 
+ | ------ | ---------- | --------- | 
+ | [NuProps(string, IReadOnlyCollection&lt;string&gt;)](#m-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.-ctor_system.string-system.collections.generic.ireadonlycollection_system.string____c21w85) | public | CTOR - Checks the compilation file with given <strong>fileName</strong> for the source-only package metadata. When the metadata are present and valid, the [NuProps](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni) object is initialized and [HasNuProps](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.hasnuprops__17gaag3) property is set to true | 
+
+ 
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.declaringfile__11s348v" />  NuProps.DeclaringFile Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb)           
+Assembly: MarkupDoc           
+Type: [NuProps](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni)           
+Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small>
+
+
+Full path to the file declaring the source-only package (containing the package metadata as &lt;NuProp.xxxx/&gt; XML documentation comments
+
+
+
+```csharp
+public string DeclaringFile { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.externalreferences__1cpn3h1" />  NuProps.ExternalReferences Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb)           
+Assembly: MarkupDoc           
+Type: [NuProps](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni)           
+Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small>
+
+
+List of external references (NuGet package dependencies) that are not declared in the package, but the consumer has to include
+
+
+
+```csharp
+public IReadOnlyList<string> ExternalReferences { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlylist-1" target="_blank" >IReadOnlyList&lt;string&gt;</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.hasnuprops__17gaag3" />  NuProps.HasNuProps Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb)           
+Assembly: MarkupDoc           
+Type: [NuProps](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni)           
+Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small>
+
+
+Master flag whether the [NuProps](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni) class containts the valid metadata for source-only package
+
+
+
+```csharp
+public bool HasNuProps { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.includestype__zb9t6r" />  NuProps.IncludesType Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb)           
+Assembly: MarkupDoc           
+Type: [NuProps](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni)           
+Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small>
+
+
+Definition of the additional files to include into the source-only package
+
+
+
+```csharp
+public NuProps.IncludesTypeEnum IncludesType { get; }
+```
+
+<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model.NuProps.IncludesTypeEnum](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.includestypeenum__10jptjg)</dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.packagedescription__o0pb0m" />  NuProps.PackageDescription Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb)           
+Assembly: MarkupDoc           
+Type: [NuProps](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni)           
+Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small>
+
+
+Optional description of the package
+
+
+
+```csharp
+public string PackageDescription { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+
+
+###  Remarks ###
+If not defined, the custom build process uses the default generic description
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.packagefiles__deuupz" />  NuProps.PackageFiles Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb)           
+Assembly: MarkupDoc           
+Type: [NuProps](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni)           
+Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small>
+
+
+List of all files to be included into the source-only package
+
+
+
+```csharp
+public IReadOnlyList<string> PackageFiles { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlylist-1" target="_blank" >IReadOnlyList&lt;string&gt;</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.packageid__4tnxdb" />  NuProps.PackageId Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb)           
+Assembly: MarkupDoc           
+Type: [NuProps](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni)           
+Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small>
+
+
+Unique ID of the package
+
+
+
+```csharp
+public string PackageId { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.packagetags__ioqk03" />  NuProps.PackageTags Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb)           
+Assembly: MarkupDoc           
+Type: [NuProps](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni)           
+Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small>
+
+
+Optional package tags divided by space
+
+
+
+```csharp
+public string PackageTags { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.packageversion__fcxdho" />  NuProps.PackageVersion Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb)           
+Assembly: MarkupDoc           
+Type: [NuProps](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni)           
+Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small>
+
+
+Optional version of the package.
+
+
+
+```csharp
+public string PackageVersion { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+
+
+###  Remarks ###
+If not defined, the custom build process uses the solution version information
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.usings__f9kpil" />  NuProps.Usings Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb)           
+Assembly: MarkupDoc           
+Type: [NuProps](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni)           
+Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small>
+
+
+List of the dependencied that are to be declared within the package
+
+
+
+```csharp
+public IReadOnlyList<net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model.NuProps.NuPropUsing> Usings { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlylist-1" target="_blank" >IReadOnlyList&lt;net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model.NuProps.NuPropUsing&gt;</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.-ctor_system.string-system.collections.generic.ireadonlycollection_system.string____c21w85" />  NuProps.NuProps(string, IReadOnlyCollection&lt;string&gt;) Constructor ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb)           
+Assembly: MarkupDoc           
+Type: [NuProps](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni)           
+Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small>
+
+
+CTOR - Checks the compilation file with given <strong>fileName</strong> for the source-only package metadata. When the metadata are present and valid, the [NuProps](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni) object is initialized and [HasNuProps](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.hasnuprops__17gaag3) property is set to true
+
+
+
+```csharp
+public NuProps(string fileName, IReadOnlyCollection<string> allFiles)
+```
+
+<strong>Constructor parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>fileName</strong></dt><dd>Full path to the compliation file</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlycollection-1" target="_blank" >IReadOnlyCollection&lt;string&gt;</a> <strong>allFiles</strong></dt><dd>List of all files in compilation, used to resolve the includes (Folder, FolderRecursive) when needed</dd></dl>
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.nupropusing__oshg6w" />  NuProps.NuPropUsing Class ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb)           
+Assembly: MarkupDoc           
+Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small>
+
+
+Metadata from &lt;NuProp.Using id = &quot;&quot; version=&quot;&quot;/&gt; XML documentation comment
+
+
+
+```csharp
+public class NuProps.NuPropUsing
+```
+
+Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+
+
+
+###  Properties ###
+
+ | Name | Modifier | Summary | 
+ | ------ | ---------- | --------- | 
+ | [PackageId](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.nupropusing.packageid__eu5x7p) | public | Unique ID of the package | 
+ | [PackageVersion](#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.nupropusing.packageversion__1yv6qpe) | public | Optional version of the package | 
+
+ 
+
+
+###  Constructors ###
+
+ | Name | Modifier | Summary | 
+ | ------ | ---------- | --------- | 
+ | [NuProps.NuPropUsing(string, string)](#m-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.nupropusing.-ctor_system.string-system.string___15m1paf) | public | CTOR | 
+
+ 
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.nupropusing.packageid__eu5x7p" />  NuProps.NuPropUsing.PackageId Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb)           
+Assembly: MarkupDoc           
+Type: [NuProps.NuPropUsing](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.nupropusing__oshg6w)           
+Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small>
+
+
+Unique ID of the package
+
+
+
+```csharp
+public string PackageId { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.nupropusing.packageversion__1yv6qpe" />  NuProps.NuPropUsing.PackageVersion Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb)           
+Assembly: MarkupDoc           
+Type: [NuProps.NuPropUsing](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.nupropusing__oshg6w)           
+Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small>
+
+
+Optional version of the package
+
+
+
+```csharp
+public string PackageVersion { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.nupropusing.-ctor_system.string-system.string___15m1paf" />  NuProps.NuPropUsing.NuProps.NuPropUsing(string, string) Constructor ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb)           
+Assembly: MarkupDoc           
+Type: [NuProps.NuPropUsing](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.nupropusing__oshg6w)           
+Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small>
+
+
+CTOR
+
+
+
+```csharp
+public NuProps.NuPropUsing(string packageId, string packageVersion)
+```
+
+<strong>Constructor parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>packageId</strong></dt><dd>Unique ID of the package</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>packageVersion</strong></dt><dd>Optional version of the package</dd></dl>
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.includestypeenum__10jptjg" />  NuProps.IncludesTypeEnum Enum ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb)           
+Assembly: MarkupDoc           
+Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small>
+
+
+Definition of the additional files to include into the source-only package
+
+
+
+```csharp
+public enum NuProps.IncludesTypeEnum: int
+```
+
+Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a> -&gt; <a href="https://docs.microsoft.com/en-us/dotnet/api/system.valuetype" target="_blank" >ValueType</a> -&gt; <a href="https://docs.microsoft.com/en-us/dotnet/api/system.enum" target="_blank" >Enum</a>           
+Implements: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.icomparable" target="_blank" >System.IComparable</a>, <a href="https://docs.microsoft.com/en-us/dotnet/api/system.iformattable" target="_blank" >System.IFormattable</a>, <a href="https://docs.microsoft.com/en-us/dotnet/api/system.iconvertible" target="_blank" >System.IConvertible</a>
+
+
+###  Constants ###
+
+ | Name | Value | Summary | 
+ | ------ | ------- | --------- | 
+ | [None](#f-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.includestypeenum.none__86bq96) | 0 | Don&#39;t include any other files (only the file defining the source-only package will be included) | 
+ | [Folder](#f-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.includestypeenum.folder__1fxd0xg) | 1 | Include all compilation files from the same folder where the file defining the source-only package is stored | 
+ | [FolderRecursive](#f-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.includestypeenum.folderrecursive__b1w9ag) | 2 | Include all compilation files from the same folder where the file defining the source-only package is stored and the subfolders | 
+
+ 
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="f-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.includestypeenum.folder__1fxd0xg" />  NuProps.IncludesTypeEnum.Folder Constant ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb)           
+Assembly: MarkupDoc           
+Type: [NuProps.IncludesTypeEnum](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.includestypeenum__10jptjg)           
+Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small>
+
+
+Include all compilation files from the same folder where the file defining the source-only package is stored
+
+
+
+```csharp
+ Folder = 1
+```
+
+<strong>Field value</strong><dl><dt>[net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model.NuProps.IncludesTypeEnum](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.includestypeenum__10jptjg)</dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="f-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.includestypeenum.folderrecursive__b1w9ag" />  NuProps.IncludesTypeEnum.FolderRecursive Constant ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb)           
+Assembly: MarkupDoc           
+Type: [NuProps.IncludesTypeEnum](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.includestypeenum__10jptjg)           
+Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small>
+
+
+Include all compilation files from the same folder where the file defining the source-only package is stored and the subfolders
+
+
+
+```csharp
+ FolderRecursive = 2
+```
+
+<strong>Field value</strong><dl><dt>[net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model.NuProps.IncludesTypeEnum](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.includestypeenum__10jptjg)</dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="f-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.includestypeenum.none__86bq96" />  NuProps.IncludesTypeEnum.None Constant ##
+<small>Namespace: [net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model](#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb)           
+Assembly: MarkupDoc           
+Type: [NuProps.IncludesTypeEnum](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.includestypeenum__10jptjg)           
+Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small>
+
+
+Don&#39;t include any other files (only the file defining the source-only package will be included)
+
+
+
+```csharp
+ None = 0
+```
+
+<strong>Field value</strong><dl><dt>[net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model.NuProps.IncludesTypeEnum](#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.includestypeenum__10jptjg)</dt><dd></dd></dl>
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -404,7 +2020,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.assemblymember__1lp0l3j" />  AssemblyMember Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\AssemblyMember.cs</small>
 
 
 Represents an assembly within the code model
@@ -447,7 +2064,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.assemblymember.alltypes__4kuzf7" />  AssemblyMember.AllTypes Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [AssemblyMember](#t-net.adamec.dev.markupdoc.codemodel.assemblymember__1lp0l3j)</small>
+Type: [AssemblyMember](#t-net.adamec.dev.markupdoc.codemodel.assemblymember__1lp0l3j)           
+Sources: CodeModel\AssemblyMember.cs</small>
 
 
 List of all types (including interfaces, delegates, etc.) defined within the assembly
@@ -470,7 +2088,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.assemblymember.namespaces__88sxjl" />  AssemblyMember.Namespaces Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [AssemblyMember](#t-net.adamec.dev.markupdoc.codemodel.assemblymember__1lp0l3j)</small>
+Type: [AssemblyMember](#t-net.adamec.dev.markupdoc.codemodel.assemblymember__1lp0l3j)           
+Sources: CodeModel\AssemblyMember.cs</small>
 
 
 List of namespaces within the assembly
@@ -490,10 +2109,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.assemblymember.-ctor_net.adamec.dev.markupdoc.codemodel.builder.assemblymemberbuilder___nqmg6r" />  AssemblyMember.AssemblyMember(AssemblyMemberBuilder) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.assemblymember.-ctor_net.adamec.dev.markupdoc.codemodel.builder.assemblymemberbuilder___nqmg6r" />  AssemblyMember.AssemblyMember(AssemblyMemberBuilder) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [AssemblyMember](#t-net.adamec.dev.markupdoc.codemodel.assemblymember__1lp0l3j)</small>
+Type: [AssemblyMember](#t-net.adamec.dev.markupdoc.codemodel.assemblymember__1lp0l3j)           
+Sources: CodeModel\AssemblyMember.cs</small>
 
 
 CTOR - from builder
@@ -513,7 +2133,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.eventmember__qn6e6l" />  EventMember Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\EventMember.cs</small>
 
 
 Represents an event within the code model
@@ -556,7 +2177,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.eventmember.hasexplicitaddandremove__1jois6b" />  EventMember.HasExplicitAddAndRemove Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [EventMember](#t-net.adamec.dev.markupdoc.codemodel.eventmember__qn6e6l)</small>
+Type: [EventMember](#t-net.adamec.dev.markupdoc.codemodel.eventmember__qn6e6l)           
+Sources: CodeModel\EventMember.cs</small>
 
 
 Flag whether the event has explicit implementation of add and remove accessors
@@ -579,7 +2201,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.eventmember.typeref__1klwzm2" />  EventMember.TypeRef Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [EventMember](#t-net.adamec.dev.markupdoc.codemodel.eventmember__qn6e6l)</small>
+Type: [EventMember](#t-net.adamec.dev.markupdoc.codemodel.eventmember__qn6e6l)           
+Sources: CodeModel\EventMember.cs</small>
 
 
 Delegate type (type reference) of the event handler
@@ -599,10 +2222,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.eventmember.-ctor_net.adamec.dev.markupdoc.codemodel.builder.eventmemberbuilder___ggrb3b" />  EventMember.EventMember(EventMemberBuilder) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.eventmember.-ctor_net.adamec.dev.markupdoc.codemodel.builder.eventmemberbuilder___ggrb3b" />  EventMember.EventMember(EventMemberBuilder) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [EventMember](#t-net.adamec.dev.markupdoc.codemodel.eventmember__qn6e6l)</small>
+Type: [EventMember](#t-net.adamec.dev.markupdoc.codemodel.eventmember__qn6e6l)           
+Sources: CodeModel\EventMember.cs</small>
 
 
 CTOR - from builder
@@ -622,7 +2246,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.fieldmember__tbd84z" />  FieldMember Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\FieldMember.cs</small>
 
 
 Represents a field within the code model
@@ -677,7 +2302,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.fieldmember.constantvalue__16xaw06" />  FieldMember.ConstantValue Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [FieldMember](#t-net.adamec.dev.markupdoc.codemodel.fieldmember__tbd84z)</small>
+Type: [FieldMember](#t-net.adamec.dev.markupdoc.codemodel.fieldmember__tbd84z)           
+Sources: CodeModel\FieldMember.cs</small>
 
 
 The constant value of the field
@@ -704,7 +2330,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.fieldmember.isconst__ynfeu8" />  FieldMember.IsConst Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [FieldMember](#t-net.adamec.dev.markupdoc.codemodel.fieldmember__tbd84z)</small>
+Type: [FieldMember](#t-net.adamec.dev.markupdoc.codemodel.fieldmember__tbd84z)           
+Sources: CodeModel\FieldMember.cs</small>
 
 
 Flag whether the field is constant
@@ -727,7 +2354,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.fieldmember.isreadonly__wmv1mh" />  FieldMember.IsReadOnly Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [FieldMember](#t-net.adamec.dev.markupdoc.codemodel.fieldmember__tbd84z)</small>
+Type: [FieldMember](#t-net.adamec.dev.markupdoc.codemodel.fieldmember__tbd84z)           
+Sources: CodeModel\FieldMember.cs</small>
 
 
 Flag whether the field is read only
@@ -750,7 +2378,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.fieldmember.isvolatile__b4otyf" />  FieldMember.IsVolatile Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [FieldMember](#t-net.adamec.dev.markupdoc.codemodel.fieldmember__tbd84z)</small>
+Type: [FieldMember](#t-net.adamec.dev.markupdoc.codemodel.fieldmember__tbd84z)           
+Sources: CodeModel\FieldMember.cs</small>
 
 
 Flag whether the field is volatile
@@ -773,7 +2402,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.fieldmember.typeref__167hm5u" />  FieldMember.TypeRef Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [FieldMember](#t-net.adamec.dev.markupdoc.codemodel.fieldmember__tbd84z)</small>
+Type: [FieldMember](#t-net.adamec.dev.markupdoc.codemodel.fieldmember__tbd84z)           
+Sources: CodeModel\FieldMember.cs</small>
 
 
 Type (type reference) of the field value
@@ -793,10 +2423,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.fieldmember.-ctor_net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder___1fpgncf" />  FieldMember.FieldMember(FieldMemberBuilder) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.fieldmember.-ctor_net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder___1fpgncf" />  FieldMember.FieldMember(FieldMemberBuilder) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [FieldMember](#t-net.adamec.dev.markupdoc.codemodel.fieldmember__tbd84z)</small>
+Type: [FieldMember](#t-net.adamec.dev.markupdoc.codemodel.fieldmember__tbd84z)           
+Sources: CodeModel\FieldMember.cs</small>
 
 
 CTOR - from builder
@@ -814,10 +2445,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.fieldmember.getconstantvaluestring__10j93v2" />  FieldMember.GetConstantValueString() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.fieldmember.getconstantvaluestring__10j93v2" />  FieldMember.GetConstantValueString() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [FieldMember](#t-net.adamec.dev.markupdoc.codemodel.fieldmember__tbd84z)</small>
+Type: [FieldMember](#t-net.adamec.dev.markupdoc.codemodel.fieldmember__tbd84z)           
+Sources: CodeModel\FieldMember.cs</small>
 
 
 Gets the constant value as string with &quot;code syntax&quot; (meaning how would be the value defined in the code)
@@ -843,7 +2475,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh" />  Member Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\Member.cs</small>
 
 
 Represents a single entity of the code model - called member. The member can be namespace, type, type member like field, method (aka type code member) , etc.
@@ -855,6 +2488,7 @@ public abstract class Member
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Derived: [net.adamec.dev.markupdoc.CodeModel.AssemblyMember](#t-net.adamec.dev.markupdoc.codemodel.assemblymember__1lp0l3j), [net.adamec.dev.markupdoc.CodeModel.NamespaceMember](#t-net.adamec.dev.markupdoc.codemodel.namespacemember__ja97li), [net.adamec.dev.markupdoc.CodeModel.RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj), [net.adamec.dev.markupdoc.CodeModel.TypeContentMember](#t-net.adamec.dev.markupdoc.codemodel.typecontentmember__suhfqw), [net.adamec.dev.markupdoc.CodeModel.TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
 
 
 
@@ -898,6 +2532,7 @@ The code model should not be manipulated (changed) once built, however for the s
  | [NameBase](#p-net.adamec.dev.markupdoc.codemodel.member.namebase__j1nvad) | public | Name of the member without type params, indexer params, operator params, etc. | 
  | [Namespace](#p-net.adamec.dev.markupdoc.codemodel.member.namespace__1asgr92) | public | Reference to the containing namespace member | 
  | [Root](#p-net.adamec.dev.markupdoc.codemodel.member.root__gg0v8x) | public | Reference to the root of the code model | 
+ | [SourceFiles](#p-net.adamec.dev.markupdoc.codemodel.member.sourcefiles__dplo3j) | public | Source file defining the member | 
  | [Symbol](#p-net.adamec.dev.markupdoc.codemodel.member.symbol__t0bfa1) | public | Roslyn semantic analysis symbol of the member | 
 
  
@@ -933,7 +2568,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.member.base36chars__l4rdpm" />  Member.Base36Chars Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Characters allowed in Base36 encoding
@@ -956,7 +2592,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.allmembers__19b310x" />  Member.AllMembers Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 All child members, for example types for namespace; fields, properties, methods, etc. for types
@@ -979,7 +2616,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.anchor__18l6dou" />  Member.Anchor Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Anchor to the member to point the links  (FileName.extension#Anchor) to proper part of generated output file.
@@ -1002,7 +2640,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.assembly__qc3fud" />  Member.Assembly Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Reference to the containing assembly member
@@ -1025,7 +2664,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.attributes__rcsj8a" />  Member.Attributes Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Member&#39;s attributes definition (including the parameters).
@@ -1048,7 +2688,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.attributetyperefs__1fb8l8x" />  Member.AttributeTypeRefs Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Types (type references) of the member attributes
@@ -1071,7 +2712,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.documentation__6xwakl" />  Member.Documentation Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Parsed XML documentation comments. [Documentation](#p-net.adamec.dev.markupdoc.codemodel.member.documentation__6xwakl) is the root element of the parsed XML documentation comments
@@ -1094,7 +2736,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.documentationid__nvdczi" />  Member.DocumentationId Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Member&#39;s documentation ID as provided by the compiler (for example M:myNamespace.myType.myMethod)
@@ -1121,7 +2764,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.documentationxml__4przj0" />  Member.DocumentationXml Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 XML documentation comments
@@ -1144,7 +2788,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.filename__1u5e2zq" />  Member.FileName Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 File name (without extension !!!) where the member should be generated to (aka split name) in case that the output splitting is allowed, otherwise the empty string. This is also used when building the links to the member (FileName.extension#Anchor)
@@ -1167,7 +2812,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.id__1m648yq" />  Member.Id Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Member id, used to distinguish between the names when building the &quot;internal&quot; links (for example when ti difference is in case only)
@@ -1196,7 +2842,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.isabstract__1gf9bb1" />  Member.IsAbstract Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Flag whether the member is abstract
@@ -1219,7 +2866,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.isextern__1tt02ct" />  Member.IsExtern Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Flag whether the member is extern
@@ -1242,7 +2890,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.isnew__1y68kz9" />  Member.IsNew Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Flag whether the member hides member with the same name in base class
@@ -1265,7 +2914,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.isoverride__hfq1uh" />  Member.IsOverride Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Flag whether the member overrides the member in the base class
@@ -1288,7 +2938,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.issealed__f7nzi7" />  Member.IsSealed Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Flag whether the member is sealed
@@ -1311,7 +2962,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.isstatic__5j9jyt" />  Member.IsStatic Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Flag whether the member is static
@@ -1334,7 +2986,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.isvirtual__1ha2d4u" />  Member.IsVirtual Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Flag whether the member is virtual (can be overriden)
@@ -1357,7 +3010,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.memberkind__vd33lr" />  Member.MemberKind Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Kind (type) of the member
@@ -1380,7 +3034,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.modifier__11o4ay6" />  Member.Modifier Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Member modifier (public, private, etc.)
@@ -1403,7 +3058,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.name__1cwkr6w" />  Member.Name Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Name of the member as presented in generated output
@@ -1426,7 +3082,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.namebase__j1nvad" />  Member.NameBase Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Name of the member without type params, indexer params, operator params, etc.
@@ -1449,7 +3106,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.namespace__1asgr92" />  Member.Namespace Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Reference to the containing namespace member
@@ -1472,7 +3130,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.root__gg0v8x" />  Member.Root Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Reference to the root of the code model
@@ -1492,10 +3151,35 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
+##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.sourcefiles__dplo3j" />  Member.SourceFiles Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
+Assembly: MarkupDoc           
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
+
+
+Source file defining the member
+
+
+
+```csharp
+public IReadOnlyList<string> SourceFiles { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlylist-1" target="_blank" >IReadOnlyList&lt;string&gt;</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.member.symbol__t0bfa1" />  Member.Symbol Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Roslyn semantic analysis symbol of the member
@@ -1515,10 +3199,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.member.-ctor_net.adamec.dev.markupdoc.codemodel.builder.memberbuilder___z47b5f" />  Member.Member(MemberBuilder) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.member.-ctor_net.adamec.dev.markupdoc.codemodel.builder.memberbuilder___z47b5f" />  Member.Member(MemberBuilder) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 CTOR - from builder
@@ -1536,10 +3221,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.member.base36_system.uint32___1qf9alr" />  Member.Base36(uint) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.member.base36_system.uint32___1qf9alr" />  Member.Base36(uint) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Encodes the <strong>input</strong> number to Base36 encoded string
@@ -1560,10 +3246,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.member.formatanchor__17xjba4" />  Member.FormatAnchor() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.member.formatanchor__17xjba4" />  Member.FormatAnchor() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Creates and format the anchor based on the [DocumentationId](#p-net.adamec.dev.markupdoc.codemodel.member.documentationid__nvdczi) . In general, it gets the DocumentationID, trims is, converts it to lower case and replaces the &quot;special&quot; characters with &#39;_&#39; or &#39;-&#39;
@@ -1583,10 +3270,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.member.stablehash_system.string___1fyn53c" />  Member.StableHash(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.member.stablehash_system.string___1fyn53c" />  Member.StableHash(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Hashing function for strings that generates the sting hash as <a href="https://docs.microsoft.com/en-us/dotnet/api/system.uint32" target="_blank" >System.UInt32</a>
@@ -1611,10 +3299,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.member.tostring__zfv5tm" />  Member.ToString() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.member.tostring__zfv5tm" />  Member.ToString() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</small>
+Type: [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Sources: CodeModel\Member.cs</small>
 
 
 Returns the brief description of the member
@@ -1625,7 +3314,7 @@ Returns the brief description of the member
 public override string ToString()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>The brief description of the member</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>The brief description of the member</dd></dl>Overrides: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring#System_Object_ToString" target="_blank" >object.ToString</a>
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -1636,7 +3325,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq" />  MethodMember Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\MethodMember.cs</small>
 
 
 Represents a method within the code model
@@ -1695,7 +3385,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodmember.hasparameters__1rxkvrw" />  MethodMember.HasParameters Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)</small>
+Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)           
+Sources: CodeModel\MethodMember.cs</small>
 
 
 Flag whether the method has parameters
@@ -1718,7 +3409,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodmember.isasync__ytfsx0" />  MethodMember.IsAsync Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)</small>
+Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)           
+Sources: CodeModel\MethodMember.cs</small>
 
 
 Flag whether the method is async
@@ -1741,7 +3433,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodmember.isconstructor__ywn7v4" />  MethodMember.IsConstructor Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)</small>
+Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)           
+Sources: CodeModel\MethodMember.cs</small>
 
 
 Flag whether the method is construction
@@ -1764,7 +3457,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodmember.isconversion__b8j9og" />  MethodMember.IsConversion Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)</small>
+Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)           
+Sources: CodeModel\MethodMember.cs</small>
 
 
 Flag whether the method is conversion
@@ -1787,7 +3481,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodmember.isdestructor__ju36r5" />  MethodMember.IsDestructor Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)</small>
+Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)           
+Sources: CodeModel\MethodMember.cs</small>
 
 
 Flag whether the method is destructor
@@ -1810,7 +3505,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodmember.isextensionmethod__18y7t40" />  MethodMember.IsExtensionMethod Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)</small>
+Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)           
+Sources: CodeModel\MethodMember.cs</small>
 
 
 Flag whether the method is extension method
@@ -1833,7 +3529,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodmember.isgeneric__8ey4iz" />  MethodMember.IsGeneric Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)</small>
+Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)           
+Sources: CodeModel\MethodMember.cs</small>
 
 
 Flag whether method is generic
@@ -1856,7 +3553,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodmember.isoperator__1wwd9so" />  MethodMember.IsOperator Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)</small>
+Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)           
+Sources: CodeModel\MethodMember.cs</small>
 
 
 Flag whether the method is operator
@@ -1879,7 +3577,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodmember.isoperatororconversion__1csdo8z" />  MethodMember.IsOperatorOrConversion Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)</small>
+Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)           
+Sources: CodeModel\MethodMember.cs</small>
 
 
 Flag whether the method is operator or conversion
@@ -1902,7 +3601,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodmember.methodkind__1xifuon" />  MethodMember.MethodKind Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)</small>
+Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)           
+Sources: CodeModel\MethodMember.cs</small>
 
 
 Kind of the method (constructor, getter, regular method ...)
@@ -1925,7 +3625,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodmember.operatorcsharpsymbol__1q138b9" />  MethodMember.OperatorCSharpSymbol Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)</small>
+Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)           
+Sources: CodeModel\MethodMember.cs</small>
 
 
 C# operator symbol for operator method
@@ -1948,7 +3649,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodmember.parameters__17bkuxc" />  MethodMember.Parameters Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)</small>
+Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)           
+Sources: CodeModel\MethodMember.cs</small>
 
 
 Method parameters
@@ -1971,7 +3673,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodmember.refkind__2zcm51" />  MethodMember.RefKind Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)</small>
+Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)           
+Sources: CodeModel\MethodMember.cs</small>
 
 
 Method&#39;s return ref kind (none, ref)
@@ -1994,7 +3697,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodmember.returnsbyref__vlkvqj" />  MethodMember.ReturnsByRef Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)</small>
+Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)           
+Sources: CodeModel\MethodMember.cs</small>
 
 
 Flag whether the methods returns by reference
@@ -2017,7 +3721,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodmember.returnsbyrefreadonly__1dy3n4d" />  MethodMember.ReturnsByRefReadonly Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)</small>
+Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)           
+Sources: CodeModel\MethodMember.cs</small>
 
 
 Flag whether the methods returns by read only reference (ref readonly)
@@ -2040,7 +3745,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodmember.returnsvoid__1x5yr6t" />  MethodMember.ReturnsVoid Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)</small>
+Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)           
+Sources: CodeModel\MethodMember.cs</small>
 
 
 Flags whether the method returns void
@@ -2063,7 +3769,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodmember.returntyperef__1kqintr" />  MethodMember.ReturnTypeRef Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)</small>
+Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)           
+Sources: CodeModel\MethodMember.cs</small>
 
 
 Type reference of the method return type
@@ -2086,7 +3793,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodmember.typeparameters__ceqh5s" />  MethodMember.TypeParameters Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)</small>
+Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)           
+Sources: CodeModel\MethodMember.cs</small>
 
 
 Type parameters for generic methods
@@ -2106,10 +3814,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.methodmember.-ctor_net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder___brj243" />  MethodMember.MethodMember(MethodMemberBuilder) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.methodmember.-ctor_net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder___brj243" />  MethodMember.MethodMember(MethodMemberBuilder) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)</small>
+Type: [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)           
+Sources: CodeModel\MethodMember.cs</small>
 
 
 CTOR - from builder
@@ -2129,7 +3838,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483" />  MethodParameter Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\MethodParameter.cs</small>
 
 
 Represents a method parameter within the code model
@@ -2192,7 +3902,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodparameter.attributes__njhgum" />  MethodParameter.Attributes Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)</small>
+Type: [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)           
+Sources: CodeModel\MethodParameter.cs</small>
 
 
 Parameter attributes definition (including the parameters).
@@ -2215,7 +3926,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodparameter.explicitdefaultvalue__1tgn3en" />  MethodParameter.ExplicitDefaultValue Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)</small>
+Type: [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)           
+Sources: CodeModel\MethodParameter.cs</small>
 
 
 Parameter&#39;s explicitly defined default value (when available)
@@ -2238,7 +3950,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodparameter.hasexplicitdefaultvalue__163byvx" />  MethodParameter.HasExplicitDefaultValue Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)</small>
+Type: [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)           
+Sources: CodeModel\MethodParameter.cs</small>
 
 
 Flag whether the parameter has explicitly defined default value
@@ -2261,7 +3974,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodparameter.isoptional__k07gdx" />  MethodParameter.IsOptional Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)</small>
+Type: [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)           
+Sources: CodeModel\MethodParameter.cs</small>
 
 
 Flag whether the parameter is optional
@@ -2284,7 +3998,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodparameter.isparams__1r0stz3" />  MethodParameter.IsParams Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)</small>
+Type: [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)           
+Sources: CodeModel\MethodParameter.cs</small>
 
 
 Flag whether the parameter is with `params` modifier
@@ -2307,7 +4022,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodparameter.isthis__1u7nw65" />  MethodParameter.IsThis Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)</small>
+Type: [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)           
+Sources: CodeModel\MethodParameter.cs</small>
 
 
 Flag whether the parameter is with `this` modifier
@@ -2330,7 +4046,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodparameter.name__1wzjmfo" />  MethodParameter.Name Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)</small>
+Type: [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)           
+Sources: CodeModel\MethodParameter.cs</small>
 
 
 Name of the parameter
@@ -2353,7 +4070,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodparameter.refkind__1vi47va" />  MethodParameter.RefKind Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)</small>
+Type: [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)           
+Sources: CodeModel\MethodParameter.cs</small>
 
 
 Information whether the parameter is &quot;by reference&quot; with the reference kind (None, Ref, Out,In)
@@ -2376,7 +4094,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.methodparameter.typeref__1j0ijds" />  MethodParameter.TypeRef Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)</small>
+Type: [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)           
+Sources: CodeModel\MethodParameter.cs</small>
 
 
 Type reference for the parameter&#39;s type
@@ -2396,10 +4115,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.methodparameter.-ctor_net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder___bbc2rj" />  MethodParameter.MethodParameter(MethodParameterBuilder) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.methodparameter.-ctor_net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder___bbc2rj" />  MethodParameter.MethodParameter(MethodParameterBuilder) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)</small>
+Type: [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)           
+Sources: CodeModel\MethodParameter.cs</small>
 
 
 CTOR - from builder
@@ -2417,10 +4137,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.methodparameter.getdefaultvaluestring__1q0k02v" />  MethodParameter.GetDefaultValueString() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.methodparameter.getdefaultvaluestring__1q0k02v" />  MethodParameter.GetDefaultValueString() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)</small>
+Type: [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)           
+Sources: CodeModel\MethodParameter.cs</small>
 
 
 Gets the default value for the parameter as string with &quot;code syntax&quot; (meaning how would be the value defined in the code)
@@ -2446,7 +4167,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.namespacemember__ja97li" />  NamespaceMember Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\NamespaceMember.cs</small>
 
 
 Represents a namespace within the code model
@@ -2498,7 +4220,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.namespacemember.isglobalnamespace__1q6idri" />  NamespaceMember.IsGlobalNamespace Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [NamespaceMember](#t-net.adamec.dev.markupdoc.codemodel.namespacemember__ja97li)</small>
+Type: [NamespaceMember](#t-net.adamec.dev.markupdoc.codemodel.namespacemember__ja97li)           
+Sources: CodeModel\NamespaceMember.cs</small>
 
 
 Flag whether the namespace is global
@@ -2521,7 +4244,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.namespacemember.types__16yd0zn" />  NamespaceMember.Types Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [NamespaceMember](#t-net.adamec.dev.markupdoc.codemodel.namespacemember__ja97li)</small>
+Type: [NamespaceMember](#t-net.adamec.dev.markupdoc.codemodel.namespacemember__ja97li)           
+Sources: CodeModel\NamespaceMember.cs</small>
 
 
 List of all types (including interfaces, delegates, etc.) defined within the namespace
@@ -2541,10 +4265,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.namespacemember.-ctor_net.adamec.dev.markupdoc.codemodel.builder.namespacememberbuilder___1wmw5ar" />  NamespaceMember.NamespaceMember(NamespaceMemberBuilder) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.namespacemember.-ctor_net.adamec.dev.markupdoc.codemodel.builder.namespacememberbuilder___1wmw5ar" />  NamespaceMember.NamespaceMember(NamespaceMemberBuilder) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [NamespaceMember](#t-net.adamec.dev.markupdoc.codemodel.namespacemember__ja97li)</small>
+Type: [NamespaceMember](#t-net.adamec.dev.markupdoc.codemodel.namespacemember__ja97li)           
+Sources: CodeModel\NamespaceMember.cs</small>
 
 
 CTOR - from builder
@@ -2562,10 +4287,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.namespacemember.tostring__pk2xyj" />  NamespaceMember.ToString() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.namespacemember.tostring__pk2xyj" />  NamespaceMember.ToString() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [NamespaceMember](#t-net.adamec.dev.markupdoc.codemodel.namespacemember__ja97li)</small>
+Type: [NamespaceMember](#t-net.adamec.dev.markupdoc.codemodel.namespacemember__ja97li)           
+Sources: CodeModel\NamespaceMember.cs</small>
 
 
 Returns the brief description of the namespace
@@ -2576,7 +4302,7 @@ Returns the brief description of the namespace
 public override string ToString()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>The brief description of the namespace</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>The brief description of the namespace</dd></dl>Overrides: [Member.ToString()](#m-net.adamec.dev.markupdoc.codemodel.member.tostring__zfv5tm)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -2587,7 +4313,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.propertymember__m06mbu" />  PropertyMember Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\PropertyMember.cs</small>
 
 
 Represents a property within the code model
@@ -2635,7 +4362,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.propertymember.gettermodifier__17x8k4y" />  PropertyMember.GetterModifier Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [PropertyMember](#t-net.adamec.dev.markupdoc.codemodel.propertymember__m06mbu)</small>
+Type: [PropertyMember](#t-net.adamec.dev.markupdoc.codemodel.propertymember__m06mbu)           
+Sources: CodeModel\PropertyMember.cs</small>
 
 
 Getter access modifier if it&#39;s different than the property one
@@ -2658,7 +4386,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.propertymember.isindexer__mmbewf" />  PropertyMember.IsIndexer Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [PropertyMember](#t-net.adamec.dev.markupdoc.codemodel.propertymember__m06mbu)</small>
+Type: [PropertyMember](#t-net.adamec.dev.markupdoc.codemodel.propertymember__m06mbu)           
+Sources: CodeModel\PropertyMember.cs</small>
 
 
 Flag whether the property is indexer;
@@ -2681,7 +4410,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.propertymember.isreadonly__10ggxbi" />  PropertyMember.IsReadOnly Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [PropertyMember](#t-net.adamec.dev.markupdoc.codemodel.propertymember__m06mbu)</small>
+Type: [PropertyMember](#t-net.adamec.dev.markupdoc.codemodel.propertymember__m06mbu)           
+Sources: CodeModel\PropertyMember.cs</small>
 
 
 Flag whether the property is read only
@@ -2704,7 +4434,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.propertymember.iswriteonly__s5y7lf" />  PropertyMember.IsWriteOnly Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [PropertyMember](#t-net.adamec.dev.markupdoc.codemodel.propertymember__m06mbu)</small>
+Type: [PropertyMember](#t-net.adamec.dev.markupdoc.codemodel.propertymember__m06mbu)           
+Sources: CodeModel\PropertyMember.cs</small>
 
 
 Flag whether the property is write only
@@ -2727,7 +4458,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.propertymember.parameters__j2iqt4" />  PropertyMember.Parameters Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [PropertyMember](#t-net.adamec.dev.markupdoc.codemodel.propertymember__m06mbu)</small>
+Type: [PropertyMember](#t-net.adamec.dev.markupdoc.codemodel.propertymember__m06mbu)           
+Sources: CodeModel\PropertyMember.cs</small>
 
 
 List of property parameters (if any). Just the indexers may have the parameters
@@ -2750,7 +4482,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.propertymember.settermodifier__j66486" />  PropertyMember.SetterModifier Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [PropertyMember](#t-net.adamec.dev.markupdoc.codemodel.propertymember__m06mbu)</small>
+Type: [PropertyMember](#t-net.adamec.dev.markupdoc.codemodel.propertymember__m06mbu)           
+Sources: CodeModel\PropertyMember.cs</small>
 
 
 Setter access modifier if it&#39;s different than the property one
@@ -2773,7 +4506,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.propertymember.typeref__3apeoh" />  PropertyMember.TypeRef Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [PropertyMember](#t-net.adamec.dev.markupdoc.codemodel.propertymember__m06mbu)</small>
+Type: [PropertyMember](#t-net.adamec.dev.markupdoc.codemodel.propertymember__m06mbu)           
+Sources: CodeModel\PropertyMember.cs</small>
 
 
 Type reference of property type
@@ -2793,10 +4527,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.propertymember.-ctor_net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder___1x2uhir" />  PropertyMember.PropertyMember(PropertyMemberBuilder) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.propertymember.-ctor_net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder___1x2uhir" />  PropertyMember.PropertyMember(PropertyMemberBuilder) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [PropertyMember](#t-net.adamec.dev.markupdoc.codemodel.propertymember__m06mbu)</small>
+Type: [PropertyMember](#t-net.adamec.dev.markupdoc.codemodel.propertymember__m06mbu)           
+Sources: CodeModel\PropertyMember.cs</small>
 
 
 CTOR - from builder
@@ -2816,7 +4551,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj" />  RootMember Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\RootMember.cs</small>
 
 
 Represents a root of the code model
@@ -2835,12 +4571,18 @@ Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object"
 
  | Name | Modifier | Summary | 
  | ------ | ---------- | --------- | 
+ | [AddOns](#p-net.adamec.dev.markupdoc.codemodel.rootmember.addons__1j9odmo) | public | Optional list of add-ons | 
  | [AllMembersByDocId](#p-net.adamec.dev.markupdoc.codemodel.rootmember.allmembersbydocid__lvh671) | public | Dictionary of all members by their documentation ID | 
+ | [AllMembersBySourceFile](#p-net.adamec.dev.markupdoc.codemodel.rootmember.allmembersbysourcefile__1dx754b) | public | Dictionary of all members by their source file | 
+ | [AllMembersBySymbol](#p-net.adamec.dev.markupdoc.codemodel.rootmember.allmembersbysymbol__5nme1w) | public | Dictionary of all members by their Roslyn <em>Microsoft.CodeAnalysis.ISymbol</em> | 
  | [AllNamespaces](#p-net.adamec.dev.markupdoc.codemodel.rootmember.allnamespaces__uj34ta) | public | List of namespaces within the code model | 
  | [AllTypeRefs](#p-net.adamec.dev.markupdoc.codemodel.rootmember.alltyperefs__loe4tc) | public | List of all type references used within the code model | 
  | [AllTypes](#p-net.adamec.dev.markupdoc.codemodel.rootmember.alltypes__1vf7rd7) | public | List of all types (including interfaces, delegates, etc.) defined within the code model | 
  | [Assemblies](#p-net.adamec.dev.markupdoc.codemodel.rootmember.assemblies__nirzih) | public | List of all assemblies defined within the code model | 
  | [ProcessingInfo](#p-net.adamec.dev.markupdoc.codemodel.rootmember.processinginfo__1h25pqs) | public | Processing information. This is the only part that can be modified after the code model is built as it&#39;s used to adjust the behavior during the processing within markup generator | 
+ | [ProjectRootDir](#p-net.adamec.dev.markupdoc.codemodel.rootmember.projectrootdir__iedlt) | public | Full path to the project root directory | 
+ | [TypeImplementsInterfaceList](#p-net.adamec.dev.markupdoc.codemodel.rootmember.typeimplementsinterfacelist__1xj5fc) | public | List of all direct and indirect interface-implementation type pairs | 
+ | [TypeInheritsFromTypeList](#p-net.adamec.dev.markupdoc.codemodel.rootmember.typeinheritsfromtypelist__1mluucj) | public | List of all inheritance pairs (member, parent) | 
 
  
 
@@ -2849,9 +4591,45 @@ Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object"
 
  | Name | Modifier | Summary | 
  | ------ | ---------- | --------- | 
- | [RootMember(RootMemberBuilder)](#m-net.adamec.dev.markupdoc.codemodel.rootmember.-ctor_net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder___14y5g1f) | public | CTOR - from builder | 
+ | [RootMember(RootMemberBuilder, IEnumerable&lt;net.adamec.dev.markupdoc.AddOns.IAddOn&gt;)](#m-net.adamec.dev.markupdoc.codemodel.rootmember.-ctor_net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-system.collections.generic.ienumerable_net.adamec.dev.markupdoc.addons.iaddon____js8pq6) | public | CTOR - from builder | 
 
  
+
+
+###  Methods ###
+
+ | Name | Modifier | Summary | 
+ | ------ | ---------- | --------- | 
+ | [AddOnsSelector(Func&lt;net.adamec.dev.markupdoc.AddOns.IAddOn,int&gt;)](#m-net.adamec.dev.markupdoc.codemodel.rootmember.addonsselector_system.func_net.adamec.dev.markupdoc.addons.iaddon-system.int32____4fhqxg) | public | Return list of add-ons having the <strong>prioritySelector</strong> &gt; 0 ordered by the priority. When  no add-ons applies, the empty list is returned | 
+ | [GetDerivedTypeMembers(TypeMember)](#m-net.adamec.dev.markupdoc.codemodel.rootmember.getderivedtypemembers_net.adamec.dev.markupdoc.codemodel.typemember___1daom5o) | public | Gets the inherited (children) [type members](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp) of given <strong>type</strong> | 
+ | [GetParentTypeMember(TypeMember)](#m-net.adamec.dev.markupdoc.codemodel.rootmember.getparenttypemember_net.adamec.dev.markupdoc.codemodel.typemember___1wu79xm) | public | Gets the parent [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp) of given <strong>type</strong> | 
+ | [GetTypeMembersImplementingInterface(TypeMember)](#m-net.adamec.dev.markupdoc.codemodel.rootmember.gettypemembersimplementinginterface_net.adamec.dev.markupdoc.codemodel.typemember___678kix) | public | Gets the [type members](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp) implementing <strong>type</strong> (interface) | 
+
+ 
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.codemodel.rootmember.addons__1j9odmo" />  RootMember.AddOns Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
+Assembly: MarkupDoc           
+Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)           
+Sources: CodeModel\RootMember.cs</small>
+
+
+Optional list of add-ons
+
+
+
+```csharp
+public IReadOnlyList<net.adamec.dev.markupdoc.AddOns.IAddOn> AddOns { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlylist-1" target="_blank" >IReadOnlyList&lt;net.adamec.dev.markupdoc.AddOns.IAddOn&gt;</a></dt><dd></dd></dl>
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -2863,7 +4641,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.rootmember.allmembersbydocid__lvh671" />  RootMember.AllMembersByDocId Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)</small>
+Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)           
+Sources: CodeModel\RootMember.cs</small>
 
 
 Dictionary of all members by their documentation ID
@@ -2883,10 +4662,59 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
+##  <a id="p-net.adamec.dev.markupdoc.codemodel.rootmember.allmembersbysourcefile__1dx754b" />  RootMember.AllMembersBySourceFile Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
+Assembly: MarkupDoc           
+Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)           
+Sources: CodeModel\RootMember.cs</small>
+
+
+Dictionary of all members by their source file
+
+
+
+```csharp
+public IReadOnlyDictionary<string,IReadOnlyList<net.adamec.dev.markupdoc.CodeModel.Member>> AllMembersBySourceFile { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlydictionary-2" target="_blank" >System.Collections.Generic.IReadOnlyDictionary&lt;string,IReadOnlyList&lt;net.adamec.dev.markupdoc.CodeModel.Member&gt;&gt;</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.codemodel.rootmember.allmembersbysymbol__5nme1w" />  RootMember.AllMembersBySymbol Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
+Assembly: MarkupDoc           
+Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)           
+Sources: CodeModel\RootMember.cs</small>
+
+
+Dictionary of all members by their Roslyn <em>Microsoft.CodeAnalysis.ISymbol</em>
+
+
+
+```csharp
+public IReadOnlyDictionary<Microsoft.CodeAnalysis.ISymbol,net.adamec.dev.markupdoc.CodeModel.Member> AllMembersBySymbol { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlydictionary-2" target="_blank" >System.Collections.Generic.IReadOnlyDictionary&lt;Microsoft.CodeAnalysis.ISymbol,net.adamec.dev.markupdoc.CodeModel.Member&gt;</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.rootmember.allnamespaces__uj34ta" />  RootMember.AllNamespaces Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)</small>
+Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)           
+Sources: CodeModel\RootMember.cs</small>
 
 
 List of namespaces within the code model
@@ -2909,7 +4737,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.rootmember.alltyperefs__loe4tc" />  RootMember.AllTypeRefs Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)</small>
+Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)           
+Sources: CodeModel\RootMember.cs</small>
 
 
 List of all type references used within the code model
@@ -2932,7 +4761,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.rootmember.alltypes__1vf7rd7" />  RootMember.AllTypes Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)</small>
+Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)           
+Sources: CodeModel\RootMember.cs</small>
 
 
 List of all types (including interfaces, delegates, etc.) defined within the code model
@@ -2955,7 +4785,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.rootmember.assemblies__nirzih" />  RootMember.Assemblies Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)</small>
+Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)           
+Sources: CodeModel\RootMember.cs</small>
 
 
 List of all assemblies defined within the code model
@@ -2978,7 +4809,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.rootmember.processinginfo__1h25pqs" />  RootMember.ProcessingInfo Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)</small>
+Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)           
+Sources: CodeModel\RootMember.cs</small>
 
 
 Processing information. This is the only part that can be modified after the code model is built as it&#39;s used to adjust the behavior during the processing within markup generator
@@ -2998,10 +4830,83 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.rootmember.-ctor_net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder___14y5g1f" />  RootMember.RootMember(RootMemberBuilder) Title ##
+##  <a id="p-net.adamec.dev.markupdoc.codemodel.rootmember.projectrootdir__iedlt" />  RootMember.ProjectRootDir Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)</small>
+Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)           
+Sources: CodeModel\RootMember.cs</small>
+
+
+Full path to the project root directory
+
+
+
+```csharp
+public string ProjectRootDir { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.codemodel.rootmember.typeimplementsinterfacelist__1xj5fc" />  RootMember.TypeImplementsInterfaceList Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
+Assembly: MarkupDoc           
+Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)           
+Sources: CodeModel\RootMember.cs</small>
+
+
+List of all direct and indirect interface-implementation type pairs
+
+
+
+```csharp
+public IReadOnlyList<System.Collections.Generic.KeyValuePair<net.adamec.dev.markupdoc.CodeModel.TypeMember,net.adamec.dev.markupdoc.CodeModel.TypeMember>> TypeImplementsInterfaceList { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlylist-1" target="_blank" >IReadOnlyList&lt;System.Collections.Generic.KeyValuePair&lt;net.adamec.dev.markupdoc.CodeModel.TypeMember,net.adamec.dev.markupdoc.CodeModel.TypeMember&gt;&gt;</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.codemodel.rootmember.typeinheritsfromtypelist__1mluucj" />  RootMember.TypeInheritsFromTypeList Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
+Assembly: MarkupDoc           
+Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)           
+Sources: CodeModel\RootMember.cs</small>
+
+
+List of all inheritance pairs (member, parent)
+
+
+
+```csharp
+public IReadOnlyList<System.Collections.Generic.KeyValuePair<net.adamec.dev.markupdoc.CodeModel.TypeMember,net.adamec.dev.markupdoc.CodeModel.TypeMember>> TypeInheritsFromTypeList { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlylist-1" target="_blank" >IReadOnlyList&lt;System.Collections.Generic.KeyValuePair&lt;net.adamec.dev.markupdoc.CodeModel.TypeMember,net.adamec.dev.markupdoc.CodeModel.TypeMember&gt;&gt;</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.rootmember.-ctor_net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-system.collections.generic.ienumerable_net.adamec.dev.markupdoc.addons.iaddon____js8pq6" />  RootMember.RootMember(RootMemberBuilder, IEnumerable&lt;net.adamec.dev.markupdoc.AddOns.IAddOn&gt;) Constructor ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
+Assembly: MarkupDoc           
+Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)           
+Sources: CodeModel\RootMember.cs</small>
 
 
 CTOR - from builder
@@ -3009,10 +4914,10 @@ CTOR - from builder
 
 
 ```csharp
-public RootMember(RootMemberBuilder builder)
+public RootMember(RootMemberBuilder builder, IEnumerable<net.adamec.dev.markupdoc.AddOns.IAddOn> addOns)
 ```
 
-<strong>Constructor parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.Builder.RootMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad) <strong>builder</strong></dt><dd>Builder</dd></dl>
+<strong>Constructor parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.Builder.RootMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad) <strong>builder</strong></dt><dd>Builder</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1" target="_blank" >IEnumerable&lt;net.adamec.dev.markupdoc.AddOns.IAddOn&gt;</a> <strong>addOns</strong></dt><dd>Optional list of add-ons</dd></dl>
 ###  Remarks ###
 Use the [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj) to build the whole code model hierarchy from the [RootMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad) that contains such hierarchy and the details about individual entities
 
@@ -3023,9 +4928,122 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.rootmember.addonsselector_system.func_net.adamec.dev.markupdoc.addons.iaddon-system.int32____4fhqxg" />  RootMember.AddOnsSelector(Func&lt;net.adamec.dev.markupdoc.AddOns.IAddOn,int&gt;) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
+Assembly: MarkupDoc           
+Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)           
+Sources: CodeModel\RootMember.cs</small>
+
+
+Return list of add-ons having the <strong>prioritySelector</strong> &gt; 0 ordered by the priority. When  no add-ons applies, the empty list is returned
+
+
+
+```csharp
+public IReadOnlyList<net.adamec.dev.markupdoc.AddOns.IAddOn> AddOnsSelector(Func<net.adamec.dev.markupdoc.AddOns.IAddOn,int> prioritySelector)
+```
+
+<strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.func-2" target="_blank" >System.Func&lt;net.adamec.dev.markupdoc.AddOns.IAddOn,int&gt;</a> <strong>prioritySelector</strong></dt><dd>Priority selector</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlylist-1" target="_blank" >IReadOnlyList&lt;net.adamec.dev.markupdoc.AddOns.IAddOn&gt;</a></dt><dd>List of add-ons having the <strong>prioritySelector</strong> &gt; 0 ordered by the priority</dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.rootmember.getderivedtypemembers_net.adamec.dev.markupdoc.codemodel.typemember___1daom5o" />  RootMember.GetDerivedTypeMembers(TypeMember) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
+Assembly: MarkupDoc           
+Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)           
+Sources: CodeModel\RootMember.cs</small>
+
+
+Gets the inherited (children) [type members](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp) of given <strong>type</strong>
+
+
+
+```csharp
+public IReadOnlyList<net.adamec.dev.markupdoc.CodeModel.TypeMember> GetDerivedTypeMembers(TypeMember type)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp) <strong>type</strong></dt><dd>Type to get the parent for</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlylist-1" target="_blank" >IReadOnlyList&lt;net.adamec.dev.markupdoc.CodeModel.TypeMember&gt;</a></dt><dd>List of inherited (children) [type members](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp) of given <strong>type</strong></dd></dl>
+
+
+###  Remarks ###
+This method should not be used to generic check for the inheritance. It&#39;s intended to get the children existing within the project being documented! When the child of <strong>type</strong> is not defined within project, there is no corresponding [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp) and such inheritance info will not be part of the list returned
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.rootmember.getparenttypemember_net.adamec.dev.markupdoc.codemodel.typemember___1wu79xm" />  RootMember.GetParentTypeMember(TypeMember) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
+Assembly: MarkupDoc           
+Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)           
+Sources: CodeModel\RootMember.cs</small>
+
+
+Gets the parent [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp) of given <strong>type</strong>
+
+
+
+```csharp
+public TypeMember GetParentTypeMember(TypeMember type)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp) <strong>type</strong></dt><dd>Type to get the parent for</dd></dl>
+<strong>Return value</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</dt><dd>The parent [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp) of given <strong>type</strong> or null</dd></dl>
+
+
+###  Remarks ###
+This method should not be used to generic check for the inheritance. It&#39;s intended to get the parent existing within the project being documented! When the parent of <strong>type</strong> is not defined within project, there is no [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp) for the parent and the returned value will be null.
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.rootmember.gettypemembersimplementinginterface_net.adamec.dev.markupdoc.codemodel.typemember___678kix" />  RootMember.GetTypeMembersImplementingInterface(TypeMember) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
+Assembly: MarkupDoc           
+Type: [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)           
+Sources: CodeModel\RootMember.cs</small>
+
+
+Gets the [type members](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp) implementing <strong>type</strong> (interface)
+
+
+
+```csharp
+public IReadOnlyList<net.adamec.dev.markupdoc.CodeModel.TypeMember> GetTypeMembersImplementingInterface(TypeMember type)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp) <strong>type</strong></dt><dd>Interface to get the implementations for</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlylist-1" target="_blank" >IReadOnlyList&lt;net.adamec.dev.markupdoc.CodeModel.TypeMember&gt;</a></dt><dd>List of [type members](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp) implementing <strong>type</strong> (interface)</dd></dl>
+
+
+###  Remarks ###
+This method should not be used to generic check for the interface implementation. It&#39;s intended to get the &quot;in-project&quot; type members implementing given interface. When the interface is implemented by type that is not defined within project, there is no corresponding [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp) and such implemented interface info will not be part of the list returned
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.rootmember.processinginfocontainer__2hw0vn" />  RootMember.ProcessingInfoContainer Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\RootMember.cs</small>
 
 
 Processing information
@@ -3059,7 +5077,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.rootmember.processinginfocontainer.basemainfile__t5z7wx" />  RootMember.ProcessingInfoContainer.BaseMainFile Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [RootMember.ProcessingInfoContainer](#t-net.adamec.dev.markupdoc.codemodel.rootmember.processinginfocontainer__2hw0vn)</small>
+Type: [RootMember.ProcessingInfoContainer](#t-net.adamec.dev.markupdoc.codemodel.rootmember.processinginfocontainer__2hw0vn)           
+Sources: CodeModel\RootMember.cs</small>
 
 
 Name of the main (index) file without the path and extension
@@ -3082,7 +5101,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.rootmember.processinginfocontainer.splitfiletype__gcnbr9" />  RootMember.ProcessingInfoContainer.SplitFileType Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [RootMember.ProcessingInfoContainer](#t-net.adamec.dev.markupdoc.codemodel.rootmember.processinginfocontainer__2hw0vn)</small>
+Type: [RootMember.ProcessingInfoContainer](#t-net.adamec.dev.markupdoc.codemodel.rootmember.processinginfocontainer__2hw0vn)           
+Sources: CodeModel\RootMember.cs</small>
 
 
 Information whether and how to split the output (none, per namespace, per type)
@@ -3104,7 +5124,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.typecontentmember__suhfqw" />  TypeContentMember Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\TypeContentMember.cs</small>
 
 
 Abstract class for type members (fields, properties, etc.) within the code model
@@ -3116,6 +5137,7 @@ public abstract class TypeContentMember : Member
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a> -&gt; [net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)           
+Derived: [net.adamec.dev.markupdoc.CodeModel.EventMember](#t-net.adamec.dev.markupdoc.codemodel.eventmember__qn6e6l), [net.adamec.dev.markupdoc.CodeModel.FieldMember](#t-net.adamec.dev.markupdoc.codemodel.fieldmember__tbd84z), [net.adamec.dev.markupdoc.CodeModel.MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq), [net.adamec.dev.markupdoc.CodeModel.PropertyMember](#t-net.adamec.dev.markupdoc.codemodel.propertymember__m06mbu)           
 
 
 
@@ -3123,7 +5145,12 @@ Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object"
 
  | Name | Modifier | Summary | 
  | ------ | ---------- | --------- | 
+ | [ExplicitInterfaceImplementationMemberSymbol](#p-net.adamec.dev.markupdoc.codemodel.typecontentmember.explicitinterfaceimplementationmembersymbol__1vjakud) | public | Symbol of explicitly implemented interface member | 
  | [FileName](#p-net.adamec.dev.markupdoc.codemodel.typecontentmember.filename__1agakr7) | public | File name (without extension !!!) where the member should be generated to (aka split name) in case that the output splitting is allowed, otherwise the empty string. This is also used when building the links to the member (FileName.extension#Anchor) | 
+ | [ImplementsMembers](#p-net.adamec.dev.markupdoc.codemodel.typecontentmember.implementsmembers__1m1r4w5) | public | Members implemented by this member (if any) | 
+ | [ImplementsSymbols](#p-net.adamec.dev.markupdoc.codemodel.typecontentmember.implementssymbols__9hzrj7) | public | Symbols of members implemented by this member (if any) | 
+ | [OverridesMember](#p-net.adamec.dev.markupdoc.codemodel.typecontentmember.overridesmember__1o4qx21) | public | Member overriden by this member (if any) | 
+ | [OverridesSymbol](#p-net.adamec.dev.markupdoc.codemodel.typecontentmember.overridessymbol__1xa3vrj) | public | Symbol of member overriden by this member (if any) | 
  | [Type](#p-net.adamec.dev.markupdoc.codemodel.typecontentmember.type__lnqvp2) | public | Type containing the content member | 
 
  
@@ -3144,10 +5171,35 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
+##  <a id="p-net.adamec.dev.markupdoc.codemodel.typecontentmember.explicitinterfaceimplementationmembersymbol__1vjakud" />  TypeContentMember.ExplicitInterfaceImplementationMemberSymbol Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
+Assembly: MarkupDoc           
+Type: [TypeContentMember](#t-net.adamec.dev.markupdoc.codemodel.typecontentmember__suhfqw)           
+Sources: CodeModel\TypeContentMember.cs</small>
+
+
+Symbol of explicitly implemented interface member
+
+
+
+```csharp
+public ISymbol ExplicitInterfaceImplementationMemberSymbol { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.codeanalysis.isymbol" target="_blank" >Microsoft.CodeAnalysis.ISymbol</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typecontentmember.filename__1agakr7" />  TypeContentMember.FileName Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeContentMember](#t-net.adamec.dev.markupdoc.codemodel.typecontentmember__suhfqw)</small>
+Type: [TypeContentMember](#t-net.adamec.dev.markupdoc.codemodel.typecontentmember__suhfqw)           
+Sources: CodeModel\TypeContentMember.cs</small>
 
 
 File name (without extension !!!) where the member should be generated to (aka split name) in case that the output splitting is allowed, otherwise the empty string. This is also used when building the links to the member (FileName.extension#Anchor)
@@ -3158,7 +5210,7 @@ File name (without extension !!!) where the member should be generated to (aka s
 public override string FileName { get; }
 ```
 
-<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>Overrides: [Member.FileName](#p-net.adamec.dev.markupdoc.codemodel.member.filename__1u5e2zq)
 
 
 ###  Remarks ###
@@ -3171,10 +5223,111 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
+##  <a id="p-net.adamec.dev.markupdoc.codemodel.typecontentmember.implementsmembers__1m1r4w5" />  TypeContentMember.ImplementsMembers Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
+Assembly: MarkupDoc           
+Type: [TypeContentMember](#t-net.adamec.dev.markupdoc.codemodel.typecontentmember__suhfqw)           
+Sources: CodeModel\TypeContentMember.cs</small>
+
+
+Members implemented by this member (if any)
+
+
+
+```csharp
+public IReadOnlyList<net.adamec.dev.markupdoc.CodeModel.TypeContentMember> ImplementsMembers { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlylist-1" target="_blank" >IReadOnlyList&lt;net.adamec.dev.markupdoc.CodeModel.TypeContentMember&gt;</a></dt><dd></dd></dl>
+
+
+###  Remarks ###
+ImplementsMembers contain the same number of elements as [ImplementsSymbols](#p-net.adamec.dev.markupdoc.codemodel.typecontentmember.implementssymbols__9hzrj7) . When there is not member corresponding to the symbol, the ImplementsMembers item is null
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.codemodel.typecontentmember.implementssymbols__9hzrj7" />  TypeContentMember.ImplementsSymbols Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
+Assembly: MarkupDoc           
+Type: [TypeContentMember](#t-net.adamec.dev.markupdoc.codemodel.typecontentmember__suhfqw)           
+Sources: CodeModel\TypeContentMember.cs</small>
+
+
+Symbols of members implemented by this member (if any)
+
+
+
+```csharp
+public IReadOnlyList<Microsoft.CodeAnalysis.ISymbol> ImplementsSymbols { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlylist-1" target="_blank" >IReadOnlyList&lt;Microsoft.CodeAnalysis.ISymbol&gt;</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.codemodel.typecontentmember.overridesmember__1o4qx21" />  TypeContentMember.OverridesMember Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
+Assembly: MarkupDoc           
+Type: [TypeContentMember](#t-net.adamec.dev.markupdoc.codemodel.typecontentmember__suhfqw)           
+Sources: CodeModel\TypeContentMember.cs</small>
+
+
+Member overriden by this member (if any)
+
+
+
+```csharp
+public TypeContentMember OverridesMember { get; }
+```
+
+<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.TypeContentMember](#t-net.adamec.dev.markupdoc.codemodel.typecontentmember__suhfqw)</dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.codemodel.typecontentmember.overridessymbol__1xa3vrj" />  TypeContentMember.OverridesSymbol Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
+Assembly: MarkupDoc           
+Type: [TypeContentMember](#t-net.adamec.dev.markupdoc.codemodel.typecontentmember__suhfqw)           
+Sources: CodeModel\TypeContentMember.cs</small>
+
+
+Symbol of member overriden by this member (if any)
+
+
+
+```csharp
+public ISymbol OverridesSymbol { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.codeanalysis.isymbol" target="_blank" >Microsoft.CodeAnalysis.ISymbol</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typecontentmember.type__lnqvp2" />  TypeContentMember.Type Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeContentMember](#t-net.adamec.dev.markupdoc.codemodel.typecontentmember__suhfqw)</small>
+Type: [TypeContentMember](#t-net.adamec.dev.markupdoc.codemodel.typecontentmember__suhfqw)           
+Sources: CodeModel\TypeContentMember.cs</small>
 
 
 Type containing the content member
@@ -3182,7 +5335,7 @@ Type containing the content member
 
 
 ```csharp
-public TypeMember Type { get; set; }
+public TypeMember Type { get; }
 ```
 
 <strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</dt><dd></dd></dl>
@@ -3194,10 +5347,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.typecontentmember.-ctor_net.adamec.dev.markupdoc.codemodel.builder.typecontentmemberbuilder___180rpzv" />  TypeContentMember.TypeContentMember(TypeContentMemberBuilder) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.typecontentmember.-ctor_net.adamec.dev.markupdoc.codemodel.builder.typecontentmemberbuilder___180rpzv" />  TypeContentMember.TypeContentMember(TypeContentMemberBuilder) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeContentMember](#t-net.adamec.dev.markupdoc.codemodel.typecontentmember__suhfqw)</small>
+Type: [TypeContentMember](#t-net.adamec.dev.markupdoc.codemodel.typecontentmember__suhfqw)           
+Sources: CodeModel\TypeContentMember.cs</small>
 
 
 CTOR - from builder
@@ -3217,7 +5371,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp" />  TypeMember Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 Represents a type within the code model
@@ -3256,6 +5411,8 @@ Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object"
  | [FileName](#p-net.adamec.dev.markupdoc.codemodel.typemember.filename__t0861a) | public | File name (without extension !!!) where the type should be generated to (aka split name) in case that the output splitting is allowed, otherwise the empty string. This is used when building the links to the member (FileName.extension#Anchor) | 
  | [FullName](#p-net.adamec.dev.markupdoc.codemodel.typemember.fullname__1f38d4f) | public | Type full name (namespace.type) | 
  | [ImplementsAnyInterface](#p-net.adamec.dev.markupdoc.codemodel.typemember.implementsanyinterface__1kg40n4) | public | Flag whether the type implements any (at least one) interface | 
+ | [InterfaceImplementationsByInterfaceMember](#p-net.adamec.dev.markupdoc.codemodel.typemember.interfaceimplementationsbyinterfacemember__1gc7a5l) | public | Dictionary of  interface member implementation by interface member (key=interface member symbol, value=implementation member symbol) | 
+ | [InterfaceMembersByInterfaceImplementation](#p-net.adamec.dev.markupdoc.codemodel.typemember.interfacemembersbyinterfaceimplementation__bc5ap5) | public | Dictionary of implemented interface members by implementation member (key=implementation member symbol, value=interface member symbol) | 
  | [InterfacesTypeRefs](#p-net.adamec.dev.markupdoc.codemodel.typemember.interfacestyperefs__11tpv8v) | public | Type references for directly implemented interfaces | 
  | [IsDelegate](#p-net.adamec.dev.markupdoc.codemodel.typemember.isdelegate__1w85a6g) | public | Flag whether type is delegate | 
  | [IsGeneric](#p-net.adamec.dev.markupdoc.codemodel.typemember.isgeneric__1l3ysmo) | public | Flag whether type is generic | 
@@ -3297,7 +5454,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.typemember.delegateparameters__1qbjoam" />  TypeMember.DelegateParameters Field ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 Delegate parameters for delegate types
@@ -3320,7 +5478,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.typemember.delegatereturntype__bzbjz4" />  TypeMember.DelegateReturnType Field ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 Type reference for delegate return type
@@ -3343,7 +5502,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.typemember.typeparameters__994fx3" />  TypeMember.TypeParameters Field ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 Type parameters for generic types
@@ -3366,7 +5526,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typemember.allinterfacestyperefs__glhkkw" />  TypeMember.AllInterfacesTypeRefs Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 Type references for all implemented interfaces (both directly implemented and inherited)
@@ -3389,7 +5550,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typemember.constructors__r1xvmy" />  TypeMember.Constructors Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 All constructors defined within the type
@@ -3412,7 +5574,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typemember.conversions__1u10dmc" />  TypeMember.Conversions Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 All conversions defined within the type
@@ -3435,7 +5598,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typemember.destructor__xpqlhc" />  TypeMember.Destructor Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 Destructor defined within the type or null if none
@@ -3458,7 +5622,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typemember.events__13nod8q" />  TypeMember.Events Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 All events defined within the type
@@ -3481,7 +5646,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typemember.fields__1mn3d06" />  TypeMember.Fields Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 All fields defined within the type
@@ -3504,7 +5670,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typemember.filename__t0861a" />  TypeMember.FileName Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 File name (without extension !!!) where the type should be generated to (aka split name) in case that the output splitting is allowed, otherwise the empty string. This is used when building the links to the member (FileName.extension#Anchor)
@@ -3515,7 +5682,7 @@ File name (without extension !!!) where the type should be generated to (aka spl
 public override string FileName { get; }
 ```
 
-<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>Overrides: [Member.FileName](#p-net.adamec.dev.markupdoc.codemodel.member.filename__1u5e2zq)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -3527,7 +5694,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typemember.fullname__1f38d4f" />  TypeMember.FullName Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 Type full name (namespace.type)
@@ -3550,7 +5718,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typemember.implementsanyinterface__1kg40n4" />  TypeMember.ImplementsAnyInterface Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 Flag whether the type implements any (at least one) interface
@@ -3570,10 +5739,59 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
+##  <a id="p-net.adamec.dev.markupdoc.codemodel.typemember.interfaceimplementationsbyinterfacemember__1gc7a5l" />  TypeMember.InterfaceImplementationsByInterfaceMember Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
+Assembly: MarkupDoc           
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
+
+
+Dictionary of  interface member implementation by interface member (key=interface member symbol, value=implementation member symbol)
+
+
+
+```csharp
+public IReadOnlyDictionary<Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.ISymbol> InterfaceImplementationsByInterfaceMember { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlydictionary-2" target="_blank" >System.Collections.Generic.IReadOnlyDictionary&lt;Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.ISymbol&gt;</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.codemodel.typemember.interfacemembersbyinterfaceimplementation__bc5ap5" />  TypeMember.InterfaceMembersByInterfaceImplementation Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
+Assembly: MarkupDoc           
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
+
+
+Dictionary of implemented interface members by implementation member (key=implementation member symbol, value=interface member symbol)
+
+
+
+```csharp
+public IReadOnlyDictionary<Microsoft.CodeAnalysis.ISymbol,IReadOnlyList<Microsoft.CodeAnalysis.ISymbol>> InterfaceMembersByInterfaceImplementation { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlydictionary-2" target="_blank" >System.Collections.Generic.IReadOnlyDictionary&lt;Microsoft.CodeAnalysis.ISymbol,IReadOnlyList&lt;Microsoft.CodeAnalysis.ISymbol&gt;&gt;</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typemember.interfacestyperefs__11tpv8v" />  TypeMember.InterfacesTypeRefs Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 Type references for directly implemented interfaces
@@ -3596,7 +5814,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typemember.isdelegate__1w85a6g" />  TypeMember.IsDelegate Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 Flag whether type is delegate
@@ -3619,7 +5838,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typemember.isgeneric__1l3ysmo" />  TypeMember.IsGeneric Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 Flag whether type is generic
@@ -3642,7 +5862,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typemember.isinherited__17xrtn5" />  TypeMember.IsInherited Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 Flag whether the type is inherited (applicable to classes only)
@@ -3665,7 +5886,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typemember.methods__5f6ltb" />  TypeMember.Methods Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 All methods defined within the type
@@ -3688,7 +5910,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typemember.operators__li6pd8" />  TypeMember.Operators Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 All operators defined within the type
@@ -3711,7 +5934,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typemember.operatorsandconversions__g20s4y" />  TypeMember.OperatorsAndConversions Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 All operators and conversions defined within the type
@@ -3734,7 +5958,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typemember.properties__148da3a" />  TypeMember.Properties Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 All properties defined within the type
@@ -3757,7 +5982,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typemember.typekind__1eer5mr" />  TypeMember.TypeKind Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 Type kind (class, interface, ...)
@@ -3780,7 +6006,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typemember.typeref__12qbfl8" />  TypeMember.TypeRef Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 Type reference for this type
@@ -3800,10 +6027,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.typemember.-ctor_net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder___1xi7kkz" />  TypeMember.TypeMember(TypeMemberBuilder) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.typemember.-ctor_net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder___1xi7kkz" />  TypeMember.TypeMember(TypeMemberBuilder) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 CTOR - from builder
@@ -3821,10 +6049,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.typemember.tostring__19326cy" />  TypeMember.ToString() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.typemember.tostring__19326cy" />  TypeMember.ToString() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)</small>
+Type: [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)           
+Sources: CodeModel\TypeMember.cs</small>
 
 
 Returns the brief description of the type
@@ -3835,7 +6064,7 @@ Returns the brief description of the type
 public override string ToString()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>The brief description of the type</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>The brief description of the type</dd></dl>Overrides: [Member.ToString()](#m-net.adamec.dev.markupdoc.codemodel.member.tostring__zfv5tm)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -3846,7 +6075,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408" />  TypeParameter Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\TypeParameter.cs</small>
 
 
 Represents a type parameter within the code model
@@ -3905,7 +6135,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typeparameter.attributes__inz4tx" />  TypeParameter.Attributes Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)</small>
+Type: [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)           
+Sources: CodeModel\TypeParameter.cs</small>
 
 
 Type parameter attributes definition (including the parameters).
@@ -3928,7 +6159,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typeparameter.constrainttypes__z92o1e" />  TypeParameter.ConstraintTypes Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)</small>
+Type: [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)           
+Sources: CodeModel\TypeParameter.cs</small>
 
 
 List of type references of constraint types  when the concrete types are defined as constraints
@@ -3951,7 +6183,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typeparameter.hasanyconstraint__1iy1zr7" />  TypeParameter.HasAnyConstraint Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)</small>
+Type: [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)           
+Sources: CodeModel\TypeParameter.cs</small>
 
 
 Flag whether the type parameter has any constraint
@@ -3974,7 +6207,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typeparameter.hasconstructorconstraint__wqv9qt" />  TypeParameter.HasConstructorConstraint Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)</small>
+Type: [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)           
+Sources: CodeModel\TypeParameter.cs</small>
 
 
 Flag whether the type parameter has constructor constraint ( new() )
@@ -3997,7 +6231,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typeparameter.hasreferencetypeconstraint__143rl1s" />  TypeParameter.HasReferenceTypeConstraint Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)</small>
+Type: [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)           
+Sources: CodeModel\TypeParameter.cs</small>
 
 
 Flag whether the type parameter has reference type constraint ( class )
@@ -4020,7 +6255,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typeparameter.hasunmanagedtypeconstraint__nm7zzj" />  TypeParameter.HasUnmanagedTypeConstraint Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)</small>
+Type: [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)           
+Sources: CodeModel\TypeParameter.cs</small>
 
 
 Flag whether the type parameter has unmanaged type constraint ( unmanaged )
@@ -4043,7 +6279,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typeparameter.hasvaluetypeconstraint__1ukksns" />  TypeParameter.HasValueTypeConstraint Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)</small>
+Type: [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)           
+Sources: CodeModel\TypeParameter.cs</small>
 
 
 Flag whether the type parameter has value type constraint ( struct )
@@ -4066,7 +6303,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typeparameter.name__1h5j7x" />  TypeParameter.Name Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)</small>
+Type: [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)           
+Sources: CodeModel\TypeParameter.cs</small>
 
 
 Name of the parameter
@@ -4089,7 +6327,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typeparameter.variance__a30lyr" />  TypeParameter.Variance Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)</small>
+Type: [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)           
+Sources: CodeModel\TypeParameter.cs</small>
 
 
 Variance (covariance and contravariance) modifier (in, out) for the type parameter if available.
@@ -4109,10 +6348,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.typeparameter.-ctor_net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder___nocdp7" />  TypeParameter.TypeParameter(TypeParameterBuilder) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.typeparameter.-ctor_net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder___nocdp7" />  TypeParameter.TypeParameter(TypeParameterBuilder) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)</small>
+Type: [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)           
+Sources: CodeModel\TypeParameter.cs</small>
 
 
 CTOR - from builder
@@ -4130,10 +6370,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.typeparameter.getconstraintsstring__iddb2s" />  TypeParameter.GetConstraintsString() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.typeparameter.getconstraintsstring__iddb2s" />  TypeParameter.GetConstraintsString() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)</small>
+Type: [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)           
+Sources: CodeModel\TypeParameter.cs</small>
 
 
 Returns the string with all constraints as defined in code
@@ -4155,7 +6396,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm" />  TypeRef Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\TypeRef.cs</small>
 
 
 Type reference - used to hold the reference to the type from the commented code as we as the referenced/used types. There is only single TypeRef for a type even if used on multiple &quot;places&quot;
@@ -4211,7 +6453,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typeref.arrayelementtype__byw1yl" />  TypeRef.ArrayElementType Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)</small>
+Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)           
+Sources: CodeModel\TypeRef.cs</small>
 
 
 Type reference of array element type when available
@@ -4234,7 +6477,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typeref.base__9jxpo3" />  TypeRef.Base Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)</small>
+Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)           
+Sources: CodeModel\TypeRef.cs</small>
 
 
 Base (parent) type when available
@@ -4257,7 +6501,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typeref.baseexclobject__uyu8rc" />  TypeRef.BaseExclObject Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)</small>
+Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)           
+Sources: CodeModel\TypeRef.cs</small>
 
 
 Base (parent) type excluding the System.Object, when available
@@ -4280,7 +6525,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typeref.documentationid__1fruy65" />  TypeRef.DocumentationId Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)</small>
+Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)           
+Sources: CodeModel\TypeRef.cs</small>
 
 
 Documentation ID of type when available
@@ -4303,7 +6549,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typeref.enumvaluetype__1wygike" />  TypeRef.EnumValueType Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)</small>
+Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)           
+Sources: CodeModel\TypeRef.cs</small>
 
 
 Underlying value type name for enums
@@ -4326,7 +6573,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typeref.genericarity__1yz9ryu" />  TypeRef.GenericArity Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)</small>
+Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)           
+Sources: CodeModel\TypeRef.cs</small>
 
 
 Generic type arity (number of type parameters) when available
@@ -4349,7 +6597,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typeref.genericbasename__iwu9kd" />  TypeRef.GenericBaseName Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)</small>
+Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)           
+Sources: CodeModel\TypeRef.cs</small>
 
 
 Base name (without the type parameters) for generic types
@@ -4372,7 +6621,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typeref.genericdefinition__7s13og" />  TypeRef.GenericDefinition Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)</small>
+Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)           
+Sources: CodeModel\TypeRef.cs</small>
 
 
 Base generic type when available - used for the types that have applied generic parameters. In such case, GenericDefinition refers to the &quot;original&quot; type
@@ -4395,7 +6645,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typeref.member__nc9l46" />  TypeRef.Member Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)</small>
+Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)           
+Sources: CodeModel\TypeRef.cs</small>
 
 
 Corresponding type member from the code model when available
@@ -4418,7 +6669,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typeref.name__ic643d" />  TypeRef.Name Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)</small>
+Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)           
+Sources: CodeModel\TypeRef.cs</small>
 
 
 Name of the type
@@ -4441,7 +6693,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.typeref.namespace__1oofukd" />  TypeRef.Namespace Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)</small>
+Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)           
+Sources: CodeModel\TypeRef.cs</small>
 
 
 Containing namespace of type
@@ -4461,10 +6714,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.typeref.applyspecialname_system.boolean___1blwydr" />  TypeRef.ApplySpecialName(bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.typeref.applyspecialname_system.boolean___1blwydr" />  TypeRef.ApplySpecialName(bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)</small>
+Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)           
+Sources: CodeModel\TypeRef.cs</small>
 
 
 Applies the type special name for the current type reference
@@ -4489,10 +6743,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.typeref.applyspecialname_microsoft.codeanalysis.itypesymbol-system.boolean___fzp5cf" />  TypeRef.ApplySpecialName(ITypeSymbol, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.typeref.applyspecialname_microsoft.codeanalysis.itypesymbol-system.boolean___fzp5cf" />  TypeRef.ApplySpecialName(ITypeSymbol, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)</small>
+Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)           
+Sources: CodeModel\TypeRef.cs</small>
 
 
 Applies the type special name for given <strong>typeSymbol</strong>
@@ -4517,10 +6772,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.typeref.applyspecialname_system.string-system.string-system.boolean___1q0wvwv" />  TypeRef.ApplySpecialName(string, string, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.typeref.applyspecialname_system.string-system.string-system.boolean___1q0wvwv" />  TypeRef.ApplySpecialName(string, string, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)</small>
+Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)           
+Sources: CodeModel\TypeRef.cs</small>
 
 
 Applies the type special name for given type described by namespace and <strong>name</strong>
@@ -4551,10 +6807,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.typeref.getorcreate_microsoft.codeanalysis.itypesymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder___dytfda" />  TypeRef.GetOrCreate(ITypeSymbol, RootMemberBuilder) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.typeref.getorcreate_microsoft.codeanalysis.itypesymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder___dytfda" />  TypeRef.GetOrCreate(ITypeSymbol, RootMemberBuilder) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)</small>
+Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)           
+Sources: CodeModel\TypeRef.cs</small>
 
 
 Gets the [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm) from the <em>Microsoft.CodeAnalysis.ITypeSymbol</em> . When such TypeRef doesn&#39;t exist yet, it&#39;s created.
@@ -4579,10 +6836,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.typeref.tostring__ql1z7x" />  TypeRef.ToString() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.typeref.tostring__ql1z7x" />  TypeRef.ToString() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)</small>
+Type: [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm)           
+Sources: CodeModel\TypeRef.cs</small>
 
 
 Gets the brief description - name - of the type reference
@@ -4593,7 +6851,7 @@ Gets the brief description - name - of the type reference
 public override string ToString()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Brief description - name - of the type reference</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Brief description - name - of the type reference</dd></dl>Overrides: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring#System_Object_ToString" target="_blank" >object.ToString</a>
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -4604,7 +6862,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0" />  MemberKindEnum Enum ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\Enums.cs</small>
 
 
 Possible member kinds
@@ -4645,7 +6904,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.memberkindenum.assembly__195rcdw" />  MemberKindEnum.Assembly Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</small>
+Type: [MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Member is assembly
@@ -4668,7 +6928,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.memberkindenum.event__kroq58" />  MemberKindEnum.Event Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</small>
+Type: [MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Member is event
@@ -4691,7 +6952,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.memberkindenum.field__1rsexl4" />  MemberKindEnum.Field Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</small>
+Type: [MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Members is field
@@ -4714,7 +6976,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.memberkindenum.method__1yfg25h" />  MemberKindEnum.Method Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</small>
+Type: [MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Member is method
@@ -4737,7 +7000,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.memberkindenum.namespace__1nsxwyd" />  MemberKindEnum.Namespace Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</small>
+Type: [MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Member is namespace
@@ -4760,7 +7024,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.memberkindenum.property__1p6vnkt" />  MemberKindEnum.Property Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</small>
+Type: [MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Member is property
@@ -4783,7 +7048,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.memberkindenum.root__boynuw" />  MemberKindEnum.Root Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</small>
+Type: [MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Member is the root
@@ -4806,7 +7072,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.memberkindenum.type__m8zl20" />  MemberKindEnum.Type Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</small>
+Type: [MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Member is type
@@ -4829,7 +7096,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.memberkindenum.unknown__1t9t5bu" />  MemberKindEnum.Unknown Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</small>
+Type: [MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Member type is unknown or not set
@@ -4851,7 +7119,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9" />  MethodKindEnum Enum ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\Enums.cs</small>
 
 
 Possible kinds of method symbols
@@ -4903,7 +7172,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.methodkindenum.anonymousfunction__1oee5xm" />  MethodKindEnum.AnonymousFunction Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)</small>
+Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)           
+Sources: CodeModel\Enums.cs</small>
 
 
 An anonymous method or lambda expression
@@ -4926,7 +7196,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.methodkindenum.builtinoperator__2mxmg0" />  MethodKindEnum.BuiltinOperator Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)</small>
+Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)           
+Sources: CodeModel\Enums.cs</small>
 
 
 A built-in operator.
@@ -4949,7 +7220,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.methodkindenum.constructor__1nz33wd" />  MethodKindEnum.Constructor Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)</small>
+Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Method is a constructor.
@@ -4972,7 +7244,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.methodkindenum.conversion__y33wax" />  MethodKindEnum.Conversion Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)</small>
+Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Method is a conversion.
@@ -4995,7 +7268,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.methodkindenum.declaremethod__cyhzzk" />  MethodKindEnum.DeclareMethod Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)</small>
+Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Declare Sub or Function.
@@ -5018,7 +7292,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.methodkindenum.delegateinvoke__11hlzmy" />  MethodKindEnum.DelegateInvoke Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)</small>
+Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Method is a delegate invoke.
@@ -5041,7 +7316,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.methodkindenum.destructor__uituse" />  MethodKindEnum.Destructor Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)</small>
+Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Method is a destructor.
@@ -5064,7 +7340,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.methodkindenum.eventadd__jebxkq" />  MethodKindEnum.EventAdd Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)</small>
+Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Method is an event add.
@@ -5087,7 +7364,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.methodkindenum.eventraise__mzxxud" />  MethodKindEnum.EventRaise Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)</small>
+Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Method is an event raise.
@@ -5110,7 +7388,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.methodkindenum.eventremove__1n75nqj" />  MethodKindEnum.EventRemove Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)</small>
+Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Method is an event remove.
@@ -5133,7 +7412,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.methodkindenum.explicitinterfaceimplementation__16hqzay" />  MethodKindEnum.ExplicitInterfaceImplementation Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)</small>
+Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Method is an explicit interface implementation.
@@ -5156,7 +7436,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.methodkindenum.lambdamethod__9dx2i9" />  MethodKindEnum.LambdaMethod Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)</small>
+Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)           
+Sources: CodeModel\Enums.cs</small>
 
 
 
@@ -5176,7 +7457,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.methodkindenum.localfunction__1o14ddk" />  MethodKindEnum.LocalFunction Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)</small>
+Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Method is declared inside of another method.
@@ -5199,7 +7481,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.methodkindenum.ordinary__owbfct" />  MethodKindEnum.Ordinary Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)</small>
+Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Method is an ordinary method.
@@ -5222,7 +7505,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.methodkindenum.propertyget__1jgaww0" />  MethodKindEnum.PropertyGet Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)</small>
+Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Method is a property get.
@@ -5245,7 +7529,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.methodkindenum.propertyset__1jgaxd8" />  MethodKindEnum.PropertySet Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)</small>
+Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Method is a property set.
@@ -5268,7 +7553,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.methodkindenum.reducedextension__7k1du2" />  MethodKindEnum.ReducedExtension Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)</small>
+Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)           
+Sources: CodeModel\Enums.cs</small>
 
 
 An extension method with the &quot;this&quot; parameter removed.
@@ -5291,7 +7577,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.methodkindenum.sharedconstructor__j724eo" />  MethodKindEnum.SharedConstructor Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)</small>
+Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)           
+Sources: CodeModel\Enums.cs</small>
 
 
 
@@ -5311,7 +7598,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.methodkindenum.staticconstructor__6rfcqt" />  MethodKindEnum.StaticConstructor Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)</small>
+Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Method is a static constructor.
@@ -5334,7 +7622,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.methodkindenum.userdefinedoperator__11f8k5d" />  MethodKindEnum.UserDefinedOperator Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)</small>
+Type: [MethodKindEnum](#t-net.adamec.dev.markupdoc.codemodel.methodkindenum__1u4eys9)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Method is an operator.
@@ -5356,7 +7645,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.modifierenum__1xbpfel" />  ModifierEnum Enum ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\Enums.cs</small>
 
 
 Possible access modifiers
@@ -5395,7 +7685,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.modifierenum.internal__1fcelle" />  ModifierEnum.Internal Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [ModifierEnum](#t-net.adamec.dev.markupdoc.codemodel.modifierenum__1xbpfel)</small>
+Type: [ModifierEnum](#t-net.adamec.dev.markupdoc.codemodel.modifierenum__1xbpfel)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Member is internal
@@ -5418,7 +7709,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.modifierenum.notapplicable__1c9bqep" />  ModifierEnum.NotApplicable Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [ModifierEnum](#t-net.adamec.dev.markupdoc.codemodel.modifierenum__1xbpfel)</small>
+Type: [ModifierEnum](#t-net.adamec.dev.markupdoc.codemodel.modifierenum__1xbpfel)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Not applicable/unknown
@@ -5441,7 +7733,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.modifierenum.private__10gl1bm" />  ModifierEnum.Private Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [ModifierEnum](#t-net.adamec.dev.markupdoc.codemodel.modifierenum__1xbpfel)</small>
+Type: [ModifierEnum](#t-net.adamec.dev.markupdoc.codemodel.modifierenum__1xbpfel)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Member is private
@@ -5464,7 +7757,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.modifierenum.privateprotected__16sulww" />  ModifierEnum.PrivateProtected Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [ModifierEnum](#t-net.adamec.dev.markupdoc.codemodel.modifierenum__1xbpfel)</small>
+Type: [ModifierEnum](#t-net.adamec.dev.markupdoc.codemodel.modifierenum__1xbpfel)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Member is private protected (protected and internal)
@@ -5487,7 +7781,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.modifierenum.protected__ghfrnv" />  ModifierEnum.Protected Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [ModifierEnum](#t-net.adamec.dev.markupdoc.codemodel.modifierenum__1xbpfel)</small>
+Type: [ModifierEnum](#t-net.adamec.dev.markupdoc.codemodel.modifierenum__1xbpfel)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Member is protected
@@ -5510,7 +7805,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.modifierenum.protectedinternal__1u0qjgu" />  ModifierEnum.ProtectedInternal Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [ModifierEnum](#t-net.adamec.dev.markupdoc.codemodel.modifierenum__1xbpfel)</small>
+Type: [ModifierEnum](#t-net.adamec.dev.markupdoc.codemodel.modifierenum__1xbpfel)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Member is protected internal (protected or internal)
@@ -5533,7 +7829,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.modifierenum.public__16bc72i" />  ModifierEnum.Public Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [ModifierEnum](#t-net.adamec.dev.markupdoc.codemodel.modifierenum__1xbpfel)</small>
+Type: [ModifierEnum](#t-net.adamec.dev.markupdoc.codemodel.modifierenum__1xbpfel)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Member is public
@@ -5555,7 +7852,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.refkindenum__q0ecx7" />  RefKindEnum Enum ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\Enums.cs</small>
 
 
 Possible reference parameter kinds
@@ -5591,7 +7889,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.refkindenum.in__o6c6to" />  RefKindEnum.In Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [RefKindEnum](#t-net.adamec.dev.markupdoc.codemodel.refkindenum__q0ecx7)</small>
+Type: [RefKindEnum](#t-net.adamec.dev.markupdoc.codemodel.refkindenum__q0ecx7)           
+Sources: CodeModel\Enums.cs</small>
 
 
 In
@@ -5614,7 +7913,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.refkindenum.none__115b1ud" />  RefKindEnum.None Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [RefKindEnum](#t-net.adamec.dev.markupdoc.codemodel.refkindenum__q0ecx7)</small>
+Type: [RefKindEnum](#t-net.adamec.dev.markupdoc.codemodel.refkindenum__q0ecx7)           
+Sources: CodeModel\Enums.cs</small>
 
 
 None
@@ -5637,7 +7937,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.refkindenum.out__1jsgqj5" />  RefKindEnum.Out Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [RefKindEnum](#t-net.adamec.dev.markupdoc.codemodel.refkindenum__q0ecx7)</small>
+Type: [RefKindEnum](#t-net.adamec.dev.markupdoc.codemodel.refkindenum__q0ecx7)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Out
@@ -5660,7 +7961,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.refkindenum.ref__7rm5co" />  RefKindEnum.Ref Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [RefKindEnum](#t-net.adamec.dev.markupdoc.codemodel.refkindenum__q0ecx7)</small>
+Type: [RefKindEnum](#t-net.adamec.dev.markupdoc.codemodel.refkindenum__q0ecx7)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Ref
@@ -5682,7 +7984,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.splittypeenum__1fx14km" />  SplitTypeEnum Enum ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\Enums.cs</small>
 
 
 Possible split definitions
@@ -5717,7 +8020,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.splittypeenum.namespace__1bo5ytj" />  SplitTypeEnum.Namespace Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [SplitTypeEnum](#t-net.adamec.dev.markupdoc.codemodel.splittypeenum__1fx14km)</small>
+Type: [SplitTypeEnum](#t-net.adamec.dev.markupdoc.codemodel.splittypeenum__1fx14km)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Split per namespace
@@ -5740,7 +8044,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.splittypeenum.none__5fy47s" />  SplitTypeEnum.None Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [SplitTypeEnum](#t-net.adamec.dev.markupdoc.codemodel.splittypeenum__1fx14km)</small>
+Type: [SplitTypeEnum](#t-net.adamec.dev.markupdoc.codemodel.splittypeenum__1fx14km)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Don&#39;t split
@@ -5763,7 +8068,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.splittypeenum.type__hbxlci" />  SplitTypeEnum.Type Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [SplitTypeEnum](#t-net.adamec.dev.markupdoc.codemodel.splittypeenum__1fx14km)</small>
+Type: [SplitTypeEnum](#t-net.adamec.dev.markupdoc.codemodel.splittypeenum__1fx14km)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Split per type (will also force split per namespace)
@@ -5785,7 +8091,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.typekindenum__1aridgm" />  TypeKindEnum Enum ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\Enums.cs</small>
 
 
 Possible kinds of type symbol
@@ -5825,7 +8132,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.typekindenum.array__1crhs0v" />  TypeKindEnum.Array Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeKindEnum](#t-net.adamec.dev.markupdoc.codemodel.typekindenum__1aridgm)</small>
+Type: [TypeKindEnum](#t-net.adamec.dev.markupdoc.codemodel.typekindenum__1aridgm)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Type is array
@@ -5848,7 +8156,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.typekindenum.class__mr4q2m" />  TypeKindEnum.Class Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeKindEnum](#t-net.adamec.dev.markupdoc.codemodel.typekindenum__1aridgm)</small>
+Type: [TypeKindEnum](#t-net.adamec.dev.markupdoc.codemodel.typekindenum__1aridgm)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Type is class
@@ -5871,7 +8180,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.typekindenum.delegate__1ia2gv1" />  TypeKindEnum.Delegate Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeKindEnum](#t-net.adamec.dev.markupdoc.codemodel.typekindenum__1aridgm)</small>
+Type: [TypeKindEnum](#t-net.adamec.dev.markupdoc.codemodel.typekindenum__1aridgm)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Type is delegate
@@ -5894,7 +8204,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.typekindenum.dynamic__1ql5ndn" />  TypeKindEnum.Dynamic Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeKindEnum](#t-net.adamec.dev.markupdoc.codemodel.typekindenum__1aridgm)</small>
+Type: [TypeKindEnum](#t-net.adamec.dev.markupdoc.codemodel.typekindenum__1aridgm)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Type is dynamic
@@ -5917,7 +8228,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.typekindenum.enum__xhij1l" />  TypeKindEnum.Enum Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeKindEnum](#t-net.adamec.dev.markupdoc.codemodel.typekindenum__1aridgm)</small>
+Type: [TypeKindEnum](#t-net.adamec.dev.markupdoc.codemodel.typekindenum__1aridgm)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Type is enum
@@ -5940,7 +8252,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.typekindenum.interface__1kr3gmn" />  TypeKindEnum.Interface Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeKindEnum](#t-net.adamec.dev.markupdoc.codemodel.typekindenum__1aridgm)</small>
+Type: [TypeKindEnum](#t-net.adamec.dev.markupdoc.codemodel.typekindenum__1aridgm)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Type is interface
@@ -5963,7 +8276,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.typekindenum.struct__1qs31hl" />  TypeKindEnum.Struct Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeKindEnum](#t-net.adamec.dev.markupdoc.codemodel.typekindenum__1aridgm)</small>
+Type: [TypeKindEnum](#t-net.adamec.dev.markupdoc.codemodel.typekindenum__1aridgm)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Type is structure
@@ -5986,7 +8300,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.typekindenum.unknown__6qwupk" />  TypeKindEnum.Unknown Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel](#n-net.adamec.dev.markupdoc.codemodel__1f8sg55)           
 Assembly: MarkupDoc           
-Type: [TypeKindEnum](#t-net.adamec.dev.markupdoc.codemodel.typekindenum__1aridgm)</small>
+Type: [TypeKindEnum](#t-net.adamec.dev.markupdoc.codemodel.typekindenum__1aridgm)           
+Sources: CodeModel\Enums.cs</small>
 
 
 Unknown or not set
@@ -6039,7 +8354,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.builder.assemblymemberbuilder__1t89m35" />  AssemblyMemberBuilder Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\Builder\AssemblyMemberBuilder.cs</small>
 
 
 Builder for [AssemblyMember](#t-net.adamec.dev.markupdoc.codemodel.assemblymember__1lp0l3j)
@@ -6073,7 +8389,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.assemblymemberbuilder.memberkind__vdzakj" />  AssemblyMemberBuilder.MemberKind Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [AssemblyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.assemblymemberbuilder__1t89m35)</small>
+Type: [AssemblyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.assemblymemberbuilder__1t89m35)           
+Sources: CodeModel\Builder\AssemblyMemberBuilder.cs</small>
 
 
 Kind (type) of the member
@@ -6084,7 +8401,7 @@ Kind (type) of the member
 public override MemberKindEnum MemberKind { get; }
 ```
 
-<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</dt><dd></dd></dl>
+<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</dt><dd></dd></dl>Overrides: [MemberBuilder.MemberKind](#p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.memberkind__1o9lat)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -6096,7 +8413,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.assemblymemberbuilder.namespaces__e9i497" />  AssemblyMemberBuilder.Namespaces Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [AssemblyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.assemblymemberbuilder__1t89m35)</small>
+Type: [AssemblyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.assemblymemberbuilder__1t89m35)           
+Sources: CodeModel\Builder\AssemblyMemberBuilder.cs</small>
 
 
 List of namespaces within the assembly
@@ -6118,7 +8436,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.builder.eventmemberbuilder__6cikxn" />  EventMemberBuilder Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\Builder\EventMemberBuilder.cs</small>
 
 
 Builder for [EventMember](#t-net.adamec.dev.markupdoc.codemodel.eventmember__qn6e6l)
@@ -6153,7 +8472,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.eventmemberbuilder.hasexplicitaddandremove__pjyyg5" />  EventMemberBuilder.HasExplicitAddAndRemove Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [EventMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.eventmemberbuilder__6cikxn)</small>
+Type: [EventMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.eventmemberbuilder__6cikxn)           
+Sources: CodeModel\Builder\EventMemberBuilder.cs</small>
 
 
 Flag whether the event has explicit implementation of add and remove accessors
@@ -6176,7 +8496,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.eventmemberbuilder.memberkind__r2w7o1" />  EventMemberBuilder.MemberKind Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [EventMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.eventmemberbuilder__6cikxn)</small>
+Type: [EventMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.eventmemberbuilder__6cikxn)           
+Sources: CodeModel\Builder\EventMemberBuilder.cs</small>
 
 
 Kind (type) of the member
@@ -6187,7 +8508,7 @@ Kind (type) of the member
 public override MemberKindEnum MemberKind { get; }
 ```
 
-<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</dt><dd></dd></dl>
+<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</dt><dd></dd></dl>Overrides: [MemberBuilder.MemberKind](#p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.memberkind__1o9lat)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -6199,7 +8520,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.eventmemberbuilder.typeref__qd87z0" />  EventMemberBuilder.TypeRef Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [EventMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.eventmemberbuilder__6cikxn)</small>
+Type: [EventMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.eventmemberbuilder__6cikxn)           
+Sources: CodeModel\Builder\EventMemberBuilder.cs</small>
 
 
 Delegate type (type reference) of the event handler
@@ -6221,7 +8543,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder__1jrcush" />  FieldMemberBuilder Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\Builder\FieldMemberBuilder.cs</small>
 
 
 Builder for [FieldMember](#t-net.adamec.dev.markupdoc.codemodel.fieldmember__tbd84z)
@@ -6259,7 +8582,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder.constantvalue__3vfjkc" />  FieldMemberBuilder.ConstantValue Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [FieldMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder__1jrcush)</small>
+Type: [FieldMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder__1jrcush)           
+Sources: CodeModel\Builder\FieldMemberBuilder.cs</small>
 
 
 The constant value of the field
@@ -6286,7 +8610,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder.isconst__1n6s3ui" />  FieldMemberBuilder.IsConst Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [FieldMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder__1jrcush)</small>
+Type: [FieldMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder__1jrcush)           
+Sources: CodeModel\Builder\FieldMemberBuilder.cs</small>
 
 
 Flag whether the field is constant
@@ -6309,7 +8634,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder.isreadonly__7c8nkj" />  FieldMemberBuilder.IsReadOnly Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [FieldMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder__1jrcush)</small>
+Type: [FieldMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder__1jrcush)           
+Sources: CodeModel\Builder\FieldMemberBuilder.cs</small>
 
 
 Flag whether the field is read only
@@ -6332,7 +8658,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder.isvolatile__u90vd5" />  FieldMemberBuilder.IsVolatile Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [FieldMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder__1jrcush)</small>
+Type: [FieldMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder__1jrcush)           
+Sources: CodeModel\Builder\FieldMemberBuilder.cs</small>
 
 
 Flag whether the field is volatile
@@ -6355,7 +8682,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder.memberkind__m8cfwz" />  FieldMemberBuilder.MemberKind Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [FieldMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder__1jrcush)</small>
+Type: [FieldMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder__1jrcush)           
+Sources: CodeModel\Builder\FieldMemberBuilder.cs</small>
 
 
 Kind (type) of the member
@@ -6366,7 +8694,7 @@ Kind (type) of the member
 public override MemberKindEnum MemberKind { get; }
 ```
 
-<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</dt><dd></dd></dl>
+<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</dt><dd></dd></dl>Overrides: [MemberBuilder.MemberKind](#p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.memberkind__1o9lat)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -6378,7 +8706,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder.typeref__1yrsoq0" />  FieldMemberBuilder.TypeRef Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [FieldMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder__1jrcush)</small>
+Type: [FieldMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder__1jrcush)           
+Sources: CodeModel\Builder\FieldMemberBuilder.cs</small>
 
 
 Type (type reference) of the field value
@@ -6400,7 +8729,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab" />  MemberBuilder Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
 
 
 Builder for [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)
@@ -6412,6 +8742,7 @@ public abstract class MemberBuilder
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Derived: [net.adamec.dev.markupdoc.CodeModel.Builder.AssemblyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.assemblymemberbuilder__1t89m35), [net.adamec.dev.markupdoc.CodeModel.Builder.NamespaceMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.namespacememberbuilder__1a79nrm), [net.adamec.dev.markupdoc.CodeModel.Builder.RootMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad), [net.adamec.dev.markupdoc.CodeModel.Builder.TypeContentMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typecontentmemberbuilder__1kmstl4), [net.adamec.dev.markupdoc.CodeModel.Builder.TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)           
 
 
 
@@ -6438,6 +8769,7 @@ Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object"
  | [NameBase](#p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.namebase__1uczvyr) | public | Name of the member without type params, indexer params, operator params, etc. | 
  | [Namespace](#p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.namespace__k8my0i) | public | Reference to the containing namespace member | 
  | [Root](#p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.root__1dexqz) | public | Reference to the root of the code model | 
+ | [SourceFiles](#p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.sourcefiles__15tpme5) | public | Source file defining the symbol | 
  | [Symbol](#p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.symbol__11sbm3v) | public | Roslyn semantic analysis symbol of the member | 
 
  
@@ -6461,7 +8793,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.assembly__u0picr" />  MemberBuilder.Assembly Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)</small>
+Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
 
 
 Reference to the containing assembly member
@@ -6484,7 +8817,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.attributes__13uegce" />  MemberBuilder.Attributes Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)</small>
+Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
 
 
 Member&#39;s attributes definition (including the parameters).
@@ -6507,7 +8841,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.attributetyperefs__1w94m33" />  MemberBuilder.AttributeTypeRefs Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)</small>
+Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
 
 
 Types (type references) of the member attributes
@@ -6530,7 +8865,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.documentation__1h6mhf" />  MemberBuilder.Documentation Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)</small>
+Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
 
 
 Parsed XML documentation comments. [Documentation](#p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.documentation__1h6mhf) is the root element of the parsed XML documentation comments
@@ -6553,7 +8889,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.documentationid__fuj6uu" />  MemberBuilder.DocumentationId Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)</small>
+Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
 
 
 Member&#39;s documentation ID as provided by the compiler (for example M:myNamespace.myType.myMethod)
@@ -6580,7 +8917,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.documentationxml__hki5yw" />  MemberBuilder.DocumentationXml Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)</small>
+Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
 
 
 XML documentation comments
@@ -6603,7 +8941,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.isabstract__1gvw0bf" />  MemberBuilder.IsAbstract Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)</small>
+Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
 
 
 Flag whether the member is abstract
@@ -6626,7 +8965,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.isextern__1lst26j" />  MemberBuilder.IsExtern Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)</small>
+Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
 
 
 Flag whether the member is extern
@@ -6649,7 +8989,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.isnew__7v1jmv" />  MemberBuilder.IsNew Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)</small>
+Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
 
 
 Flag whether the member hides member with the same name in base class
@@ -6672,7 +9013,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.isoverride__1p2q36b" />  MemberBuilder.IsOverride Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)</small>
+Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
 
 
 Flag whether the member overrides the member in the base class
@@ -6695,7 +9037,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.issealed__1biaeq1" />  MemberBuilder.IsSealed Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)</small>
+Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
 
 
 Flag whether the member is sealed
@@ -6718,7 +9061,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.isstatic__exro8z" />  MemberBuilder.IsStatic Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)</small>
+Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
 
 
 Flag whether the member is static
@@ -6741,7 +9085,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.isvirtual__1rjdu3e" />  MemberBuilder.IsVirtual Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)</small>
+Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
 
 
 Flag whether the member is virtual (can be overriden)
@@ -6764,7 +9109,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.memberkind__1o9lat" />  MemberBuilder.MemberKind Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)</small>
+Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
 
 
 Kind (type) of the member
@@ -6787,7 +9133,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.modifier__9ghn8u" />  MemberBuilder.Modifier Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)</small>
+Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
 
 
 Member modifier (public, private, etc.)
@@ -6810,7 +9157,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.name__1xiduuc" />  MemberBuilder.Name Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)</small>
+Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
 
 
 Name of the member as presented in generated output
@@ -6833,7 +9181,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.namebase__1uczvyr" />  MemberBuilder.NameBase Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)</small>
+Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
 
 
 Name of the member without type params, indexer params, operator params, etc.
@@ -6856,7 +9205,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.namespace__k8my0i" />  MemberBuilder.Namespace Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)</small>
+Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
 
 
 Reference to the containing namespace member
@@ -6879,7 +9229,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.root__1dexqz" />  MemberBuilder.Root Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)</small>
+Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
 
 
 Reference to the root of the code model
@@ -6899,10 +9250,35 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
+##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.sourcefiles__15tpme5" />  MemberBuilder.SourceFiles Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
+Assembly: MarkupDoc           
+Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
+
+
+Source file defining the symbol
+
+
+
+```csharp
+public List<string> SourceFiles { get; set; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1" target="_blank" >List&lt;string&gt;</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.symbol__11sbm3v" />  MemberBuilder.Symbol Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)</small>
+Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
 
 
 Roslyn semantic analysis symbol of the member
@@ -6922,10 +9298,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.setattributes_net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder___y95mcr" />  MemberBuilder.SetAttributes(RootMemberBuilder) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.setattributes_net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder___y95mcr" />  MemberBuilder.SetAttributes(RootMemberBuilder) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)</small>
+Type: [MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Sources: CodeModel\Builder\MemberBuilder.cs</small>
 
 
 Sets the member&#39;s [Attributes](#p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.attributes__13uegce) and [AttributeTypeRefs](#p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.attributetyperefs__1w94m33)
@@ -6948,7 +9325,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w" />  MethodMemberBuilder Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\Builder\MethodMemberBuilder.cs</small>
 
 
 Builder for [MethodMember](#t-net.adamec.dev.markupdoc.codemodel.methodmember__od9yq)
@@ -6995,7 +9373,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder.isasync__8y3p82" />  MethodMemberBuilder.IsAsync Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)</small>
+Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)           
+Sources: CodeModel\Builder\MethodMemberBuilder.cs</small>
 
 
 Flag whether the method is async
@@ -7018,7 +9397,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder.isconstructor__1r17j86" />  MethodMemberBuilder.IsConstructor Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)</small>
+Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)           
+Sources: CodeModel\Builder\MethodMemberBuilder.cs</small>
 
 
 Flag whether the method is construction
@@ -7041,7 +9421,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder.isdestructor__1xax39j" />  MethodMemberBuilder.IsDestructor Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)</small>
+Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)           
+Sources: CodeModel\Builder\MethodMemberBuilder.cs</small>
 
 
 Flag whether the method is destructor
@@ -7064,7 +9445,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder.isextensionmethod__pmj45m" />  MethodMemberBuilder.IsExtensionMethod Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)</small>
+Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)           
+Sources: CodeModel\Builder\MethodMemberBuilder.cs</small>
 
 
 Flag whether the method is extension method
@@ -7087,7 +9469,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder.isgeneric__1pwvqjl" />  MethodMemberBuilder.IsGeneric Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)</small>
+Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)           
+Sources: CodeModel\Builder\MethodMemberBuilder.cs</small>
 
 
 Flag whether method is generic
@@ -7110,7 +9493,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder.memberkind__woi5v2" />  MethodMemberBuilder.MemberKind Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)</small>
+Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)           
+Sources: CodeModel\Builder\MethodMemberBuilder.cs</small>
 
 
 Kind (type) of the member
@@ -7121,7 +9505,7 @@ Kind (type) of the member
 public override MemberKindEnum MemberKind { get; }
 ```
 
-<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</dt><dd></dd></dl>
+<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</dt><dd></dd></dl>Overrides: [MemberBuilder.MemberKind](#p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.memberkind__1o9lat)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -7133,7 +9517,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder.methodkind__f41fm9" />  MethodMemberBuilder.MethodKind Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)</small>
+Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)           
+Sources: CodeModel\Builder\MethodMemberBuilder.cs</small>
 
 
 Kind of the method (constructor, getter, regular method ...)
@@ -7156,7 +9541,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder.operatorcsharpsymbol__1f31bmr" />  MethodMemberBuilder.OperatorCSharpSymbol Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)</small>
+Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)           
+Sources: CodeModel\Builder\MethodMemberBuilder.cs</small>
 
 
 C# operator symbol for operator method
@@ -7179,7 +9565,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder.parameters__1usepgy" />  MethodMemberBuilder.Parameters Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)</small>
+Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)           
+Sources: CodeModel\Builder\MethodMemberBuilder.cs</small>
 
 
 Method parameters
@@ -7202,7 +9589,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder.refkind__1cgi9xv" />  MethodMemberBuilder.RefKind Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)</small>
+Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)           
+Sources: CodeModel\Builder\MethodMemberBuilder.cs</small>
 
 
 Method&#39;s return ref kind (none, ref)
@@ -7225,7 +9613,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder.returnsbyref__1bdbn1h" />  MethodMemberBuilder.ReturnsByRef Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)</small>
+Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)           
+Sources: CodeModel\Builder\MethodMemberBuilder.cs</small>
 
 
 Flag whether the methods returns by reference
@@ -7248,7 +9637,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder.returnsbyrefreadonly__ez3crj" />  MethodMemberBuilder.ReturnsByRefReadonly Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)</small>
+Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)           
+Sources: CodeModel\Builder\MethodMemberBuilder.cs</small>
 
 
 Flag whether the methods returns by read only reference (ref readonly)
@@ -7271,7 +9661,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder.returnsvoid__n964nn" />  MethodMemberBuilder.ReturnsVoid Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)</small>
+Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)           
+Sources: CodeModel\Builder\MethodMemberBuilder.cs</small>
 
 
 Flags whether the method returns void
@@ -7294,7 +9685,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder.returntyperef__iiyukl" />  MethodMemberBuilder.ReturnTypeRef Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)</small>
+Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)           
+Sources: CodeModel\Builder\MethodMemberBuilder.cs</small>
 
 
 Type reference of the method return type
@@ -7317,7 +9709,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder.typeparameters__n6xbei" />  MethodMemberBuilder.TypeParameters Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)</small>
+Type: [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w)           
+Sources: CodeModel\Builder\MethodMemberBuilder.cs</small>
 
 
 Type parameters for generic methods
@@ -7339,7 +9732,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder__lh5rux" />  MethodParameterBuilder Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\Builder\MethodParameterBuilder.cs</small>
 
 
 Builder for [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)
@@ -7384,7 +9778,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder.attributes__1t8c7wg" />  MethodParameterBuilder.Attributes Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder__lh5rux)</small>
+Type: [MethodParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder__lh5rux)           
+Sources: CodeModel\Builder\MethodParameterBuilder.cs</small>
 
 
 Parameter attributes definition (including the parameters).
@@ -7407,7 +9802,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder.explicitdefaultvalue__gvc0n5" />  MethodParameterBuilder.ExplicitDefaultValue Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder__lh5rux)</small>
+Type: [MethodParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder__lh5rux)           
+Sources: CodeModel\Builder\MethodParameterBuilder.cs</small>
 
 
 Parameter&#39;s explicitly defined default value (when available)
@@ -7430,7 +9826,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder.hasexplicitdefaultvalue__1kulx9f" />  MethodParameterBuilder.HasExplicitDefaultValue Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder__lh5rux)</small>
+Type: [MethodParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder__lh5rux)           
+Sources: CodeModel\Builder\MethodParameterBuilder.cs</small>
 
 
 Flag whether the parameter has explicitly defined default value
@@ -7453,7 +9850,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder.isoptional__1rtnv9j" />  MethodParameterBuilder.IsOptional Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder__lh5rux)</small>
+Type: [MethodParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder__lh5rux)           
+Sources: CodeModel\Builder\MethodParameterBuilder.cs</small>
 
 
 Flag whether the parameter is optional
@@ -7476,7 +9874,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder.isparams__b64bjt" />  MethodParameterBuilder.IsParams Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder__lh5rux)</small>
+Type: [MethodParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder__lh5rux)           
+Sources: CodeModel\Builder\MethodParameterBuilder.cs</small>
 
 
 Flag whether the parameter is with `params` modifier
@@ -7499,7 +9898,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder.isthis__xj2zwv" />  MethodParameterBuilder.IsThis Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder__lh5rux)</small>
+Type: [MethodParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder__lh5rux)           
+Sources: CodeModel\Builder\MethodParameterBuilder.cs</small>
 
 
 Flag whether the parameter is with `this` modifier
@@ -7522,7 +9922,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder.name__zd3u2a" />  MethodParameterBuilder.Name Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder__lh5rux)</small>
+Type: [MethodParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder__lh5rux)           
+Sources: CodeModel\Builder\MethodParameterBuilder.cs</small>
 
 
 Name of the parameter
@@ -7545,7 +9946,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder.refkind__1xrhok" />  MethodParameterBuilder.RefKind Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder__lh5rux)</small>
+Type: [MethodParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder__lh5rux)           
+Sources: CodeModel\Builder\MethodParameterBuilder.cs</small>
 
 
 Information whether the parameter is &quot;by reference&quot; with the reference kind (None, Ref, Out,In)
@@ -7568,7 +9970,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder.typeref__r2j80u" />  MethodParameterBuilder.TypeRef Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [MethodParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder__lh5rux)</small>
+Type: [MethodParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodparameterbuilder__lh5rux)           
+Sources: CodeModel\Builder\MethodParameterBuilder.cs</small>
 
 
 Type reference for the parameter&#39;s type
@@ -7590,7 +9993,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2" />  ModelBuilder Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\Builder\ModelBuilder.cs</small>
 
 
 Code model builder
@@ -7613,7 +10017,7 @@ Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object"
  | [BuildAssembly(IAssemblySymbol, RootMemberBuilder, int)](#m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildassembly_microsoft.codeanalysis.iassemblysymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-system.int32___1lbqkgy) | private static | Prepares the [AssemblyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.assemblymemberbuilder__1t89m35) from the <strong>symbol</strong> and adds it to [Assemblies](#p-net.adamec.dev.markupdoc.codemodel.rootmember.assemblies__nirzih) | 
  | [BuildEvent(IEventSymbol, RootMemberBuilder, TypeMemberBuilder, int)](#m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildevent_microsoft.codeanalysis.ieventsymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder-system.int32___jk6kv) | private static | Prepares the [EventMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.eventmemberbuilder__6cikxn) from the <strong>symbol</strong> and adds it to [ContentMembers](#p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.contentmembers__1jrowmf) | 
  | [BuildField(IFieldSymbol, RootMemberBuilder, TypeMemberBuilder, int)](#m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildfield_microsoft.codeanalysis.ifieldsymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder-system.int32___pykoun) | private static | Prepares the [FieldMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder__1jrcush) from the <strong>symbol</strong> and adds it to [ContentMembers](#p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.contentmembers__1jrowmf) | 
- | [BuildFromProjectSourcesAsync(string)](#m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildfromprojectsourcesasync_system.string___zrjhad) | public static | Builds a code model for C# project | 
+ | [BuildFromProjectSourcesAsync(string, IEnumerable&lt;net.adamec.dev.markupdoc.AddOns.IAddOn&gt;)](#m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildfromprojectsourcesasync_system.string-system.collections.generic.ienumerable_net.adamec.dev.markupdoc.addons.iaddon____d690to) | public static | Builds a code model for C# project | 
  | [BuildMethod(IMethodSymbol, RootMemberBuilder, TypeMemberBuilder, int)](#m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildmethod_microsoft.codeanalysis.imethodsymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder-system.int32___18on0xf) | private static | Prepares the [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w) from the <strong>symbol</strong> and adds it to [ContentMembers](#p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.contentmembers__1jrowmf) | 
  | [BuildNamespace(INamespaceSymbol, RootMemberBuilder, AssemblyMemberBuilder, int)](#m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildnamespace_microsoft.codeanalysis.inamespacesymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.assemblymemberbuilder-system.int32___1weblwh) | private static | Prepares the [NamespaceMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.namespacememberbuilder__1a79nrm) from the <strong>symbol</strong> and adds it to [Namespaces](#p-net.adamec.dev.markupdoc.codemodel.builder.assemblymemberbuilder.namespaces__e9i497) | 
  | [BuildProperty(IPropertySymbol, RootMemberBuilder, TypeMemberBuilder, int)](#m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildproperty_microsoft.codeanalysis.ipropertysymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder-system.int32___gfm8xv) | private static | Prepares the [PropertyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder__k8fr6c) from the <strong>symbol</strong> and adds it to [ContentMembers](#p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.contentmembers__1jrowmf) | 
@@ -7630,10 +10034,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.build_microsoft.codeanalysis.isymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.assemblymemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.namespacememberbuilder-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder-system.int32___15bn67a" />  ModelBuilder.Build(ISymbol, RootMemberBuilder, AssemblyMemberBuilder, NamespaceMemberBuilder, TypeMemberBuilder, int) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.build_microsoft.codeanalysis.isymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.assemblymemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.namespacememberbuilder-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder-system.int32___15bn67a" />  ModelBuilder.Build(ISymbol, RootMemberBuilder, AssemblyMemberBuilder, NamespaceMemberBuilder, TypeMemberBuilder, int) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [ModelBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2)</small>
+Type: [ModelBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2)           
+Sources: CodeModel\Builder\ModelBuilder.cs</small>
 
 
 Walks through the Roslyn symbols hierarchy and prepares the member builders hierarchy into the given <strong>root</strong> builder.
@@ -7654,10 +10059,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildassembly_microsoft.codeanalysis.iassemblysymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-system.int32___1lbqkgy" />  ModelBuilder.BuildAssembly(IAssemblySymbol, RootMemberBuilder, int) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildassembly_microsoft.codeanalysis.iassemblysymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-system.int32___1lbqkgy" />  ModelBuilder.BuildAssembly(IAssemblySymbol, RootMemberBuilder, int) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [ModelBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2)</small>
+Type: [ModelBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2)           
+Sources: CodeModel\Builder\ModelBuilder.cs</small>
 
 
 Prepares the [AssemblyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.assemblymemberbuilder__1t89m35) from the <strong>symbol</strong> and adds it to [Assemblies](#p-net.adamec.dev.markupdoc.codemodel.rootmember.assemblies__nirzih)
@@ -7678,10 +10084,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildevent_microsoft.codeanalysis.ieventsymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder-system.int32___jk6kv" />  ModelBuilder.BuildEvent(IEventSymbol, RootMemberBuilder, TypeMemberBuilder, int) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildevent_microsoft.codeanalysis.ieventsymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder-system.int32___jk6kv" />  ModelBuilder.BuildEvent(IEventSymbol, RootMemberBuilder, TypeMemberBuilder, int) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [ModelBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2)</small>
+Type: [ModelBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2)           
+Sources: CodeModel\Builder\ModelBuilder.cs</small>
 
 
 Prepares the [EventMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.eventmemberbuilder__6cikxn) from the <strong>symbol</strong> and adds it to [ContentMembers](#p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.contentmembers__1jrowmf)
@@ -7702,10 +10109,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildfield_microsoft.codeanalysis.ifieldsymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder-system.int32___pykoun" />  ModelBuilder.BuildField(IFieldSymbol, RootMemberBuilder, TypeMemberBuilder, int) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildfield_microsoft.codeanalysis.ifieldsymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder-system.int32___pykoun" />  ModelBuilder.BuildField(IFieldSymbol, RootMemberBuilder, TypeMemberBuilder, int) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [ModelBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2)</small>
+Type: [ModelBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2)           
+Sources: CodeModel\Builder\ModelBuilder.cs</small>
 
 
 Prepares the [FieldMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder__1jrcush) from the <strong>symbol</strong> and adds it to [ContentMembers](#p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.contentmembers__1jrowmf)
@@ -7726,10 +10134,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildfromprojectsourcesasync_system.string___zrjhad" />  ModelBuilder.BuildFromProjectSourcesAsync(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildfromprojectsourcesasync_system.string-system.collections.generic.ienumerable_net.adamec.dev.markupdoc.addons.iaddon____d690to" />  ModelBuilder.BuildFromProjectSourcesAsync(string, IEnumerable&lt;net.adamec.dev.markupdoc.AddOns.IAddOn&gt;) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [ModelBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2)</small>
+Type: [ModelBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2)           
+Sources: CodeModel\Builder\ModelBuilder.cs</small>
 
 
 Builds a code model for C# project
@@ -7737,10 +10146,10 @@ Builds a code model for C# project
 
 
 ```csharp
-public static async Task<net.adamec.dev.markupdoc.CodeModel.RootMember> BuildFromProjectSourcesAsync(string projectFile)
+public static async Task<net.adamec.dev.markupdoc.CodeModel.RootMember> BuildFromProjectSourcesAsync(string projectFile, IEnumerable<net.adamec.dev.markupdoc.AddOns.IAddOn> addOns)
 ```
 
-<strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>projectFile</strong></dt><dd>Project file full path</dd></dl>
+<strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>projectFile</strong></dt><dd>Project file full path</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1" target="_blank" >IEnumerable&lt;net.adamec.dev.markupdoc.AddOns.IAddOn&gt;</a> <strong>addOns</strong></dt><dd>Optional list of add-ons</dd></dl>
 <strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1" target="_blank" >System.Threading.Tasks.Task&lt;net.adamec.dev.markupdoc.CodeModel.RootMember&gt;</a></dt><dd>Code model root (async)</dd></dl>
 
 
@@ -7750,10 +10159,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildmethod_microsoft.codeanalysis.imethodsymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder-system.int32___18on0xf" />  ModelBuilder.BuildMethod(IMethodSymbol, RootMemberBuilder, TypeMemberBuilder, int) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildmethod_microsoft.codeanalysis.imethodsymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder-system.int32___18on0xf" />  ModelBuilder.BuildMethod(IMethodSymbol, RootMemberBuilder, TypeMemberBuilder, int) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [ModelBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2)</small>
+Type: [ModelBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2)           
+Sources: CodeModel\Builder\ModelBuilder.cs</small>
 
 
 Prepares the [MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w) from the <strong>symbol</strong> and adds it to [ContentMembers](#p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.contentmembers__1jrowmf)
@@ -7774,10 +10184,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildnamespace_microsoft.codeanalysis.inamespacesymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.assemblymemberbuilder-system.int32___1weblwh" />  ModelBuilder.BuildNamespace(INamespaceSymbol, RootMemberBuilder, AssemblyMemberBuilder, int) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildnamespace_microsoft.codeanalysis.inamespacesymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.assemblymemberbuilder-system.int32___1weblwh" />  ModelBuilder.BuildNamespace(INamespaceSymbol, RootMemberBuilder, AssemblyMemberBuilder, int) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [ModelBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2)</small>
+Type: [ModelBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2)           
+Sources: CodeModel\Builder\ModelBuilder.cs</small>
 
 
 Prepares the [NamespaceMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.namespacememberbuilder__1a79nrm) from the <strong>symbol</strong> and adds it to [Namespaces](#p-net.adamec.dev.markupdoc.codemodel.builder.assemblymemberbuilder.namespaces__e9i497)
@@ -7798,10 +10209,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildproperty_microsoft.codeanalysis.ipropertysymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder-system.int32___gfm8xv" />  ModelBuilder.BuildProperty(IPropertySymbol, RootMemberBuilder, TypeMemberBuilder, int) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildproperty_microsoft.codeanalysis.ipropertysymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder-system.int32___gfm8xv" />  ModelBuilder.BuildProperty(IPropertySymbol, RootMemberBuilder, TypeMemberBuilder, int) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [ModelBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2)</small>
+Type: [ModelBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2)           
+Sources: CodeModel\Builder\ModelBuilder.cs</small>
 
 
 Prepares the [PropertyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder__k8fr6c) from the <strong>symbol</strong> and adds it to [ContentMembers](#p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.contentmembers__1jrowmf)
@@ -7822,10 +10234,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildtype_microsoft.codeanalysis.inamedtypesymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.assemblymemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.namespacememberbuilder-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder-system.int32___af53q5" />  ModelBuilder.BuildType(INamedTypeSymbol, RootMemberBuilder, AssemblyMemberBuilder, NamespaceMemberBuilder, TypeMemberBuilder, int) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.buildtype_microsoft.codeanalysis.inamedtypesymbol-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.assemblymemberbuilder-net.adamec.dev.markupdoc.codemodel.builder.namespacememberbuilder-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder-system.int32___af53q5" />  ModelBuilder.BuildType(INamedTypeSymbol, RootMemberBuilder, AssemblyMemberBuilder, NamespaceMemberBuilder, TypeMemberBuilder, int) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [ModelBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2)</small>
+Type: [ModelBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2)           
+Sources: CodeModel\Builder\ModelBuilder.cs</small>
 
 
 Prepares the [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn) from the <strong>symbol</strong> and adds it to [Types](#p-net.adamec.dev.markupdoc.codemodel.builder.namespacememberbuilder.types__robhnp)
@@ -7846,10 +10259,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.getmethodparameters_system.collections.immutable.immutablearray_microsoft.codeanalysis.iparametersymbol_-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-system.boolean___134ezzp" />  ModelBuilder.GetMethodParameters(ImmutableArray&lt;Microsoft.CodeAnalysis.IParameterSymbol&gt;, RootMemberBuilder, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.getmethodparameters_system.collections.immutable.immutablearray_microsoft.codeanalysis.iparametersymbol_-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder-system.boolean___134ezzp" />  ModelBuilder.GetMethodParameters(ImmutableArray&lt;Microsoft.CodeAnalysis.IParameterSymbol&gt;, RootMemberBuilder, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [ModelBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2)</small>
+Type: [ModelBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2)           
+Sources: CodeModel\Builder\ModelBuilder.cs</small>
 
 
 Gets the list of method parameters (also used for retrieving delegate and indexer parameters)
@@ -7874,10 +10288,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.gettypeparameters_system.collections.immutable.immutablearray_microsoft.codeanalysis.itypeparametersymbol_-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder___4af5sd" />  ModelBuilder.GetTypeParameters(ImmutableArray&lt;Microsoft.CodeAnalysis.ITypeParameterSymbol&gt;, RootMemberBuilder) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder.gettypeparameters_system.collections.immutable.immutablearray_microsoft.codeanalysis.itypeparametersymbol_-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder___4af5sd" />  ModelBuilder.GetTypeParameters(ImmutableArray&lt;Microsoft.CodeAnalysis.ITypeParameterSymbol&gt;, RootMemberBuilder) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [ModelBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2)</small>
+Type: [ModelBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.modelbuilder__1bidpb2)           
+Sources: CodeModel\Builder\ModelBuilder.cs</small>
 
 
 Gets the list of type parameters for generic type or generic method
@@ -7900,7 +10315,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.builder.namespacememberbuilder__1a79nrm" />  NamespaceMemberBuilder Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\Builder\NamespaceMemberBuilder.cs</small>
 
 
 Builder for [NamespaceMember](#t-net.adamec.dev.markupdoc.codemodel.namespacemember__ja97li)
@@ -7935,7 +10351,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.namespacememberbuilder.isglobalnamespace__1idlboq" />  NamespaceMemberBuilder.IsGlobalNamespace Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [NamespaceMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.namespacememberbuilder__1a79nrm)</small>
+Type: [NamespaceMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.namespacememberbuilder__1a79nrm)           
+Sources: CodeModel\Builder\NamespaceMemberBuilder.cs</small>
 
 
 Flag whether the namespace is global
@@ -7958,7 +10375,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.namespacememberbuilder.memberkind__1w0tyvk" />  NamespaceMemberBuilder.MemberKind Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [NamespaceMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.namespacememberbuilder__1a79nrm)</small>
+Type: [NamespaceMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.namespacememberbuilder__1a79nrm)           
+Sources: CodeModel\Builder\NamespaceMemberBuilder.cs</small>
 
 
 Kind (type) of the member
@@ -7969,7 +10387,7 @@ Kind (type) of the member
 public override MemberKindEnum MemberKind { get; }
 ```
 
-<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</dt><dd></dd></dl>
+<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</dt><dd></dd></dl>Overrides: [MemberBuilder.MemberKind](#p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.memberkind__1o9lat)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -7981,7 +10399,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.namespacememberbuilder.types__robhnp" />  NamespaceMemberBuilder.Types Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [NamespaceMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.namespacememberbuilder__1a79nrm)</small>
+Type: [NamespaceMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.namespacememberbuilder__1a79nrm)           
+Sources: CodeModel\Builder\NamespaceMemberBuilder.cs</small>
 
 
 List of all types (including interfaces, delegates, etc.) defined within the namespace
@@ -8003,7 +10422,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder__k8fr6c" />  PropertyMemberBuilder Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\Builder\PropertyMemberBuilder.cs</small>
 
 
 Builder for [PropertyMember](#t-net.adamec.dev.markupdoc.codemodel.propertymember__m06mbu)
@@ -8043,7 +10463,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder.gettermodifier__114qq8s" />  PropertyMemberBuilder.GetterModifier Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [PropertyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder__k8fr6c)</small>
+Type: [PropertyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder__k8fr6c)           
+Sources: CodeModel\Builder\PropertyMemberBuilder.cs</small>
 
 
 Getter access modifier if it&#39;s different than the property one
@@ -8066,7 +10487,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder.isindexer__1ux36yh" />  PropertyMemberBuilder.IsIndexer Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [PropertyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder__k8fr6c)</small>
+Type: [PropertyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder__k8fr6c)           
+Sources: CodeModel\Builder\PropertyMemberBuilder.cs</small>
 
 
 Flag whether the property is indexer;
@@ -8089,7 +10511,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder.isreadonly__evv3bs" />  PropertyMemberBuilder.IsReadOnly Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [PropertyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder__k8fr6c)</small>
+Type: [PropertyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder__k8fr6c)           
+Sources: CodeModel\Builder\PropertyMemberBuilder.cs</small>
 
 
 Flag whether the property is read only
@@ -8112,7 +10535,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder.iswriteonly__z59w9d" />  PropertyMemberBuilder.IsWriteOnly Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [PropertyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder__k8fr6c)</small>
+Type: [PropertyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder__k8fr6c)           
+Sources: CodeModel\Builder\PropertyMemberBuilder.cs</small>
 
 
 Flag whether the property is write only
@@ -8135,7 +10559,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder.memberkind__6klili" />  PropertyMemberBuilder.MemberKind Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [PropertyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder__k8fr6c)</small>
+Type: [PropertyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder__k8fr6c)           
+Sources: CodeModel\Builder\PropertyMemberBuilder.cs</small>
 
 
 Kind (type) of the member
@@ -8146,7 +10571,7 @@ Kind (type) of the member
 public override MemberKindEnum MemberKind { get; }
 ```
 
-<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</dt><dd></dd></dl>
+<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</dt><dd></dd></dl>Overrides: [MemberBuilder.MemberKind](#p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.memberkind__1o9lat)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -8158,7 +10583,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder.parameters__1xthnx6" />  PropertyMemberBuilder.Parameters Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [PropertyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder__k8fr6c)</small>
+Type: [PropertyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder__k8fr6c)           
+Sources: CodeModel\Builder\PropertyMemberBuilder.cs</small>
 
 
 List of property parameters (if any). Just the indexers may have the parameters
@@ -8181,7 +10607,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder.settermodifier__13b9zlk" />  PropertyMemberBuilder.SetterModifier Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [PropertyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder__k8fr6c)</small>
+Type: [PropertyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder__k8fr6c)           
+Sources: CodeModel\Builder\PropertyMemberBuilder.cs</small>
 
 
 Setter access modifier if it&#39;s different than the property one
@@ -8204,7 +10631,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder.typeref__1tm2yvr" />  PropertyMemberBuilder.TypeRef Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [PropertyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder__k8fr6c)</small>
+Type: [PropertyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder__k8fr6c)           
+Sources: CodeModel\Builder\PropertyMemberBuilder.cs</small>
 
 
 Type reference of property type
@@ -8226,7 +10654,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad" />  RootMemberBuilder Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\Builder\RootMemberBuilder.cs</small>
 
 
 Builder for [RootMember](#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj)
@@ -8248,7 +10677,9 @@ Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object"
  | [AllTypeRefs](#p-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder.alltyperefs__6pc6ms) | public | List of all type references used within the code model | 
  | [Assemblies](#p-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder.assemblies__1y8u6kb) | public | List of all assemblies defined within the code model | 
  | [BaseMainFile](#p-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder.basemainfile__152qap3) | public | Name of the main (index) file without the path and extension | 
+ | [CompilationFiles](#p-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder.compilationfiles__1bber0z) | public | List of all source files in compilation | 
  | [MemberKind](#p-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder.memberkind__1hvln7) | public | Kind (type) of the member | 
+ | [ProjectRootDir](#p-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder.projectrootdir__ylhykn) | public | Full path to the project root directory | 
  | [SplitFileType](#p-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder.splitfiletype__jt8zgj) | public | Information whether and how to split the output (none, per namespace, per type) | 
 
  
@@ -8272,7 +10703,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder.alltyperefs__6pc6ms" />  RootMemberBuilder.AllTypeRefs Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [RootMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad)</small>
+Type: [RootMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad)           
+Sources: CodeModel\Builder\RootMemberBuilder.cs</small>
 
 
 List of all type references used within the code model
@@ -8295,7 +10727,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder.assemblies__1y8u6kb" />  RootMemberBuilder.Assemblies Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [RootMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad)</small>
+Type: [RootMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad)           
+Sources: CodeModel\Builder\RootMemberBuilder.cs</small>
 
 
 List of all assemblies defined within the code model
@@ -8318,7 +10751,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder.basemainfile__152qap3" />  RootMemberBuilder.BaseMainFile Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [RootMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad)</small>
+Type: [RootMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad)           
+Sources: CodeModel\Builder\RootMemberBuilder.cs</small>
 
 
 Name of the main (index) file without the path and extension
@@ -8338,10 +10772,35 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
+##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder.compilationfiles__1bber0z" />  RootMemberBuilder.CompilationFiles Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
+Assembly: MarkupDoc           
+Type: [RootMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad)           
+Sources: CodeModel\Builder\RootMemberBuilder.cs</small>
+
+
+List of all source files in compilation
+
+
+
+```csharp
+public List<string> CompilationFiles { get; set; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1" target="_blank" >List&lt;string&gt;</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder.memberkind__1hvln7" />  RootMemberBuilder.MemberKind Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [RootMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad)</small>
+Type: [RootMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad)           
+Sources: CodeModel\Builder\RootMemberBuilder.cs</small>
 
 
 Kind (type) of the member
@@ -8352,7 +10811,31 @@ Kind (type) of the member
 public override MemberKindEnum MemberKind { get; }
 ```
 
-<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</dt><dd></dd></dl>
+<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</dt><dd></dd></dl>Overrides: [MemberBuilder.MemberKind](#p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.memberkind__1o9lat)
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder.projectrootdir__ylhykn" />  RootMemberBuilder.ProjectRootDir Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
+Assembly: MarkupDoc           
+Type: [RootMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad)           
+Sources: CodeModel\Builder\RootMemberBuilder.cs</small>
+
+
+Full path to the project root directory
+
+
+
+```csharp
+public string ProjectRootDir { get; set; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -8364,7 +10847,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder.splitfiletype__jt8zgj" />  RootMemberBuilder.SplitFileType Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [RootMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad)</small>
+Type: [RootMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad)           
+Sources: CodeModel\Builder\RootMemberBuilder.cs</small>
 
 
 Information whether and how to split the output (none, per namespace, per type)
@@ -8384,10 +10868,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder.-ctor__1ut3l6j" />  RootMemberBuilder.RootMemberBuilder() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder.-ctor__1ut3l6j" />  RootMemberBuilder.RootMemberBuilder() Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [RootMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad)</small>
+Type: [RootMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad)           
+Sources: CodeModel\Builder\RootMemberBuilder.cs</small>
 
 
 CTOR - sets the name to `<ROOT>`
@@ -8406,7 +10891,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.builder.typecontentmemberbuilder__1kmstl4" />  TypeContentMemberBuilder Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\Builder\TypeContentMemberBuilder.cs</small>
 
 
 Builder for [TypeContentMember](#t-net.adamec.dev.markupdoc.codemodel.typecontentmember__suhfqw)
@@ -8418,6 +10904,7 @@ public abstract class TypeContentMemberBuilder : MemberBuilder
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a> -&gt; [net.adamec.dev.markupdoc.CodeModel.Builder.MemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder__ju81ab)           
+Derived: [net.adamec.dev.markupdoc.CodeModel.Builder.EventMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.eventmemberbuilder__6cikxn), [net.adamec.dev.markupdoc.CodeModel.Builder.FieldMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.fieldmemberbuilder__1jrcush), [net.adamec.dev.markupdoc.CodeModel.Builder.MethodMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.methodmemberbuilder__1p2pk7w), [net.adamec.dev.markupdoc.CodeModel.Builder.PropertyMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder__k8fr6c)           
 
 
 
@@ -8425,6 +10912,8 @@ Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object"
 
  | Name | Modifier | Summary | 
  | ------ | ---------- | --------- | 
+ | [ExplicitInterfaceImplementationMemberSymbol](#p-net.adamec.dev.markupdoc.codemodel.builder.typecontentmemberbuilder.explicitinterfaceimplementationmembersymbol__1wn9wyv) | public | Symbol of explicitly implemented interface member | 
+ | [OverridesSymbol](#p-net.adamec.dev.markupdoc.codemodel.builder.typecontentmemberbuilder.overridessymbol__13r4tkp) | public | Symbol of member overriden by this member | 
  | [Type](#p-net.adamec.dev.markupdoc.codemodel.builder.typecontentmemberbuilder.type__1bgq70u) | public | Type containing the content member | 
 
  
@@ -8436,10 +10925,59 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
+##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.typecontentmemberbuilder.explicitinterfaceimplementationmembersymbol__1wn9wyv" />  TypeContentMemberBuilder.ExplicitInterfaceImplementationMemberSymbol Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
+Assembly: MarkupDoc           
+Type: [TypeContentMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typecontentmemberbuilder__1kmstl4)           
+Sources: CodeModel\Builder\TypeContentMemberBuilder.cs</small>
+
+
+Symbol of explicitly implemented interface member
+
+
+
+```csharp
+public ISymbol ExplicitInterfaceImplementationMemberSymbol { get; set; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.codeanalysis.isymbol" target="_blank" >Microsoft.CodeAnalysis.ISymbol</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.typecontentmemberbuilder.overridessymbol__13r4tkp" />  TypeContentMemberBuilder.OverridesSymbol Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
+Assembly: MarkupDoc           
+Type: [TypeContentMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typecontentmemberbuilder__1kmstl4)           
+Sources: CodeModel\Builder\TypeContentMemberBuilder.cs</small>
+
+
+Symbol of member overriden by this member
+
+
+
+```csharp
+public ISymbol OverridesSymbol { get; set; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.codeanalysis.isymbol" target="_blank" >Microsoft.CodeAnalysis.ISymbol</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.typecontentmemberbuilder.type__1bgq70u" />  TypeContentMemberBuilder.Type Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [TypeContentMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typecontentmemberbuilder__1kmstl4)</small>
+Type: [TypeContentMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typecontentmemberbuilder__1kmstl4)           
+Sources: CodeModel\Builder\TypeContentMemberBuilder.cs</small>
 
 
 Type containing the content member
@@ -8461,7 +10999,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn" />  TypeMemberBuilder Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\Builder\TypeMemberBuilder.cs</small>
 
 
 Builder for [TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp)
@@ -8493,6 +11032,8 @@ Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object"
  | ------ | ---------- | --------- | 
  | [AllInterfacesTypeRefs](#p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.allinterfacestyperefs__br2ak) | public | Type references for all implemented interfaces (both directly implemented and inherited) | 
  | [ContentMembers](#p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.contentmembers__1jrowmf) | public | List of all type content members (fields, properties, methods, events) | 
+ | [InterfaceImplementationsByInterfaceMember](#p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.interfaceimplementationsbyinterfacemember__1topu9r) | public | Dictionary of  interface member implementation by interface member (key=interface member symbol, value=implementation member symbol) | 
+ | [InterfaceMembersByInterfaceImplementation](#p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.interfacemembersbyinterfaceimplementation__b1sx1b) | public | Dictionary of implemented interface members by implementation member (key=implementation member symbol, value=interface member symbol) | 
  | [InterfacesTypeRefs](#p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.interfacestyperefs__3ufra9) | public | Type references for directly implemented interfaces | 
  | [IsGeneric](#p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.isgeneric__utg9go) | public | Flag whether type is generic | 
  | [MemberKind](#p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.memberkind__1y10oqd) | public | Kind (type) of the member | 
@@ -8511,7 +11052,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.delegateparameters__14r3a3m" />  TypeMemberBuilder.DelegateParameters Field ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)</small>
+Type: [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)           
+Sources: CodeModel\Builder\TypeMemberBuilder.cs</small>
 
 
 Delegate parameters for delegate types
@@ -8534,7 +11076,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.delegatereturntype__10z9wvk" />  TypeMemberBuilder.DelegateReturnType Field ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)</small>
+Type: [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)           
+Sources: CodeModel\Builder\TypeMemberBuilder.cs</small>
 
 
 Type reference for delegate return type
@@ -8557,7 +11100,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.typeparameters__7d95h" />  TypeMemberBuilder.TypeParameters Field ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)</small>
+Type: [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)           
+Sources: CodeModel\Builder\TypeMemberBuilder.cs</small>
 
 
 Type parameters for generic types
@@ -8580,7 +11124,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.allinterfacestyperefs__br2ak" />  TypeMemberBuilder.AllInterfacesTypeRefs Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)</small>
+Type: [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)           
+Sources: CodeModel\Builder\TypeMemberBuilder.cs</small>
 
 
 Type references for all implemented interfaces (both directly implemented and inherited)
@@ -8603,7 +11148,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.contentmembers__1jrowmf" />  TypeMemberBuilder.ContentMembers Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)</small>
+Type: [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)           
+Sources: CodeModel\Builder\TypeMemberBuilder.cs</small>
 
 
 List of all type content members (fields, properties, methods, events)
@@ -8623,10 +11169,59 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
+##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.interfaceimplementationsbyinterfacemember__1topu9r" />  TypeMemberBuilder.InterfaceImplementationsByInterfaceMember Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
+Assembly: MarkupDoc           
+Type: [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)           
+Sources: CodeModel\Builder\TypeMemberBuilder.cs</small>
+
+
+Dictionary of  interface member implementation by interface member (key=interface member symbol, value=implementation member symbol)
+
+
+
+```csharp
+public Dictionary<Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.ISymbol> InterfaceImplementationsByInterfaceMember { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2" target="_blank" >Dictionary&lt;Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.ISymbol&gt;</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.interfacemembersbyinterfaceimplementation__b1sx1b" />  TypeMemberBuilder.InterfaceMembersByInterfaceImplementation Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
+Assembly: MarkupDoc           
+Type: [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)           
+Sources: CodeModel\Builder\TypeMemberBuilder.cs</small>
+
+
+Dictionary of implemented interface members by implementation member (key=implementation member symbol, value=interface member symbol)
+
+
+
+```csharp
+public Dictionary<Microsoft.CodeAnalysis.ISymbol,IReadOnlyList<Microsoft.CodeAnalysis.ISymbol>> InterfaceMembersByInterfaceImplementation { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2" target="_blank" >Dictionary&lt;Microsoft.CodeAnalysis.ISymbol,IReadOnlyList&lt;Microsoft.CodeAnalysis.ISymbol&gt;&gt;</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.interfacestyperefs__3ufra9" />  TypeMemberBuilder.InterfacesTypeRefs Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)</small>
+Type: [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)           
+Sources: CodeModel\Builder\TypeMemberBuilder.cs</small>
 
 
 Type references for directly implemented interfaces
@@ -8649,7 +11244,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.isgeneric__utg9go" />  TypeMemberBuilder.IsGeneric Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)</small>
+Type: [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)           
+Sources: CodeModel\Builder\TypeMemberBuilder.cs</small>
 
 
 Flag whether type is generic
@@ -8672,7 +11268,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.memberkind__1y10oqd" />  TypeMemberBuilder.MemberKind Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)</small>
+Type: [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)           
+Sources: CodeModel\Builder\TypeMemberBuilder.cs</small>
 
 
 Kind (type) of the member
@@ -8683,7 +11280,7 @@ Kind (type) of the member
 public override MemberKindEnum MemberKind { get; }
 ```
 
-<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</dt><dd></dd></dl>
+<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.MemberKindEnum](#t-net.adamec.dev.markupdoc.codemodel.memberkindenum__cdphd0)</dt><dd></dd></dl>Overrides: [MemberBuilder.MemberKind](#p-net.adamec.dev.markupdoc.codemodel.builder.memberbuilder.memberkind__1o9lat)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -8695,7 +11292,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.typekind__qphofl" />  TypeMemberBuilder.TypeKind Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)</small>
+Type: [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)           
+Sources: CodeModel\Builder\TypeMemberBuilder.cs</small>
 
 
 Type kind (class, interface, ...)
@@ -8718,7 +11316,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder.typeref__1hwjb38" />  TypeMemberBuilder.TypeRef Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)</small>
+Type: [TypeMemberBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typememberbuilder__15jf5vn)           
+Sources: CodeModel\Builder\TypeMemberBuilder.cs</small>
 
 
 Type reference for this type
@@ -8740,7 +11339,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder__1h07j2w" />  TypeParameterBuilder Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: CodeModel\Builder\TypeParameterBuilder.cs</small>
 
 
 Builder for [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408)
@@ -8780,7 +11380,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder.attributes__i6iqgf" />  TypeParameterBuilder.Attributes Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [TypeParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder__1h07j2w)</small>
+Type: [TypeParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder__1h07j2w)           
+Sources: CodeModel\Builder\TypeParameterBuilder.cs</small>
 
 
 Type parameter attributes definition (including the parameters).
@@ -8803,7 +11404,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder.constrainttypes__1sn5icu" />  TypeParameterBuilder.ConstraintTypes Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [TypeParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder__1h07j2w)</small>
+Type: [TypeParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder__1h07j2w)           
+Sources: CodeModel\Builder\TypeParameterBuilder.cs</small>
 
 
 List of type references of constraint types  when the concrete types are defined as constraints
@@ -8826,7 +11428,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder.hasconstructorconstraint__lz79dv" />  TypeParameterBuilder.HasConstructorConstraint Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [TypeParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder__1h07j2w)</small>
+Type: [TypeParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder__1h07j2w)           
+Sources: CodeModel\Builder\TypeParameterBuilder.cs</small>
 
 
 Flag whether the type parameter has constructor constraint ( new() )
@@ -8849,7 +11452,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder.hasreferencetypeconstraint__1c0buuo" />  TypeParameterBuilder.HasReferenceTypeConstraint Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [TypeParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder__1h07j2w)</small>
+Type: [TypeParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder__1h07j2w)           
+Sources: CodeModel\Builder\TypeParameterBuilder.cs</small>
 
 
 Flag whether the type parameter has reference type constraint ( class )
@@ -8872,7 +11476,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder.hasunmanagedtypeconstraint__14xpe3x" />  TypeParameterBuilder.HasUnmanagedTypeConstraint Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [TypeParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder__1h07j2w)</small>
+Type: [TypeParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder__1h07j2w)           
+Sources: CodeModel\Builder\TypeParameterBuilder.cs</small>
 
 
 Flag whether the type parameter has unmanaged type constraint ( unmanaged )
@@ -8895,7 +11500,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder.hasvaluetypeconstraint__1ojvgf8" />  TypeParameterBuilder.HasValueTypeConstraint Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [TypeParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder__1h07j2w)</small>
+Type: [TypeParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder__1h07j2w)           
+Sources: CodeModel\Builder\TypeParameterBuilder.cs</small>
 
 
 Flag whether the type parameter has value type constraint ( struct )
@@ -8918,7 +11524,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder.name__1swcen7" />  TypeParameterBuilder.Name Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [TypeParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder__1h07j2w)</small>
+Type: [TypeParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder__1h07j2w)           
+Sources: CodeModel\Builder\TypeParameterBuilder.cs</small>
 
 
 Name of the parameter
@@ -8941,7 +11548,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder.variance__r9zbyx" />  TypeParameterBuilder.Variance Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.CodeModel.Builder](#n-net.adamec.dev.markupdoc.codemodel.builder__w36mxa)           
 Assembly: MarkupDoc           
-Type: [TypeParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder__1h07j2w)</small>
+Type: [TypeParameterBuilder](#t-net.adamec.dev.markupdoc.codemodel.builder.typeparameterbuilder__1h07j2w)           
+Sources: CodeModel\Builder\TypeParameterBuilder.cs</small>
 
 
 Variance (covariance and contravariance) modifier (in, out) for the type parameter if available.
@@ -8997,7 +11605,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj" />  HtmlMarkupProvider Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 HTML markup provider
@@ -9016,6 +11625,7 @@ Implements: [net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.
 
  | Name | Modifier | Summary | 
  | ------ | ---------- | --------- | 
+ | [Extension](#p-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.extension__c1rvcu) | public | Gets the extension of file generated by markup provider | 
  | [MarkupWriter](#p-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.markupwriter__11z2ax2) | public | Gets or sets the [IMarkupWriter](#t-net.adamec.dev.markupdoc.markup.imarkupwriter__14znp75) used for the markup output | 
  | [OutputOptions](#p-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.outputoptions__dsmy12) | protected | Output configuration | 
 
@@ -9079,10 +11689,35 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
+##  <a id="p-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.extension__c1rvcu" />  HtmlMarkupProvider.Extension Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
+Assembly: MarkupDoc           
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
+
+
+Gets the extension of file generated by markup provider
+
+
+
+```csharp
+public string Extension { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>Implements: [IMarkupProvider.Extension](#p-net.adamec.dev.markupdoc.markup.imarkupprovider.extension__1bh2bcm)
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
 ##  <a id="p-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.markupwriter__11z2ax2" />  HtmlMarkupProvider.MarkupWriter Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Gets or sets the [IMarkupWriter](#t-net.adamec.dev.markupdoc.markup.imarkupwriter__14znp75) used for the markup output
@@ -9093,7 +11728,7 @@ Gets or sets the [IMarkupWriter](#t-net.adamec.dev.markupdoc.markup.imarkupwrite
 public IMarkupWriter MarkupWriter { get; set; }
 ```
 
-<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.Markup.IMarkupWriter](#t-net.adamec.dev.markupdoc.markup.imarkupwriter__14znp75)</dt><dd></dd></dl>
+<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.Markup.IMarkupWriter](#t-net.adamec.dev.markupdoc.markup.imarkupwriter__14znp75)</dt><dd></dd></dl>Implements: [IMarkupProvider.MarkupWriter](#p-net.adamec.dev.markupdoc.markup.imarkupprovider.markupwriter__ko0cve)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -9105,7 +11740,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.outputoptions__dsmy12" />  HtmlMarkupProvider.OutputOptions Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Output configuration
@@ -9125,10 +11761,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.-ctor_net.adamec.dev.markupdoc.options.outputoptions___j6fwjc" />  HtmlMarkupProvider.HtmlMarkupProvider(OutputOptions) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.-ctor_net.adamec.dev.markupdoc.options.outputoptions___j6fwjc" />  HtmlMarkupProvider.HtmlMarkupProvider(OutputOptions) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 CTOR with given [OutputOptions](#p-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.outputoptions__dsmy12)
@@ -9146,10 +11783,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.bold_system.string___1qynapw" />  HtmlMarkupProvider.Bold(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.bold_system.string___1qynapw" />  HtmlMarkupProvider.Bold(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Returns the markup for bold (strong) <strong>text</strong>
@@ -9161,7 +11799,7 @@ public virtual string Bold(string text)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Content</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for bold (strong) <strong>text</strong></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for bold (strong) <strong>text</strong></dd></dl>Implements: [IMarkupProvider.Bold(string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.bold_system.string___17tar4q)
 
 
 ###  Remarks ###
@@ -9174,10 +11812,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.bookmark_system.string___tf3k8b" />  HtmlMarkupProvider.Bookmark(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.bookmark_system.string___tf3k8b" />  HtmlMarkupProvider.Bookmark(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Returns the markup of the bookmark with given <strong>id</strong>
@@ -9189,7 +11828,7 @@ public virtual string Bookmark(string id)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>id</strong></dt><dd>Bookmark id</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup of the bookmark with given <strong>id</strong></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup of the bookmark with given <strong>id</strong></dd></dl>Implements: [IMarkupProvider.Bookmark(string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.bookmark_system.string___1wc4cmn)
 
 
 ###  Remarks ###
@@ -9202,10 +11841,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.code_system.string-system.boolean___juaq1h" />  HtmlMarkupProvider.Code(string, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.code_system.string-system.boolean___juaq1h" />  HtmlMarkupProvider.Code(string, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Returns the markup for multi-line code with given <strong>text</strong>
@@ -9217,7 +11857,7 @@ public virtual string Code(string text, bool encodeNeeded = false)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Code</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a> <strong>encodeNeeded</strong></dt><dd>Flag whether it&#39;s the <strong>text</strong> needs the HTML encoding (the code from XML documentation comments should already be encoded, the code from generator needs encoding)</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for code with given <strong>text</strong></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for code with given <strong>text</strong></dd></dl>Implements: [IMarkupProvider.Code(string, bool)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.code_system.string-system.boolean___185qr7p)
 
 
 ###  Remarks ###
@@ -9234,10 +11874,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.descriptionlist_system.collections.generic.ilist_system.string____18u8zoh" />  HtmlMarkupProvider.DescriptionList(IList&lt;string&gt;) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.descriptionlist_system.collections.generic.ilist_system.string____18u8zoh" />  HtmlMarkupProvider.DescriptionList(IList&lt;string&gt;) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Returns the markup for the description list with the given <strong>renderedItems</strong>
@@ -9249,7 +11890,7 @@ public virtual string DescriptionList(IList<string> renderedItems)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ilist-1" target="_blank" >IList&lt;string&gt;</a> <strong>renderedItems</strong></dt><dd>Description list items markup</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the description list with the given <strong>renderedItems</strong></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the description list with the given <strong>renderedItems</strong></dd></dl>Implements: [IMarkupProvider.DescriptionList(IList&lt;string&gt;)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.descriptionlist_system.collections.generic.ilist_system.string____1pqryk1)
 
 
 ###  Remarks ###
@@ -9262,10 +11903,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.descriptionlist--1_system.func_--0-system.string_-system.func_--0-system.string_-system.collections.generic.ienumerable_--0____1r9hw58" />  HtmlMarkupProvider.DescriptionList&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, Func&lt;TItemType,string&gt;, IEnumerable&lt;TItemType&gt;) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.descriptionlist--1_system.func_--0-system.string_-system.func_--0-system.string_-system.collections.generic.ienumerable_--0____1r9hw58" />  HtmlMarkupProvider.DescriptionList&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, Func&lt;TItemType,string&gt;, IEnumerable&lt;TItemType&gt;) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Returns the markup for the description list with the given <strong>items</strong>
@@ -9278,7 +11920,7 @@ public virtual string DescriptionList<TItemType>(Func<TItemType,string> itemTerm
 
 <strong>Type parameters</strong><dl><dt><strong>TItemType</strong></dt><dd>Type of the object to generate the description list item for</dd></dl>
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.func-2" target="_blank" >System.Func&lt;TItemType,string&gt;</a> <strong>itemTerm</strong></dt><dd>Function to get the term for given item</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.func-2" target="_blank" >System.Func&lt;TItemType,string&gt;</a> <strong>itemDescription</strong></dt><dd>Function to get the description for given item</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1" target="_blank" >IEnumerable&lt;TItemType&gt;</a> <strong>items</strong></dt><dd>Description list items</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the description list with the given <strong>items</strong></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the description list with the given <strong>items</strong></dd></dl>Implements: [IMarkupProvider.DescriptionList&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, Func&lt;TItemType,string&gt;, IEnumerable&lt;TItemType&gt;)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.descriptionlist--1_system.func_--0-system.string_-system.func_--0-system.string_-system.collections.generic.ienumerable_--0____kr2fi2)
 
 
 ###  Remarks ###
@@ -9291,10 +11933,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.descriptionlistitem_system.string-system.string___b7aaxm" />  HtmlMarkupProvider.DescriptionListItem(string, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.descriptionlistitem_system.string-system.string___b7aaxm" />  HtmlMarkupProvider.DescriptionListItem(string, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Returns the markup of the description list item
@@ -9306,7 +11949,7 @@ public virtual string DescriptionListItem(string itemTerm, string itemDescriptio
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>itemTerm</strong></dt><dd>Item term</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>itemDescription</strong></dt><dd>Item description</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup of the description list item</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup of the description list item</dd></dl>Implements: [IMarkupProvider.DescriptionListItem(string, string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.descriptionlistitem_system.string-system.string___185r8jg)
 
 
 ###  Remarks ###
@@ -9319,10 +11962,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.descriptionlistitem--1_system.func_--0-system.string_-system.func_--0-system.string_---0___1ekkbyt" />  HtmlMarkupProvider.DescriptionListItem&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, Func&lt;TItemType,string&gt;, HtmlMarkupProvider.TItemType) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.descriptionlistitem--1_system.func_--0-system.string_-system.func_--0-system.string_---0___1ekkbyt" />  HtmlMarkupProvider.DescriptionListItem&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, Func&lt;TItemType,string&gt;, HtmlMarkupProvider.TItemType) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Returns the markup of the description list item
@@ -9335,7 +11979,7 @@ public virtual string DescriptionListItem<TItemType>(Func<TItemType,string> item
 
 <strong>Type parameters</strong><dl><dt><strong>TItemType</strong></dt><dd>Type of the object to generate the description list item for</dd></dl>
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.func-2" target="_blank" >System.Func&lt;TItemType,string&gt;</a> <strong>itemTerm</strong></dt><dd>Function to get the term for given item</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.func-2" target="_blank" >System.Func&lt;TItemType,string&gt;</a> <strong>itemDescription</strong></dt><dd>Function to get the description for given item</dd><dt>net.adamec.dev.markupdoc.Markup.HtmlMarkupProvider.TItemType <strong>item</strong></dt><dd>Object to generate the description list item for</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup of the description list item</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup of the description list item</dd></dl>Implements: [IMarkupProvider.DescriptionListItem&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, Func&lt;TItemType,string&gt;, IMarkupProvider.TItemType)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.descriptionlistitem--1_system.func_--0-system.string_-system.func_--0-system.string_---0___1d21q1x)
 
 
 ###  Remarks ###
@@ -9348,10 +11992,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.externallink_system.string-system.string___1hcrnzo" />  HtmlMarkupProvider.ExternalLink(string, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.externallink_system.string-system.string___1hcrnzo" />  HtmlMarkupProvider.ExternalLink(string, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Returns the markup for the external link
@@ -9363,7 +12008,7 @@ public virtual string ExternalLink(string text, string url)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Link text</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>url</strong></dt><dd>Link URL</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the external link</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the external link</dd></dl>Implements: [IMarkupProvider.ExternalLink(string, string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.externallink_system.string-system.string___76ohd6)
 
 
 ###  Remarks ###
@@ -9376,10 +12021,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.inlinecode_system.string-system.boolean___1fttc4c" />  HtmlMarkupProvider.InlineCode(string, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.inlinecode_system.string-system.boolean___1fttc4c" />  HtmlMarkupProvider.InlineCode(string, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Returns the markup for inline code with given <strong>text</strong>
@@ -9391,7 +12037,7 @@ public virtual string InlineCode(string text, bool encodeNeeded = false)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Inline code</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a> <strong>encodeNeeded</strong></dt><dd>Flag whether it&#39;s the <strong>text</strong> needs the HTML encoding (the code from XML documentation comments should already be encoded, the code from generator needs encoding)</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for inline code with given <strong>text</strong></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for inline code with given <strong>text</strong></dd></dl>Implements: [IMarkupProvider.InlineCode(string, bool)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.inlinecode_system.string-system.boolean___70e1uy)
 
 
 ###  Remarks ###
@@ -9404,10 +12050,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.italic_system.string___13ad6r1" />  HtmlMarkupProvider.Italic(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.italic_system.string___13ad6r1" />  HtmlMarkupProvider.Italic(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Returns the markup for italic (emphasized) <strong>text</strong>
@@ -9419,7 +12066,7 @@ public virtual string Italic(string text)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Content</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for italic (emphasized) <strong>text</strong></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for italic (emphasized) <strong>text</strong></dd></dl>Implements: [IMarkupProvider.Italic(string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.italic_system.string___txs4xh)
 
 
 ###  Remarks ###
@@ -9432,10 +12079,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.linebreak__kztdid" />  HtmlMarkupProvider.LineBreak() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.linebreak__kztdid" />  HtmlMarkupProvider.LineBreak() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Returns the markup for the line break
@@ -9446,7 +12094,7 @@ Returns the markup for the line break
 public virtual string LineBreak()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the line break</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the line break</dd></dl>Implements: [IMarkupProvider.LineBreak()](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.linebreak__bcasm5)
 
 
 ###  Remarks ###
@@ -9459,10 +12107,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.link_system.string-net.adamec.dev.markupdoc.codemodel.member___1uer8n8" />  HtmlMarkupProvider.Link(string, Member) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.link_system.string-net.adamec.dev.markupdoc.codemodel.member___1uer8n8" />  HtmlMarkupProvider.Link(string, Member) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Returns the markup for the internal link
@@ -9474,7 +12123,7 @@ public virtual string Link(string text, Member member)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Link text</dd><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>[Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) to generate the link to</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the internal link</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the internal link</dd></dl>Implements: [IMarkupProvider.Link(string, Member)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.link_system.string-net.adamec.dev.markupdoc.codemodel.member___kz8auq)
 
 
 ###  Remarks ###
@@ -9487,10 +12136,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.link_system.string-system.string-system.string___1qp7blb" />  HtmlMarkupProvider.Link(string, string, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.link_system.string-system.string-system.string___1qp7blb" />  HtmlMarkupProvider.Link(string, string, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Returns the markup for the internal link
@@ -9502,7 +12152,7 @@ public virtual string Link(string text, string file, string bookmark)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Link text</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>file</strong></dt><dd>Name of the file relative to the documentation root (index file)</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>bookmark</strong></dt><dd>Optional bookmark</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the internal link</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the internal link</dd></dl>Implements: [IMarkupProvider.Link(string, string, string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.link_system.string-system.string-system.string___fpfsg3)
 
 
 ###  Remarks ###
@@ -9515,10 +12165,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.list--1_system.func_--0-system.string_-system.collections.generic.ienumerable_--0_-system.boolean___airw86" />  HtmlMarkupProvider.List&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, IEnumerable&lt;TItemType&gt;, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.list--1_system.func_--0-system.string_-system.collections.generic.ienumerable_--0_-system.boolean___airw86" />  HtmlMarkupProvider.List&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, IEnumerable&lt;TItemType&gt;, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Returns the markup for the list of the items
@@ -9531,7 +12182,7 @@ public virtual string List<TItemType>(Func<TItemType,string> itemOutput, IEnumer
 
 <strong>Type parameters</strong><dl><dt><strong>TItemType</strong></dt><dd>Type of the list item entry object</dd></dl>
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.func-2" target="_blank" >System.Func&lt;TItemType,string&gt;</a> <strong>itemOutput</strong></dt><dd>Function returning the markup for single item</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1" target="_blank" >IEnumerable&lt;TItemType&gt;</a> <strong>items</strong></dt><dd>List items</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a> <strong>numbered</strong></dt><dd>Flag whether the list is to be numbered (ordered). If false bullet list (unordered) will be generated</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the list of the items</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the list of the items</dd></dl>Implements: [IMarkupProvider.List&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, IEnumerable&lt;TItemType&gt;, bool)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.list--1_system.func_--0-system.string_-system.collections.generic.ienumerable_--0_-system.boolean___1gcvzmw)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -9540,10 +12191,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.para_system.string___wojq3x" />  HtmlMarkupProvider.Para(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.para_system.string___wojq3x" />  HtmlMarkupProvider.Para(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Returns the markup for paragraph with given <strong>text</strong>
@@ -9555,7 +12207,7 @@ public virtual string Para(string text)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Content of the paragraph</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for paragraph with given <strong>text</strong></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for paragraph with given <strong>text</strong></dd></dl>Implements: [IMarkupProvider.Para(string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.para_system.string___1n5d79p)
 
 
 ###  Remarks ###
@@ -9568,10 +12220,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.small_system.string___hgqng0" />  HtmlMarkupProvider.Small(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.small_system.string___hgqng0" />  HtmlMarkupProvider.Small(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Returns the markup for small <strong>text</strong>
@@ -9583,7 +12236,7 @@ public virtual string Small(string text)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Content</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for small <strong>text</strong></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for small <strong>text</strong></dd></dl>Implements: [IMarkupProvider.Small(string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.small_system.string___16hyku)
 
 
 ###  Remarks ###
@@ -9596,10 +12249,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.tablecols_system.string_____1jv7jno" />  HtmlMarkupProvider.TableCols(string[]) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.tablecols_system.string_____1jv7jno" />  HtmlMarkupProvider.TableCols(string[]) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Returns the markup for the table row with given columns
@@ -9611,7 +12265,7 @@ public virtual string TableCols(params string[] items)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string[]</a> <strong>items</strong></dt><dd>Content of individual columns</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the table row with given columns</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the table row with given columns</dd></dl>Implements: [IMarkupProvider.TableCols(string[])](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.tablecols_system.string_____9o05ka)
 
 
 ###  Remarks ###
@@ -9624,10 +12278,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.tablefooter__1vwh4nf" />  HtmlMarkupProvider.TableFooter() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.tablefooter__1vwh4nf" />  HtmlMarkupProvider.TableFooter() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Returns the markup for the table footer
@@ -9638,7 +12293,7 @@ Returns the markup for the table footer
 public virtual string TableFooter()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the table footer</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the table footer</dd></dl>Implements: [IMarkupProvider.TableFooter()](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.tablefooter__8xrzfr)
 
 
 ###  Remarks ###
@@ -9651,10 +12306,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.tableheader_system.string_____qrpzxu" />  HtmlMarkupProvider.TableHeader(string[]) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.tableheader_system.string_____qrpzxu" />  HtmlMarkupProvider.TableHeader(string[]) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Returns the markup for the table header with given columns
@@ -9666,7 +12322,7 @@ public virtual string TableHeader(params string[] items)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string[]</a> <strong>items</strong></dt><dd>Content of individual header columns</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the table header with given columns</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the table header with given columns</dd></dl>Implements: [IMarkupProvider.TableHeader(string[])](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.tableheader_system.string_____1id0rx8)
 
 
 ###  Remarks ###
@@ -9679,10 +12335,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.text_system.string___lqn9mc" />  HtmlMarkupProvider.Text(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.text_system.string___lqn9mc" />  HtmlMarkupProvider.Text(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Returns the markup for the &quot;plain&quot; text
@@ -9694,7 +12351,7 @@ public virtual string Text(string text)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Content</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the &quot;plain&quot; text</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the &quot;plain&quot; text</dd></dl>Implements: [IMarkupProvider.Text(string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.text_system.string___1c1xx56)
 
 
 ###  Remarks ###
@@ -9707,10 +12364,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writecodeasync_system.string-system.boolean___pec4ge" />  HtmlMarkupProvider.WriteCodeAsync(string, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writecodeasync_system.string-system.boolean___pec4ge" />  HtmlMarkupProvider.WriteCodeAsync(string, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Writes the markup for multi-line code with given <strong>text</strong>
@@ -9722,7 +12380,7 @@ public virtual Task WriteCodeAsync(string text, bool encodeNeeded = false)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Code</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a> <strong>encodeNeeded</strong></dt><dd>Flag whether it&#39;s the <strong>text</strong> needs the HTML encoding (the code from XML documentation comments should already be encoded, the code from generator needs encoding)</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteCodeAsync(string, bool)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writecodeasync_system.string-system.boolean___13eqprk)
 
 
 ###  Remarks ###
@@ -9735,10 +12393,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writedocumentendasync__1nz8j5b" />  HtmlMarkupProvider.WriteDocumentEndAsync() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writedocumentendasync__1nz8j5b" />  HtmlMarkupProvider.WriteDocumentEndAsync() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Writes the markup for the end of the document (file)
@@ -9749,7 +12408,7 @@ Writes the markup for the end of the document (file)
 public virtual Task WriteDocumentEndAsync()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteDocumentEndAsync()](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writedocumentendasync__wnyzbn)
 
 
 ###  Remarks ###
@@ -9762,10 +12421,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writedocumentstartasync_system.string___qnddpf" />  HtmlMarkupProvider.WriteDocumentStartAsync(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writedocumentstartasync_system.string___qnddpf" />  HtmlMarkupProvider.WriteDocumentStartAsync(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Writes the markup for the beginning of the document (file) and level 1 header with title
@@ -9777,7 +12437,7 @@ public virtual async Task WriteDocumentStartAsync(string title = null)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>title</strong></dt><dd>Document title</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteDocumentStartAsync(string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writedocumentstartasync_system.string___1c7fdif)
 
 
 ###  Remarks ###
@@ -9790,10 +12450,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writeh1async_system.string-system.string___15gnrvj" />  HtmlMarkupProvider.WriteH1Async(string, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writeh1async_system.string-system.string___15gnrvj" />  HtmlMarkupProvider.WriteH1Async(string, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Writes the level 1 <strong>header</strong> with  optional bookmark
@@ -9805,7 +12466,7 @@ public virtual Task WriteH1Async(string header, string bookmark = null)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>header</strong></dt><dd>Header content</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>bookmark</strong></dt><dd>Optional bookmark ID</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteH1Async(string, string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writeh1async_system.string-system.string___12a3vxn)
 
 
 ###  Remarks ###
@@ -9822,10 +12483,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writeh2async_system.string-system.string___lp25cg" />  HtmlMarkupProvider.WriteH2Async(string, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writeh2async_system.string-system.string___lp25cg" />  HtmlMarkupProvider.WriteH2Async(string, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Writes the level 2 <strong>header</strong> with  optional bookmark
@@ -9837,7 +12499,7 @@ public virtual Task WriteH2Async(string header, string bookmark = null)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>header</strong></dt><dd>Header content</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>bookmark</strong></dt><dd>Optional bookmark ID</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteH2Async(string, string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writeh2async_system.string-system.string___cb64y6)
 
 
 ###  Remarks ###
@@ -9854,10 +12516,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writeh3async_system.string-system.string___cyzxw5" />  HtmlMarkupProvider.WriteH3Async(string, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writeh3async_system.string-system.string___cyzxw5" />  HtmlMarkupProvider.WriteH3Async(string, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Writes the level 3 <strong>header</strong> with  optional bookmark
@@ -9869,7 +12532,7 @@ public virtual Task WriteH3Async(string header, string bookmark = null)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>header</strong></dt><dd>Header content</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>bookmark</strong></dt><dd>Optional bookmark ID</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteH3Async(string, string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writeh3async_system.string-system.string___b45e7h)
 
 
 ###  Remarks ###
@@ -9886,10 +12549,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writeh4async_system.string-system.string___1q9xyx2" />  HtmlMarkupProvider.WriteH4Async(string, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writeh4async_system.string-system.string___1q9xyx2" />  HtmlMarkupProvider.WriteH4Async(string, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Writes the level 4 <strong>header</strong> with  optional bookmark
@@ -9901,7 +12565,7 @@ public virtual Task WriteH4Async(string header, string bookmark = null)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>header</strong></dt><dd>Header content</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>bookmark</strong></dt><dd>Optional bookmark ID</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteH4Async(string, string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writeh4async_system.string-system.string___c9u6hc)
 
 
 ###  Remarks ###
@@ -9918,10 +12582,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writehorizontallineasync__xp579z" />  HtmlMarkupProvider.WriteHorizontalLineAsync() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writehorizontallineasync__xp579z" />  HtmlMarkupProvider.WriteHorizontalLineAsync() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Writes the markup for horizontal line Writes `<hr />` to the output
@@ -9932,7 +12597,7 @@ Writes the markup for horizontal line Writes `<hr />` to the output
 public virtual Task WriteHorizontalLineAsync()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteHorizontalLineAsync()](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writehorizontallineasync__ovb1ir)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -9941,10 +12606,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writelineasync_system.string___77379g" />  HtmlMarkupProvider.WriteLineAsync(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writelineasync_system.string___77379g" />  HtmlMarkupProvider.WriteLineAsync(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Writes the line into the [MarkupWriter](#p-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.markupwriter__11z2ax2)
@@ -9965,10 +12631,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writeparaasync_system.string___3tdjuo" />  HtmlMarkupProvider.WriteParaAsync(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writeparaasync_system.string___3tdjuo" />  HtmlMarkupProvider.WriteParaAsync(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Writes the markup for paragraph with given <strong>text</strong>
@@ -9980,7 +12647,7 @@ public virtual Task WriteParaAsync(string text)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Content of the paragraph</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteParaAsync(string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writeparaasync_system.string___1jgyfl2)
 
 
 ###  Remarks ###
@@ -9993,10 +12660,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writetablecolsasync_system.string_____1tr3v3b" />  HtmlMarkupProvider.WriteTableColsAsync(string[]) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writetablecolsasync_system.string_____1tr3v3b" />  HtmlMarkupProvider.WriteTableColsAsync(string[]) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Writes the markup for the table row with given columns
@@ -10008,7 +12676,7 @@ public virtual Task WriteTableColsAsync(params string[] items)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string[]</a> <strong>items</strong></dt><dd>Content of individual columns</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteTableColsAsync(string[])](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writetablecolsasync_system.string_____isipmj)
 
 
 ###  Remarks ###
@@ -10021,10 +12689,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writetablefooterasync__lbdo3o" />  HtmlMarkupProvider.WriteTableFooterAsync() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writetablefooterasync__lbdo3o" />  HtmlMarkupProvider.WriteTableFooterAsync() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Writes the markup for the table footer
@@ -10035,7 +12704,7 @@ Writes the markup for the table footer
 public virtual Task WriteTableFooterAsync()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteTableFooterAsync()](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writetablefooterasync__1ht3gvm)
 
 
 ###  Remarks ###
@@ -10048,10 +12717,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writetableheaderasync_system.string_____9fpd8n" />  HtmlMarkupProvider.WriteTableHeaderAsync(string[]) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writetableheaderasync_system.string_____9fpd8n" />  HtmlMarkupProvider.WriteTableHeaderAsync(string[]) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Writes the markup for the table header with given columns
@@ -10063,7 +12733,7 @@ public virtual async Task WriteTableHeaderAsync(params string[] items)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string[]</a> <strong>items</strong></dt><dd>Content of individual header columns</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteTableHeaderAsync(string[])](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writetableheaderasync_system.string_____1ifrlmz)
 
 
 ###  Remarks ###
@@ -10076,10 +12746,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writetextasync_system.string___bax8hp" />  HtmlMarkupProvider.WriteTextAsync(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.htmlmarkupprovider.writetextasync_system.string___bax8hp" />  HtmlMarkupProvider.WriteTextAsync(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)</small>
+Type: [HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj)           
+Sources: Markup\HtmlMarkupProvider.cs</small>
 
 
 Writes the <strong>text</strong> to the output
@@ -10091,7 +12762,7 @@ public virtual Task WriteTextAsync(string text = null)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Text to write to the output</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteTextAsync(string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writetextasync_system.string___hugpid)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -10102,7 +12773,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9" />  MarkdownMarkupProvider Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Markdown markup provider
@@ -10121,6 +12793,7 @@ Implements: [net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.
 
  | Name | Modifier | Summary | 
  | ------ | ---------- | --------- | 
+ | [Extension](#p-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.extension__1khyyoa) | public | Gets the extension of file generated by markup provider | 
  | [MarkupWriter](#p-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.markupwriter__iogc0e) | public | Gets or sets the [IMarkupWriter](#t-net.adamec.dev.markupdoc.markup.imarkupwriter__14znp75) used for the markup output | 
  | [OutputOptions](#p-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.outputoptions__1c1tmim) | protected | Output configuration | 
 
@@ -10185,10 +12858,35 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
+##  <a id="p-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.extension__1khyyoa" />  MarkdownMarkupProvider.Extension Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
+Assembly: MarkupDoc           
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
+
+
+Gets the extension of file generated by markup provider
+
+
+
+```csharp
+public string Extension { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>Implements: [IMarkupProvider.Extension](#p-net.adamec.dev.markupdoc.markup.imarkupprovider.extension__1bh2bcm)
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
 ##  <a id="p-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.markupwriter__iogc0e" />  MarkdownMarkupProvider.MarkupWriter Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Gets or sets the [IMarkupWriter](#t-net.adamec.dev.markupdoc.markup.imarkupwriter__14znp75) used for the markup output
@@ -10199,7 +12897,7 @@ Gets or sets the [IMarkupWriter](#t-net.adamec.dev.markupdoc.markup.imarkupwrite
 public IMarkupWriter MarkupWriter { get; set; }
 ```
 
-<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.Markup.IMarkupWriter](#t-net.adamec.dev.markupdoc.markup.imarkupwriter__14znp75)</dt><dd></dd></dl>
+<strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.Markup.IMarkupWriter](#t-net.adamec.dev.markupdoc.markup.imarkupwriter__14znp75)</dt><dd></dd></dl>Implements: [IMarkupProvider.MarkupWriter](#p-net.adamec.dev.markupdoc.markup.imarkupprovider.markupwriter__ko0cve)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -10211,7 +12909,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.outputoptions__1c1tmim" />  MarkdownMarkupProvider.OutputOptions Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Output configuration
@@ -10231,10 +12930,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.-ctor_net.adamec.dev.markupdoc.options.outputoptions___1h2t4lc" />  MarkdownMarkupProvider.MarkdownMarkupProvider(OutputOptions) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.-ctor_net.adamec.dev.markupdoc.options.outputoptions___1h2t4lc" />  MarkdownMarkupProvider.MarkdownMarkupProvider(OutputOptions) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 CTOR with given [OutputOptions](#p-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.outputoptions__1c1tmim)
@@ -10252,10 +12952,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.bold_system.string___b9aa40" />  MarkdownMarkupProvider.Bold(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.bold_system.string___b9aa40" />  MarkdownMarkupProvider.Bold(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Returns the markup for bold (strong) <strong>text</strong>
@@ -10267,7 +12968,7 @@ public virtual string Bold(string text)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Content</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for bold (strong) <strong>text</strong></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for bold (strong) <strong>text</strong></dd></dl>Implements: [IMarkupProvider.Bold(string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.bold_system.string___17tar4q)
 
 
 ###  Remarks ###
@@ -10280,10 +12981,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.bookmark_system.string___1mbr35l" />  MarkdownMarkupProvider.Bookmark(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.bookmark_system.string___1mbr35l" />  MarkdownMarkupProvider.Bookmark(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Returns the markup of the bookmark with given <strong>id</strong>
@@ -10295,7 +12997,7 @@ public virtual string Bookmark(string id)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>id</strong></dt><dd>Bookmark id</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup of the bookmark with given <strong>id</strong></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup of the bookmark with given <strong>id</strong></dd></dl>Implements: [IMarkupProvider.Bookmark(string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.bookmark_system.string___1wc4cmn)
 
 
 ###  Remarks ###
@@ -10308,10 +13010,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.code_system.string-system.boolean___k8fv7z" />  MarkdownMarkupProvider.Code(string, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.code_system.string-system.boolean___k8fv7z" />  MarkdownMarkupProvider.Code(string, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Returns the markup for multi-line code with given <strong>text</strong>
@@ -10323,7 +13026,7 @@ public virtual string Code(string text, bool encodeNeeded = false)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Code</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a> <strong>encodeNeeded</strong></dt><dd>Flag whether it&#39;s the <strong>text</strong> needs the HTML encoding (the code from XML documentation comments should already be encoded, the code from generator needs encoding)</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for code with given <strong>text</strong></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for code with given <strong>text</strong></dd></dl>Implements: [IMarkupProvider.Code(string, bool)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.code_system.string-system.boolean___185qr7p)
 
 
 ###  Remarks ###
@@ -10336,10 +13039,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.descriptionlist_system.collections.generic.ilist_system.string____1brwmlb" />  MarkdownMarkupProvider.DescriptionList(IList&lt;string&gt;) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.descriptionlist_system.collections.generic.ilist_system.string____1brwmlb" />  MarkdownMarkupProvider.DescriptionList(IList&lt;string&gt;) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Returns the markup for the description list with the given <strong>renderedItems</strong>
@@ -10351,7 +13055,7 @@ public virtual string DescriptionList(IList<string> renderedItems)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ilist-1" target="_blank" >IList&lt;string&gt;</a> <strong>renderedItems</strong></dt><dd>Description list items markup</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the description list with the given <strong>renderedItems</strong></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the description list with the given <strong>renderedItems</strong></dd></dl>Implements: [IMarkupProvider.DescriptionList(IList&lt;string&gt;)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.descriptionlist_system.collections.generic.ilist_system.string____1pqryk1)
 
 
 ###  Remarks ###
@@ -10364,10 +13068,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.descriptionlist--1_system.func_--0-system.string_-system.func_--0-system.string_-system.collections.generic.ienumerable_--0____1s7b5lg" />  MarkdownMarkupProvider.DescriptionList&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, Func&lt;TItemType,string&gt;, IEnumerable&lt;TItemType&gt;) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.descriptionlist--1_system.func_--0-system.string_-system.func_--0-system.string_-system.collections.generic.ienumerable_--0____1s7b5lg" />  MarkdownMarkupProvider.DescriptionList&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, Func&lt;TItemType,string&gt;, IEnumerable&lt;TItemType&gt;) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Returns the markup for the description list with the given <strong>items</strong>
@@ -10380,7 +13085,7 @@ public virtual string DescriptionList<TItemType>(Func<TItemType,string> itemTerm
 
 <strong>Type parameters</strong><dl><dt><strong>TItemType</strong></dt><dd>Type of the object to generate the description list item for</dd></dl>
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.func-2" target="_blank" >System.Func&lt;TItemType,string&gt;</a> <strong>itemTerm</strong></dt><dd>Function to get the term for given item</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.func-2" target="_blank" >System.Func&lt;TItemType,string&gt;</a> <strong>itemDescription</strong></dt><dd>Function to get the description for given item</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1" target="_blank" >IEnumerable&lt;TItemType&gt;</a> <strong>items</strong></dt><dd>Description list items</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the description list with the given <strong>items</strong></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the description list with the given <strong>items</strong></dd></dl>Implements: [IMarkupProvider.DescriptionList&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, Func&lt;TItemType,string&gt;, IEnumerable&lt;TItemType&gt;)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.descriptionlist--1_system.func_--0-system.string_-system.func_--0-system.string_-system.collections.generic.ienumerable_--0____kr2fi2)
 
 
 ###  Remarks ###
@@ -10393,10 +13098,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.descriptionlistitem_system.string-system.string___1av3zn6" />  MarkdownMarkupProvider.DescriptionListItem(string, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.descriptionlistitem_system.string-system.string___1av3zn6" />  MarkdownMarkupProvider.DescriptionListItem(string, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Returns the markup of the description list item
@@ -10408,7 +13114,7 @@ public virtual string DescriptionListItem(string itemTerm, string itemDescriptio
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>itemTerm</strong></dt><dd>Item term</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>itemDescription</strong></dt><dd>Item description</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup of the description list item</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup of the description list item</dd></dl>Implements: [IMarkupProvider.DescriptionListItem(string, string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.descriptionlistitem_system.string-system.string___185r8jg)
 
 
 ###  Remarks ###
@@ -10421,10 +13127,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.descriptionlistitem--1_system.func_--0-system.string_-system.func_--0-system.string_---0___1qq7hkf" />  MarkdownMarkupProvider.DescriptionListItem&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, Func&lt;TItemType,string&gt;, MarkdownMarkupProvider.TItemType) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.descriptionlistitem--1_system.func_--0-system.string_-system.func_--0-system.string_---0___1qq7hkf" />  MarkdownMarkupProvider.DescriptionListItem&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, Func&lt;TItemType,string&gt;, MarkdownMarkupProvider.TItemType) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Returns the markup of the description list item
@@ -10437,7 +13144,7 @@ public virtual string DescriptionListItem<TItemType>(Func<TItemType,string> item
 
 <strong>Type parameters</strong><dl><dt><strong>TItemType</strong></dt><dd>Type of the object to generate the description list item for</dd></dl>
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.func-2" target="_blank" >System.Func&lt;TItemType,string&gt;</a> <strong>itemTerm</strong></dt><dd>Function to get the term for given item</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.func-2" target="_blank" >System.Func&lt;TItemType,string&gt;</a> <strong>itemDescription</strong></dt><dd>Function to get the description for given item</dd><dt>net.adamec.dev.markupdoc.Markup.MarkdownMarkupProvider.TItemType <strong>item</strong></dt><dd>Object to generate the description list item for</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup of the description list item</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup of the description list item</dd></dl>Implements: [IMarkupProvider.DescriptionListItem&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, Func&lt;TItemType,string&gt;, IMarkupProvider.TItemType)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.descriptionlistitem--1_system.func_--0-system.string_-system.func_--0-system.string_---0___1d21q1x)
 
 
 ###  Remarks ###
@@ -10450,10 +13157,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.externallink_system.string-system.string___174by24" />  MarkdownMarkupProvider.ExternalLink(string, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.externallink_system.string-system.string___174by24" />  MarkdownMarkupProvider.ExternalLink(string, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Returns the markup for the external link
@@ -10465,7 +13173,7 @@ public virtual string ExternalLink(string text, string url)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Link text</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>url</strong></dt><dd>Link URL</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the external link</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the external link</dd></dl>Implements: [IMarkupProvider.ExternalLink(string, string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.externallink_system.string-system.string___76ohd6)
 
 
 ###  Remarks ###
@@ -10478,10 +13186,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.inlinecode_system.string-system.boolean___1b4extg" />  MarkdownMarkupProvider.InlineCode(string, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.inlinecode_system.string-system.boolean___1b4extg" />  MarkdownMarkupProvider.InlineCode(string, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Returns the markup for inline code with given <strong>text</strong>
@@ -10493,7 +13202,7 @@ public virtual string InlineCode(string text, bool encodeNeeded = false)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Inline code</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a> <strong>encodeNeeded</strong></dt><dd>Flag whether it&#39;s the <strong>text</strong> needs the HTML encoding (the code from XML documentation comments should already be encoded, the code from generator needs encoding)</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for inline code with given <strong>text</strong></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for inline code with given <strong>text</strong></dd></dl>Implements: [IMarkupProvider.InlineCode(string, bool)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.inlinecode_system.string-system.boolean___70e1uy)
 
 
 ###  Remarks ###
@@ -10506,10 +13215,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.italic_system.string___b2vpxr" />  MarkdownMarkupProvider.Italic(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.italic_system.string___b2vpxr" />  MarkdownMarkupProvider.Italic(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Returns the markup for italic (emphasized) <strong>text</strong>
@@ -10521,7 +13231,7 @@ public virtual string Italic(string text)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Content</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for italic (emphasized) <strong>text</strong></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for italic (emphasized) <strong>text</strong></dd></dl>Implements: [IMarkupProvider.Italic(string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.italic_system.string___txs4xh)
 
 
 ###  Remarks ###
@@ -10534,10 +13244,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.linebreak__hs8533" />  MarkdownMarkupProvider.LineBreak() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.linebreak__hs8533" />  MarkdownMarkupProvider.LineBreak() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Returns the markup for the line break
@@ -10548,7 +13259,7 @@ Returns the markup for the line break
 public virtual string LineBreak()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the line break</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the line break</dd></dl>Implements: [IMarkupProvider.LineBreak()](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.linebreak__bcasm5)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -10557,10 +13268,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.link_system.string-net.adamec.dev.markupdoc.codemodel.member___v9zov0" />  MarkdownMarkupProvider.Link(string, Member) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.link_system.string-net.adamec.dev.markupdoc.codemodel.member___v9zov0" />  MarkdownMarkupProvider.Link(string, Member) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Returns the markup for the internal link
@@ -10572,7 +13284,7 @@ public virtual string Link(string text, Member member)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Link text</dd><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>[Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) to generate the link to</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the internal link</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the internal link</dd></dl>Implements: [IMarkupProvider.Link(string, Member)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.link_system.string-net.adamec.dev.markupdoc.codemodel.member___kz8auq)
 
 
 ###  Remarks ###
@@ -10585,10 +13297,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.link_system.string-system.string-system.string___76rdyl" />  MarkdownMarkupProvider.Link(string, string, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.link_system.string-system.string-system.string___76rdyl" />  MarkdownMarkupProvider.Link(string, string, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Returns the markup for the internal link
@@ -10600,7 +13313,7 @@ public virtual string Link(string text, string file, string bookmark)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Link text</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>file</strong></dt><dd>Name of the file relative to the documentation root (index file)</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>bookmark</strong></dt><dd>Optional bookmark</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the internal link</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the internal link</dd></dl>Implements: [IMarkupProvider.Link(string, string, string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.link_system.string-system.string-system.string___fpfsg3)
 
 
 ###  Remarks ###
@@ -10613,10 +13326,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.list--1_system.func_--0-system.string_-system.collections.generic.ienumerable_--0_-system.boolean___1917ej2" />  MarkdownMarkupProvider.List&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, IEnumerable&lt;TItemType&gt;, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.list--1_system.func_--0-system.string_-system.collections.generic.ienumerable_--0_-system.boolean___1917ej2" />  MarkdownMarkupProvider.List&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, IEnumerable&lt;TItemType&gt;, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Returns the markup for the list of the items
@@ -10629,7 +13343,7 @@ public virtual string List<TItemType>(Func<TItemType,string> itemOutput, IEnumer
 
 <strong>Type parameters</strong><dl><dt><strong>TItemType</strong></dt><dd>Type of the list item entry object</dd></dl>
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.func-2" target="_blank" >System.Func&lt;TItemType,string&gt;</a> <strong>itemOutput</strong></dt><dd>Function returning the markup for single item</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1" target="_blank" >IEnumerable&lt;TItemType&gt;</a> <strong>items</strong></dt><dd>List items</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a> <strong>numbered</strong></dt><dd>Flag whether the list is to be numbered (ordered). If false bullet list (unordered) will be generated</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the list of the items</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the list of the items</dd></dl>Implements: [IMarkupProvider.List&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, IEnumerable&lt;TItemType&gt;, bool)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.list--1_system.func_--0-system.string_-system.collections.generic.ienumerable_--0_-system.boolean___1gcvzmw)
 
 
 ###  Remarks ###
@@ -10642,10 +13356,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.para_system.string___132alpn" />  MarkdownMarkupProvider.Para(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.para_system.string___132alpn" />  MarkdownMarkupProvider.Para(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Returns the markup for paragraph with given <strong>text</strong>
@@ -10657,7 +13372,7 @@ public virtual string Para(string text)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Content of the paragraph</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for paragraph with given <strong>text</strong></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for paragraph with given <strong>text</strong></dd></dl>Implements: [IMarkupProvider.Para(string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.para_system.string___1n5d79p)
 
 
 ###  Remarks ###
@@ -10670,10 +13385,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.small_system.string___1lx0f04" />  MarkdownMarkupProvider.Small(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.small_system.string___1lx0f04" />  MarkdownMarkupProvider.Small(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Returns the markup for small <strong>text</strong>
@@ -10685,7 +13401,7 @@ public virtual string Small(string text)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Content</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for small <strong>text</strong></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for small <strong>text</strong></dd></dl>Implements: [IMarkupProvider.Small(string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.small_system.string___16hyku)
 
 
 ###  Remarks ###
@@ -10698,10 +13414,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.tablecols_system.string_____148cz14" />  MarkdownMarkupProvider.TableCols(string[]) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.tablecols_system.string_____148cz14" />  MarkdownMarkupProvider.TableCols(string[]) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Returns the markup for the table row with given columns
@@ -10713,7 +13430,7 @@ public virtual string TableCols(params string[] items)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string[]</a> <strong>items</strong></dt><dd>Content of individual columns</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the table row with given columns</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the table row with given columns</dd></dl>Implements: [IMarkupProvider.TableCols(string[])](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.tablecols_system.string_____9o05ka)
 
 
 ###  Remarks ###
@@ -10726,10 +13443,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.tablefooter__1dlh3o5" />  MarkdownMarkupProvider.TableFooter() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.tablefooter__1dlh3o5" />  MarkdownMarkupProvider.TableFooter() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Returns the markup for the table footer
@@ -10740,7 +13458,7 @@ Returns the markup for the table footer
 public virtual string TableFooter()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the table footer</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the table footer</dd></dl>Implements: [IMarkupProvider.TableFooter()](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.tablefooter__8xrzfr)
 
 
 ###  Remarks ###
@@ -10753,10 +13471,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.tableheader_system.string_____1e5alfy" />  MarkdownMarkupProvider.TableHeader(string[]) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.tableheader_system.string_____1e5alfy" />  MarkdownMarkupProvider.TableHeader(string[]) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Returns the markup for the table header with given columns
@@ -10768,7 +13487,7 @@ public virtual string TableHeader(params string[] items)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string[]</a> <strong>items</strong></dt><dd>Content of individual header columns</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the table header with given columns</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the table header with given columns</dd></dl>Implements: [IMarkupProvider.TableHeader(string[])](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.tableheader_system.string_____1id0rx8)
 
 
 ###  Remarks ###
@@ -10781,10 +13500,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.text_system.string___h7ckd8" />  MarkdownMarkupProvider.Text(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.text_system.string___h7ckd8" />  MarkdownMarkupProvider.Text(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Returns the markup for the &quot;plain&quot; text
@@ -10796,7 +13516,7 @@ public virtual string Text(string text)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Content</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the &quot;plain&quot; text</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Markup for the &quot;plain&quot; text</dd></dl>Implements: [IMarkupProvider.Text(string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.text_system.string___1c1xx56)
 
 
 ###  Remarks ###
@@ -10809,10 +13529,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writeasync_system.string___k18wdm" />  MarkdownMarkupProvider.WriteAsync(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writeasync_system.string___k18wdm" />  MarkdownMarkupProvider.WriteAsync(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Writes the text into the [MarkupWriter](#p-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.markupwriter__iogc0e)
@@ -10833,10 +13554,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writecodeasync_system.string-system.boolean___1jsgrs6" />  MarkdownMarkupProvider.WriteCodeAsync(string, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writecodeasync_system.string-system.boolean___1jsgrs6" />  MarkdownMarkupProvider.WriteCodeAsync(string, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Writes the markup for multi-line code with given <strong>text</strong>
@@ -10848,7 +13570,7 @@ public virtual Task WriteCodeAsync(string text, bool encodeNeeded = false)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Code</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a> <strong>encodeNeeded</strong></dt><dd>Flag whether it&#39;s the <strong>text</strong> needs the HTML encoding (the code from XML documentation comments should already be encoded, the code from generator needs encoding)</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteCodeAsync(string, bool)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writecodeasync_system.string-system.boolean___13eqprk)
 
 
 ###  Remarks ###
@@ -10861,10 +13583,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writedocumentendasync__1nr8f51" />  MarkdownMarkupProvider.WriteDocumentEndAsync() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writedocumentendasync__1nr8f51" />  MarkdownMarkupProvider.WriteDocumentEndAsync() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Writes the markup for the end of the document (file)
@@ -10875,7 +13598,7 @@ Writes the markup for the end of the document (file)
 public virtual Task WriteDocumentEndAsync()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteDocumentEndAsync()](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writedocumentendasync__wnyzbn)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -10884,10 +13607,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writedocumentstartasync_system.string___7jtt0h" />  MarkdownMarkupProvider.WriteDocumentStartAsync(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writedocumentstartasync_system.string___7jtt0h" />  MarkdownMarkupProvider.WriteDocumentStartAsync(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Writes the markup for the beginning of the document (file) and level 1 header with title
@@ -10899,7 +13623,7 @@ public virtual async Task WriteDocumentStartAsync(string title = null)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>title</strong></dt><dd>Document title</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteDocumentStartAsync(string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writedocumentstartasync_system.string___1c7fdif)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -10908,10 +13632,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writeh1async_system.string-system.string___ya18vd" />  MarkdownMarkupProvider.WriteH1Async(string, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writeh1async_system.string-system.string___ya18vd" />  MarkdownMarkupProvider.WriteH1Async(string, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Writes the level 1 <strong>header</strong> with  optional bookmark
@@ -10923,7 +13648,7 @@ public virtual Task WriteH1Async(string header, string bookmark = null)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>header</strong></dt><dd>Header content</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>bookmark</strong></dt><dd>Optional bookmark ID</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteH1Async(string, string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writeh1async_system.string-system.string___12a3vxn)
 
 
 ###  Remarks ###
@@ -10940,10 +13665,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writeh2async_system.string-system.string___lnpb08" />  MarkdownMarkupProvider.WriteH2Async(string, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writeh2async_system.string-system.string___lnpb08" />  MarkdownMarkupProvider.WriteH2Async(string, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Writes the level 2 <strong>header</strong> with  optional bookmark
@@ -10955,7 +13681,7 @@ public virtual Task WriteH2Async(string header, string bookmark = null)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>header</strong></dt><dd>Header content</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>bookmark</strong></dt><dd>Optional bookmark ID</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteH2Async(string, string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writeh2async_system.string-system.string___cb64y6)
 
 
 ###  Remarks ###
@@ -10972,10 +13698,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writeh3async_system.string-system.string___1qpmhf7" />  MarkdownMarkupProvider.WriteH3Async(string, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writeh3async_system.string-system.string___1qpmhf7" />  MarkdownMarkupProvider.WriteH3Async(string, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Writes the level 3 <strong>header</strong> with  optional bookmark
@@ -10987,7 +13714,7 @@ public virtual Task WriteH3Async(string header, string bookmark = null)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>header</strong></dt><dd>Header content</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>bookmark</strong></dt><dd>Optional bookmark ID</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteH3Async(string, string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writeh3async_system.string-system.string___b45e7h)
 
 
 ###  Remarks ###
@@ -11004,10 +13731,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writeh4async_system.string-system.string___npsj8a" />  MarkdownMarkupProvider.WriteH4Async(string, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writeh4async_system.string-system.string___npsj8a" />  MarkdownMarkupProvider.WriteH4Async(string, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Writes the level 4 <strong>header</strong> with  optional bookmark
@@ -11019,7 +13747,7 @@ public virtual Task WriteH4Async(string header, string bookmark = null)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>header</strong></dt><dd>Header content</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>bookmark</strong></dt><dd>Optional bookmark ID</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteH4Async(string, string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writeh4async_system.string-system.string___c9u6hc)
 
 
 ###  Remarks ###
@@ -11036,10 +13764,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writehorizontallineasync__1uvqjt5" />  MarkdownMarkupProvider.WriteHorizontalLineAsync() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writehorizontallineasync__1uvqjt5" />  MarkdownMarkupProvider.WriteHorizontalLineAsync() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Writes the markup for horizontal line Writes `----` to the output
@@ -11050,7 +13779,7 @@ Writes the markup for horizontal line Writes `----` to the output
 public virtual Task WriteHorizontalLineAsync()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteHorizontalLineAsync()](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writehorizontallineasync__ovb1ir)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -11059,10 +13788,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writelineasync_system.string___162wgc0" />  MarkdownMarkupProvider.WriteLineAsync(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writelineasync_system.string___162wgc0" />  MarkdownMarkupProvider.WriteLineAsync(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Writes the line into the [MarkupWriter](#p-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.markupwriter__iogc0e)
@@ -11083,10 +13813,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writeparaasync_system.string___j458mk" />  MarkdownMarkupProvider.WriteParaAsync(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writeparaasync_system.string___j458mk" />  MarkdownMarkupProvider.WriteParaAsync(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Writes the markup for paragraph with given <strong>text</strong>
@@ -11098,7 +13829,7 @@ public virtual Task WriteParaAsync(string text)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Content of the paragraph</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteParaAsync(string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writeparaasync_system.string___1jgyfl2)
 
 
 ###  Remarks ###
@@ -11111,10 +13842,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writetablecolsasync_system.string_____jje9d" />  MarkdownMarkupProvider.WriteTableColsAsync(string[]) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writetablecolsasync_system.string_____jje9d" />  MarkdownMarkupProvider.WriteTableColsAsync(string[]) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Writes the markup for the table row with given columns
@@ -11126,7 +13858,7 @@ public virtual Task WriteTableColsAsync(params string[] items)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string[]</a> <strong>items</strong></dt><dd>Content of individual columns</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteTableColsAsync(string[])](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writetablecolsasync_system.string_____isipmj)
 
 
 ###  Remarks ###
@@ -11139,10 +13871,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writetablefooterasync__13f0c5o" />  MarkdownMarkupProvider.WriteTableFooterAsync() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writetablefooterasync__13f0c5o" />  MarkdownMarkupProvider.WriteTableFooterAsync() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Writes the markup for the table footer
@@ -11153,7 +13886,7 @@ Writes the markup for the table footer
 public virtual Task WriteTableFooterAsync()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteTableFooterAsync()](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writetablefooterasync__1ht3gvm)
 
 
 ###  Remarks ###
@@ -11166,10 +13899,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writetableheaderasync_system.string_____xnsal9" />  MarkdownMarkupProvider.WriteTableHeaderAsync(string[]) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writetableheaderasync_system.string_____xnsal9" />  MarkdownMarkupProvider.WriteTableHeaderAsync(string[]) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Writes the markup for the table header with given columns
@@ -11181,7 +13915,7 @@ public virtual async Task WriteTableHeaderAsync(params string[] items)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string[]</a> <strong>items</strong></dt><dd>Content of individual header columns</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteTableHeaderAsync(string[])](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writetableheaderasync_system.string_____1ifrlmz)
 
 
 ###  Remarks ###
@@ -11194,10 +13928,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writetextasync_system.string___1p36ub" />  MarkdownMarkupProvider.WriteTextAsync(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markdownmarkupprovider.writetextasync_system.string___1p36ub" />  MarkdownMarkupProvider.WriteTextAsync(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)</small>
+Type: [MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+Sources: Markup\MarkdownMarkupProvider.cs</small>
 
 
 Writes the <strong>text</strong> to the output
@@ -11209,7 +13944,7 @@ public virtual Task WriteTextAsync(string text = null)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Text to write to the output</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupProvider.WriteTextAsync(string)](#m-net.adamec.dev.markupdoc.markup.imarkupprovider.writetextasync_system.string___hugpid)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -11220,7 +13955,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.markup.markupfilewriter__1xoedys" />  MarkupFileWriter Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Markup\MarkupFileWriter.cs</small>
 
 
 Markup output single file writer
@@ -11232,6 +13968,7 @@ public class MarkupFileWriter : BaseDisposable, IMarkupWriter
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a> -&gt; [net.adamec.dev.markupdoc.Utils.BaseDisposable](#t-net.adamec.dev.markupdoc.utils.basedisposable__1niv1i9)           
+Derived: [net.adamec.dev.markupdoc.Markup.MarkupMultiFileWriter](#t-net.adamec.dev.markupdoc.markup.markupmultifilewriter__1vc7asb)           
 Implements: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.idisposable" target="_blank" >IDisposable</a>, [net.adamec.dev.markupdoc.Markup.IMarkupWriter](#t-net.adamec.dev.markupdoc.markup.imarkupwriter__14znp75), [net.adamec.dev.markupdoc.Markup.INonWritableWriter](#t-net.adamec.dev.markupdoc.markup.inonwritablewriter__1ortihg)
 
 
@@ -11269,7 +14006,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.markup.markupfilewriter.isinprogress__1gxpzuq" />  MarkupFileWriter.IsInProgress Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupFileWriter](#t-net.adamec.dev.markupdoc.markup.markupfilewriter__1xoedys)</small>
+Type: [MarkupFileWriter](#t-net.adamec.dev.markupdoc.markup.markupfilewriter__1xoedys)           
+Sources: Markup\MarkupFileWriter.cs</small>
 
 
 Flag whether the output is currently being generated
@@ -11292,7 +14030,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.markup.markupfilewriter.target__1ulj4al" />  MarkupFileWriter.Target Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupFileWriter](#t-net.adamec.dev.markupdoc.markup.markupfilewriter__1xoedys)</small>
+Type: [MarkupFileWriter](#t-net.adamec.dev.markupdoc.markup.markupfilewriter__1xoedys)           
+Sources: Markup\MarkupFileWriter.cs</small>
 
 
 Full path to the target output file
@@ -11315,7 +14054,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.markup.markupfilewriter.writer__fhot8b" />  MarkupFileWriter.Writer Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupFileWriter](#t-net.adamec.dev.markupdoc.markup.markupfilewriter__1xoedys)</small>
+Type: [MarkupFileWriter](#t-net.adamec.dev.markupdoc.markup.markupfilewriter__1xoedys)           
+Sources: Markup\MarkupFileWriter.cs</small>
 
 
 Underlying <a href="https://docs.microsoft.com/en-us/dotnet/api/system.io.streamwriter" target="_blank" >System.IO.StreamWriter</a> used to write the output to the file.
@@ -11335,10 +14075,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupfilewriter.disposemanaged__1cklrbb" />  MarkupFileWriter.DisposeManaged() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupfilewriter.disposemanaged__1cklrbb" />  MarkupFileWriter.DisposeManaged() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupFileWriter](#t-net.adamec.dev.markupdoc.markup.markupfilewriter__1xoedys)</small>
+Type: [MarkupFileWriter](#t-net.adamec.dev.markupdoc.markup.markupfilewriter__1xoedys)           
+Sources: Markup\MarkupFileWriter.cs</small>
 
 
 Disposes the markup writer - flush the output, close the output file and dispose the underlying stream writer
@@ -11349,7 +14090,7 @@ Disposes the markup writer - flush the output, close the output file and dispose
 protected override void DisposeManaged()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" target="_blank" >void</a></dt><dd></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" target="_blank" >void</a></dt><dd></dd></dl>Overrides: [BaseDisposable.DisposeManaged()](#m-net.adamec.dev.markupdoc.utils.basedisposable.disposemanaged__1oz4q8k)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -11358,10 +14099,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupfilewriter.settarget_system.string___42x1bx" />  MarkupFileWriter.SetTarget(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupfilewriter.settarget_system.string___42x1bx" />  MarkupFileWriter.SetTarget(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupFileWriter](#t-net.adamec.dev.markupdoc.markup.markupfilewriter__1xoedys)</small>
+Type: [MarkupFileWriter](#t-net.adamec.dev.markupdoc.markup.markupfilewriter__1xoedys)           
+Sources: Markup\MarkupFileWriter.cs</small>
 
 
 Sets the target of the markdown writer
@@ -11373,7 +14115,7 @@ public virtual bool SetTarget(string fileName)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>fileName</strong></dt><dd>Full path to the file (including the extension) to write the output to</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a></dt><dd>True when the target has been set, otherwise false (because the output is in progress)</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a></dt><dd>True when the target has been set, otherwise false (because the output is in progress)</dd></dl>Implements: [INonWritableWriter.SetTarget(string)](#m-net.adamec.dev.markupdoc.markup.inonwritablewriter.settarget_system.string___gdnbq7)
 
 
 ###  Remarks ###
@@ -11386,10 +14128,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupfilewriter.split_system.string___1qu56ua" />  MarkupFileWriter.Split(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupfilewriter.split_system.string___1qu56ua" />  MarkupFileWriter.Split(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupFileWriter](#t-net.adamec.dev.markupdoc.markup.markupfilewriter__1xoedys)</small>
+Type: [MarkupFileWriter](#t-net.adamec.dev.markupdoc.markup.markupfilewriter__1xoedys)           
+Sources: Markup\MarkupFileWriter.cs</small>
 
 
 Starts a new split of the output - it&#39;s ignored for the single file output
@@ -11401,7 +14144,7 @@ public virtual void Split(string splitName)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>splitName</strong></dt><dd>Name of the split</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" target="_blank" >void</a></dt><dd></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" target="_blank" >void</a></dt><dd></dd></dl>Implements: [INonWritableWriter.Split(string)](#m-net.adamec.dev.markupdoc.markup.inonwritablewriter.split_system.string___hrmauu)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -11410,10 +14153,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupfilewriter.writeasync_system.string___n2fw5x" />  MarkupFileWriter.WriteAsync(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupfilewriter.writeasync_system.string___n2fw5x" />  MarkupFileWriter.WriteAsync(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupFileWriter](#t-net.adamec.dev.markupdoc.markup.markupfilewriter__1xoedys)</small>
+Type: [MarkupFileWriter](#t-net.adamec.dev.markupdoc.markup.markupfilewriter__1xoedys)           
+Sources: Markup\MarkupFileWriter.cs</small>
 
 
 Writes the <strong>text</strong> to the output
@@ -11425,7 +14169,7 @@ public virtual async Task WriteAsync(string text)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Text to write</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupWriter.WriteAsync(string)](#m-net.adamec.dev.markupdoc.markup.imarkupwriter.writeasync_system.string___aeq6ei)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -11434,10 +14178,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupfilewriter.writelineasync_system.string___nhuxxz" />  MarkupFileWriter.WriteLineAsync(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupfilewriter.writelineasync_system.string___nhuxxz" />  MarkupFileWriter.WriteLineAsync(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupFileWriter](#t-net.adamec.dev.markupdoc.markup.markupfilewriter__1xoedys)</small>
+Type: [MarkupFileWriter](#t-net.adamec.dev.markupdoc.markup.markupfilewriter__1xoedys)           
+Sources: Markup\MarkupFileWriter.cs</small>
 
 
 Writes the <strong>text</strong> and a new line to the output
@@ -11449,7 +14194,7 @@ public virtual async Task WriteLineAsync(string text = null)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>text</strong></dt><dd>Text to write</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupWriter.WriteLineAsync(string)](#m-net.adamec.dev.markupdoc.markup.imarkupwriter.writelineasync_system.string___9m03pw)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -11458,10 +14203,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupfilewriter.writemodelasync_system.func_system.threading.tasks.task____1cfox9p" />  MarkupFileWriter.WriteModelAsync(Func&lt;System.Threading.Tasks.Task&gt;) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupfilewriter.writemodelasync_system.func_system.threading.tasks.task____1cfox9p" />  MarkupFileWriter.WriteModelAsync(Func&lt;System.Threading.Tasks.Task&gt;) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupFileWriter](#t-net.adamec.dev.markupdoc.markup.markupfilewriter__1xoedys)</small>
+Type: [MarkupFileWriter](#t-net.adamec.dev.markupdoc.markup.markupfilewriter__1xoedys)           
+Sources: Markup\MarkupFileWriter.cs</small>
 
 
 Writes the code model to the output
@@ -11473,7 +14219,7 @@ public virtual async Task WriteModelAsync(Func<System.Threading.Tasks.Task> writ
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.func-1" target="_blank" >System.Func&lt;System.Threading.Tasks.Task&gt;</a> <strong>writeContentActionAsync</strong></dt><dd>Function rendering the model to the output</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Implements: [IMarkupWriter.WriteModelAsync(Func&lt;System.Threading.Tasks.Task&gt;)](#m-net.adamec.dev.markupdoc.markup.imarkupwriter.writemodelasync_system.func_system.threading.tasks.task____10tqrtq)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -11484,7 +14230,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36" />  MarkupGenerator Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Markup generator
@@ -11513,7 +14260,7 @@ Here is the overall look and feel of documentation implemented. The MarkupGenera
  | [FileName](#p-net.adamec.dev.markupdoc.markup.markupgenerator.filename__13khtsz) | protected | Full path to the (main) file | 
  | [Markup](#p-net.adamec.dev.markupdoc.markup.markupgenerator.markup__1vbytfw) | protected | [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) used to render the markup | 
  | [Model](#p-net.adamec.dev.markupdoc.markup.markupgenerator.model__1co1bvp) | protected | Root of the code model | 
- | [Options](#p-net.adamec.dev.markupdoc.markup.markupgenerator.options__1s5c9s6) | protected | Output configuration | 
+ | [Options](#p-net.adamec.dev.markupdoc.markup.markupgenerator.options__1s5c9s6) | public | Output configuration | 
  | [Title](#p-net.adamec.dev.markupdoc.markup.markupgenerator.title__djkbku) | protected | Documentation title shown at the top of each page | 
  | [Writer](#p-net.adamec.dev.markupdoc.markup.markupgenerator.writer__k1ecih) | protected | Underlying output writer. | 
 
@@ -11533,9 +14280,15 @@ Here is the overall look and feel of documentation implemented. The MarkupGenera
 
  | Name | Modifier | Summary | 
  | ------ | ---------- | --------- | 
- | [Split(string)](#m-net.adamec.dev.markupdoc.markup.markupgenerator.split_system.string___15djmg6) | public | Initializes a new split. When splitting is not required, it&#39;s ignored (no split generated) | 
+ | [DerivedInfo(TypeMember)](#m-net.adamec.dev.markupdoc.markup.markupgenerator.derivedinfo_net.adamec.dev.markupdoc.codemodel.typemember___necpkw) | protected | Renders the info about the type members that directly inherits from the type member if available | 
+ | [ImplementedByInfo(TypeMember)](#m-net.adamec.dev.markupdoc.markup.markupgenerator.implementedbyinfo_net.adamec.dev.markupdoc.codemodel.typemember___1orbxhc) | protected | Renders the info about the type members that implements the given <strong>type</strong> (interface) if available | 
+ | [ImplementsInfo(TypeContentMember)](#m-net.adamec.dev.markupdoc.markup.markupgenerator.implementsinfo_net.adamec.dev.markupdoc.codemodel.typecontentmember___1gbbr5k) | protected | Renders the info about the implemented members/symbols with link if available | 
+ | [OverrideInfo(TypeContentMember)](#m-net.adamec.dev.markupdoc.markup.markupgenerator.overrideinfo_net.adamec.dev.markupdoc.codemodel.typecontentmember___1cld12y) | protected | Renders the info about the overriden member/symbol with link if available | 
+ | [Split(string)](#m-net.adamec.dev.markupdoc.markup.markupgenerator.split_system.string___15djmg6) | public | [Deprecated] Initializes a new split. Split is deprecated, please use SplitAsync instead. | 
+ | [SplitAsync(string)](#m-net.adamec.dev.markupdoc.markup.markupgenerator.splitasync_system.string___11yym48) | public | Initializes a new split. When splitting is not required, it&#39;s ignored (no split generated) | 
  | [TypeRefWithLink(TypeRef, bool)](#m-net.adamec.dev.markupdoc.markup.markupgenerator.typerefwithlink_net.adamec.dev.markupdoc.codemodel.typeref-system.boolean___1i3oxay) | protected | Renders the type reference ( [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm) ) with link if available | 
  | [TypRefHierarchyWithLinks(TypeRef, string, bool)](#m-net.adamec.dev.markupdoc.markup.markupgenerator.typrefhierarchywithlinks_net.adamec.dev.markupdoc.codemodel.typeref-system.string-system.boolean___10q15vf) | protected | Renders the type hierarchy from the &quot;very base type&quot; to the type represented by given <strong>typeRef</strong> | 
+ | [WriteAddOnsBodyAsync(Member)](#m-net.adamec.dev.markupdoc.markup.markupgenerator.writeaddonsbodyasync_net.adamec.dev.markupdoc.codemodel.member___1xls04d) | protected | Writes the add-on page bodies (if provided) | 
  | [WriteConstantsTableAsync(string, ICollection&lt;net.adamec.dev.markupdoc.CodeModel.FieldMember&gt;)](#m-net.adamec.dev.markupdoc.markup.markupgenerator.writeconstantstableasync_system.string-system.collections.generic.icollection_net.adamec.dev.markupdoc.codemodel.fieldmember____d4difj) | protected | Writes the table with given list of constants | 
  | [WriteDocumentationExampleAsync(Member)](#m-net.adamec.dev.markupdoc.markup.markupgenerator.writedocumentationexampleasync_net.adamec.dev.markupdoc.codemodel.member___1gemch6) | protected | Writes the Example documentation section for given <strong>member</strong> if available | 
  | [WriteDocumentationExceptionsAsync(Member)](#m-net.adamec.dev.markupdoc.markup.markupgenerator.writedocumentationexceptionsasync_net.adamec.dev.markupdoc.codemodel.member___xz5wnq) | protected | Writes the Exceptions documentation section for given <strong>member</strong> if available | 
@@ -11550,7 +14303,8 @@ Here is the overall look and feel of documentation implemented. The MarkupGenera
  | [WriteNamespaceAsync(NamespaceMember)](#m-net.adamec.dev.markupdoc.markup.markupgenerator.writenamespaceasync_net.adamec.dev.markupdoc.codemodel.namespacemember___15mn91c) | protected | Writes the namespace documentation page | 
  | [WriteNamespacesAsync()](#m-net.adamec.dev.markupdoc.markup.markupgenerator.writenamespacesasync__11thw7o) | protected | Writes the namespaces and their members into the output | 
  | [WriteNamespacesListAsync()](#m-net.adamec.dev.markupdoc.markup.markupgenerator.writenamespaceslistasync__17n45k8) | protected | Writes the table of all namespaces within the code model into the output | 
- | [WritePageFooter()](#m-net.adamec.dev.markupdoc.markup.markupgenerator.writepagefooter__qhunh8) | protected | Writes the page footer | 
+ | [WritePageFooter()](#m-net.adamec.dev.markupdoc.markup.markupgenerator.writepagefooter__qhunh8) | public | [Deprecated] Writes the page footer. WritePageFooter is deprecated, please use WritePageFooterAsync instead. | 
+ | [WritePageFooterAsync()](#m-net.adamec.dev.markupdoc.markup.markupgenerator.writepagefooterasync__18snnl8) | public | Writes the page footer | 
  | [WritePropertyAsync(PropertyMember)](#m-net.adamec.dev.markupdoc.markup.markupgenerator.writepropertyasync_net.adamec.dev.markupdoc.codemodel.propertymember___1l6fuxk) | protected | Writes the property documentation page | 
  | [WriteTypeAsync(TypeMember)](#m-net.adamec.dev.markupdoc.markup.markupgenerator.writetypeasync_net.adamec.dev.markupdoc.codemodel.typemember___e4a8de) | protected | Writes the type documentation page | 
  | [WriteTypeContentMemberHeaderAsync(TypeContentMember, string)](#m-net.adamec.dev.markupdoc.markup.markupgenerator.writetypecontentmemberheaderasync_net.adamec.dev.markupdoc.codemodel.typecontentmember-system.string___126xy13) | protected | Writes the header for the type member (field, method, etc.) | 
@@ -11570,7 +14324,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.markup.markupgenerator.basefilename__gh1ccg" />  MarkupGenerator.BaseFileName Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Name of the (main) file
@@ -11593,7 +14348,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.markup.markupgenerator.filename__13khtsz" />  MarkupGenerator.FileName Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Full path to the (main) file
@@ -11616,7 +14372,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.markup.markupgenerator.markup__1vbytfw" />  MarkupGenerator.Markup Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) used to render the markup
@@ -11639,7 +14396,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.markup.markupgenerator.model__1co1bvp" />  MarkupGenerator.Model Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Root of the code model
@@ -11662,7 +14420,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.markup.markupgenerator.options__1s5c9s6" />  MarkupGenerator.Options Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Output configuration
@@ -11670,7 +14429,7 @@ Output configuration
 
 
 ```csharp
-protected OutputOptions Options { get; }
+public OutputOptions Options { get; }
 ```
 
 <strong>Property value</strong><dl><dt>[net.adamec.dev.markupdoc.Options.OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6)</dt><dd></dd></dl>
@@ -11685,7 +14444,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.markup.markupgenerator.title__djkbku" />  MarkupGenerator.Title Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Documentation title shown at the top of each page
@@ -11708,7 +14468,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.markup.markupgenerator.writer__k1ecih" />  MarkupGenerator.Writer Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Underlying output writer.
@@ -11732,10 +14493,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.-ctor_system.string-net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.markup.imarkupprovider___8kpdd9" />  MarkupGenerator.MarkupGenerator(string, RootMember, IMarkupProvider) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.-ctor_system.string-net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.markup.imarkupprovider___8kpdd9" />  MarkupGenerator.MarkupGenerator(string, RootMember, IMarkupProvider) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 CTOR
@@ -11753,10 +14515,141 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.split_system.string___15djmg6" />  MarkupGenerator.Split(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.derivedinfo_net.adamec.dev.markupdoc.codemodel.typemember___necpkw" />  MarkupGenerator.DerivedInfo(TypeMember) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
+
+
+Renders the info about the type members that directly inherits from the type member if available
+
+
+
+```csharp
+protected virtual string DerivedInfo(TypeMember type)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp) <strong>type</strong></dt><dd>Type to document</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>info about the type members with links that directly inherits from the type member or null when not available</dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.implementedbyinfo_net.adamec.dev.markupdoc.codemodel.typemember___1orbxhc" />  MarkupGenerator.ImplementedByInfo(TypeMember) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
+Assembly: MarkupDoc           
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
+
+
+Renders the info about the type members that implements the given <strong>type</strong> (interface) if available
+
+
+
+```csharp
+protected virtual string ImplementedByInfo(TypeMember type)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.TypeMember](#t-net.adamec.dev.markupdoc.codemodel.typemember__1dz0rmp) <strong>type</strong></dt><dd>Type (interface) to document</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>info about the type members with links that implements the given <strong>type</strong> (interface) or null when not available</dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.implementsinfo_net.adamec.dev.markupdoc.codemodel.typecontentmember___1gbbr5k" />  MarkupGenerator.ImplementsInfo(TypeContentMember) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
+Assembly: MarkupDoc           
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
+
+
+Renders the info about the implemented members/symbols with link if available
+
+
+
+```csharp
+protected virtual string ImplementsInfo(TypeContentMember member)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.TypeContentMember](#t-net.adamec.dev.markupdoc.codemodel.typecontentmember__suhfqw) <strong>member</strong></dt><dd>Member to document</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Info about the overriden members/symbols with link if available</dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.overrideinfo_net.adamec.dev.markupdoc.codemodel.typecontentmember___1cld12y" />  MarkupGenerator.OverrideInfo(TypeContentMember) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
+Assembly: MarkupDoc           
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
+
+
+Renders the info about the overriden member/symbol with link if available
+
+
+
+```csharp
+protected virtual string OverrideInfo(TypeContentMember member)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.TypeContentMember](#t-net.adamec.dev.markupdoc.codemodel.typecontentmember__suhfqw) <strong>member</strong></dt><dd>Member to document</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Info about the overriden member/symbol with link if available</dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.split_system.string___15djmg6" />  MarkupGenerator.Split(string) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
+Assembly: MarkupDoc           
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
+
+
+[Deprecated] Initializes a new split. Split is deprecated, please use SplitAsync instead.
+
+
+
+```csharp
+[Obsolete("Split is deprecated, please use SplitAsync instead.")]
+public virtual async Task Split(string splitName)
+```
+
+<strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>splitName</strong></dt><dd></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Attributes: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.obsoleteattribute" target="_blank" >System.ObsoleteAttribute</a>
+
+
+###  Remarks ###
+The functionality of [SplitAsync(string)](#m-net.adamec.dev.markupdoc.markup.markupgenerator.splitasync_system.string___11yym48) remains the same, just the name of the method has been corrected
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.splitasync_system.string___11yym48" />  MarkupGenerator.SplitAsync(string) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
+Assembly: MarkupDoc           
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Initializes a new split. When splitting is not required, it&#39;s ignored (no split generated)
@@ -11764,7 +14657,7 @@ Initializes a new split. When splitting is not required, it&#39;s ignored (no sp
 
 
 ```csharp
-public virtual async Task Split(string splitName)
+public virtual async Task SplitAsync(string splitName)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>splitName</strong></dt><dd>Name of the split</dd></dl>
@@ -11781,10 +14674,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.typerefwithlink_net.adamec.dev.markupdoc.codemodel.typeref-system.boolean___1i3oxay" />  MarkupGenerator.TypeRefWithLink(TypeRef, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.typerefwithlink_net.adamec.dev.markupdoc.codemodel.typeref-system.boolean___1i3oxay" />  MarkupGenerator.TypeRefWithLink(TypeRef, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Renders the type reference ( [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm) ) with link if available
@@ -11796,7 +14690,7 @@ protected virtual string TypeRefWithLink(TypeRef typeRef, bool includeNamespace 
 ```
 
 <strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm) <strong>typeRef</strong></dt><dd>Type reference to render</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a> <strong>includeNamespace</strong></dt><dd>Flag whether to include the namespace in the member name shown</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Rendered type reference ( [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm) ) with link if available</dd></dl>
 
 
 ###  Remarks ###
@@ -11809,10 +14703,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.typrefhierarchywithlinks_net.adamec.dev.markupdoc.codemodel.typeref-system.string-system.boolean___10q15vf" />  MarkupGenerator.TypRefHierarchyWithLinks(TypeRef, string, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.typrefhierarchywithlinks_net.adamec.dev.markupdoc.codemodel.typeref-system.string-system.boolean___10q15vf" />  MarkupGenerator.TypRefHierarchyWithLinks(TypeRef, string, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Renders the type hierarchy from the &quot;very base type&quot; to the type represented by given <strong>typeRef</strong>
@@ -11824,7 +14719,7 @@ protected virtual string TypRefHierarchyWithLinks(TypeRef typeRef, string separa
 ```
 
 <strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm) <strong>typeRef</strong></dt><dd>Type reference to render the type hierarchy for</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>separator</strong></dt><dd>Inheritance separator</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a> <strong>includeNamespace</strong></dt><dd>Flag whether to include the namespace in the member name shown</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Rendered type hierarchy from the &quot;very base type&quot; to the type represented by given <strong>typeRef</strong></dd></dl>
 
 
 ###  Remarks ###
@@ -11837,10 +14732,36 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writeconstantstableasync_system.string-system.collections.generic.icollection_net.adamec.dev.markupdoc.codemodel.fieldmember____d4difj" />  MarkupGenerator.WriteConstantsTableAsync(string, ICollection&lt;net.adamec.dev.markupdoc.CodeModel.FieldMember&gt;) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writeaddonsbodyasync_net.adamec.dev.markupdoc.codemodel.member___1xls04d" />  MarkupGenerator.WriteAddOnsBodyAsync(Member) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
+
+
+Writes the add-on page bodies (if provided)
+
+
+
+```csharp
+protected virtual async Task WriteAddOnsBodyAsync(Member member)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writeconstantstableasync_system.string-system.collections.generic.icollection_net.adamec.dev.markupdoc.codemodel.fieldmember____d4difj" />  MarkupGenerator.WriteConstantsTableAsync(string, ICollection&lt;net.adamec.dev.markupdoc.CodeModel.FieldMember&gt;) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
+Assembly: MarkupDoc           
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Writes the table with given list of constants
@@ -11865,10 +14786,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writedocumentationexampleasync_net.adamec.dev.markupdoc.codemodel.member___1gemch6" />  MarkupGenerator.WriteDocumentationExampleAsync(Member) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writedocumentationexampleasync_net.adamec.dev.markupdoc.codemodel.member___1gemch6" />  MarkupGenerator.WriteDocumentationExampleAsync(Member) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Writes the Example documentation section for given <strong>member</strong> if available
@@ -11889,10 +14811,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writedocumentationexceptionsasync_net.adamec.dev.markupdoc.codemodel.member___xz5wnq" />  MarkupGenerator.WriteDocumentationExceptionsAsync(Member) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writedocumentationexceptionsasync_net.adamec.dev.markupdoc.codemodel.member___xz5wnq" />  MarkupGenerator.WriteDocumentationExceptionsAsync(Member) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Writes the Exceptions documentation section for given <strong>member</strong> if available
@@ -11913,10 +14836,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writedocumentationremarksasync_net.adamec.dev.markupdoc.codemodel.member___1kq5btp" />  MarkupGenerator.WriteDocumentationRemarksAsync(Member) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writedocumentationremarksasync_net.adamec.dev.markupdoc.codemodel.member___1kq5btp" />  MarkupGenerator.WriteDocumentationRemarksAsync(Member) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Writes the Remarks documentation section for given <strong>member</strong> if available
@@ -11937,10 +14861,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writedocumentationseealsoasync_net.adamec.dev.markupdoc.codemodel.member___1r791ds" />  MarkupGenerator.WriteDocumentationSeeAlsoAsync(Member) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writedocumentationseealsoasync_net.adamec.dev.markupdoc.codemodel.member___1r791ds" />  MarkupGenerator.WriteDocumentationSeeAlsoAsync(Member) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Writes the See Also documentation section for given <strong>member</strong> if available
@@ -11961,10 +14886,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writeeventasync_net.adamec.dev.markupdoc.codemodel.eventmember___nfiwo0" />  MarkupGenerator.WriteEventAsync(EventMember) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writeeventasync_net.adamec.dev.markupdoc.codemodel.eventmember___nfiwo0" />  MarkupGenerator.WriteEventAsync(EventMember) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Writes the event documentation page
@@ -11985,10 +14911,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writefieldasync_net.adamec.dev.markupdoc.codemodel.fieldmember___1ly8teo" />  MarkupGenerator.WriteFieldAsync(FieldMember) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writefieldasync_net.adamec.dev.markupdoc.codemodel.fieldmember___1ly8teo" />  MarkupGenerator.WriteFieldAsync(FieldMember) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Writes the field documentation page
@@ -12009,10 +14936,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writememberstableasync_system.string-system.collections.generic.icollection_net.adamec.dev.markupdoc.codemodel.member____1ogbyt3" />  MarkupGenerator.WriteMembersTableAsync(string, ICollection&lt;net.adamec.dev.markupdoc.CodeModel.Member&gt;) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writememberstableasync_system.string-system.collections.generic.icollection_net.adamec.dev.markupdoc.codemodel.member____1ogbyt3" />  MarkupGenerator.WriteMembersTableAsync(string, ICollection&lt;net.adamec.dev.markupdoc.CodeModel.Member&gt;) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Writes the table with given list of members
@@ -12037,10 +14965,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writemethodasync_net.adamec.dev.markupdoc.codemodel.methodmember___2mw79k" />  MarkupGenerator.WriteMethodAsync(MethodMember) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writemethodasync_net.adamec.dev.markupdoc.codemodel.methodmember___2mw79k" />  MarkupGenerator.WriteMethodAsync(MethodMember) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Writes the method documentation page
@@ -12061,10 +14990,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writemodelasync_system.string___zl49vu" />  MarkupGenerator.WriteModelAsync(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writemodelasync_system.string___zl49vu" />  MarkupGenerator.WriteModelAsync(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Main code model rendering public end point. Writes the model into the documentation file(s)
@@ -12089,10 +15019,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writemodelcontentasync__t54h4e" />  MarkupGenerator.WriteModelContentAsync() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writemodelcontentasync__t54h4e" />  MarkupGenerator.WriteModelContentAsync() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Writes the code model into the output
@@ -12116,10 +15047,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writenamespaceasync_net.adamec.dev.markupdoc.codemodel.namespacemember___15mn91c" />  MarkupGenerator.WriteNamespaceAsync(NamespaceMember) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writenamespaceasync_net.adamec.dev.markupdoc.codemodel.namespacemember___15mn91c" />  MarkupGenerator.WriteNamespaceAsync(NamespaceMember) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Writes the namespace documentation page
@@ -12146,10 +15078,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writenamespacesasync__11thw7o" />  MarkupGenerator.WriteNamespacesAsync() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writenamespacesasync__11thw7o" />  MarkupGenerator.WriteNamespacesAsync() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Writes the namespaces and their members into the output
@@ -12173,10 +15106,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writenamespaceslistasync__17n45k8" />  MarkupGenerator.WriteNamespacesListAsync() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writenamespaceslistasync__17n45k8" />  MarkupGenerator.WriteNamespacesListAsync() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Writes the table of all namespaces within the code model into the output
@@ -12196,10 +15130,40 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writepagefooter__qhunh8" />  MarkupGenerator.WritePageFooter() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writepagefooter__qhunh8" />  MarkupGenerator.WritePageFooter() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
+
+
+[Deprecated] Writes the page footer. WritePageFooter is deprecated, please use WritePageFooterAsync instead.
+
+
+
+```csharp
+[Obsolete("WritePageFooter is deprecated, please use WritePageFooterAsync instead.")]
+public virtual async Task WritePageFooter()
+```
+
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Attributes: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.obsoleteattribute" target="_blank" >System.ObsoleteAttribute</a>
+
+
+###  Remarks ###
+The functionality of [WritePageFooterAsync()](#m-net.adamec.dev.markupdoc.markup.markupgenerator.writepagefooterasync__18snnl8) remains the same, just the name of the method has been corrected
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writepagefooterasync__18snnl8" />  MarkupGenerator.WritePageFooterAsync() Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
+Assembly: MarkupDoc           
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Writes the page footer
@@ -12207,7 +15171,7 @@ Writes the page footer
 
 
 ```csharp
-protected virtual async Task WritePageFooter()
+public virtual async Task WritePageFooterAsync()
 ```
 
 <strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
@@ -12223,10 +15187,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writepropertyasync_net.adamec.dev.markupdoc.codemodel.propertymember___1l6fuxk" />  MarkupGenerator.WritePropertyAsync(PropertyMember) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writepropertyasync_net.adamec.dev.markupdoc.codemodel.propertymember___1l6fuxk" />  MarkupGenerator.WritePropertyAsync(PropertyMember) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Writes the property documentation page
@@ -12247,10 +15212,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writetypeasync_net.adamec.dev.markupdoc.codemodel.typemember___e4a8de" />  MarkupGenerator.WriteTypeAsync(TypeMember) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writetypeasync_net.adamec.dev.markupdoc.codemodel.typemember___e4a8de" />  MarkupGenerator.WriteTypeAsync(TypeMember) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Writes the type documentation page
@@ -12275,10 +15241,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writetypecontentmemberheaderasync_net.adamec.dev.markupdoc.codemodel.typecontentmember-system.string___126xy13" />  MarkupGenerator.WriteTypeContentMemberHeaderAsync(TypeContentMember, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writetypecontentmemberheaderasync_net.adamec.dev.markupdoc.codemodel.typecontentmember-system.string___126xy13" />  MarkupGenerator.WriteTypeContentMemberHeaderAsync(TypeContentMember, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Writes the header for the type member (field, method, etc.)
@@ -12303,10 +15270,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writetypeheaderasync_net.adamec.dev.markupdoc.codemodel.typemember___cgai25" />  MarkupGenerator.WriteTypeHeaderAsync(TypeMember) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writetypeheaderasync_net.adamec.dev.markupdoc.codemodel.typemember___cgai25" />  MarkupGenerator.WriteTypeHeaderAsync(TypeMember) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Writes the header for the type member (field, method, etc.)
@@ -12331,10 +15299,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writetypesasync_net.adamec.dev.markupdoc.codemodel.namespacemember___1xky7be" />  MarkupGenerator.WriteTypesAsync(NamespaceMember) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writetypesasync_net.adamec.dev.markupdoc.codemodel.namespacemember___1xky7be" />  MarkupGenerator.WriteTypesAsync(NamespaceMember) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Writes the types and their members contained within given namespace into the output
@@ -12359,10 +15328,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writetypeslistasync__1dszey5" />  MarkupGenerator.WriteTypesListAsync() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupgenerator.writetypeslistasync__1dszey5" />  MarkupGenerator.WriteTypesListAsync() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)</small>
+Type: [MarkupGenerator](#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36)           
+Sources: Markup\MarkupGenerator.cs</small>
 
 
 Writes the table of all types within the code model into the output
@@ -12384,7 +15354,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.markup.markupmultifilewriter__1vc7asb" />  MarkupMultiFileWriter Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Markup\MarkupMultiFileWriter.cs</small>
 
 
 Markup output multi file writer
@@ -12429,7 +15400,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.markup.markupmultifilewriter.currentfile__1yrfj36" />  MarkupMultiFileWriter.CurrentFile Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupMultiFileWriter](#t-net.adamec.dev.markupdoc.markup.markupmultifilewriter__1vc7asb)</small>
+Type: [MarkupMultiFileWriter](#t-net.adamec.dev.markupdoc.markup.markupmultifilewriter__1vc7asb)           
+Sources: Markup\MarkupMultiFileWriter.cs</small>
 
 
 Full path of the file the output is currently being written to
@@ -12452,7 +15424,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.markup.markupmultifilewriter.extension__ij1g4s" />  MarkupMultiFileWriter.Extension Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupMultiFileWriter](#t-net.adamec.dev.markupdoc.markup.markupmultifilewriter__1vc7asb)</small>
+Type: [MarkupMultiFileWriter](#t-net.adamec.dev.markupdoc.markup.markupmultifilewriter__1vc7asb)           
+Sources: Markup\MarkupMultiFileWriter.cs</small>
 
 
 Extension of the output files
@@ -12472,10 +15445,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupmultifilewriter.settarget_system.string___1t4u7ve" />  MarkupMultiFileWriter.SetTarget(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupmultifilewriter.settarget_system.string___1t4u7ve" />  MarkupMultiFileWriter.SetTarget(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupMultiFileWriter](#t-net.adamec.dev.markupdoc.markup.markupmultifilewriter__1vc7asb)</small>
+Type: [MarkupMultiFileWriter](#t-net.adamec.dev.markupdoc.markup.markupmultifilewriter__1vc7asb)           
+Sources: Markup\MarkupMultiFileWriter.cs</small>
 
 
 Sets the target directory of the markdown writer (directory of index file provided in <strong>indexFileName</strong> )
@@ -12487,7 +15461,7 @@ public override bool SetTarget(string indexFileName)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>indexFileName</strong></dt><dd>Full path to the index file (including the extension) to write the output to</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a></dt><dd>True when the target has been set, otherwise false (because the output is in progress)</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a></dt><dd>True when the target has been set, otherwise false (because the output is in progress)</dd></dl>Overrides: [MarkupFileWriter.SetTarget(string)](#m-net.adamec.dev.markupdoc.markup.markupfilewriter.settarget_system.string___42x1bx)
 
 
 ###  Remarks ###
@@ -12500,10 +15474,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupmultifilewriter.split_system.string___12nvaw1" />  MarkupMultiFileWriter.Split(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupmultifilewriter.split_system.string___12nvaw1" />  MarkupMultiFileWriter.Split(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupMultiFileWriter](#t-net.adamec.dev.markupdoc.markup.markupmultifilewriter__1vc7asb)</small>
+Type: [MarkupMultiFileWriter](#t-net.adamec.dev.markupdoc.markup.markupmultifilewriter__1vc7asb)           
+Sources: Markup\MarkupMultiFileWriter.cs</small>
 
 
 Starts a new split of the output - closes the current file and opens a new one having the <strong>splitName</strong> and [Extension](#p-net.adamec.dev.markupdoc.markup.markupmultifilewriter.extension__ij1g4s)
@@ -12515,7 +15490,7 @@ public override void Split(string splitName)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>splitName</strong></dt><dd>Name of the split</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" target="_blank" >void</a></dt><dd></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" target="_blank" >void</a></dt><dd></dd></dl>Overrides: [MarkupFileWriter.Split(string)](#m-net.adamec.dev.markupdoc.markup.markupfilewriter.split_system.string___1qu56ua)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -12524,10 +15499,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.markupmultifilewriter.writemodelasync_system.func_system.threading.tasks.task____pvlhm2" />  MarkupMultiFileWriter.WriteModelAsync(Func&lt;System.Threading.Tasks.Task&gt;) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.markupmultifilewriter.writemodelasync_system.func_system.threading.tasks.task____pvlhm2" />  MarkupMultiFileWriter.WriteModelAsync(Func&lt;System.Threading.Tasks.Task&gt;) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [MarkupMultiFileWriter](#t-net.adamec.dev.markupdoc.markup.markupmultifilewriter__1vc7asb)</small>
+Type: [MarkupMultiFileWriter](#t-net.adamec.dev.markupdoc.markup.markupmultifilewriter__1vc7asb)           
+Sources: Markup\MarkupMultiFileWriter.cs</small>
 
 
 Writes the code model to the output
@@ -12539,7 +15515,7 @@ public override async Task WriteModelAsync(Func<System.Threading.Tasks.Task> wri
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.func-1" target="_blank" >System.Func&lt;System.Threading.Tasks.Task&gt;</a> <strong>writeContentActionAsync</strong></dt><dd>Function rendering the model to the output</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl>Overrides: [MarkupFileWriter.WriteModelAsync(Func&lt;System.Threading.Tasks.Task&gt;)](#m-net.adamec.dev.markupdoc.markup.markupfilewriter.writemodelasync_system.func_system.threading.tasks.task____1cfox9p)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -12550,7 +15526,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr" />  IMarkupProvider Interface ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Markup provider interface
@@ -12561,10 +15538,15 @@ Markup provider interface
 public interface IMarkupProvider
 ```
 
+Implemented by: [net.adamec.dev.markupdoc.Markup.HtmlMarkupProvider](#t-net.adamec.dev.markupdoc.markup.htmlmarkupprovider__oinjfj), [net.adamec.dev.markupdoc.Markup.MarkdownMarkupProvider](#t-net.adamec.dev.markupdoc.markup.markdownmarkupprovider__189wwt9)           
+
+
+
 ###  Properties ###
 
  | Name | Modifier | Summary | 
  | ------ | ---------- | --------- | 
+ | [Extension](#p-net.adamec.dev.markupdoc.markup.imarkupprovider.extension__1bh2bcm) | public abstract | Gets the extension of file generated by markup provider | 
  | [MarkupWriter](#p-net.adamec.dev.markupdoc.markup.imarkupprovider.markupwriter__ko0cve) | public abstract | Gets or sets the [IMarkupWriter](#t-net.adamec.dev.markupdoc.markup.imarkupwriter__14znp75) used for the markup output | 
 
  
@@ -12617,10 +15599,35 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
+##  <a id="p-net.adamec.dev.markupdoc.markup.imarkupprovider.extension__1bh2bcm" />  IMarkupProvider.Extension Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
+Assembly: MarkupDoc           
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
+
+
+Gets the extension of file generated by markup provider
+
+
+
+```csharp
+public abstract string Extension { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
 ##  <a id="p-net.adamec.dev.markupdoc.markup.imarkupprovider.markupwriter__ko0cve" />  IMarkupProvider.MarkupWriter Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Gets or sets the [IMarkupWriter](#t-net.adamec.dev.markupdoc.markup.imarkupwriter__14znp75) used for the markup output
@@ -12640,10 +15647,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.bold_system.string___17tar4q" />  IMarkupProvider.Bold(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.bold_system.string___17tar4q" />  IMarkupProvider.Bold(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Returns the markup for bold (strong) <strong>text</strong>
@@ -12664,10 +15672,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.bookmark_system.string___1wc4cmn" />  IMarkupProvider.Bookmark(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.bookmark_system.string___1wc4cmn" />  IMarkupProvider.Bookmark(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Returns the markup of the bookmark with given <strong>id</strong>
@@ -12688,10 +15697,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.code_system.string-system.boolean___185qr7p" />  IMarkupProvider.Code(string, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.code_system.string-system.boolean___185qr7p" />  IMarkupProvider.Code(string, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Returns the markup for multi-line code with given <strong>text</strong>
@@ -12712,10 +15722,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.descriptionlist_system.collections.generic.ilist_system.string____1pqryk1" />  IMarkupProvider.DescriptionList(IList&lt;string&gt;) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.descriptionlist_system.collections.generic.ilist_system.string____1pqryk1" />  IMarkupProvider.DescriptionList(IList&lt;string&gt;) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Returns the markup for the description list with the given <strong>renderedItems</strong>
@@ -12736,10 +15747,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.descriptionlist--1_system.func_--0-system.string_-system.func_--0-system.string_-system.collections.generic.ienumerable_--0____kr2fi2" />  IMarkupProvider.DescriptionList&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, Func&lt;TItemType,string&gt;, IEnumerable&lt;TItemType&gt;) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.descriptionlist--1_system.func_--0-system.string_-system.func_--0-system.string_-system.collections.generic.ienumerable_--0____kr2fi2" />  IMarkupProvider.DescriptionList&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, Func&lt;TItemType,string&gt;, IEnumerable&lt;TItemType&gt;) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Returns the markup for the description list with the given <strong>items</strong>
@@ -12761,10 +15773,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.descriptionlistitem_system.string-system.string___185r8jg" />  IMarkupProvider.DescriptionListItem(string, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.descriptionlistitem_system.string-system.string___185r8jg" />  IMarkupProvider.DescriptionListItem(string, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Returns the markup of the description list item
@@ -12785,10 +15798,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.descriptionlistitem--1_system.func_--0-system.string_-system.func_--0-system.string_---0___1d21q1x" />  IMarkupProvider.DescriptionListItem&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, Func&lt;TItemType,string&gt;, IMarkupProvider.TItemType) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.descriptionlistitem--1_system.func_--0-system.string_-system.func_--0-system.string_---0___1d21q1x" />  IMarkupProvider.DescriptionListItem&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, Func&lt;TItemType,string&gt;, IMarkupProvider.TItemType) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Returns the markup of the description list item
@@ -12810,10 +15824,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.externallink_system.string-system.string___76ohd6" />  IMarkupProvider.ExternalLink(string, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.externallink_system.string-system.string___76ohd6" />  IMarkupProvider.ExternalLink(string, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Returns the markup for the external link
@@ -12834,10 +15849,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.inlinecode_system.string-system.boolean___70e1uy" />  IMarkupProvider.InlineCode(string, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.inlinecode_system.string-system.boolean___70e1uy" />  IMarkupProvider.InlineCode(string, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Returns the markup for inline code with given <strong>text</strong>
@@ -12858,10 +15874,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.italic_system.string___txs4xh" />  IMarkupProvider.Italic(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.italic_system.string___txs4xh" />  IMarkupProvider.Italic(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Returns the markup for italic (emphasized) <strong>text</strong>
@@ -12882,10 +15899,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.linebreak__bcasm5" />  IMarkupProvider.LineBreak() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.linebreak__bcasm5" />  IMarkupProvider.LineBreak() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Returns the markup for the line break
@@ -12905,10 +15923,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.link_system.string-net.adamec.dev.markupdoc.codemodel.member___kz8auq" />  IMarkupProvider.Link(string, Member) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.link_system.string-net.adamec.dev.markupdoc.codemodel.member___kz8auq" />  IMarkupProvider.Link(string, Member) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Returns the markup for the internal link
@@ -12929,10 +15948,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.link_system.string-system.string-system.string___fpfsg3" />  IMarkupProvider.Link(string, string, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.link_system.string-system.string-system.string___fpfsg3" />  IMarkupProvider.Link(string, string, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Returns the markup for the internal link
@@ -12953,10 +15973,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.list--1_system.func_--0-system.string_-system.collections.generic.ienumerable_--0_-system.boolean___1gcvzmw" />  IMarkupProvider.List&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, IEnumerable&lt;TItemType&gt;, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.list--1_system.func_--0-system.string_-system.collections.generic.ienumerable_--0_-system.boolean___1gcvzmw" />  IMarkupProvider.List&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, IEnumerable&lt;TItemType&gt;, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Returns the markup for the list of the items
@@ -12978,10 +15999,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.para_system.string___1n5d79p" />  IMarkupProvider.Para(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.para_system.string___1n5d79p" />  IMarkupProvider.Para(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Returns the markup for paragraph with given <strong>text</strong>
@@ -13002,10 +16024,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.small_system.string___16hyku" />  IMarkupProvider.Small(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.small_system.string___16hyku" />  IMarkupProvider.Small(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Returns the markup for small <strong>text</strong>
@@ -13026,10 +16049,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.tablecols_system.string_____9o05ka" />  IMarkupProvider.TableCols(string[]) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.tablecols_system.string_____9o05ka" />  IMarkupProvider.TableCols(string[]) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Returns the markup for the table row with given columns
@@ -13050,10 +16074,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.tablefooter__8xrzfr" />  IMarkupProvider.TableFooter() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.tablefooter__8xrzfr" />  IMarkupProvider.TableFooter() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Returns the markup for the table footer
@@ -13073,10 +16098,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.tableheader_system.string_____1id0rx8" />  IMarkupProvider.TableHeader(string[]) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.tableheader_system.string_____1id0rx8" />  IMarkupProvider.TableHeader(string[]) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Returns the markup for the table header with given columns
@@ -13097,10 +16123,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.text_system.string___1c1xx56" />  IMarkupProvider.Text(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.text_system.string___1c1xx56" />  IMarkupProvider.Text(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Returns the markup for the &quot;plain&quot; text
@@ -13121,10 +16148,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writecodeasync_system.string-system.boolean___13eqprk" />  IMarkupProvider.WriteCodeAsync(string, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writecodeasync_system.string-system.boolean___13eqprk" />  IMarkupProvider.WriteCodeAsync(string, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Writes the markup for multi-line code with given <strong>text</strong>
@@ -13145,10 +16173,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writedocumentendasync__wnyzbn" />  IMarkupProvider.WriteDocumentEndAsync() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writedocumentendasync__wnyzbn" />  IMarkupProvider.WriteDocumentEndAsync() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Writes the markup for the end of the document (file)
@@ -13168,10 +16197,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writedocumentstartasync_system.string___1c7fdif" />  IMarkupProvider.WriteDocumentStartAsync(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writedocumentstartasync_system.string___1c7fdif" />  IMarkupProvider.WriteDocumentStartAsync(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Writes the markup for the beginning of the document (file)
@@ -13192,10 +16222,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writeh1async_system.string-system.string___12a3vxn" />  IMarkupProvider.WriteH1Async(string, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writeh1async_system.string-system.string___12a3vxn" />  IMarkupProvider.WriteH1Async(string, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Writes the level 1 <strong>header</strong> with  optional bookmark
@@ -13216,10 +16247,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writeh2async_system.string-system.string___cb64y6" />  IMarkupProvider.WriteH2Async(string, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writeh2async_system.string-system.string___cb64y6" />  IMarkupProvider.WriteH2Async(string, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Writes the level 2 <strong>header</strong> with  optional bookmark
@@ -13240,10 +16272,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writeh3async_system.string-system.string___b45e7h" />  IMarkupProvider.WriteH3Async(string, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writeh3async_system.string-system.string___b45e7h" />  IMarkupProvider.WriteH3Async(string, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Writes the level 3 <strong>header</strong> with  optional bookmark
@@ -13264,10 +16297,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writeh4async_system.string-system.string___c9u6hc" />  IMarkupProvider.WriteH4Async(string, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writeh4async_system.string-system.string___c9u6hc" />  IMarkupProvider.WriteH4Async(string, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Writes the level 4 <strong>header</strong> with  optional bookmark
@@ -13288,10 +16322,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writehorizontallineasync__ovb1ir" />  IMarkupProvider.WriteHorizontalLineAsync() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writehorizontallineasync__ovb1ir" />  IMarkupProvider.WriteHorizontalLineAsync() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Writes the markup for horizontal line
@@ -13311,10 +16346,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writeparaasync_system.string___1jgyfl2" />  IMarkupProvider.WriteParaAsync(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writeparaasync_system.string___1jgyfl2" />  IMarkupProvider.WriteParaAsync(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Writes the markup for paragraph with given <strong>text</strong>
@@ -13335,10 +16371,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writetablecolsasync_system.string_____isipmj" />  IMarkupProvider.WriteTableColsAsync(string[]) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writetablecolsasync_system.string_____isipmj" />  IMarkupProvider.WriteTableColsAsync(string[]) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Writes the markup for the table row with given columns
@@ -13359,10 +16396,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writetablefooterasync__1ht3gvm" />  IMarkupProvider.WriteTableFooterAsync() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writetablefooterasync__1ht3gvm" />  IMarkupProvider.WriteTableFooterAsync() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Writes the markup for the table footer
@@ -13382,10 +16420,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writetableheaderasync_system.string_____1ifrlmz" />  IMarkupProvider.WriteTableHeaderAsync(string[]) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writetableheaderasync_system.string_____1ifrlmz" />  IMarkupProvider.WriteTableHeaderAsync(string[]) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Writes the markup for the table header with given columns
@@ -13406,10 +16445,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writetextasync_system.string___hugpid" />  IMarkupProvider.WriteTextAsync(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupprovider.writetextasync_system.string___hugpid" />  IMarkupProvider.WriteTextAsync(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)</small>
+Type: [IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr)           
+Sources: Markup\IMarkupProvider.cs</small>
 
 
 Writes the <strong>text</strong> to the output
@@ -13432,7 +16472,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.markup.imarkupwriter__14znp75" />  IMarkupWriter Interface ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Markup\IMarkupWriter.cs</small>
 
 
 Interface of the markup output writer
@@ -13443,6 +16484,7 @@ Interface of the markup output writer
 public interface IMarkupWriter : INonWritableWriter
 ```
 
+Implemented by: [net.adamec.dev.markupdoc.Markup.MarkupFileWriter](#t-net.adamec.dev.markupdoc.markup.markupfilewriter__1xoedys), [net.adamec.dev.markupdoc.Markup.MarkupMultiFileWriter](#t-net.adamec.dev.markupdoc.markup.markupmultifilewriter__1vc7asb)           
 Implements: [net.adamec.dev.markupdoc.Markup.INonWritableWriter](#t-net.adamec.dev.markupdoc.markup.inonwritablewriter__1ortihg)
 
 
@@ -13463,10 +16505,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupwriter.writeasync_system.string___aeq6ei" />  IMarkupWriter.WriteAsync(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupwriter.writeasync_system.string___aeq6ei" />  IMarkupWriter.WriteAsync(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupWriter](#t-net.adamec.dev.markupdoc.markup.imarkupwriter__14znp75)</small>
+Type: [IMarkupWriter](#t-net.adamec.dev.markupdoc.markup.imarkupwriter__14znp75)           
+Sources: Markup\IMarkupWriter.cs</small>
 
 
 Writes the <strong>text</strong> to the output
@@ -13487,10 +16530,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupwriter.writelineasync_system.string___9m03pw" />  IMarkupWriter.WriteLineAsync(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupwriter.writelineasync_system.string___9m03pw" />  IMarkupWriter.WriteLineAsync(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupWriter](#t-net.adamec.dev.markupdoc.markup.imarkupwriter__14znp75)</small>
+Type: [IMarkupWriter](#t-net.adamec.dev.markupdoc.markup.imarkupwriter__14znp75)           
+Sources: Markup\IMarkupWriter.cs</small>
 
 
 Writes the <strong>text</strong> and a new line to the output
@@ -13511,10 +16555,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupwriter.writemodelasync_system.func_system.threading.tasks.task____10tqrtq" />  IMarkupWriter.WriteModelAsync(Func&lt;System.Threading.Tasks.Task&gt;) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.imarkupwriter.writemodelasync_system.func_system.threading.tasks.task____10tqrtq" />  IMarkupWriter.WriteModelAsync(Func&lt;System.Threading.Tasks.Task&gt;) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [IMarkupWriter](#t-net.adamec.dev.markupdoc.markup.imarkupwriter__14znp75)</small>
+Type: [IMarkupWriter](#t-net.adamec.dev.markupdoc.markup.imarkupwriter__14znp75)           
+Sources: Markup\IMarkupWriter.cs</small>
 
 
 Writes the code model to the output
@@ -13537,7 +16582,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.markup.inonwritablewriter__1ortihg" />  INonWritableWriter Interface ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Markup\IMarkupWriter.cs</small>
 
 
 Non writable interface of the output writer
@@ -13547,6 +16593,10 @@ Non writable interface of the output writer
 ```csharp
 public interface INonWritableWriter
 ```
+
+Implemented by: [net.adamec.dev.markupdoc.Markup.IMarkupWriter](#t-net.adamec.dev.markupdoc.markup.imarkupwriter__14znp75), [net.adamec.dev.markupdoc.Markup.MarkupFileWriter](#t-net.adamec.dev.markupdoc.markup.markupfilewriter__1xoedys), [net.adamec.dev.markupdoc.Markup.MarkupMultiFileWriter](#t-net.adamec.dev.markupdoc.markup.markupmultifilewriter__1vc7asb)           
+
+
 
 ###  Remarks ###
 This interface is used when the direct writing to the output is not allowed
@@ -13568,10 +16618,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.inonwritablewriter.settarget_system.string___gdnbq7" />  INonWritableWriter.SetTarget(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.inonwritablewriter.settarget_system.string___gdnbq7" />  INonWritableWriter.SetTarget(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [INonWritableWriter](#t-net.adamec.dev.markupdoc.markup.inonwritablewriter__1ortihg)</small>
+Type: [INonWritableWriter](#t-net.adamec.dev.markupdoc.markup.inonwritablewriter__1ortihg)           
+Sources: Markup\IMarkupWriter.cs</small>
 
 
 Sets the initial target of the markdown writer
@@ -13596,10 +16647,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.markup.inonwritablewriter.split_system.string___hrmauu" />  INonWritableWriter.Split(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.markup.inonwritablewriter.split_system.string___hrmauu" />  INonWritableWriter.Split(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Markup](#n-net.adamec.dev.markupdoc.markup__1918uiv)           
 Assembly: MarkupDoc           
-Type: [INonWritableWriter](#t-net.adamec.dev.markupdoc.markup.inonwritablewriter__1ortihg)</small>
+Type: [INonWritableWriter](#t-net.adamec.dev.markupdoc.markup.inonwritablewriter__1ortihg)           
+Sources: Markup\IMarkupWriter.cs</small>
 
 
 Starts a new split of the output
@@ -13642,7 +16694,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx" />  MsApiDocEngine Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.MsApiDoc](#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: MsApiDoc\MsApiDocEngine.cs</small>
 
 
 Provides the links to MS API browser (https://docs.microsoft.com/en-us/dotnet/api/) for .NET API types and their members.
@@ -13711,7 +16764,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.msapidoc.msapidocengine.baseurl__mfwodh" />  MsApiDocEngine.BaseUrl Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.MsApiDoc](#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l)           
 Assembly: MarkupDoc           
-Type: [MsApiDocEngine](#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx)</small>
+Type: [MsApiDocEngine](#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx)           
+Sources: MsApiDoc\MsApiDocEngine.cs</small>
 
 
 
@@ -13731,7 +16785,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.msapidoc.msapidocengine.idtolinkdictionary__ij5vc1" />  MsApiDocEngine.IdToLinkDictionary Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.MsApiDoc](#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l)           
 Assembly: MarkupDoc           
-Type: [MsApiDocEngine](#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx)</small>
+Type: [MsApiDocEngine](#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx)           
+Sources: MsApiDoc\MsApiDocEngine.cs</small>
 
 
 ID to Link read-only dictionary for items read from local clone of MS .NET API documentation
@@ -13754,7 +16809,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.msapidoc.msapidocengine.idtolinkdictionaryprivate__1qh58ay" />  MsApiDocEngine.IdToLinkDictionaryPrivate Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.MsApiDoc](#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l)           
 Assembly: MarkupDoc           
-Type: [MsApiDocEngine](#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx)</small>
+Type: [MsApiDocEngine](#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx)           
+Sources: MsApiDoc\MsApiDocEngine.cs</small>
 
 
 Internal ID to Link dictionary for items read from local clone of MS .NET API documentation
@@ -13774,10 +16830,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.msapidoc.msapidocengine.getlink_system.string___c42uyj" />  MsApiDocEngine.GetLink(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.msapidoc.msapidocengine.getlink_system.string___c42uyj" />  MsApiDocEngine.GetLink(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.MsApiDoc](#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l)           
 Assembly: MarkupDoc           
-Type: [MsApiDocEngine](#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx)</small>
+Type: [MsApiDocEngine](#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx)           
+Sources: MsApiDoc\MsApiDocEngine.cs</small>
 
 
 Retrieves the link to MS API online documentation based on the member <strong>id</strong> (documentation ID)
@@ -13798,10 +16855,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.msapidoc.msapidocengine.getlink_net.adamec.dev.markupdoc.codemodel.typeref___iigjs7" />  MsApiDocEngine.GetLink(TypeRef) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.msapidoc.msapidocengine.getlink_net.adamec.dev.markupdoc.codemodel.typeref___iigjs7" />  MsApiDocEngine.GetLink(TypeRef) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.MsApiDoc](#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l)           
 Assembly: MarkupDoc           
-Type: [MsApiDocEngine](#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx)</small>
+Type: [MsApiDocEngine](#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx)           
+Sources: MsApiDoc\MsApiDocEngine.cs</small>
 
 
 Retrieves the link to MS API online documentation based on the <strong>typeRef</strong> .
@@ -13826,10 +16884,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.msapidoc.msapidocengine.readlocaldoc__ned6d5" />  MsApiDocEngine.ReadLocalDoc() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.msapidoc.msapidocengine.readlocaldoc__ned6d5" />  MsApiDocEngine.ReadLocalDoc() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.MsApiDoc](#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l)           
 Assembly: MarkupDoc           
-Type: [MsApiDocEngine](#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx)</small>
+Type: [MsApiDocEngine](#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx)           
+Sources: MsApiDoc\MsApiDocEngine.cs</small>
 
 
 Reads the local clone of MS .NET API documentation and builds the internal dictionary of member IDs and links to MS online API documentation
@@ -13867,10 +16926,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.msapidoc.msapidocengine.typememberbasename_system.string___1akr6b7" />  MsApiDocEngine.TypeMemberBaseName(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.msapidoc.msapidocengine.typememberbasename_system.string___1akr6b7" />  MsApiDocEngine.TypeMemberBaseName(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.MsApiDoc](#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l)           
 Assembly: MarkupDoc           
-Type: [MsApiDocEngine](#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx)</small>
+Type: [MsApiDocEngine](#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx)           
+Sources: MsApiDoc\MsApiDocEngine.cs</small>
 
 
 Extracts the base name for the type member.
@@ -13897,7 +16957,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.msapidoc.msapidocoptions__19hrssn" />  MsApiDocOptions Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.MsApiDoc](#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: MsApiDoc\MsApiDocOptions.cs</small>
 
 
 Configuration class for [MsApiDocEngine](#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx)
@@ -13933,7 +16994,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.msapidoc.msapidocoptions.apibaseurl__p6wemb" />  MsApiDocOptions.ApiBaseUrl Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.MsApiDoc](#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l)           
 Assembly: MarkupDoc           
-Type: [MsApiDocOptions](#t-net.adamec.dev.markupdoc.msapidoc.msapidocoptions__19hrssn)</small>
+Type: [MsApiDocOptions](#t-net.adamec.dev.markupdoc.msapidoc.msapidocoptions__19hrssn)           
+Sources: MsApiDoc\MsApiDocOptions.cs</small>
 
 
 Base URL of MS .NET API Browser (must end with &quot;/&quot;) If [LinkToApi](#p-net.adamec.dev.markupdoc.msapidoc.msapidocoptions.linktoapi__1tvqqu4) is set, missing [ApiBaseUrl](#p-net.adamec.dev.markupdoc.msapidoc.msapidocoptions.apibaseurl__p6wemb) throws the exception while building the link
@@ -13956,7 +17018,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.msapidoc.msapidocoptions.linktoapi__1tvqqu4" />  MsApiDocOptions.LinkToApi Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.MsApiDoc](#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l)           
 Assembly: MarkupDoc           
-Type: [MsApiDocOptions](#t-net.adamec.dev.markupdoc.msapidoc.msapidocoptions__19hrssn)</small>
+Type: [MsApiDocOptions](#t-net.adamec.dev.markupdoc.msapidoc.msapidocoptions__19hrssn)           
+Sources: MsApiDoc\MsApiDocOptions.cs</small>
 
 
 Flag whether to generate the links to MS .NET API Browser
@@ -13979,7 +17042,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.msapidoc.msapidocoptions.localdocdir__1lcfz8f" />  MsApiDocOptions.LocalDocDir Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.MsApiDoc](#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l)           
 Assembly: MarkupDoc           
-Type: [MsApiDocOptions](#t-net.adamec.dev.markupdoc.msapidoc.msapidocoptions__19hrssn)</small>
+Type: [MsApiDocOptions](#t-net.adamec.dev.markupdoc.msapidoc.msapidocoptions__19hrssn)           
+Sources: MsApiDoc\MsApiDocOptions.cs</small>
 
 
 Local clone of .NET API Documentation root directory
@@ -14002,7 +17066,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.msapidoc.msapidocoptions.requirelocaldoc__10og155" />  MsApiDocOptions.RequireLocalDoc Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.MsApiDoc](#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l)           
 Assembly: MarkupDoc           
-Type: [MsApiDocOptions](#t-net.adamec.dev.markupdoc.msapidoc.msapidocoptions__19hrssn)</small>
+Type: [MsApiDocOptions](#t-net.adamec.dev.markupdoc.msapidoc.msapidocoptions__19hrssn)           
+Sources: MsApiDoc\MsApiDocOptions.cs</small>
 
 
 Flag whether to build the links based on the local close of .NET API Documentation only.
@@ -14053,7 +17118,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.options.configuration__110r0mb" />  Configuration Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Options\Configuration.cs</small>
 
 
 Singleton holding the application configuration (options)
@@ -14140,7 +17206,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.options.configuration.bindingscache__oj0pqx" />  Configuration.bindingsCache Field ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)</small>
+Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)           
+Sources: Options\Configuration.cs</small>
 
 
 Cache for bindings. Dictionary of type bound as a key and the bound object as value.
@@ -14167,7 +17234,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.options.configuration.instance__5kocls" />  Configuration.instance Field ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)</small>
+Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)           
+Sources: Options\Configuration.cs</small>
 
 
 Instance of the [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb) created when the singleton is first touched
@@ -14194,7 +17262,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.options.configuration.instance__1ginlaa" />  Configuration.Instance Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)</small>
+Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)           
+Sources: Options\Configuration.cs</small>
 
 
 Public [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb) instance
@@ -14217,7 +17286,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.options.configuration.items__10m50f7" />  Configuration.Items Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)</small>
+Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)           
+Sources: Options\Configuration.cs</small>
 
 
 Configuration items stored as key-value pairs
@@ -14237,10 +17307,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.options.configuration.-cctor__1angiqa" />  Configuration.Configuration() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.options.configuration.-cctor__1angiqa" />  Configuration.Configuration() Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)</small>
+Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)           
+Sources: Options\Configuration.cs</small>
 
 
 Static constructor
@@ -14261,10 +17332,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.options.configuration.-ctor__12l16zd" />  Configuration.Configuration() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.options.configuration.-ctor__12l16zd" />  Configuration.Configuration() Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)</small>
+Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)           
+Sources: Options\Configuration.cs</small>
 
 
 Private constructor used to build the singleton instance
@@ -14281,10 +17353,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.options.configuration.addorupdateitem_system.string-system.object___gf6021" />  Configuration.AddOrUpdateItem(string, object) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.options.configuration.addorupdateitem_system.string-system.object___gf6021" />  Configuration.AddOrUpdateItem(string, object) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)</small>
+Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)           
+Sources: Options\Configuration.cs</small>
 
 
 Add a new configuration item with given <strong>value</strong> or updates its value if the <strong>key</strong> already exists.
@@ -14305,10 +17378,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.options.configuration.bind_system.type-system.string___y5tird" />  Configuration.Bind(Type, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.options.configuration.bind_system.type-system.string___y5tird" />  Configuration.Bind(Type, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)</small>
+Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)           
+Sources: Options\Configuration.cs</small>
 
 
 Creates a  new object with given <strong>type</strong> and binds the configuration to its public properties where possible.
@@ -14333,10 +17407,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.options.configuration.bind--1_system.string-system.boolean___181qnd6" />  Configuration.Bind&lt;TOptionsContainer&gt;(string, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.options.configuration.bind--1_system.string-system.boolean___181qnd6" />  Configuration.Bind&lt;TOptionsContainer&gt;(string, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)</small>
+Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)           
+Sources: Options\Configuration.cs</small>
 
 
 Binds the configuration to given <strong>TOptionsContainer</strong> type and returns the bound object of such type. The resulting configuration object is stored to the cache and can be later on retrieved using [Retrieve&lt;TOptionsContainer&gt;()](#m-net.adamec.dev.markupdoc.options.configuration.retrieve--1__nuzv9n)
@@ -14358,10 +17433,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.options.configuration.builder__orgv4x" />  Configuration.Builder() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.options.configuration.builder__orgv4x" />  Configuration.Builder() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)</small>
+Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)           
+Sources: Options\Configuration.cs</small>
 
 
 Clears the configuration items and binding cache and creates a new instance of [Configuration.ConfigurationBuilder](#t-net.adamec.dev.markupdoc.options.configuration.configurationbuilder__vv30sc)
@@ -14381,10 +17457,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.options.configuration.get_system.string___1i40j4h" />  Configuration.Get(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.options.configuration.get_system.string___1i40j4h" />  Configuration.Get(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)</small>
+Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)           
+Sources: Options\Configuration.cs</small>
 
 
 Gets the configuration item by <strong>key</strong>
@@ -14405,10 +17482,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.options.configuration.get--1_system.string---0___snj5ho" />  Configuration.Get&lt;TValueType&gt;(string, Configuration.TValueType) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.options.configuration.get--1_system.string---0___snj5ho" />  Configuration.Get&lt;TValueType&gt;(string, Configuration.TValueType) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)</small>
+Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)           
+Sources: Options\Configuration.cs</small>
 
 
 Gets the typed configuration item by <strong>key</strong> . Returns the default value, that can be provided or is default to given <strong>TValueType</strong> The function tries to convert the value to <strong>TValueType</strong> using <a href="https://docs.microsoft.com/en-us/dotnet/api/system.convert.changetype#System_Convert_ChangeType_System_Object_System_Type_" target="_blank" >System.Convert.ChangeType(System.Object,System.Type)</a> if the conversion is not successful, the default is returned.
@@ -14430,10 +17508,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.options.configuration.getsection_system.string___h5pqqc" />  Configuration.GetSection(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.options.configuration.getsection_system.string___h5pqqc" />  Configuration.GetSection(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)</small>
+Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)           
+Sources: Options\Configuration.cs</small>
 
 
 Gets the configuration sub-tree that belongs to given section. The keys returned are relative to given section! When the section is not provided, the whole configuration tree is returned.
@@ -14454,10 +17533,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.options.configuration.retrieve--1__nuzv9n" />  Configuration.Retrieve&lt;TOptionsContainer&gt;() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.options.configuration.retrieve--1__nuzv9n" />  Configuration.Retrieve&lt;TOptionsContainer&gt;() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)</small>
+Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)           
+Sources: Options\Configuration.cs</small>
 
 
 Retrieves the configuration object of given <strong>TOptionsContainer</strong> that has been bound and cached before. The new instance of <strong>TOptionsContainer</strong> is created when the type not found in cache
@@ -14478,10 +17558,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.options.configuration.tryconvertvalue_system.type-system.object-system.object-___1em2of1" />  Configuration.TryConvertValue(Type, object, object) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.options.configuration.tryconvertvalue_system.type-system.object-system.object-___1em2of1" />  Configuration.TryConvertValue(Type, object, object) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)</small>
+Type: [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb)           
+Sources: Options\Configuration.cs</small>
 
 
 Tries to convert <strong>sourceValue</strong> to <strong>targetType</strong> . The converted values is returned in <strong>targetValue</strong> out parameter, the result of conversion is the function return value.
@@ -14508,7 +17589,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.options.configuration.configurationbuilder__vv30sc" />  Configuration.ConfigurationBuilder Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Options\Configuration.cs</small>
 
 
 Configuration builder providing the methods for adding the configuration items from individual sources
@@ -14542,10 +17624,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.options.configuration.configurationbuilder.add_system.string-system.object___c4hvdf" />  Configuration.ConfigurationBuilder.Add(string, object) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.options.configuration.configurationbuilder.add_system.string-system.object___c4hvdf" />  Configuration.ConfigurationBuilder.Add(string, object) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [Configuration.ConfigurationBuilder](#t-net.adamec.dev.markupdoc.options.configuration.configurationbuilder__vv30sc)</small>
+Type: [Configuration.ConfigurationBuilder](#t-net.adamec.dev.markupdoc.options.configuration.configurationbuilder__vv30sc)           
+Sources: Options\Configuration.cs</small>
 
 
 Add a new configuration item with given <strong>value</strong> or updates its value if the <strong>key</strong> already exists.
@@ -14566,10 +17649,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.options.configuration.configurationbuilder.addcommandlinearguments_system.string_____1xz90ae" />  Configuration.ConfigurationBuilder.AddCommandLineArguments(string[]) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.options.configuration.configurationbuilder.addcommandlinearguments_system.string_____1xz90ae" />  Configuration.ConfigurationBuilder.AddCommandLineArguments(string[]) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [Configuration.ConfigurationBuilder](#t-net.adamec.dev.markupdoc.options.configuration.configurationbuilder__vv30sc)</small>
+Type: [Configuration.ConfigurationBuilder](#t-net.adamec.dev.markupdoc.options.configuration.configurationbuilder__vv30sc)           
+Sources: Options\Configuration.cs</small>
 
 
 Adds the command line arguments starting with <strong>prefixes</strong> into the [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb) . When a configuration item exists, the value is updated.
@@ -14596,10 +17680,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.options.configuration.configurationbuilder.addenvironmentvariables__1lp30f0" />  Configuration.ConfigurationBuilder.AddEnvironmentVariables() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.options.configuration.configurationbuilder.addenvironmentvariables__1lp30f0" />  Configuration.ConfigurationBuilder.AddEnvironmentVariables() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [Configuration.ConfigurationBuilder](#t-net.adamec.dev.markupdoc.options.configuration.configurationbuilder__vv30sc)</small>
+Type: [Configuration.ConfigurationBuilder](#t-net.adamec.dev.markupdoc.options.configuration.configurationbuilder__vv30sc)           
+Sources: Options\Configuration.cs</small>
 
 
 Adds all environment variables into the [Configuration](#t-net.adamec.dev.markupdoc.options.configuration__110r0mb) . When a configuration item exists, the value is updated.
@@ -14623,10 +17708,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.options.configuration.configurationbuilder.addjsonfile_system.string-system.boolean-system.boolean___1s8rjnj" />  Configuration.ConfigurationBuilder.AddJsonFile(string, bool, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.options.configuration.configurationbuilder.addjsonfile_system.string-system.boolean-system.boolean___1s8rjnj" />  Configuration.ConfigurationBuilder.AddJsonFile(string, bool, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [Configuration.ConfigurationBuilder](#t-net.adamec.dev.markupdoc.options.configuration.configurationbuilder__vv30sc)</small>
+Type: [Configuration.ConfigurationBuilder](#t-net.adamec.dev.markupdoc.options.configuration.configurationbuilder__vv30sc)           
+Sources: Options\Configuration.cs</small>
 
 
 Loads the configuration items from JSON file, keeping the hierarchy of JSON objects (and arrays) When a configuration item exists, the value is updated.
@@ -14647,10 +17733,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.options.configuration.configurationbuilder.build__ubyzgt" />  Configuration.ConfigurationBuilder.Build() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.options.configuration.configurationbuilder.build__ubyzgt" />  Configuration.ConfigurationBuilder.Build() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [Configuration.ConfigurationBuilder](#t-net.adamec.dev.markupdoc.options.configuration.configurationbuilder__vv30sc)</small>
+Type: [Configuration.ConfigurationBuilder](#t-net.adamec.dev.markupdoc.options.configuration.configurationbuilder__vv30sc)           
+Sources: Options\Configuration.cs</small>
 
 
 Finishes the configuration building and returns the [Instance](#p-net.adamec.dev.markupdoc.options.configuration.instance__1ginlaa)
@@ -14672,7 +17759,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6" />  OutputOptions Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Options\OutputOptions.cs</small>
 
 
 Output configuration
@@ -14691,6 +17779,7 @@ Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object"
 
  | Name | Modifier | Summary | 
  | ------ | ---------- | --------- | 
+ | [EnableAddOns](#p-net.adamec.dev.markupdoc.options.outputoptions.enableaddons__1ysvrps) | public | Flag whether to enable AddOns (false by default) | 
  | [Html](#p-net.adamec.dev.markupdoc.options.outputoptions.html__cl135b) | public | Flag whether to generate the HTML output | 
  | [HtmlExtension](#p-net.adamec.dev.markupdoc.options.outputoptions.htmlextension__17720ly) | public | Extension of generated HTML file | 
  | [Markdown](#p-net.adamec.dev.markupdoc.options.outputoptions.markdown__1glxj0d) | public | Flag whether to generate the Markdown output | 
@@ -14709,10 +17798,35 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
+##  <a id="p-net.adamec.dev.markupdoc.options.outputoptions.enableaddons__1ysvrps" />  OutputOptions.EnableAddOns Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
+Assembly: MarkupDoc           
+Type: [OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6)           
+Sources: Options\OutputOptions.cs</small>
+
+
+Flag whether to enable AddOns (false by default)
+
+
+
+```csharp
+public bool EnableAddOns { get; set; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
 ##  <a id="p-net.adamec.dev.markupdoc.options.outputoptions.html__cl135b" />  OutputOptions.Html Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6)</small>
+Type: [OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6)           
+Sources: Options\OutputOptions.cs</small>
 
 
 Flag whether to generate the HTML output
@@ -14735,7 +17849,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.options.outputoptions.htmlextension__17720ly" />  OutputOptions.HtmlExtension Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6)</small>
+Type: [OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6)           
+Sources: Options\OutputOptions.cs</small>
 
 
 Extension of generated HTML file
@@ -14758,7 +17873,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.options.outputoptions.markdown__1glxj0d" />  OutputOptions.Markdown Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6)</small>
+Type: [OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6)           
+Sources: Options\OutputOptions.cs</small>
 
 
 Flag whether to generate the Markdown output
@@ -14781,7 +17897,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.options.outputoptions.markdownextension__1nkg7o6" />  OutputOptions.MarkdownExtension Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6)</small>
+Type: [OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6)           
+Sources: Options\OutputOptions.cs</small>
 
 
 Extension of generated Markdown file
@@ -14804,7 +17921,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.options.outputoptions.splitns__11lojtx" />  OutputOptions.SplitNs Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6)</small>
+Type: [OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6)           
+Sources: Options\OutputOptions.cs</small>
 
 
 Flag whether to split the output per namespace
@@ -14827,7 +17945,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.options.outputoptions.splittype__1nl0vhs" />  OutputOptions.SplitType Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6)</small>
+Type: [OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6)           
+Sources: Options\OutputOptions.cs</small>
 
 
 Flag whether to split the output per type. In this case, the split per namespace will also be applied.
@@ -14850,7 +17969,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.options.outputoptions.target__1v9mv9v" />  OutputOptions.Target Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6)</small>
+Type: [OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6)           
+Sources: Options\OutputOptions.cs</small>
 
 
 Output target - full path including file name without extension for single file output, index file without extension for multi-file output
@@ -14873,7 +17993,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.options.outputoptions.title__aav6cy" />  OutputOptions.Title Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Options](#n-net.adamec.dev.markupdoc.options__g1tahn)           
 Assembly: MarkupDoc           
-Type: [OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6)</small>
+Type: [OutputOptions](#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6)           
+Sources: Options\OutputOptions.cs</small>
 
 
 Title of documentation show at the top of each page
@@ -14917,7 +18038,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.utils.basedisposable__1niv1i9" />  BaseDisposable Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Utils\BaseDisposable.cs</small>
 
 
 Helper class for implementation of <a href="https://docs.microsoft.com/en-us/dotnet/api/system.idisposable" target="_blank" >System.IDisposable</a> types
@@ -14929,6 +18051,7 @@ public abstract class BaseDisposable : IDisposable
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Derived: [net.adamec.dev.markupdoc.Markup.MarkupFileWriter](#t-net.adamec.dev.markupdoc.markup.markupfilewriter__1xoedys)           
 Implements: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.idisposable" target="_blank" >IDisposable</a>
 
 
@@ -14973,7 +18096,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.utils.basedisposable.disposed__18556iw" />  BaseDisposable.Disposed Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [BaseDisposable](#t-net.adamec.dev.markupdoc.utils.basedisposable__1niv1i9)</small>
+Type: [BaseDisposable](#t-net.adamec.dev.markupdoc.utils.basedisposable__1niv1i9)           
+Sources: Utils\BaseDisposable.cs</small>
 
 
 Flag whether the object is fully disposed
@@ -14996,7 +18120,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.utils.basedisposable.disposedmanaged__2sgag1" />  BaseDisposable.DisposedManaged Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [BaseDisposable](#t-net.adamec.dev.markupdoc.utils.basedisposable__1niv1i9)</small>
+Type: [BaseDisposable](#t-net.adamec.dev.markupdoc.utils.basedisposable__1niv1i9)           
+Sources: Utils\BaseDisposable.cs</small>
 
 
 Flag whether the managed resources are disposed
@@ -15019,7 +18144,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.utils.basedisposable.disposednative__5yjrj1" />  BaseDisposable.DisposedNative Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [BaseDisposable](#t-net.adamec.dev.markupdoc.utils.basedisposable__1niv1i9)</small>
+Type: [BaseDisposable](#t-net.adamec.dev.markupdoc.utils.basedisposable__1niv1i9)           
+Sources: Utils\BaseDisposable.cs</small>
 
 
 Flag whether the native resources are disposed
@@ -15039,10 +18165,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.basedisposable.finalize__18kxll4" />  BaseDisposable.~BaseDisposable() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.basedisposable.finalize__18kxll4" />  BaseDisposable.~BaseDisposable() Destructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [BaseDisposable](#t-net.adamec.dev.markupdoc.utils.basedisposable__1niv1i9)</small>
+Type: [BaseDisposable](#t-net.adamec.dev.markupdoc.utils.basedisposable__1niv1i9)           
+Sources: Utils\BaseDisposable.cs</small>
 
 
 
@@ -15056,10 +18183,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.basedisposable.dispose__xrg0b5" />  BaseDisposable.Dispose() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.basedisposable.dispose__xrg0b5" />  BaseDisposable.Dispose() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [BaseDisposable](#t-net.adamec.dev.markupdoc.utils.basedisposable__1niv1i9)</small>
+Type: [BaseDisposable](#t-net.adamec.dev.markupdoc.utils.basedisposable__1niv1i9)           
+Sources: Utils\BaseDisposable.cs</small>
 
 
 Dispose the object
@@ -15070,7 +18198,7 @@ Dispose the object
 public void Dispose()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" target="_blank" >void</a></dt><dd></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" target="_blank" >void</a></dt><dd></dd></dl>Implements: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.idisposable.dispose#System_IDisposable_Dispose" target="_blank" >IDisposable.Dispose</a>
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -15079,10 +18207,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.basedisposable.dispose_system.boolean___1n6qg2z" />  BaseDisposable.Dispose(bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.basedisposable.dispose_system.boolean___1n6qg2z" />  BaseDisposable.Dispose(bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [BaseDisposable](#t-net.adamec.dev.markupdoc.utils.basedisposable__1niv1i9)</small>
+Type: [BaseDisposable](#t-net.adamec.dev.markupdoc.utils.basedisposable__1niv1i9)           
+Sources: Utils\BaseDisposable.cs</small>
 
 
 Internal implementation of dispose - free the managed and native resources using the respective methods
@@ -15103,10 +18232,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.basedisposable.disposemanaged__1oz4q8k" />  BaseDisposable.DisposeManaged() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.basedisposable.disposemanaged__1oz4q8k" />  BaseDisposable.DisposeManaged() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [BaseDisposable](#t-net.adamec.dev.markupdoc.utils.basedisposable__1niv1i9)</small>
+Type: [BaseDisposable](#t-net.adamec.dev.markupdoc.utils.basedisposable__1niv1i9)           
+Sources: Utils\BaseDisposable.cs</small>
 
 
 Dispose any disposable managed fields or properties.
@@ -15126,10 +18256,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.basedisposable.disposenative__dinlio" />  BaseDisposable.DisposeNative() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.basedisposable.disposenative__dinlio" />  BaseDisposable.DisposeNative() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [BaseDisposable](#t-net.adamec.dev.markupdoc.utils.basedisposable__1niv1i9)</small>
+Type: [BaseDisposable](#t-net.adamec.dev.markupdoc.utils.basedisposable__1niv1i9)           
+Sources: Utils\BaseDisposable.cs</small>
 
 
 Dispose of COM objects, Handles, etc. Then set those objects to null.
@@ -15151,7 +18282,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.utils.consoleutils__xyngj2" />  ConsoleUtils Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Utils\ConsoleUtils.cs</small>
 
 
 Console output helpers
@@ -15199,7 +18331,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.utils.consoleutils.colorerr__a9iigc" />  ConsoleUtils.ColorErr Field ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [ConsoleUtils](#t-net.adamec.dev.markupdoc.utils.consoleutils__xyngj2)</small>
+Type: [ConsoleUtils](#t-net.adamec.dev.markupdoc.utils.consoleutils__xyngj2)           
+Sources: Utils\ConsoleUtils.cs</small>
 
 
 Error text color (red)
@@ -15222,7 +18355,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.utils.consoleutils.colorwarn__1afyv2z" />  ConsoleUtils.ColorWarn Field ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [ConsoleUtils](#t-net.adamec.dev.markupdoc.utils.consoleutils__xyngj2)</small>
+Type: [ConsoleUtils](#t-net.adamec.dev.markupdoc.utils.consoleutils__xyngj2)           
+Sources: Utils\ConsoleUtils.cs</small>
 
 
 Warning text color (yellow)
@@ -15242,10 +18376,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.consoleutils.writeerr_system.string___1azpq0y" />  ConsoleUtils.WriteErr(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.consoleutils.writeerr_system.string___1azpq0y" />  ConsoleUtils.WriteErr(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [ConsoleUtils](#t-net.adamec.dev.markupdoc.utils.consoleutils__xyngj2)</small>
+Type: [ConsoleUtils](#t-net.adamec.dev.markupdoc.utils.consoleutils__xyngj2)           
+Sources: Utils\ConsoleUtils.cs</small>
 
 
 Writes error <strong>line</strong> to console error output
@@ -15266,10 +18401,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.consoleutils.writeerrwarn_system.string___2xtvma" />  ConsoleUtils.WriteErrWarn(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.consoleutils.writeerrwarn_system.string___2xtvma" />  ConsoleUtils.WriteErrWarn(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [ConsoleUtils](#t-net.adamec.dev.markupdoc.utils.consoleutils__xyngj2)</small>
+Type: [ConsoleUtils](#t-net.adamec.dev.markupdoc.utils.consoleutils__xyngj2)           
+Sources: Utils\ConsoleUtils.cs</small>
 
 
 Writes warning <strong>line</strong> to console error output
@@ -15290,10 +18426,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.consoleutils.writeinfo_system.string___3r76tf" />  ConsoleUtils.WriteInfo(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.consoleutils.writeinfo_system.string___3r76tf" />  ConsoleUtils.WriteInfo(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [ConsoleUtils](#t-net.adamec.dev.markupdoc.utils.consoleutils__xyngj2)</small>
+Type: [ConsoleUtils](#t-net.adamec.dev.markupdoc.utils.consoleutils__xyngj2)           
+Sources: Utils\ConsoleUtils.cs</small>
 
 
 Writes info <strong>line</strong> to console standard output
@@ -15314,10 +18451,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.consoleutils.writeline_system.string-system.consolecolor___11tj0l2" />  ConsoleUtils.WriteLine(string, ConsoleColor) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.consoleutils.writeline_system.string-system.consolecolor___11tj0l2" />  ConsoleUtils.WriteLine(string, ConsoleColor) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [ConsoleUtils](#t-net.adamec.dev.markupdoc.utils.consoleutils__xyngj2)</small>
+Type: [ConsoleUtils](#t-net.adamec.dev.markupdoc.utils.consoleutils__xyngj2)           
+Sources: Utils\ConsoleUtils.cs</small>
 
 
 Writes colored <strong>line</strong> to console standard output
@@ -15338,10 +18476,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.consoleutils.writeline_system.io.textwriter-system.string-system.consolecolor___31kixv" />  ConsoleUtils.WriteLine(TextWriter, string, ConsoleColor) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.consoleutils.writeline_system.io.textwriter-system.string-system.consolecolor___31kixv" />  ConsoleUtils.WriteLine(TextWriter, string, ConsoleColor) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [ConsoleUtils](#t-net.adamec.dev.markupdoc.utils.consoleutils__xyngj2)</small>
+Type: [ConsoleUtils](#t-net.adamec.dev.markupdoc.utils.consoleutils__xyngj2)           
+Sources: Utils\ConsoleUtils.cs</small>
 
 
 Writes a <strong>line</strong> to (console&#39;s) <strong>writer</strong> with given text <strong>color</strong>
@@ -15362,10 +18501,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.consoleutils.writewarn_system.string___xnztmn" />  ConsoleUtils.WriteWarn(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.consoleutils.writewarn_system.string___xnztmn" />  ConsoleUtils.WriteWarn(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [ConsoleUtils](#t-net.adamec.dev.markupdoc.utils.consoleutils__xyngj2)</small>
+Type: [ConsoleUtils](#t-net.adamec.dev.markupdoc.utils.consoleutils__xyngj2)           
+Sources: Utils\ConsoleUtils.cs</small>
 
 
 Writes warning <strong>line</strong> to console standard output
@@ -15388,7 +18528,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.utils.isnewutils__slf3x" />  IsNewUtils Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Utils\IsNewUtils.cs</small>
 
 
 Helpers to get the access to internal ISymbol.IsNew property
@@ -15430,7 +18571,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.utils.isnewutils.isnewpropertycache__fi6gva" />  IsNewUtils.IsNewPropertyCache Field ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [IsNewUtils](#t-net.adamec.dev.markupdoc.utils.isnewutils__slf3x)</small>
+Type: [IsNewUtils](#t-net.adamec.dev.markupdoc.utils.isnewutils__slf3x)           
+Sources: Utils\IsNewUtils.cs</small>
 
 
 Cache of the <a href="https://docs.microsoft.com/en-us/dotnet/api/system.reflection.propertyinfo" target="_blank" >System.Reflection.PropertyInfo</a> s for IsNew properties for individual <em>Microsoft.CodeAnalysis.ISymbol</em> s (types)
@@ -15450,10 +18592,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.isnewutils.getisnew_microsoft.codeanalysis.isymbol___1eu6ykb" />  IsNewUtils.GetIsNew(ISymbol) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.isnewutils.getisnew_microsoft.codeanalysis.isymbol___1eu6ykb" />  IsNewUtils.GetIsNew(ISymbol) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [IsNewUtils](#t-net.adamec.dev.markupdoc.utils.isnewutils__slf3x)</small>
+Type: [IsNewUtils](#t-net.adamec.dev.markupdoc.utils.isnewutils__slf3x)           
+Sources: Utils\IsNewUtils.cs</small>
 
 
 Gets the value of internal IsNew property of given <strong>symbol</strong>
@@ -15480,7 +18623,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.utils.txt__ptyt6s" />  Txt Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Utils\Txt.cs</small>
 
 
 Text builder
@@ -15552,7 +18696,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.utils.txt.builder__g52n25" />  Txt.builder Field ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)</small>
+Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)           
+Sources: Utils\Txt.cs</small>
 
 
 Internal <a href="https://docs.microsoft.com/en-us/dotnet/api/system.text.stringbuilder" target="_blank" >System.Text.StringBuilder</a>
@@ -15572,10 +18717,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.txt.-ctor__gsw7a4" />  Txt.Txt() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.txt.-ctor__gsw7a4" />  Txt.Txt() Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)</small>
+Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)           
+Sources: Utils\Txt.cs</small>
 
 
 Creates a new empty text builder
@@ -15592,10 +18738,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.txt.-ctor_system.string___1a0kui5" />  Txt.Txt(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.txt.-ctor_system.string___1a0kui5" />  Txt.Txt(string) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)</small>
+Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)           
+Sources: Utils\Txt.cs</small>
 
 
 Creates a new text builder with initial <strong>text</strong>
@@ -15613,10 +18760,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.txt.add_system.func_system.string____1qdiz0q" />  Txt.Add(Func&lt;string&gt;) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.txt.add_system.func_system.string____1qdiz0q" />  Txt.Add(Func&lt;string&gt;) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)</small>
+Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)           
+Sources: Utils\Txt.cs</small>
 
 
 Adds the text returned from <strong>textFunc</strong> to the text builder
@@ -15637,10 +18785,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.txt.add_system.string___1b5phwl" />  Txt.Add(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.txt.add_system.string___1b5phwl" />  Txt.Add(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)</small>
+Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)           
+Sources: Utils\Txt.cs</small>
 
 
 Adds the <strong>text</strong> to the text builder
@@ -15661,10 +18810,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.txt.addeach--1_system.func_--0-system.string_-system.collections.generic.ienumerable_--0_-system.string___1ef8yye" />  Txt.AddEach&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, IEnumerable&lt;TItemType&gt;, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.txt.addeach--1_system.func_--0-system.string_-system.collections.generic.ienumerable_--0_-system.string___1ef8yye" />  Txt.AddEach&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, IEnumerable&lt;TItemType&gt;, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)</small>
+Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)           
+Sources: Utils\Txt.cs</small>
 
 
 Adds the returned from <strong>textFunc</strong> for each items from <strong>items</strong> to the text builder.
@@ -15686,10 +18836,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.txt.addeachif--1_system.func_--0-system.string_-system.collections.generic.ienumerable_--0_-system.boolean-system.string___cg39re" />  Txt.AddEachIf&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, IEnumerable&lt;TItemType&gt;, bool, string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.txt.addeachif--1_system.func_--0-system.string_-system.collections.generic.ienumerable_--0_-system.boolean-system.string___cg39re" />  Txt.AddEachIf&lt;TItemType&gt;(Func&lt;TItemType,string&gt;, IEnumerable&lt;TItemType&gt;, bool, string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)</small>
+Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)           
+Sources: Utils\Txt.cs</small>
 
 
 Adds the returned from <strong>textFunc</strong> for each items from <strong>items</strong> to the text builder when the <strong>condition</strong> is true.
@@ -15715,10 +18866,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.txt.addif_system.func_system.string_-system.boolean___spc04k" />  Txt.AddIf(Func&lt;string&gt;, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.txt.addif_system.func_system.string_-system.boolean___spc04k" />  Txt.AddIf(Func&lt;string&gt;, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)</small>
+Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)           
+Sources: Utils\Txt.cs</small>
 
 
 Adds the text returned from <strong>textFunc</strong> to the text builder when the <strong>condition</strong> is true.
@@ -15739,10 +18891,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.txt.addif_system.string-system.boolean___1hv0ppx" />  Txt.AddIf(string, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.txt.addif_system.string-system.boolean___1hv0ppx" />  Txt.AddIf(string, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)</small>
+Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)           
+Sources: Utils\Txt.cs</small>
 
 
 Adds the <strong>text</strong> to the text builder when the <strong>condition</strong> is true.
@@ -15767,10 +18920,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.txt.clear__1gpgbxi" />  Txt.Clear() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.txt.clear__1gpgbxi" />  Txt.Clear() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)</small>
+Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)           
+Sources: Utils\Txt.cs</small>
 
 
 Clear the text builder
@@ -15790,10 +18944,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.txt.start_system.string___dpjsla" />  Txt.Start(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.txt.start_system.string___dpjsla" />  Txt.Start(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)</small>
+Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)           
+Sources: Utils\Txt.cs</small>
 
 
 Creates a new instance ot [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s) text builder with optional initial <strong>text</strong>
@@ -15814,10 +18969,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.txt.tostring__19rvzdx" />  Txt.ToString() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.txt.tostring__19rvzdx" />  Txt.ToString() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)</small>
+Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)           
+Sources: Utils\Txt.cs</small>
 
 
 Returns the text content of the text builder
@@ -15828,7 +18984,7 @@ Returns the text content of the text builder
 public override string ToString()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>The text content of the text builder</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>The text content of the text builder</dd></dl>Overrides: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring#System_Object_ToString" target="_blank" >object.ToString</a>
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -15837,10 +18993,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.txt.op_addition_net.adamec.dev.markupdoc.utils.txt-net.adamec.dev.markupdoc.utils.txt___e5mhzq" />  Txt.Add(Txt, Txt) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.txt.op_addition_net.adamec.dev.markupdoc.utils.txt-net.adamec.dev.markupdoc.utils.txt___e5mhzq" />  Txt.Add(Txt, Txt) Operator ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)</small>
+Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)           
+Sources: Utils\Txt.cs</small>
 
 
 Concatenates the contents of two text builders
@@ -15861,10 +19018,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.txt.op_bitwiseor_net.adamec.dev.markupdoc.utils.txt-net.adamec.dev.markupdoc.utils.txt___1fjrb02" />  Txt.BitwiseOr(Txt, Txt) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.txt.op_bitwiseor_net.adamec.dev.markupdoc.utils.txt-net.adamec.dev.markupdoc.utils.txt___1fjrb02" />  Txt.BitwiseOr(Txt, Txt) Operator ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)</small>
+Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)           
+Sources: Utils\Txt.cs</small>
 
 
 Concatenates the contents of two text builders
@@ -15885,10 +19043,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.txt.op_implicit_system.string_dtornet.adamec.dev.markupdoc.utils.txt__1mjf3e7" />  Txt.From(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.txt.op_implicit_system.string_dtornet.adamec.dev.markupdoc.utils.txt__1mjf3e7" />  Txt.From(string) Conversion ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)</small>
+Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)           
+Sources: Utils\Txt.cs</small>
 
 
 Creates a new instance ot [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s) text builder with optional initial <strong>text</strong>
@@ -15909,10 +19068,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.txt.op_implicit_net.adamec.dev.markupdoc.utils.txt_dtorsystem.string__1dl24tf" />  Txt.ToString(Txt) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.txt.op_implicit_net.adamec.dev.markupdoc.utils.txt_dtorsystem.string__1dl24tf" />  Txt.ToString(Txt) Conversion ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils](#n-net.adamec.dev.markupdoc.utils__m327rs)           
 Assembly: MarkupDoc           
-Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)</small>
+Type: [Txt](#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s)           
+Sources: Utils\Txt.cs</small>
 
 
 Converts the text builder to string containing its content
@@ -15959,7 +19119,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.utils.extensions.attributedataextensions__ohfc2y" />  AttributeDataExtensions Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Utils\Extensions\AttributeDataExtensions.cs</small>
 
 
 Extension methods for <em>Microsoft.CodeAnalysis.AttributeData</em>
@@ -15990,10 +19151,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.attributedataextensions.attributeclassstring_microsoft.codeanalysis.attributedata___2jr23i" />  AttributeDataExtensions.AttributeClassString(AttributeData) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.attributedataextensions.attributeclassstring_microsoft.codeanalysis.attributedata___2jr23i" />  AttributeDataExtensions.AttributeClassString(AttributeData) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
 Assembly: MarkupDoc           
-Type: [AttributeDataExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.attributedataextensions__ohfc2y)</small>
+Type: [AttributeDataExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.attributedataextensions__ohfc2y)           
+Sources: Utils\Extensions\AttributeDataExtensions.cs</small>
 
 
 Returns the full name of the attribute class
@@ -16014,10 +19176,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.attributedataextensions.tocodestring_microsoft.codeanalysis.attributedata___yqrz7u" />  AttributeDataExtensions.ToCodeString(AttributeData) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.attributedataextensions.tocodestring_microsoft.codeanalysis.attributedata___yqrz7u" />  AttributeDataExtensions.ToCodeString(AttributeData) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
 Assembly: MarkupDoc           
-Type: [AttributeDataExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.attributedataextensions__ohfc2y)</small>
+Type: [AttributeDataExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.attributedataextensions__ohfc2y)           
+Sources: Utils\Extensions\AttributeDataExtensions.cs</small>
 
 
 Gets the string representing the attribute definition in code - class (constructor params, named params)
@@ -16040,7 +19203,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators__8jmpz0" />  IMethodSymbolExtensionsForOperators Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Utils\Extensions\IMethodSymbolExtensionsForOperators.cs</small>
 
 
 Extension methods for <em>Microsoft.CodeAnalysis.IMethodSymbol</em> related to the operators
@@ -16094,7 +19258,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators.operatormethodaliases__ji0szx" />  IMethodSymbolExtensionsForOperators.OperatorMethodAliases Field ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
 Assembly: MarkupDoc           
-Type: [IMethodSymbolExtensionsForOperators](#t-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators__8jmpz0)</small>
+Type: [IMethodSymbolExtensionsForOperators](#t-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators__8jmpz0)           
+Sources: Utils\Extensions\IMethodSymbolExtensionsForOperators.cs</small>
 
 
 Dictionary with translation of operator &quot;internal&quot; method name to operator alias (for example op_Addition to Add)
@@ -16117,7 +19282,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators.operatorsymbols__6tjcmn" />  IMethodSymbolExtensionsForOperators.OperatorSymbols Field ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
 Assembly: MarkupDoc           
-Type: [IMethodSymbolExtensionsForOperators](#t-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators__8jmpz0)</small>
+Type: [IMethodSymbolExtensionsForOperators](#t-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators__8jmpz0)           
+Sources: Utils\Extensions\IMethodSymbolExtensionsForOperators.cs</small>
 
 
 Dictionary with translation of operator &quot;internal&quot; method name to operator symbol (for example op_Addition to +)
@@ -16137,10 +19303,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators.-cctor__2vkqjv" />  IMethodSymbolExtensionsForOperators.IMethodSymbolExtensionsForOperators() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators.-cctor__2vkqjv" />  IMethodSymbolExtensionsForOperators.IMethodSymbolExtensionsForOperators() Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
 Assembly: MarkupDoc           
-Type: [IMethodSymbolExtensionsForOperators](#t-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators__8jmpz0)</small>
+Type: [IMethodSymbolExtensionsForOperators](#t-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators__8jmpz0)           
+Sources: Utils\Extensions\IMethodSymbolExtensionsForOperators.cs</small>
 
 
 Static CTOR - init operator translation dictionaries
@@ -16157,10 +19324,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators.getoperatorcsharpsymbol_microsoft.codeanalysis.imethodsymbol___1x1ipu" />  IMethodSymbolExtensionsForOperators.GetOperatorCSharpSymbol(IMethodSymbol) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators.getoperatorcsharpsymbol_microsoft.codeanalysis.imethodsymbol___1x1ipu" />  IMethodSymbolExtensionsForOperators.GetOperatorCSharpSymbol(IMethodSymbol) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
 Assembly: MarkupDoc           
-Type: [IMethodSymbolExtensionsForOperators](#t-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators__8jmpz0)</small>
+Type: [IMethodSymbolExtensionsForOperators](#t-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators__8jmpz0)           
+Sources: Utils\Extensions\IMethodSymbolExtensionsForOperators.cs</small>
 
 
 Get&#39;s the operator symbol for the method representing the operator
@@ -16181,10 +19349,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators.getoperatormethodaliasororiginalname_microsoft.codeanalysis.imethodsymbol___1e4ys9f" />  IMethodSymbolExtensionsForOperators.GetOperatorMethodAliasOrOriginalName(IMethodSymbol) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators.getoperatormethodaliasororiginalname_microsoft.codeanalysis.imethodsymbol___1e4ys9f" />  IMethodSymbolExtensionsForOperators.GetOperatorMethodAliasOrOriginalName(IMethodSymbol) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
 Assembly: MarkupDoc           
-Type: [IMethodSymbolExtensionsForOperators](#t-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators__8jmpz0)</small>
+Type: [IMethodSymbolExtensionsForOperators](#t-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators__8jmpz0)           
+Sources: Utils\Extensions\IMethodSymbolExtensionsForOperators.cs</small>
 
 
 Get&#39;s the operator alias for the method representing the operator
@@ -16205,10 +19374,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators.initoperators__1bpzsju" />  IMethodSymbolExtensionsForOperators.InitOperators() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators.initoperators__1bpzsju" />  IMethodSymbolExtensionsForOperators.InitOperators() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
 Assembly: MarkupDoc           
-Type: [IMethodSymbolExtensionsForOperators](#t-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators__8jmpz0)</small>
+Type: [IMethodSymbolExtensionsForOperators](#t-net.adamec.dev.markupdoc.utils.extensions.imethodsymbolextensionsforoperators__8jmpz0)           
+Sources: Utils\Extensions\IMethodSymbolExtensionsForOperators.cs</small>
 
 
 Initializes operator translation dictionaries (symbols and aliases)
@@ -16230,7 +19400,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.utils.extensions.listofparametersextensions__exfx5r" />  ListOfParametersExtensions Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Utils\Extensions\ListOfParametersExtensions.cs</small>
 
 
 Extension methods for <a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1" target="_blank" >System.Collections.Generic.ICollection`1</a> of [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408) and [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483)
@@ -16261,10 +19432,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.listofparametersextensions.getindexerparameterscode_system.collections.generic.ienumerable_net.adamec.dev.markupdoc.codemodel.methodparameter____1igu6yg" />  ListOfParametersExtensions.GetIndexerParametersCode(IEnumerable&lt;net.adamec.dev.markupdoc.CodeModel.MethodParameter&gt;) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.listofparametersextensions.getindexerparameterscode_system.collections.generic.ienumerable_net.adamec.dev.markupdoc.codemodel.methodparameter____1igu6yg" />  ListOfParametersExtensions.GetIndexerParametersCode(IEnumerable&lt;net.adamec.dev.markupdoc.CodeModel.MethodParameter&gt;) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
 Assembly: MarkupDoc           
-Type: [ListOfParametersExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.listofparametersextensions__exfx5r)</small>
+Type: [ListOfParametersExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.listofparametersextensions__exfx5r)           
+Sources: Utils\Extensions\ListOfParametersExtensions.cs</small>
 
 
 Converts the <a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1" target="_blank" >System.Collections.Generic.IEnumerable`1</a> of indexer parameters ( [MethodParameter](#t-net.adamec.dev.markupdoc.codemodel.methodparameter__1ax0483) ) to the string as used in code.
@@ -16285,10 +19457,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.listofparametersextensions.gettypeparameterscode_system.collections.generic.ienumerable_net.adamec.dev.markupdoc.codemodel.typeparameter____n8wb9c" />  ListOfParametersExtensions.GetTypeParametersCode(IEnumerable&lt;net.adamec.dev.markupdoc.CodeModel.TypeParameter&gt;) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.listofparametersextensions.gettypeparameterscode_system.collections.generic.ienumerable_net.adamec.dev.markupdoc.codemodel.typeparameter____n8wb9c" />  ListOfParametersExtensions.GetTypeParametersCode(IEnumerable&lt;net.adamec.dev.markupdoc.CodeModel.TypeParameter&gt;) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
 Assembly: MarkupDoc           
-Type: [ListOfParametersExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.listofparametersextensions__exfx5r)</small>
+Type: [ListOfParametersExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.listofparametersextensions__exfx5r)           
+Sources: Utils\Extensions\ListOfParametersExtensions.cs</small>
 
 
 Converts the <a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1" target="_blank" >System.Collections.Generic.IEnumerable`1</a> of [TypeParameter](#t-net.adamec.dev.markupdoc.codemodel.typeparameter__hye408) s to the string as used in code. Used for typed parameters with attributes and parameters with variance (variance is at generic interfaces and delegates only)
@@ -16311,7 +19484,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.utils.extensions.modifierenumextensions__1vu62re" />  ModifierEnumExtensions Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Utils\Extensions\ModifierEnumExtensions.cs</small>
 
 
 Extension methods and factory for [ModifierEnum](#t-net.adamec.dev.markupdoc.codemodel.modifierenum__1xbpfel)
@@ -16342,10 +19516,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.modifierenumextensions.modifier_microsoft.codeanalysis.accessibility___adiiyc" />  ModifierEnumExtensions.Modifier(Accessibility) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.modifierenumextensions.modifier_microsoft.codeanalysis.accessibility___adiiyc" />  ModifierEnumExtensions.Modifier(Accessibility) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
 Assembly: MarkupDoc           
-Type: [ModifierEnumExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.modifierenumextensions__1vu62re)</small>
+Type: [ModifierEnumExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.modifierenumextensions__1vu62re)           
+Sources: Utils\Extensions\ModifierEnumExtensions.cs</small>
 
 
 Creates the modifier from given <strong>accessibility</strong>
@@ -16366,10 +19541,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.modifierenumextensions.tomodifierstring_net.adamec.dev.markupdoc.codemodel.modifierenum___hgk62q" />  ModifierEnumExtensions.ToModifierString(ModifierEnum) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.modifierenumextensions.tomodifierstring_net.adamec.dev.markupdoc.codemodel.modifierenum___hgk62q" />  ModifierEnumExtensions.ToModifierString(ModifierEnum) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
 Assembly: MarkupDoc           
-Type: [ModifierEnumExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.modifierenumextensions__1vu62re)</small>
+Type: [ModifierEnumExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.modifierenumextensions__1vu62re)           
+Sources: Utils\Extensions\ModifierEnumExtensions.cs</small>
 
 
 Converts the [ModifierEnum](#t-net.adamec.dev.markupdoc.codemodel.modifierenum__1xbpfel) to string that can be used in code
@@ -16392,7 +19568,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.utils.extensions.stringextensions__1jm6pgz" />  StringExtensions Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Utils\Extensions\StringExtensions.cs</small>
 
 
 Extension methods for <a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >System.String</a>
@@ -16425,10 +19602,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.stringextensions.firstlettertoupper_system.string___j3gt9g" />  StringExtensions.FirstLetterToUpper(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.stringextensions.firstlettertoupper_system.string___j3gt9g" />  StringExtensions.FirstLetterToUpper(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
 Assembly: MarkupDoc           
-Type: [StringExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.stringextensions__1jm6pgz)</small>
+Type: [StringExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.stringextensions__1jm6pgz)           
+Sources: Utils\Extensions\StringExtensions.cs</small>
 
 
 Converts the first letter of string to upper case
@@ -16449,10 +19627,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.stringextensions.htmldecode_system.string___j83xey" />  StringExtensions.HtmlDecode(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.stringextensions.htmldecode_system.string___j83xey" />  StringExtensions.HtmlDecode(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
 Assembly: MarkupDoc           
-Type: [StringExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.stringextensions__1jm6pgz)</small>
+Type: [StringExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.stringextensions__1jm6pgz)           
+Sources: Utils\Extensions\StringExtensions.cs</small>
 
 
 HTML decodes the string
@@ -16473,10 +19652,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.stringextensions.htmlencode_system.string___1lb4xh2" />  StringExtensions.HtmlEncode(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.stringextensions.htmlencode_system.string___1lb4xh2" />  StringExtensions.HtmlEncode(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
 Assembly: MarkupDoc           
-Type: [StringExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.stringextensions__1jm6pgz)</small>
+Type: [StringExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.stringextensions__1jm6pgz)           
+Sources: Utils\Extensions\StringExtensions.cs</small>
 
 
 HTML encodes the string
@@ -16497,10 +19677,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.stringextensions.trimandmergelines_system.string___85g233" />  StringExtensions.TrimAndMergeLines(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.stringextensions.trimandmergelines_system.string___85g233" />  StringExtensions.TrimAndMergeLines(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
 Assembly: MarkupDoc           
-Type: [StringExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.stringextensions__1jm6pgz)</small>
+Type: [StringExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.stringextensions__1jm6pgz)           
+Sources: Utils\Extensions\StringExtensions.cs</small>
 
 
 &quot;Full&quot; trim of the string - the lines within the string are trimmed and then the lines are merged with the space as a separator (instead of the line break)
@@ -16523,7 +19704,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.utils.extensions.typekindextensions__1hqh8t0" />  TypeKindExtensions Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: Utils\Extensions\TypeKindExtensions.cs</small>
 
 
 Extension methods for <em>Microsoft.CodeAnalysis.TypeKind</em>
@@ -16553,10 +19735,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.typekindextensions.totypekindenum_microsoft.codeanalysis.typekind___b5txcz" />  TypeKindExtensions.ToTypeKindEnum(TypeKind) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.utils.extensions.typekindextensions.totypekindenum_microsoft.codeanalysis.typekind___b5txcz" />  TypeKindExtensions.ToTypeKindEnum(TypeKind) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.Utils.Extensions](#n-net.adamec.dev.markupdoc.utils.extensions__1a7eavw)           
 Assembly: MarkupDoc           
-Type: [TypeKindExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.typekindextensions__1hqh8t0)</small>
+Type: [TypeKindExtensions](#t-net.adamec.dev.markupdoc.utils.extensions.typekindextensions__1hqh8t0)           
+Sources: Utils\Extensions\TypeKindExtensions.cs</small>
 
 
 Converts the <em>Microsoft.CodeAnalysis.TypeKind</em> to [TypeKindEnum](#t-net.adamec.dev.markupdoc.codemodel.typekindenum__1aridgm)
@@ -16590,6 +19773,7 @@ XML Comment Documentation DTO classes
  | [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg) | public | Class representing (internal) &lt;member&gt; element of XML Documentation Comments. Used as a root documentation object for the code model [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) | 
  | [Example](#t-net.adamec.dev.markupdoc.xmldocumentation.example__k71z54) | public | Class representing &lt;example&gt; element of XML Documentation Comments | 
  | [ExceptionDoc](#t-net.adamec.dev.markupdoc.xmldocumentation.exceptiondoc__isvpmb) | public | Class representing &lt;exception&gt; element of XML Documentation  Comments | 
+ | [Inheritdoc](#t-net.adamec.dev.markupdoc.xmldocumentation.inheritdoc__khqjp9) | public | Class representing the `inheritdoc` element of XML Documentation Comments | 
  | [List](#t-net.adamec.dev.markupdoc.xmldocumentation.list__zvsh5a) | public | Class representing &lt;list&gt; element of XML Documentation  Comments | 
  | [ListItem](#t-net.adamec.dev.markupdoc.xmldocumentation.listitem__bk21cn) | public | Class representing &lt;item&gt; and &lt;listheader&gt; elements of XML Documentation Comments | 
  | [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1) | public | Base class for the XML Documentation Comments elements and nodes It&#39;s inherited by &quot;known&quot; nodes/elements, itself instanciated when the node/element is not recognized (known). | 
@@ -16629,7 +19813,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.c__2ehmsz" />  C Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\C.cs</small>
 
 
 Class representing &lt;c&gt; element of XML Documentation Comments
@@ -16668,10 +19853,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.c.-ctor_system.xml.linq.xnode___1sxo5vo" />  C.C(XNode) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.c.-ctor_system.xml.linq.xnode___1sxo5vo" />  C.C(XNode) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [C](#t-net.adamec.dev.markupdoc.xmldocumentation.c__2ehmsz)</small>
+Type: [C](#t-net.adamec.dev.markupdoc.xmldocumentation.c__2ehmsz)           
+Sources: XmlDocumentation\C.cs</small>
 
 
 Initialize [C](#t-net.adamec.dev.markupdoc.xmldocumentation.c__2ehmsz) instance from XML Documentation Comments element
@@ -16689,10 +19875,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.c.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___hlj6ry" />  C.RenderElement(IMarkupProvider, Member, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.c.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___hlj6ry" />  C.RenderElement(IMarkupProvider, Member, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [C](#t-net.adamec.dev.markupdoc.xmldocumentation.c__2ehmsz)</small>
+Type: [C](#t-net.adamec.dev.markupdoc.xmldocumentation.c__2ehmsz)           
+Sources: XmlDocumentation\C.cs</small>
 
 
 Renders the [C](#t-net.adamec.dev.markupdoc.xmldocumentation.c__2ehmsz) and its content to string containing the markup provided by <strong>markupProvider</strong>
@@ -16704,7 +19891,7 @@ protected override string RenderElement(IMarkupProvider markupProvider, Member m
 ```
 
 <strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) <strong>markupProvider</strong></dt><dd>[IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) allowing using the markup within the rendered content</dd><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Code model [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) to render the XML Documentation Comment for</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a> <strong>trim</strong></dt><dd>Flag whether to (full) trim the rendered content</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Rendered content of &lt;c&gt; element of XML Documentation Comments</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Rendered content of &lt;c&gt; element of XML Documentation Comments</dd></dl>Overrides: [ModelElement.RenderElement(IMarkupProvider, Member, bool)](#m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___ut2gg2)
 
 
 ###  Remarks ###
@@ -16719,7 +19906,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.code__1ow82f1" />  Code Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\Code.cs</small>
 
 
 Class representing &lt;code&gt; element of XML Documentation Comments
@@ -16758,10 +19946,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.code.-ctor_system.xml.linq.xnode___13j5k3y" />  Code.Code(XNode) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.code.-ctor_system.xml.linq.xnode___13j5k3y" />  Code.Code(XNode) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Code](#t-net.adamec.dev.markupdoc.xmldocumentation.code__1ow82f1)</small>
+Type: [Code](#t-net.adamec.dev.markupdoc.xmldocumentation.code__1ow82f1)           
+Sources: XmlDocumentation\Code.cs</small>
 
 
 Initialize [Code](#t-net.adamec.dev.markupdoc.xmldocumentation.code__1ow82f1) instance from XML Documentation Comments element
@@ -16779,10 +19968,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.code.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___1ofxyz8" />  Code.RenderElement(IMarkupProvider, Member, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.code.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___1ofxyz8" />  Code.RenderElement(IMarkupProvider, Member, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Code](#t-net.adamec.dev.markupdoc.xmldocumentation.code__1ow82f1)</small>
+Type: [Code](#t-net.adamec.dev.markupdoc.xmldocumentation.code__1ow82f1)           
+Sources: XmlDocumentation\Code.cs</small>
 
 
 Renders the [Code](#t-net.adamec.dev.markupdoc.xmldocumentation.code__1ow82f1) and its content to string containing the markup provided by <strong>markupProvider</strong>
@@ -16794,7 +19984,7 @@ protected override string RenderElement(IMarkupProvider markupProvider, Member m
 ```
 
 <strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) <strong>markupProvider</strong></dt><dd>[IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) allowing using the markup within the rendered content</dd><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Code model [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) to render the XML Documentation Comment for</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a> <strong>trim</strong></dt><dd>Flag whether to (full) trim the rendered content</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Rendered content of &lt;code&gt; element of XML Documentation Comments</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Rendered content of &lt;code&gt; element of XML Documentation Comments</dd></dl>Overrides: [ModelElement.RenderElement(IMarkupProvider, Member, bool)](#m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___ut2gg2)
 
 
 ###  Remarks ###
@@ -16809,7 +19999,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg" />  Documentation Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\Documentation.cs</small>
 
 
 Class representing (internal) &lt;member&gt; element of XML Documentation Comments. Used as a root documentation object for the code model [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)
@@ -16832,14 +20023,16 @@ The [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__
 
  | Name | Modifier | Summary | 
  | ------ | ---------- | --------- | 
- | [Example](#p-net.adamec.dev.markupdoc.xmldocumentation.documentation.example__15r3944) | public | Returns the first `example` documentation element or null if not available | 
- | [Exceptions](#p-net.adamec.dev.markupdoc.xmldocumentation.documentation.exceptions__12srzfs) | public | Returns the `exception` documentation elements or null if not available | 
+ | [Example](#p-net.adamec.dev.markupdoc.xmldocumentation.documentation.example__15r3944) | public | Returns the first `example` documentation element or null if not available. Inheritdoc is not taken into the consideration here. | 
+ | [Exceptions](#p-net.adamec.dev.markupdoc.xmldocumentation.documentation.exceptions__12srzfs) | public | Returns the `exception` documentation elements or null if not available. Inheritdoc is not taken into the consideration here. | 
+ | [InheritDocRef](#p-net.adamec.dev.markupdoc.xmldocumentation.documentation.inheritdocref__10uedri) | public | Optional inherit doc reference | 
  | [OwnRef](#p-net.adamec.dev.markupdoc.xmldocumentation.documentation.ownref__ps4lhn) | public | Content of `name` attribute of `member` element | 
- | [Remarks](#p-net.adamec.dev.markupdoc.xmldocumentation.documentation.remarks__14i5fd5) | public | Returns the first `remarks` documentation element or null if not available | 
- | [Returns](#p-net.adamec.dev.markupdoc.xmldocumentation.documentation.returns__5tixf9) | public | Returns the first `returns` documentation element or null if not available | 
- | [SeeAlso](#p-net.adamec.dev.markupdoc.xmldocumentation.documentation.seealso__11yd846) | public | Returns the `seealso` documentation elements or null if not available | 
- | [Summary](#p-net.adamec.dev.markupdoc.xmldocumentation.documentation.summary__1reflp6) | public | Returns the first `summary` documentation element or null if not available | 
- | [Value](#p-net.adamec.dev.markupdoc.xmldocumentation.documentation.value__ncvu3) | public | Returns the first `value` documentation element or null if not available | 
+ | [Remarks](#p-net.adamec.dev.markupdoc.xmldocumentation.documentation.remarks__14i5fd5) | public | Returns the first `remarks` documentation element or null if not available. Inheritdoc is not taken into the consideration here. | 
+ | [Returns](#p-net.adamec.dev.markupdoc.xmldocumentation.documentation.returns__5tixf9) | public | Returns the first `returns` documentation element or null if not available. Inheritdoc is not taken into the consideration here. | 
+ | [SeeAlso](#p-net.adamec.dev.markupdoc.xmldocumentation.documentation.seealso__11yd846) | public | Returns the `seealso` documentation elements or null if not available. Inheritdoc is not taken into the consideration here. | 
+ | [ShouldInheritDoc](#p-net.adamec.dev.markupdoc.xmldocumentation.documentation.shouldinheritdoc__t2t92m) | public | Flag whether to inherit the documentation | 
+ | [Summary](#p-net.adamec.dev.markupdoc.xmldocumentation.documentation.summary__1reflp6) | public | Returns the first `summary` documentation element or null if not available. Inheritdoc is not taken into the consideration here. | 
+ | [Value](#p-net.adamec.dev.markupdoc.xmldocumentation.documentation.value__ncvu3) | public | Returns the first `value` documentation element or null if not available. Inheritdoc is not taken into the consideration here. | 
 
  
 
@@ -16857,9 +20050,19 @@ The [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__
 
  | Name | Modifier | Summary | 
  | ------ | ---------- | --------- | 
- | [Param(string)](#m-net.adamec.dev.markupdoc.xmldocumentation.documentation.param_system.string___1ymn6yp) | public | Returns the first `param` documentation element with given <strong>name</strong> or null if not available | 
+ | [GetExample(Member)](#m-net.adamec.dev.markupdoc.xmldocumentation.documentation.getexample_net.adamec.dev.markupdoc.codemodel.member___1l1ko9p) | public | Returns the first `example` documentation element or null if not available. Inheritdoc is taken into the consideration here if applicable. | 
+ | [GetExceptions(Member)](#m-net.adamec.dev.markupdoc.xmldocumentation.documentation.getexceptions_net.adamec.dev.markupdoc.codemodel.member___1rtn3px) | public | Returns the `exception` documentation elements or null if not available. Inheritdoc is taken into the consideration here if applicable. | 
+ | [GetMemberBase(Member)](#m-net.adamec.dev.markupdoc.xmldocumentation.documentation.getmemberbase_net.adamec.dev.markupdoc.codemodel.member___1t2v2g8) | private | Gets the member to inherit documentation from if available | 
+ | [GetParam(Member, string)](#m-net.adamec.dev.markupdoc.xmldocumentation.documentation.getparam_net.adamec.dev.markupdoc.codemodel.member-system.string___grmxhs) | public | Returns the first `param` documentation element with given <strong>name</strong> or null if not available. Inheritdoc is taken into the consideration here. | 
+ | [GetRemarks(Member)](#m-net.adamec.dev.markupdoc.xmldocumentation.documentation.getremarks_net.adamec.dev.markupdoc.codemodel.member___1czq3t0) | public | Returns the first `remarks` documentation element or null if not available. Inheritdoc is taken into the consideration here if applicable. | 
+ | [GetReturns(Member)](#m-net.adamec.dev.markupdoc.xmldocumentation.documentation.getreturns_net.adamec.dev.markupdoc.codemodel.member___1pc15v6) | public | Returns the first `returns` documentation element or null if not available. Inheritdoc is taken into the consideration here if applicable. | 
+ | [GetSeeAlso(Member)](#m-net.adamec.dev.markupdoc.xmldocumentation.documentation.getseealso_net.adamec.dev.markupdoc.codemodel.member___nihnrn) | public | Returns the `seealso` documentation elements or null if not available. Inheritdoc is taken into the consideration here if applicable. | 
+ | [GetSummary(Member)](#m-net.adamec.dev.markupdoc.xmldocumentation.documentation.getsummary_net.adamec.dev.markupdoc.codemodel.member___11h0hy9) | public | Returns the first `summary` documentation element or null if not available. Inheritdoc is taken into the consideration here if applicable. | 
+ | [GetTypeParam(Member, string)](#m-net.adamec.dev.markupdoc.xmldocumentation.documentation.gettypeparam_net.adamec.dev.markupdoc.codemodel.member-system.string___fxdhc0) | public | Returns the first `typeparam` documentation element with given <strong>name</strong> or null if not available. Inheritdoc is taken into the consideration here. | 
+ | [GetValue(Member)](#m-net.adamec.dev.markupdoc.xmldocumentation.documentation.getvalue_net.adamec.dev.markupdoc.codemodel.member___mrbv44) | public | Returns the first `value` documentation element or null if not available. Inheritdoc is taken into the consideration here if applicable. | 
+ | [Param(string)](#m-net.adamec.dev.markupdoc.xmldocumentation.documentation.param_system.string___1ymn6yp) | private | Returns the first `param` documentation element with given <strong>name</strong> or null if not available. Inheritdoc is not taken into the consideration here. | 
  | [Read(string)](#m-net.adamec.dev.markupdoc.xmldocumentation.documentation.read_system.string___1el00ia) | public static | Reads the XML Documentation Comments from given <em>xml</em> string | 
- | [TypeParam(string)](#m-net.adamec.dev.markupdoc.xmldocumentation.documentation.typeparam_system.string___vwk25d) | public | Returns the first `typeparam` documentation element with given <strong>name</strong> or null if not available | 
+ | [TypeParam(string)](#m-net.adamec.dev.markupdoc.xmldocumentation.documentation.typeparam_system.string___vwk25d) | private | Returns the first `typeparam` documentation element with given <strong>name</strong> or null if not available. Inheritdoc is not taken into the consideration here. | 
 
  
 
@@ -16873,10 +20076,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.xmldocumentation.documentation.example__15r3944" />  Documentation.Example Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)</small>
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
 
 
-Returns the first `example` documentation element or null if not available
+Returns the first `example` documentation element or null if not available. Inheritdoc is not taken into the consideration here.
 
 
 
@@ -16896,10 +20100,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.xmldocumentation.documentation.exceptions__12srzfs" />  Documentation.Exceptions Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)</small>
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
 
 
-Returns the `exception` documentation elements or null if not available
+Returns the `exception` documentation elements or null if not available. Inheritdoc is not taken into the consideration here.
 
 
 
@@ -16916,10 +20121,35 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
+##  <a id="p-net.adamec.dev.markupdoc.xmldocumentation.documentation.inheritdocref__10uedri" />  Documentation.InheritDocRef Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
+Assembly: MarkupDoc           
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
+
+
+Optional inherit doc reference
+
+
+
+```csharp
+public string InheritDocRef { get; private set; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
 ##  <a id="p-net.adamec.dev.markupdoc.xmldocumentation.documentation.ownref__ps4lhn" />  Documentation.OwnRef Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)</small>
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
 
 
 Content of `name` attribute of `member` element
@@ -16942,10 +20172,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.xmldocumentation.documentation.remarks__14i5fd5" />  Documentation.Remarks Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)</small>
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
 
 
-Returns the first `remarks` documentation element or null if not available
+Returns the first `remarks` documentation element or null if not available. Inheritdoc is not taken into the consideration here.
 
 
 
@@ -16965,10 +20196,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.xmldocumentation.documentation.returns__5tixf9" />  Documentation.Returns Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)</small>
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
 
 
-Returns the first `returns` documentation element or null if not available
+Returns the first `returns` documentation element or null if not available. Inheritdoc is not taken into the consideration here.
 
 
 
@@ -16988,10 +20220,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.xmldocumentation.documentation.seealso__11yd846" />  Documentation.SeeAlso Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)</small>
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
 
 
-Returns the `seealso` documentation elements or null if not available
+Returns the `seealso` documentation elements or null if not available. Inheritdoc is not taken into the consideration here.
 
 
 
@@ -17008,13 +20241,38 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
+##  <a id="p-net.adamec.dev.markupdoc.xmldocumentation.documentation.shouldinheritdoc__t2t92m" />  Documentation.ShouldInheritDoc Property ##
+<small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
+Assembly: MarkupDoc           
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
+
+
+Flag whether to inherit the documentation
+
+
+
+```csharp
+public bool ShouldInheritDoc { get; private set; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
 ##  <a id="p-net.adamec.dev.markupdoc.xmldocumentation.documentation.summary__1reflp6" />  Documentation.Summary Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)</small>
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
 
 
-Returns the first `summary` documentation element or null if not available
+Returns the first `summary` documentation element or null if not available. Inheritdoc is not taken into the consideration here.
 
 
 
@@ -17034,10 +20292,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.xmldocumentation.documentation.value__ncvu3" />  Documentation.Value Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)</small>
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
 
 
-Returns the first `value` documentation element or null if not available
+Returns the first `value` documentation element or null if not available. Inheritdoc is not taken into the consideration here.
 
 
 
@@ -17054,10 +20313,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.documentation.-ctor_system.xml.linq.xelement___gbnnaf" />  Documentation.Documentation(XElement) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.documentation.-ctor_system.xml.linq.xelement___gbnnaf" />  Documentation.Documentation(XElement) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)</small>
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
 
 
 Initialize [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg) instance from XML Documentation Comments element
@@ -17075,18 +20335,269 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.documentation.param_system.string___1ymn6yp" />  Documentation.Param(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.documentation.getexample_net.adamec.dev.markupdoc.codemodel.member___1l1ko9p" />  Documentation.GetExample(Member) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)</small>
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
 
 
-Returns the first `param` documentation element with given <strong>name</strong> or null if not available
+Returns the first `example` documentation element or null if not available. Inheritdoc is taken into the consideration here if applicable.
 
 
 
 ```csharp
-public Param Param(string name)
+public Example GetExample(Member member)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Member the documentation belongs to</dd></dl>
+<strong>Return value</strong><dl><dt>[net.adamec.dev.markupdoc.XmlDocumentation.Example](#t-net.adamec.dev.markupdoc.xmldocumentation.example__k71z54)</dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.documentation.getexceptions_net.adamec.dev.markupdoc.codemodel.member___1rtn3px" />  Documentation.GetExceptions(Member) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
+Assembly: MarkupDoc           
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
+
+
+Returns the `exception` documentation elements or null if not available. Inheritdoc is taken into the consideration here if applicable.
+
+
+
+```csharp
+public IList<net.adamec.dev.markupdoc.XmlDocumentation.ExceptionDoc> GetExceptions(Member member)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Member the documentation belongs to</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ilist-1" target="_blank" >IList&lt;net.adamec.dev.markupdoc.XmlDocumentation.ExceptionDoc&gt;</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.documentation.getmemberbase_net.adamec.dev.markupdoc.codemodel.member___1t2v2g8" />  Documentation.GetMemberBase(Member) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
+Assembly: MarkupDoc           
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
+
+
+Gets the member to inherit documentation from if available
+
+
+
+```csharp
+private Member GetMemberBase(Member member)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Current member owning the documentation</dd></dl>
+<strong>Return value</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh)</dt><dd>The member to inherit documentation from if available, otherwise null</dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.documentation.getparam_net.adamec.dev.markupdoc.codemodel.member-system.string___grmxhs" />  Documentation.GetParam(Member, string) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
+Assembly: MarkupDoc           
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
+
+
+Returns the first `param` documentation element with given <strong>name</strong> or null if not available. Inheritdoc is taken into the consideration here.
+
+
+
+```csharp
+public Param GetParam(Member member, string name)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Member the documentation belongs to</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>name</strong></dt><dd>Name of the parameter to get the documentation for</dd></dl>
+<strong>Return value</strong><dl><dt>[net.adamec.dev.markupdoc.XmlDocumentation.Param](#t-net.adamec.dev.markupdoc.xmldocumentation.param__7q99qf)</dt><dd>The first `param` documentation element with given <strong>name</strong> or null if not available</dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.documentation.getremarks_net.adamec.dev.markupdoc.codemodel.member___1czq3t0" />  Documentation.GetRemarks(Member) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
+Assembly: MarkupDoc           
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
+
+
+Returns the first `remarks` documentation element or null if not available. Inheritdoc is taken into the consideration here if applicable.
+
+
+
+```csharp
+public Remarks GetRemarks(Member member)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Member the documentation belongs to</dd></dl>
+<strong>Return value</strong><dl><dt>[net.adamec.dev.markupdoc.XmlDocumentation.Remarks](#t-net.adamec.dev.markupdoc.xmldocumentation.remarks__1swka45)</dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.documentation.getreturns_net.adamec.dev.markupdoc.codemodel.member___1pc15v6" />  Documentation.GetReturns(Member) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
+Assembly: MarkupDoc           
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
+
+
+Returns the first `returns` documentation element or null if not available. Inheritdoc is taken into the consideration here if applicable.
+
+
+
+```csharp
+public Returns GetReturns(Member member)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Member the documentation belongs to</dd></dl>
+<strong>Return value</strong><dl><dt>[net.adamec.dev.markupdoc.XmlDocumentation.Returns](#t-net.adamec.dev.markupdoc.xmldocumentation.returns__9bt401)</dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.documentation.getseealso_net.adamec.dev.markupdoc.codemodel.member___nihnrn" />  Documentation.GetSeeAlso(Member) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
+Assembly: MarkupDoc           
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
+
+
+Returns the `seealso` documentation elements or null if not available. Inheritdoc is taken into the consideration here if applicable.
+
+
+
+```csharp
+public IList<net.adamec.dev.markupdoc.XmlDocumentation.SeeAlso> GetSeeAlso(Member member)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Member the documentation belongs to</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ilist-1" target="_blank" >IList&lt;net.adamec.dev.markupdoc.XmlDocumentation.SeeAlso&gt;</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.documentation.getsummary_net.adamec.dev.markupdoc.codemodel.member___11h0hy9" />  Documentation.GetSummary(Member) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
+Assembly: MarkupDoc           
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
+
+
+Returns the first `summary` documentation element or null if not available. Inheritdoc is taken into the consideration here if applicable.
+
+
+
+```csharp
+public Summary GetSummary(Member member)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Member the documentation belongs to</dd></dl>
+<strong>Return value</strong><dl><dt>[net.adamec.dev.markupdoc.XmlDocumentation.Summary](#t-net.adamec.dev.markupdoc.xmldocumentation.summary__mrutjy)</dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.documentation.gettypeparam_net.adamec.dev.markupdoc.codemodel.member-system.string___fxdhc0" />  Documentation.GetTypeParam(Member, string) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
+Assembly: MarkupDoc           
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
+
+
+Returns the first `typeparam` documentation element with given <strong>name</strong> or null if not available. Inheritdoc is taken into the consideration here.
+
+
+
+```csharp
+public TypeParam GetTypeParam(Member member, string name)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Member the documentation belongs to</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>name</strong></dt><dd>Name of the parameter to get the documentation for</dd></dl>
+<strong>Return value</strong><dl><dt>[net.adamec.dev.markupdoc.XmlDocumentation.TypeParam](#t-net.adamec.dev.markupdoc.xmldocumentation.typeparam__1cm275z)</dt><dd>The first `typeparam` documentation element with given <strong>name</strong> or null if not available</dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.documentation.getvalue_net.adamec.dev.markupdoc.codemodel.member___mrbv44" />  Documentation.GetValue(Member) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
+Assembly: MarkupDoc           
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
+
+
+Returns the first `value` documentation element or null if not available. Inheritdoc is taken into the consideration here if applicable.
+
+
+
+```csharp
+public Value GetValue(Member member)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Member the documentation belongs to</dd></dl>
+<strong>Return value</strong><dl><dt>[net.adamec.dev.markupdoc.XmlDocumentation.Value](#t-net.adamec.dev.markupdoc.xmldocumentation.value__sil3tn)</dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.documentation.param_system.string___1ymn6yp" />  Documentation.Param(string) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
+Assembly: MarkupDoc           
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
+
+
+Returns the first `param` documentation element with given <strong>name</strong> or null if not available. Inheritdoc is not taken into the consideration here.
+
+
+
+```csharp
+private Param Param(string name)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>name</strong></dt><dd>Name of the parameter to get the documentation for</dd></dl>
@@ -17099,10 +20610,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.documentation.read_system.string___1el00ia" />  Documentation.Read(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.documentation.read_system.string___1el00ia" />  Documentation.Read(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)</small>
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
 
 
 Reads the XML Documentation Comments from given <em>xml</em> string
@@ -17123,18 +20635,19 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.documentation.typeparam_system.string___vwk25d" />  Documentation.TypeParam(string) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.documentation.typeparam_system.string___vwk25d" />  Documentation.TypeParam(string) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)</small>
+Type: [Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg)           
+Sources: XmlDocumentation\Documentation.cs</small>
 
 
-Returns the first `typeparam` documentation element with given <strong>name</strong> or null if not available
+Returns the first `typeparam` documentation element with given <strong>name</strong> or null if not available. Inheritdoc is not taken into the consideration here.
 
 
 
 ```csharp
-public TypeParam TypeParam(string name)
+private TypeParam TypeParam(string name)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>name</strong></dt><dd>Name of the parameter to get the documentation for</dd></dl>
@@ -17149,7 +20662,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.example__k71z54" />  Example Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\Example.cs</small>
 
 
 Class representing &lt;example&gt; element of XML Documentation Comments
@@ -17179,10 +20693,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.example.-ctor_system.xml.linq.xnode___9jvitb" />  Example.Example(XNode) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.example.-ctor_system.xml.linq.xnode___9jvitb" />  Example.Example(XNode) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Example](#t-net.adamec.dev.markupdoc.xmldocumentation.example__k71z54)</small>
+Type: [Example](#t-net.adamec.dev.markupdoc.xmldocumentation.example__k71z54)           
+Sources: XmlDocumentation\Example.cs</small>
 
 
 Initialize [Example](#t-net.adamec.dev.markupdoc.xmldocumentation.example__k71z54) instance from XML Documentation Comments element
@@ -17202,7 +20717,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.exceptiondoc__isvpmb" />  ExceptionDoc Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\ExceptionDoc.cs</small>
 
 
 Class representing &lt;exception&gt; element of XML Documentation  Comments
@@ -17241,10 +20757,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.exceptiondoc.-ctor_system.xml.linq.xelement___mv5s5c" />  ExceptionDoc.ExceptionDoc(XElement) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.exceptiondoc.-ctor_system.xml.linq.xelement___mv5s5c" />  ExceptionDoc.ExceptionDoc(XElement) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ExceptionDoc](#t-net.adamec.dev.markupdoc.xmldocumentation.exceptiondoc__isvpmb)</small>
+Type: [ExceptionDoc](#t-net.adamec.dev.markupdoc.xmldocumentation.exceptiondoc__isvpmb)           
+Sources: XmlDocumentation\ExceptionDoc.cs</small>
 
 
 Initialize [ExceptionDoc](#t-net.adamec.dev.markupdoc.xmldocumentation.exceptiondoc__isvpmb) instance from XML Documentation Comments element
@@ -17262,10 +20779,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.exceptiondoc.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___9qruzs" />  ExceptionDoc.RenderElement(IMarkupProvider, Member, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.exceptiondoc.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___9qruzs" />  ExceptionDoc.RenderElement(IMarkupProvider, Member, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ExceptionDoc](#t-net.adamec.dev.markupdoc.xmldocumentation.exceptiondoc__isvpmb)</small>
+Type: [ExceptionDoc](#t-net.adamec.dev.markupdoc.xmldocumentation.exceptiondoc__isvpmb)           
+Sources: XmlDocumentation\ExceptionDoc.cs</small>
 
 
 Renders the [ExceptionDoc](#t-net.adamec.dev.markupdoc.xmldocumentation.exceptiondoc__isvpmb) element  to string containing the markup provided by <strong>markupProvider</strong>
@@ -17277,7 +20795,7 @@ protected override string RenderElement(IMarkupProvider markupProvider, Member m
 ```
 
 <strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) <strong>markupProvider</strong></dt><dd>[IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) allowing using the markup within the rendered content</dd><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Code model [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) to render the XML Documentation Comment for</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a> <strong>trim</strong></dt><dd>Flag whether to (full) trim the rendered content</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Rendered content of &lt;exception&gt; element of XML Documentation Comments. Important: it returns description list item, so must be encapsulated on higher level !!!</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Rendered content of &lt;exception&gt; element of XML Documentation Comments. Important: it returns description list item, so must be encapsulated on higher level !!!</dd></dl>Overrides: [ModelElement.RenderElement(IMarkupProvider, Member, bool)](#m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___ut2gg2)
 
 
 ###  Remarks ###
@@ -17299,9 +20817,65 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
+##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.inheritdoc__khqjp9" />  Inheritdoc Class ##
+<small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\Inheritdoc.cs</small>
+
+
+Class representing the `inheritdoc` element of XML Documentation Comments
+
+
+
+```csharp
+public class Inheritdoc : ModelElementWithCref
+```
+
+Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a> -&gt; [net.adamec.dev.markupdoc.XmlDocumentation.ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1) -&gt; [net.adamec.dev.markupdoc.XmlDocumentation.ModelElementWithCref](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref__1u5bu3t)           
+
+
+
+###  Constructors ###
+
+ | Name | Modifier | Summary | 
+ | ------ | ---------- | --------- | 
+ | [Inheritdoc(XElement)](#m-net.adamec.dev.markupdoc.xmldocumentation.inheritdoc.-ctor_system.xml.linq.xelement___po3yme) | public | Initialize [Inheritdoc](#t-net.adamec.dev.markupdoc.xmldocumentation.inheritdoc__khqjp9) instance from XML Documentation Comments element | 
+
+ 
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.inheritdoc.-ctor_system.xml.linq.xelement___po3yme" />  Inheritdoc.Inheritdoc(XElement) Constructor ##
+<small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
+Assembly: MarkupDoc           
+Type: [Inheritdoc](#t-net.adamec.dev.markupdoc.xmldocumentation.inheritdoc__khqjp9)           
+Sources: XmlDocumentation\Inheritdoc.cs</small>
+
+
+Initialize [Inheritdoc](#t-net.adamec.dev.markupdoc.xmldocumentation.inheritdoc__khqjp9) instance from XML Documentation Comments element
+
+
+
+```csharp
+public Inheritdoc(XElement element)
+```
+
+<strong>Constructor parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.xml.linq.xelement" target="_blank" >System.Xml.Linq.XElement</a> <strong>element</strong></dt><dd>XML element of XML Documentation Comments</dd></dl>
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.list__zvsh5a" />  List Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\List.cs</small>
 
 
 Class representing &lt;list&gt; element of XML Documentation  Comments
@@ -17352,7 +20926,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.xmldocumentation.list.listtype__19a59bg" />  List.ListType Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [List](#t-net.adamec.dev.markupdoc.xmldocumentation.list__zvsh5a)</small>
+Type: [List](#t-net.adamec.dev.markupdoc.xmldocumentation.list__zvsh5a)           
+Sources: XmlDocumentation\List.cs</small>
 
 
 Required type of the list rendering
@@ -17372,10 +20947,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.list.-ctor_system.xml.linq.xelement___177htrf" />  List.List(XElement) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.list.-ctor_system.xml.linq.xelement___177htrf" />  List.List(XElement) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [List](#t-net.adamec.dev.markupdoc.xmldocumentation.list__zvsh5a)</small>
+Type: [List](#t-net.adamec.dev.markupdoc.xmldocumentation.list__zvsh5a)           
+Sources: XmlDocumentation\List.cs</small>
 
 
 Initialize [List](#t-net.adamec.dev.markupdoc.xmldocumentation.list__zvsh5a) instance from XML Documentation Comments element. Extracts the `type` attribute
@@ -17393,10 +20969,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.list.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___19s1ed" />  List.RenderElement(IMarkupProvider, Member, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.list.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___19s1ed" />  List.RenderElement(IMarkupProvider, Member, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [List](#t-net.adamec.dev.markupdoc.xmldocumentation.list__zvsh5a)</small>
+Type: [List](#t-net.adamec.dev.markupdoc.xmldocumentation.list__zvsh5a)           
+Sources: XmlDocumentation\List.cs</small>
 
 
 Renders the [List](#t-net.adamec.dev.markupdoc.xmldocumentation.list__zvsh5a) and its content to string containing the markup provided by <strong>markupProvider</strong>
@@ -17408,7 +20985,7 @@ protected override string RenderElement(IMarkupProvider markupProvider, Member m
 ```
 
 <strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) <strong>markupProvider</strong></dt><dd>[IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) allowing using the markup within the rendered content</dd><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Code model [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) to render the XML Documentation Comment for</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a> <strong>trim</strong></dt><dd>Flag whether to (full) trim the rendered content</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Rendered list element of XML Documentation Comments</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Rendered list element of XML Documentation Comments</dd></dl>Overrides: [ModelElement.RenderElement(IMarkupProvider, Member, bool)](#m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___ut2gg2)
 
 
 ###  Remarks ###
@@ -17432,7 +21009,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.listitem__bk21cn" />  ListItem Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\ListItem.cs</small>
 
 
 Class representing &lt;item&gt; and &lt;listheader&gt; elements of XML Documentation Comments
@@ -17476,7 +21054,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.xmldocumentation.listitem.description__1mzbxvn" />  ListItem.Description Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ListItem](#t-net.adamec.dev.markupdoc.xmldocumentation.listitem__bk21cn)</small>
+Type: [ListItem](#t-net.adamec.dev.markupdoc.xmldocumentation.listitem__bk21cn)           
+Sources: XmlDocumentation\ListItem.cs</small>
 
 
 [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1) representing &lt;description&gt; child element of list item
@@ -17499,7 +21078,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.xmldocumentation.listitem.isheader__k82st4" />  ListItem.IsHeader Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ListItem](#t-net.adamec.dev.markupdoc.xmldocumentation.listitem__bk21cn)</small>
+Type: [ListItem](#t-net.adamec.dev.markupdoc.xmldocumentation.listitem__bk21cn)           
+Sources: XmlDocumentation\ListItem.cs</small>
 
 
 Flag whether the [ListItem](#t-net.adamec.dev.markupdoc.xmldocumentation.listitem__bk21cn) is a list header (represents the &lt;listheader&gt; tag)
@@ -17522,7 +21102,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.xmldocumentation.listitem.term__xeq7bv" />  ListItem.Term Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ListItem](#t-net.adamec.dev.markupdoc.xmldocumentation.listitem__bk21cn)</small>
+Type: [ListItem](#t-net.adamec.dev.markupdoc.xmldocumentation.listitem__bk21cn)           
+Sources: XmlDocumentation\ListItem.cs</small>
 
 
 [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1) representing &lt;term&gt; child element of list item
@@ -17542,10 +21123,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.listitem.-ctor_system.xml.linq.xelement___1isw2x6" />  ListItem.ListItem(XElement) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.listitem.-ctor_system.xml.linq.xelement___1isw2x6" />  ListItem.ListItem(XElement) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ListItem](#t-net.adamec.dev.markupdoc.xmldocumentation.listitem__bk21cn)</small>
+Type: [ListItem](#t-net.adamec.dev.markupdoc.xmldocumentation.listitem__bk21cn)           
+Sources: XmlDocumentation\ListItem.cs</small>
 
 
 Initialize [ListItem](#t-net.adamec.dev.markupdoc.xmldocumentation.listitem__bk21cn) instance from XML Documentation Comments element
@@ -17565,7 +21147,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1" />  ModelElement Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\ModelElement.cs</small>
 
 
 Base class for the XML Documentation Comments elements and nodes It&#39;s inherited by &quot;known&quot; nodes/elements, itself instanciated when the node/element is not recognized (known).
@@ -17577,6 +21160,7 @@ public class ModelElement
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Derived: [net.adamec.dev.markupdoc.XmlDocumentation.C](#t-net.adamec.dev.markupdoc.xmldocumentation.c__2ehmsz), [net.adamec.dev.markupdoc.XmlDocumentation.Code](#t-net.adamec.dev.markupdoc.xmldocumentation.code__1ow82f1), [net.adamec.dev.markupdoc.XmlDocumentation.Documentation](#t-net.adamec.dev.markupdoc.xmldocumentation.documentation__19dzlhg), [net.adamec.dev.markupdoc.XmlDocumentation.Example](#t-net.adamec.dev.markupdoc.xmldocumentation.example__k71z54), [net.adamec.dev.markupdoc.XmlDocumentation.List](#t-net.adamec.dev.markupdoc.xmldocumentation.list__zvsh5a), [net.adamec.dev.markupdoc.XmlDocumentation.ListItem](#t-net.adamec.dev.markupdoc.xmldocumentation.listitem__bk21cn), [net.adamec.dev.markupdoc.XmlDocumentation.ModelElementWithCref](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref__1u5bu3t), [net.adamec.dev.markupdoc.XmlDocumentation.ModelElementWithName](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithname__wsyfwe), [net.adamec.dev.markupdoc.XmlDocumentation.Para](#t-net.adamec.dev.markupdoc.xmldocumentation.para__1no80es), [net.adamec.dev.markupdoc.XmlDocumentation.Remarks](#t-net.adamec.dev.markupdoc.xmldocumentation.remarks__1swka45), [net.adamec.dev.markupdoc.XmlDocumentation.Returns](#t-net.adamec.dev.markupdoc.xmldocumentation.returns__9bt401), [net.adamec.dev.markupdoc.XmlDocumentation.Summary](#t-net.adamec.dev.markupdoc.xmldocumentation.summary__mrutjy), [net.adamec.dev.markupdoc.XmlDocumentation.Text](#t-net.adamec.dev.markupdoc.xmldocumentation.text__1xsey9h), [net.adamec.dev.markupdoc.XmlDocumentation.Value](#t-net.adamec.dev.markupdoc.xmldocumentation.value__sil3tn)           
 
 
 
@@ -17631,7 +21215,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.xmldocumentation.modelelement.tagkeeplinebreak__73j6k5" />  ModelElement.TagKeepLineBreak Field ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1)</small>
+Type: [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1)           
+Sources: XmlDocumentation\ModelElement.cs</small>
 
 
 Pseudo-tag used to keep the line break in [RenderElement(IMarkupProvider, Member, bool)](#m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___ut2gg2) output
@@ -17654,7 +21239,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.xmldocumentation.modelelement.tagkeepspace__clhu5m" />  ModelElement.TagKeepSpace Field ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1)</small>
+Type: [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1)           
+Sources: XmlDocumentation\ModelElement.cs</small>
 
 
 Pseudo-tag used to keep the space in [RenderElement(IMarkupProvider, Member, bool)](#m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___ut2gg2) output
@@ -17677,7 +21263,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.xmldocumentation.modelelement.elements__15a04qw" />  ModelElement.Elements Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1)</small>
+Type: [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1)           
+Sources: XmlDocumentation\ModelElement.cs</small>
 
 
 List of  child elements
@@ -17700,7 +21287,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.xmldocumentation.modelelement.elementsprotected__2vi256" />  ModelElement.ElementsProtected Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1)</small>
+Type: [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1)           
+Sources: XmlDocumentation\ModelElement.cs</small>
 
 
 Internal list of child elements
@@ -17723,7 +21311,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.xmldocumentation.modelelement.kind__190l3cr" />  ModelElement.Kind Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1)</small>
+Type: [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1)           
+Sources: XmlDocumentation\ModelElement.cs</small>
 
 
 Element name (tag) or &quot;Text&quot; for the [Text](#t-net.adamec.dev.markupdoc.xmldocumentation.text__1xsey9h) node
@@ -17743,10 +21332,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.-ctor_system.xml.linq.xnode___1neqw34" />  ModelElement.ModelElement(XNode) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.-ctor_system.xml.linq.xnode___1neqw34" />  ModelElement.ModelElement(XNode) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1)</small>
+Type: [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1)           
+Sources: XmlDocumentation\ModelElement.cs</small>
 
 
 Initialize [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1) instance from XML Documentation Comments node. Sets the [Kind](#p-net.adamec.dev.markupdoc.xmldocumentation.modelelement.kind__190l3cr) property from the element&#39;s tag (for elements only)
@@ -17764,10 +21354,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.read_system.xml.linq.xnode___o84441" />  ModelElement.Read(XNode) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.read_system.xml.linq.xnode___o84441" />  ModelElement.Read(XNode) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1)</small>
+Type: [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1)           
+Sources: XmlDocumentation\ModelElement.cs</small>
 
 
 Reads the node from XML - checks the node type (text node + named elements) and calls the appropriate constructor of derived classes. When the element is &quot;unknown&quot;, the [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1) is created. The method is recursively called for all child nodes and the created child objects are inserted into [Elements](#p-net.adamec.dev.markupdoc.xmldocumentation.modelelement.elements__15a04qw) list. This keeps the hierarchy of elements as in XML.
@@ -17788,10 +21379,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.render_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member___pvi91j" />  ModelElement.Render(IMarkupProvider, Member) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.render_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member___pvi91j" />  ModelElement.Render(IMarkupProvider, Member) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1)</small>
+Type: [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1)           
+Sources: XmlDocumentation\ModelElement.cs</small>
 
 
 Renders the [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1) and its content to string containing the markup provided by <strong>markupProvider</strong> . This is the public &quot;entry point&quot; to [RenderElement(IMarkupProvider, Member, bool)](#m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___ut2gg2) that does the final adjustment of the whitespaces.
@@ -17816,10 +21408,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___ut2gg2" />  ModelElement.RenderElement(IMarkupProvider, Member, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___ut2gg2" />  ModelElement.RenderElement(IMarkupProvider, Member, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1)</small>
+Type: [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1)           
+Sources: XmlDocumentation\ModelElement.cs</small>
 
 
 Renders the [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1) and its content to string containing the markup provided by <strong>markupProvider</strong>
@@ -17844,10 +21437,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.tostring__d0syr2" />  ModelElement.ToString() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.tostring__d0syr2" />  ModelElement.ToString() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1)</small>
+Type: [ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1)           
+Sources: XmlDocumentation\ModelElement.cs</small>
 
 
 Returns the element content as string. It gets the content of all child [Elements](#p-net.adamec.dev.markupdoc.xmldocumentation.modelelement.elements__15a04qw) , merges into single line and trims (full trim)
@@ -17858,7 +21452,7 @@ Returns the element content as string. It gets the content of all child [Element
 public override string ToString()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>The element content as string</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>The element content as string</dd></dl>Overrides: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring#System_Object_ToString" target="_blank" >object.ToString</a>
 
 
 ###  Remarks ###
@@ -17873,7 +21467,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref__1u5bu3t" />  ModelElementWithCref Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\ModelElementWithCref.cs</small>
 
 
 Abstract class representing the element of XML Documentation Comments that have the `cref` attribute
@@ -17885,6 +21480,7 @@ public abstract class ModelElementWithCref : ModelElement
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a> -&gt; [net.adamec.dev.markupdoc.XmlDocumentation.ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1)           
+Derived: [net.adamec.dev.markupdoc.XmlDocumentation.ExceptionDoc](#t-net.adamec.dev.markupdoc.xmldocumentation.exceptiondoc__isvpmb), [net.adamec.dev.markupdoc.XmlDocumentation.Inheritdoc](#t-net.adamec.dev.markupdoc.xmldocumentation.inheritdoc__khqjp9), [net.adamec.dev.markupdoc.XmlDocumentation.ModelElementWithCrefSimple](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcrefsimple__1tvmen3)           
 
 
 
@@ -17924,7 +21520,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref.ref__37qgpg" />  ModelElementWithCref.Ref Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ModelElementWithCref](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref__1u5bu3t)</small>
+Type: [ModelElementWithCref](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref__1u5bu3t)           
+Sources: XmlDocumentation\ModelElementWithCref.cs</small>
 
 
 cref attribute value
@@ -17944,10 +21541,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref.-ctor_system.xml.linq.xelement___pbe7xs" />  ModelElementWithCref.ModelElementWithCref(XElement) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref.-ctor_system.xml.linq.xelement___pbe7xs" />  ModelElementWithCref.ModelElementWithCref(XElement) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ModelElementWithCref](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref__1u5bu3t)</small>
+Type: [ModelElementWithCref](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref__1u5bu3t)           
+Sources: XmlDocumentation\ModelElementWithCref.cs</small>
 
 
 Initialize [ModelElementWithCref](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref__1u5bu3t) instance from XML Documentation Comments element Extracts the cref attribute
@@ -17965,10 +21563,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref.tostring__eru888" />  ModelElementWithCref.ToString() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref.tostring__eru888" />  ModelElementWithCref.ToString() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ModelElementWithCref](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref__1u5bu3t)</small>
+Type: [ModelElementWithCref](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref__1u5bu3t)           
+Sources: XmlDocumentation\ModelElementWithCref.cs</small>
 
 
 Returns the element content as string if [Ref](#p-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref.ref__37qgpg) when there is no content
@@ -17979,7 +21578,7 @@ Returns the element content as string if [Ref](#p-net.adamec.dev.markupdoc.xmldo
 public override string ToString()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>The element content as string if [Ref](#p-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref.ref__37qgpg) when there is no content</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>The element content as string if [Ref](#p-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref.ref__37qgpg) when there is no content</dd></dl>Overrides: [ModelElement.ToString()](#m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.tostring__d0syr2)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -17990,7 +21589,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcrefsimple__1tvmen3" />  ModelElementWithCrefSimple Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\ModelElementWithCrefSimple.cs</small>
 
 
 Abstract class representing the element of XML Documentation Comments that have the `cref` attribute and simple rendering logic - just the link and/or content
@@ -18002,6 +21602,7 @@ public abstract class ModelElementWithCrefSimple : ModelElementWithCref
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a> -&gt; [net.adamec.dev.markupdoc.XmlDocumentation.ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1) -&gt; [net.adamec.dev.markupdoc.XmlDocumentation.ModelElementWithCref](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref__1u5bu3t)           
+Derived: [net.adamec.dev.markupdoc.XmlDocumentation.See](#t-net.adamec.dev.markupdoc.xmldocumentation.see__12himun), [net.adamec.dev.markupdoc.XmlDocumentation.SeeAlso](#t-net.adamec.dev.markupdoc.xmldocumentation.seealso__1fkiu46)           
 
 
 
@@ -18030,10 +21631,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcrefsimple.-ctor_system.xml.linq.xelement___la0cia" />  ModelElementWithCrefSimple.ModelElementWithCrefSimple(XElement) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcrefsimple.-ctor_system.xml.linq.xelement___la0cia" />  ModelElementWithCrefSimple.ModelElementWithCrefSimple(XElement) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ModelElementWithCrefSimple](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcrefsimple__1tvmen3)</small>
+Type: [ModelElementWithCrefSimple](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcrefsimple__1tvmen3)           
+Sources: XmlDocumentation\ModelElementWithCrefSimple.cs</small>
 
 
 Initialize [ModelElementWithCrefSimple](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcrefsimple__1tvmen3) instance from XML Documentation Comments element No logic here
@@ -18051,10 +21653,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcrefsimple.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___isgepe" />  ModelElementWithCrefSimple.RenderElement(IMarkupProvider, Member, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcrefsimple.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___isgepe" />  ModelElementWithCrefSimple.RenderElement(IMarkupProvider, Member, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ModelElementWithCrefSimple](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcrefsimple__1tvmen3)</small>
+Type: [ModelElementWithCrefSimple](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcrefsimple__1tvmen3)           
+Sources: XmlDocumentation\ModelElementWithCrefSimple.cs</small>
 
 
 Renders the element having the `cref` attribute to string containing the markup provided by <strong>markupProvider</strong>
@@ -18066,7 +21669,7 @@ protected override string RenderElement(IMarkupProvider markupProvider, Member m
 ```
 
 <strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) <strong>markupProvider</strong></dt><dd>[IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) allowing using the markup within the rendered content</dd><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Code model [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) to render the XML Documentation Comment for</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a> <strong>trim</strong></dt><dd>Flag whether to (full) trim the rendered content</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Rendered content of element of XML Documentation Comments</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Rendered content of element of XML Documentation Comments</dd></dl>Overrides: [ModelElement.RenderElement(IMarkupProvider, Member, bool)](#m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___ut2gg2)
 
 
 ###  Remarks ###
@@ -18086,10 +21689,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcrefsimple.tostring__d884lm" />  ModelElementWithCrefSimple.ToString() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcrefsimple.tostring__d884lm" />  ModelElementWithCrefSimple.ToString() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ModelElementWithCrefSimple](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcrefsimple__1tvmen3)</small>
+Type: [ModelElementWithCrefSimple](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcrefsimple__1tvmen3)           
+Sources: XmlDocumentation\ModelElementWithCrefSimple.cs</small>
 
 
 Returns the element content as string or [Ref](#p-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref.ref__37qgpg) when there is no content
@@ -18100,7 +21704,7 @@ Returns the element content as string or [Ref](#p-net.adamec.dev.markupdoc.xmldo
 public override string ToString()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>The element content as string or [Ref](#p-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref.ref__37qgpg) when there is no content</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>The element content as string or [Ref](#p-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref.ref__37qgpg) when there is no content</dd></dl>Overrides: [ModelElementWithCref.ToString()](#m-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcref.tostring__eru888)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -18111,7 +21715,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithname__wsyfwe" />  ModelElementWithName Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\ModelElementWithName.cs</small>
 
 
 Abstract class representing the element of XML Documentation Comments that have the `name` attribute
@@ -18123,6 +21728,7 @@ public abstract class ModelElementWithName : ModelElement
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a> -&gt; [net.adamec.dev.markupdoc.XmlDocumentation.ModelElement](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelement__1j8k6p1)           
+Derived: [net.adamec.dev.markupdoc.XmlDocumentation.Param](#t-net.adamec.dev.markupdoc.xmldocumentation.param__7q99qf), [net.adamec.dev.markupdoc.XmlDocumentation.ParamRef](#t-net.adamec.dev.markupdoc.xmldocumentation.paramref__1goure8), [net.adamec.dev.markupdoc.XmlDocumentation.TypeParam](#t-net.adamec.dev.markupdoc.xmldocumentation.typeparam__1cm275z), [net.adamec.dev.markupdoc.XmlDocumentation.TypeParamRef](#t-net.adamec.dev.markupdoc.xmldocumentation.typeparamref__qcu1eo)           
 
 
 
@@ -18153,7 +21759,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithname.name__p60max" />  ModelElementWithName.Name Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ModelElementWithName](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithname__wsyfwe)</small>
+Type: [ModelElementWithName](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithname__wsyfwe)           
+Sources: XmlDocumentation\ModelElementWithName.cs</small>
 
 
 name attribute value
@@ -18173,10 +21780,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithname.-ctor_system.xml.linq.xelement___tksc91" />  ModelElementWithName.ModelElementWithName(XElement) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithname.-ctor_system.xml.linq.xelement___tksc91" />  ModelElementWithName.ModelElementWithName(XElement) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ModelElementWithName](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithname__wsyfwe)</small>
+Type: [ModelElementWithName](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithname__wsyfwe)           
+Sources: XmlDocumentation\ModelElementWithName.cs</small>
 
 
 Initialize [ModelElementWithName](#t-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithname__wsyfwe) instance from XML Documentation Comments element Extracts the name attribute
@@ -18196,7 +21804,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.para__1no80es" />  Para Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\Para.cs</small>
 
 
 Class representing &lt;para&gt; element of XML Documentation Comments
@@ -18235,10 +21844,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.para.-ctor_system.xml.linq.xnode___s8cbsh" />  Para.Para(XNode) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.para.-ctor_system.xml.linq.xnode___s8cbsh" />  Para.Para(XNode) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Para](#t-net.adamec.dev.markupdoc.xmldocumentation.para__1no80es)</small>
+Type: [Para](#t-net.adamec.dev.markupdoc.xmldocumentation.para__1no80es)           
+Sources: XmlDocumentation\Para.cs</small>
 
 
 Initialize [Para](#t-net.adamec.dev.markupdoc.xmldocumentation.para__1no80es) instance from XML Documentation Comments element
@@ -18256,10 +21866,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.para.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___1mik5qp" />  Para.RenderElement(IMarkupProvider, Member, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.para.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___1mik5qp" />  Para.RenderElement(IMarkupProvider, Member, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Para](#t-net.adamec.dev.markupdoc.xmldocumentation.para__1no80es)</small>
+Type: [Para](#t-net.adamec.dev.markupdoc.xmldocumentation.para__1no80es)           
+Sources: XmlDocumentation\Para.cs</small>
 
 
 Renders the [Para](#t-net.adamec.dev.markupdoc.xmldocumentation.para__1no80es) and its content to string containing the markup provided by <strong>markupProvider</strong>
@@ -18271,7 +21882,7 @@ protected override string RenderElement(IMarkupProvider markupProvider, Member m
 ```
 
 <strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) <strong>markupProvider</strong></dt><dd>[IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) allowing using the markup within the rendered content</dd><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Code model [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) to render the XML Documentation Comment for</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a> <strong>trim</strong></dt><dd>Flag whether to (full) trim the rendered content</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Rendered content of &lt;para&gt; element of XML Documentation Comments</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Rendered content of &lt;para&gt; element of XML Documentation Comments</dd></dl>Overrides: [ModelElement.RenderElement(IMarkupProvider, Member, bool)](#m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___ut2gg2)
 
 
 ###  Remarks ###
@@ -18286,7 +21897,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.param__7q99qf" />  Param Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\Param.cs</small>
 
 
 Class representing &lt;param&gt; element of XML Documentation  Comments
@@ -18316,10 +21928,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.param.-ctor_system.xml.linq.xelement___1e6okoa" />  Param.Param(XElement) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.param.-ctor_system.xml.linq.xelement___1e6okoa" />  Param.Param(XElement) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Param](#t-net.adamec.dev.markupdoc.xmldocumentation.param__7q99qf)</small>
+Type: [Param](#t-net.adamec.dev.markupdoc.xmldocumentation.param__7q99qf)           
+Sources: XmlDocumentation\Param.cs</small>
 
 
 
@@ -18336,7 +21949,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.paramref__1goure8" />  ParamRef Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\ParamRef.cs</small>
 
 
 Class representing &lt;paramref&gt; element of XML Documentation Comments
@@ -18375,10 +21989,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.paramref.-ctor_system.xml.linq.xelement___1ayymr" />  ParamRef.ParamRef(XElement) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.paramref.-ctor_system.xml.linq.xelement___1ayymr" />  ParamRef.ParamRef(XElement) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ParamRef](#t-net.adamec.dev.markupdoc.xmldocumentation.paramref__1goure8)</small>
+Type: [ParamRef](#t-net.adamec.dev.markupdoc.xmldocumentation.paramref__1goure8)           
+Sources: XmlDocumentation\ParamRef.cs</small>
 
 
 Initialize [ParamRef](#t-net.adamec.dev.markupdoc.xmldocumentation.paramref__1goure8) instance from XML Documentation Comments element
@@ -18396,10 +22011,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.paramref.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___mgskzh" />  ParamRef.RenderElement(IMarkupProvider, Member, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.paramref.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___mgskzh" />  ParamRef.RenderElement(IMarkupProvider, Member, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [ParamRef](#t-net.adamec.dev.markupdoc.xmldocumentation.paramref__1goure8)</small>
+Type: [ParamRef](#t-net.adamec.dev.markupdoc.xmldocumentation.paramref__1goure8)           
+Sources: XmlDocumentation\ParamRef.cs</small>
 
 
 Renders the [ParamRef](#t-net.adamec.dev.markupdoc.xmldocumentation.paramref__1goure8) and its content to string containing the markup provided by <strong>markupProvider</strong>
@@ -18411,7 +22027,7 @@ protected override string RenderElement(IMarkupProvider markupProvider, Member m
 ```
 
 <strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) <strong>markupProvider</strong></dt><dd>[IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) allowing using the markup within the rendered content</dd><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Code model [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) to render the XML Documentation Comment for</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a> <strong>trim</strong></dt><dd>Flag whether to (full) trim the rendered content</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Rendered content of &lt;paramref&gt; element of XML Documentation Comments</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Rendered content of &lt;paramref&gt; element of XML Documentation Comments</dd></dl>Overrides: [ModelElement.RenderElement(IMarkupProvider, Member, bool)](#m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___ut2gg2)
 
 
 ###  Remarks ###
@@ -18426,7 +22042,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.remarks__1swka45" />  Remarks Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\Remarks.cs</small>
 
 
 Class representing &lt;remarks&gt; element of XML Documentation Comments
@@ -18456,10 +22073,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.remarks.-ctor_system.xml.linq.xnode___clibig" />  Remarks.Remarks(XNode) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.remarks.-ctor_system.xml.linq.xnode___clibig" />  Remarks.Remarks(XNode) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Remarks](#t-net.adamec.dev.markupdoc.xmldocumentation.remarks__1swka45)</small>
+Type: [Remarks](#t-net.adamec.dev.markupdoc.xmldocumentation.remarks__1swka45)           
+Sources: XmlDocumentation\Remarks.cs</small>
 
 
 Initialize [Remarks](#t-net.adamec.dev.markupdoc.xmldocumentation.remarks__1swka45) instance from XML Documentation Comments element
@@ -18479,7 +22097,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.returns__9bt401" />  Returns Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\Returns.cs</small>
 
 
 Class representing &lt;returns&gt; element of XML Documentation Comments
@@ -18509,10 +22128,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.returns.-ctor_system.xml.linq.xnode___1yg122" />  Returns.Returns(XNode) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.returns.-ctor_system.xml.linq.xnode___1yg122" />  Returns.Returns(XNode) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Returns](#t-net.adamec.dev.markupdoc.xmldocumentation.returns__9bt401)</small>
+Type: [Returns](#t-net.adamec.dev.markupdoc.xmldocumentation.returns__9bt401)           
+Sources: XmlDocumentation\Returns.cs</small>
 
 
 Initialize [Returns](#t-net.adamec.dev.markupdoc.xmldocumentation.returns__9bt401) instance from XML Documentation Comments element
@@ -18532,7 +22152,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.see__12himun" />  See Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\See.cs</small>
 
 
 Class representing &lt;see&gt; element of XML Documentation Comments
@@ -18547,11 +22168,29 @@ Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object"
 
 
 
+###  Properties ###
+
+ | Name | Modifier | Summary | 
+ | ------ | ---------- | --------- | 
+ | [Langword](#p-net.adamec.dev.markupdoc.xmldocumentation.see.langword__6cyvjf) | public | langword attribute value | 
+
+ 
+
+
 ###  Constructors ###
 
  | Name | Modifier | Summary | 
  | ------ | ---------- | --------- | 
  | [See(XElement)](#m-net.adamec.dev.markupdoc.xmldocumentation.see.-ctor_system.xml.linq.xelement___veyfmk) | public | Initialize [See](#t-net.adamec.dev.markupdoc.xmldocumentation.see__12himun) instance from XML Documentation Comments element | 
+
+ 
+
+
+###  Methods ###
+
+ | Name | Modifier | Summary | 
+ | ------ | ---------- | --------- | 
+ | [RenderElement(IMarkupProvider, Member, bool)](#m-net.adamec.dev.markupdoc.xmldocumentation.see.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___1ex2wtc) | protected | Renders the `see` element - by default the [RenderElement(IMarkupProvider, Member, bool)](#m-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcrefsimple.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___isgepe) is used. `langword` attribute is rendered when the base renders null or empty | 
 
  
 
@@ -18562,10 +22201,35 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.see.-ctor_system.xml.linq.xelement___veyfmk" />  See.See(XElement) Title ##
+##  <a id="p-net.adamec.dev.markupdoc.xmldocumentation.see.langword__6cyvjf" />  See.Langword Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [See](#t-net.adamec.dev.markupdoc.xmldocumentation.see__12himun)</small>
+Type: [See](#t-net.adamec.dev.markupdoc.xmldocumentation.see__12himun)           
+Sources: XmlDocumentation\See.cs</small>
+
+
+langword attribute value
+
+
+
+```csharp
+public string Langword { get; }
+```
+
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.see.-ctor_system.xml.linq.xelement___veyfmk" />  See.See(XElement) Constructor ##
+<small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
+Assembly: MarkupDoc           
+Type: [See](#t-net.adamec.dev.markupdoc.xmldocumentation.see__12himun)           
+Sources: XmlDocumentation\See.cs</small>
 
 
 Initialize [See](#t-net.adamec.dev.markupdoc.xmldocumentation.see__12himun) instance from XML Documentation Comments element
@@ -18583,9 +22247,35 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.see.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___1ex2wtc" />  See.RenderElement(IMarkupProvider, Member, bool) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
+Assembly: MarkupDoc           
+Type: [See](#t-net.adamec.dev.markupdoc.xmldocumentation.see__12himun)           
+Sources: XmlDocumentation\See.cs</small>
+
+
+Renders the `see` element - by default the [RenderElement(IMarkupProvider, Member, bool)](#m-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcrefsimple.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___isgepe) is used. `langword` attribute is rendered when the base renders null or empty
+
+
+
+```csharp
+protected override string RenderElement(IMarkupProvider markupProvider, Member member, bool trim = true)
+```
+
+<strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) <strong>markupProvider</strong></dt><dd>[IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) allowing using the markup within the rendered content</dd><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Code model [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) to render the XML Documentation Comment for</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a> <strong>trim</strong></dt><dd>Flag whether to (full) trim the rendered content</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Rendered content of element of XML Documentation Comments</dd></dl>Overrides: [ModelElementWithCrefSimple.RenderElement(IMarkupProvider, Member, bool)](#m-net.adamec.dev.markupdoc.xmldocumentation.modelelementwithcrefsimple.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___isgepe)
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.seealso__1fkiu46" />  SeeAlso Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\SeeAlso.cs</small>
 
 
 Class representing &lt;seealso&gt; element of XML Documentation Comments
@@ -18615,10 +22305,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.seealso.-ctor_system.xml.linq.xelement___12boalv" />  SeeAlso.SeeAlso(XElement) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.seealso.-ctor_system.xml.linq.xelement___12boalv" />  SeeAlso.SeeAlso(XElement) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [SeeAlso](#t-net.adamec.dev.markupdoc.xmldocumentation.seealso__1fkiu46)</small>
+Type: [SeeAlso](#t-net.adamec.dev.markupdoc.xmldocumentation.seealso__1fkiu46)           
+Sources: XmlDocumentation\SeeAlso.cs</small>
 
 
 Initialize [SeeAlso](#t-net.adamec.dev.markupdoc.xmldocumentation.seealso__1fkiu46) instance from XML Documentation Comments element
@@ -18638,7 +22329,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.summary__mrutjy" />  Summary Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\Summary.cs</small>
 
 
 Class representing &lt;summary&gt; element of XML Documentation Comments
@@ -18668,10 +22360,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.summary.-ctor_system.xml.linq.xnode___1p8n2fr" />  Summary.Summary(XNode) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.summary.-ctor_system.xml.linq.xnode___1p8n2fr" />  Summary.Summary(XNode) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Summary](#t-net.adamec.dev.markupdoc.xmldocumentation.summary__mrutjy)</small>
+Type: [Summary](#t-net.adamec.dev.markupdoc.xmldocumentation.summary__mrutjy)           
+Sources: XmlDocumentation\Summary.cs</small>
 
 
 Initialize [Summary](#t-net.adamec.dev.markupdoc.xmldocumentation.summary__mrutjy) instance from XML Documentation Comments element
@@ -18691,7 +22384,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.text__1xsey9h" />  Text Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\Text.cs</small>
 
 
 Class representing text node (content) of XML Documentation Comments
@@ -18743,7 +22437,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="p-net.adamec.dev.markupdoc.xmldocumentation.text.content__dyov3e" />  Text.Content Property ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Text](#t-net.adamec.dev.markupdoc.xmldocumentation.text__1xsey9h)</small>
+Type: [Text](#t-net.adamec.dev.markupdoc.xmldocumentation.text__1xsey9h)           
+Sources: XmlDocumentation\Text.cs</small>
 
 
 
@@ -18760,10 +22455,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.text.-ctor_system.xml.linq.xtext___shkeaj" />  Text.Text(XText) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.text.-ctor_system.xml.linq.xtext___shkeaj" />  Text.Text(XText) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Text](#t-net.adamec.dev.markupdoc.xmldocumentation.text__1xsey9h)</small>
+Type: [Text](#t-net.adamec.dev.markupdoc.xmldocumentation.text__1xsey9h)           
+Sources: XmlDocumentation\Text.cs</small>
 
 
 Initialize [Text](#t-net.adamec.dev.markupdoc.xmldocumentation.text__1xsey9h) instance from XML Documentation Comments node (element content or it&#39;s part when child elements are in place)
@@ -18781,10 +22477,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.text.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___30ojk6" />  Text.RenderElement(IMarkupProvider, Member, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.text.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___30ojk6" />  Text.RenderElement(IMarkupProvider, Member, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Text](#t-net.adamec.dev.markupdoc.xmldocumentation.text__1xsey9h)</small>
+Type: [Text](#t-net.adamec.dev.markupdoc.xmldocumentation.text__1xsey9h)           
+Sources: XmlDocumentation\Text.cs</small>
 
 
 Renders the [Text](#t-net.adamec.dev.markupdoc.xmldocumentation.text__1xsey9h) content to string
@@ -18796,7 +22493,7 @@ protected override string RenderElement(IMarkupProvider markupProvider, Member m
 ```
 
 <strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) <strong>markupProvider</strong></dt><dd>[IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) allowing using the markup within the rendered content</dd><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Code model [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) to render the XML Documentation Comment for</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a> <strong>trim</strong></dt><dd>Flag whether to (full) trim the rendered content</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Rendered text content of element in XML Documentation Comments</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Rendered text content of element in XML Documentation Comments</dd></dl>Overrides: [ModelElement.RenderElement(IMarkupProvider, Member, bool)](#m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___ut2gg2)
 
 
 ###  Remarks ###
@@ -18809,10 +22506,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.text.tostring__1ob5x3q" />  Text.ToString() Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.text.tostring__1ob5x3q" />  Text.ToString() Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Text](#t-net.adamec.dev.markupdoc.xmldocumentation.text__1xsey9h)</small>
+Type: [Text](#t-net.adamec.dev.markupdoc.xmldocumentation.text__1xsey9h)           
+Sources: XmlDocumentation\Text.cs</small>
 
 
 Gets the fully trimmed text content (part) of the XML Documentation Comment
@@ -18823,7 +22521,7 @@ Gets the fully trimmed text content (part) of the XML Documentation Comment
 public override string ToString()
 ```
 
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Fully trimmed text content (part) of the XML Documentation Comment</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Fully trimmed text content (part) of the XML Documentation Comment</dd></dl>Overrides: [ModelElement.ToString()](#m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.tostring__d0syr2)
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
@@ -18834,7 +22532,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.typeparam__1cm275z" />  TypeParam Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\TypeParam.cs</small>
 
 
 Class representing &lt;typeparam&gt; element of XML Documentation Comments
@@ -18864,10 +22563,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.typeparam.-ctor_system.xml.linq.xelement___1q1mduy" />  TypeParam.TypeParam(XElement) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.typeparam.-ctor_system.xml.linq.xelement___1q1mduy" />  TypeParam.TypeParam(XElement) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [TypeParam](#t-net.adamec.dev.markupdoc.xmldocumentation.typeparam__1cm275z)</small>
+Type: [TypeParam](#t-net.adamec.dev.markupdoc.xmldocumentation.typeparam__1cm275z)           
+Sources: XmlDocumentation\TypeParam.cs</small>
 
 
 Initialize [TypeParam](#t-net.adamec.dev.markupdoc.xmldocumentation.typeparam__1cm275z) instance from XML Documentation Comments element
@@ -18887,7 +22587,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.typeparamref__qcu1eo" />  TypeParamRef Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\TypeParamRef.cs</small>
 
 
 Class representing &lt;typeparamref&gt; element of XML Documentation Comments
@@ -18926,10 +22627,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.typeparamref.-ctor_system.xml.linq.xelement___1misv2r" />  TypeParamRef.TypeParamRef(XElement) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.typeparamref.-ctor_system.xml.linq.xelement___1misv2r" />  TypeParamRef.TypeParamRef(XElement) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [TypeParamRef](#t-net.adamec.dev.markupdoc.xmldocumentation.typeparamref__qcu1eo)</small>
+Type: [TypeParamRef](#t-net.adamec.dev.markupdoc.xmldocumentation.typeparamref__qcu1eo)           
+Sources: XmlDocumentation\TypeParamRef.cs</small>
 
 
 Initialize [TypeRef](#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm) instance from XML Documentation Comments element
@@ -18947,10 +22649,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.typeparamref.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___ym1br9" />  TypeParamRef.RenderElement(IMarkupProvider, Member, bool) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.typeparamref.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___ym1br9" />  TypeParamRef.RenderElement(IMarkupProvider, Member, bool) Method ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [TypeParamRef](#t-net.adamec.dev.markupdoc.xmldocumentation.typeparamref__qcu1eo)</small>
+Type: [TypeParamRef](#t-net.adamec.dev.markupdoc.xmldocumentation.typeparamref__qcu1eo)           
+Sources: XmlDocumentation\TypeParamRef.cs</small>
 
 
 Renders the [TypeParamRef](#t-net.adamec.dev.markupdoc.xmldocumentation.typeparamref__qcu1eo) and its content to string containing the markup provided by <strong>markupProvider</strong>
@@ -18962,7 +22665,7 @@ protected override string RenderElement(IMarkupProvider markupProvider, Member m
 ```
 
 <strong>Method parameters</strong><dl><dt>[net.adamec.dev.markupdoc.Markup.IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) <strong>markupProvider</strong></dt><dd>[IMarkupProvider](#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr) allowing using the markup within the rendered content</dd><dt>[net.adamec.dev.markupdoc.CodeModel.Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) <strong>member</strong></dt><dd>Code model [Member](#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh) to render the XML Documentation Comment for</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >bool</a> <strong>trim</strong></dt><dd>Flag whether to (full) trim the rendered content</dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Rendered content of &lt;typeparamref&gt; element of XML Documentation Comments</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Rendered content of &lt;typeparamref&gt; element of XML Documentation Comments</dd></dl>Overrides: [ModelElement.RenderElement(IMarkupProvider, Member, bool)](#m-net.adamec.dev.markupdoc.xmldocumentation.modelelement.renderelement_net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.codemodel.member-system.boolean___ut2gg2)
 
 
 ###  Remarks ###
@@ -18977,7 +22680,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.value__sil3tn" />  Value Class ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\Value.cs</small>
 
 
 Class representing &lt;value&gt; element of XML Documentation  Comments
@@ -19007,10 +22711,11 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
  
 
 
-##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.value.-ctor_system.xml.linq.xnode___vva4ec" />  Value.Value(XNode) Title ##
+##  <a id="m-net.adamec.dev.markupdoc.xmldocumentation.value.-ctor_system.xml.linq.xnode___vva4ec" />  Value.Value(XNode) Constructor ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [Value](#t-net.adamec.dev.markupdoc.xmldocumentation.value__sil3tn)</small>
+Type: [Value](#t-net.adamec.dev.markupdoc.xmldocumentation.value__sil3tn)           
+Sources: XmlDocumentation\Value.cs</small>
 
 
 Initialize [Value](#t-net.adamec.dev.markupdoc.xmldocumentation.value__sil3tn) instance from XML Documentation Comments element
@@ -19030,7 +22735,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 
 ##  <a id="t-net.adamec.dev.markupdoc.xmldocumentation.list.listtypeenum__455725" />  List.ListTypeEnum Enum ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
-Assembly: MarkupDoc</small>
+Assembly: MarkupDoc           
+Sources: XmlDocumentation\List.cs</small>
 
 
 List rendering type
@@ -19065,7 +22771,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.xmldocumentation.list.listtypeenum.bullet__1tsu4x7" />  List.ListTypeEnum.Bullet Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [List.ListTypeEnum](#t-net.adamec.dev.markupdoc.xmldocumentation.list.listtypeenum__455725)</small>
+Type: [List.ListTypeEnum](#t-net.adamec.dev.markupdoc.xmldocumentation.list.listtypeenum__455725)           
+Sources: XmlDocumentation\List.cs</small>
 
 
 Render as bullet list. Each item contains &quot;Term&quot; in bold and &quot;Description&quot; (separated by dash). Both parts are optional.
@@ -19088,7 +22795,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.xmldocumentation.list.listtypeenum.number__n830ti" />  List.ListTypeEnum.Number Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [List.ListTypeEnum](#t-net.adamec.dev.markupdoc.xmldocumentation.list.listtypeenum__455725)</small>
+Type: [List.ListTypeEnum](#t-net.adamec.dev.markupdoc.xmldocumentation.list.listtypeenum__455725)           
+Sources: XmlDocumentation\List.cs</small>
 
 
 Render as numbered list. Each item contains &quot;Term&quot; in bold and &quot;Description&quot; (separated by dash). Both parts are optional.
@@ -19111,7 +22819,8 @@ Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-lis
 ##  <a id="f-net.adamec.dev.markupdoc.xmldocumentation.list.listtypeenum.table__s1bzk3" />  List.ListTypeEnum.Table Constant ##
 <small>Namespace: [net.adamec.dev.markupdoc.XmlDocumentation](#n-net.adamec.dev.markupdoc.xmldocumentation__1ter1y6)           
 Assembly: MarkupDoc           
-Type: [List.ListTypeEnum](#t-net.adamec.dev.markupdoc.xmldocumentation.list.listtypeenum__455725)</small>
+Type: [List.ListTypeEnum](#t-net.adamec.dev.markupdoc.xmldocumentation.list.listtypeenum__455725)           
+Sources: XmlDocumentation\List.cs</small>
 
 
 Render as two column table (term and description). Header item should be provided to define the table header (&quot;Term&quot; and &quot;Description&quot; are used as defaults)

@@ -35,7 +35,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.enums.enumcontainer__i9tji8" />  EnumContainer Class ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: enums\Samples.cs</small>
 
 
 This is just the container for the nested enums
@@ -47,6 +48,7 @@ public class EnumContainer
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Derived: [SampleToDocument.enums.EnumContainer2](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.enumcontainer2__1l2xcvm)           
 
 
 
@@ -58,7 +60,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.enums.enumcontainer2__1l2xcvm" />  EnumContainer2 Class ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: enums\Samples.cs</small>
 
 
 This is just another container for the nested enums
@@ -81,7 +84,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.enums.enumcontainer.testenum3__1tjqf1c" />  EnumContainer.TestEnum3 Enum ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: enums\Samples.cs</small>
 
 
 The private nested enum
@@ -115,7 +119,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.enums.enumcontainer.testenum3.item1__1bf2212" />  EnumContainer.TestEnum3.Item1 Constant ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
 Assembly: SampleToDocument           
-Type: [EnumContainer.TestEnum3](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.enumcontainer.testenum3__1tjqf1c)</small>
+Type: [EnumContainer.TestEnum3](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.enumcontainer.testenum3__1tjqf1c)           
+Sources: enums\Samples.cs</small>
 
 
 
@@ -135,7 +140,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.enums.enumcontainer.testenum3.item2__2acm5n" />  EnumContainer.TestEnum3.Item2 Constant ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
 Assembly: SampleToDocument           
-Type: [EnumContainer.TestEnum3](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.enumcontainer.testenum3__1tjqf1c)</small>
+Type: [EnumContainer.TestEnum3](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.enumcontainer.testenum3__1tjqf1c)           
+Sources: enums\Samples.cs</small>
 
 
 
@@ -154,7 +160,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.enums.enumcontainer.testenum4__xr8jtv" />  EnumContainer.TestEnum4 Enum ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: enums\Samples.cs</small>
 
 
 The protected nested enum
@@ -188,7 +195,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.enums.enumcontainer.testenum4.item1__1vhrq9j" />  EnumContainer.TestEnum4.Item1 Constant ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
 Assembly: SampleToDocument           
-Type: [EnumContainer.TestEnum4](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.enumcontainer.testenum4__xr8jtv)</small>
+Type: [EnumContainer.TestEnum4](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.enumcontainer.testenum4__xr8jtv)           
+Sources: enums\Samples.cs</small>
 
 
 
@@ -208,7 +216,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.enums.enumcontainer.testenum4.item2__15ld45u" />  EnumContainer.TestEnum4.Item2 Constant ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
 Assembly: SampleToDocument           
-Type: [EnumContainer.TestEnum4](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.enumcontainer.testenum4__xr8jtv)</small>
+Type: [EnumContainer.TestEnum4](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.enumcontainer.testenum4__xr8jtv)           
+Sources: enums\Samples.cs</small>
 
 
 
@@ -227,7 +236,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.enums.enumcontainer2.testenum3__1in9ezm" />  EnumContainer2.TestEnum3 Enum ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: enums\Samples.cs</small>
 
 
 The private nested enum
@@ -261,7 +271,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.enums.enumcontainer2.testenum3.item1__q4ob6o" />  EnumContainer2.TestEnum3.Item1 Constant ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
 Assembly: SampleToDocument           
-Type: [EnumContainer2.TestEnum3](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.enumcontainer2.testenum3__1in9ezm)</small>
+Type: [EnumContainer2.TestEnum3](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.enumcontainer2.testenum3__1in9ezm)           
+Sources: enums\Samples.cs</small>
 
 
 
@@ -281,7 +292,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.enums.enumcontainer2.testenum3.item2__q4ob6p" />  EnumContainer2.TestEnum3.Item2 Constant ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
 Assembly: SampleToDocument           
-Type: [EnumContainer2.TestEnum3](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.enumcontainer2.testenum3__1in9ezm)</small>
+Type: [EnumContainer2.TestEnum3](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.enumcontainer2.testenum3__1in9ezm)           
+Sources: enums\Samples.cs</small>
 
 
 
@@ -300,7 +312,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.enums.enumcontainer2.testenum4__1in9ezp" />  EnumContainer2.TestEnum4 Enum ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: enums\Samples.cs</small>
 
 
 The protected nested enum - this one is hiding the [EnumContainer.TestEnum4](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.enumcontainer.testenum4__xr8jtv)
@@ -334,7 +347,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.enums.enumcontainer2.testenum4.item1__q4tni5" />  EnumContainer2.TestEnum4.Item1 Constant ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
 Assembly: SampleToDocument           
-Type: [EnumContainer2.TestEnum4](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.enumcontainer2.testenum4__1in9ezp)</small>
+Type: [EnumContainer2.TestEnum4](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.enumcontainer2.testenum4__1in9ezp)           
+Sources: enums\Samples.cs</small>
 
 
 
@@ -354,7 +368,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.enums.enumcontainer2.testenum4.item2__q4tni4" />  EnumContainer2.TestEnum4.Item2 Constant ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
 Assembly: SampleToDocument           
-Type: [EnumContainer2.TestEnum4](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.enumcontainer2.testenum4__1in9ezp)</small>
+Type: [EnumContainer2.TestEnum4](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.enumcontainer2.testenum4__1in9ezp)           
+Sources: enums\Samples.cs</small>
 
 
 
@@ -373,7 +388,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.enums.testenum1__1basayc" />  TestEnum1 Enum ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: enums\Samples.cs</small>
 
 
 Test enum of integers (default)
@@ -408,7 +424,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.enums.testenum1.blue__jk3g5k" />  TestEnum1.Blue Constant ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
 Assembly: SampleToDocument           
-Type: [TestEnum1](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.testenum1__1basayc)</small>
+Type: [TestEnum1](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.testenum1__1basayc)           
+Sources: enums\Samples.cs</small>
 
 
 Blue value
@@ -431,7 +448,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.enums.testenum1.green__7cuyxz" />  TestEnum1.Green Constant ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
 Assembly: SampleToDocument           
-Type: [TestEnum1](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.testenum1__1basayc)</small>
+Type: [TestEnum1](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.testenum1__1basayc)           
+Sources: enums\Samples.cs</small>
 
 
 Green value
@@ -454,7 +472,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.enums.testenum1.red__1lr3chz" />  TestEnum1.Red Constant ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
 Assembly: SampleToDocument           
-Type: [TestEnum1](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.testenum1__1basayc)</small>
+Type: [TestEnum1](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.testenum1__1basayc)           
+Sources: enums\Samples.cs</small>
 
 
 Red value
@@ -476,7 +495,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.enums.testenum2__ledoun" />  TestEnum2 Enum ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: enums\Samples.cs</small>
 
 
 Test enum of longs (explicit)
@@ -518,7 +538,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.enums.testenum2.blue__90oobx" />  TestEnum2.Blue Constant ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
 Assembly: SampleToDocument           
-Type: [TestEnum2](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.testenum2__ledoun)</small>
+Type: [TestEnum2](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.testenum2__ledoun)           
+Sources: enums\Samples.cs</small>
 
 
 Blue value
@@ -541,7 +562,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.enums.testenum2.green__i2h0gy" />  TestEnum2.Green Constant ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
 Assembly: SampleToDocument           
-Type: [TestEnum2](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.testenum2__ledoun)</small>
+Type: [TestEnum2](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.testenum2__ledoun)           
+Sources: enums\Samples.cs</small>
 
 
 Green value =4
@@ -569,7 +591,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.enums.testenum2.red__rzdqwm" />  TestEnum2.Red Constant ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
 Assembly: SampleToDocument           
-Type: [TestEnum2](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.testenum2__ledoun)</small>
+Type: [TestEnum2](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.testenum2__ledoun)           
+Sources: enums\Samples.cs</small>
 
 
 Red value
@@ -592,7 +615,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="f-sampletodocument.enums.testenum2.rot__13rk93w" />  TestEnum2.Rot Constant ##
 <small>Namespace: [SampleToDocument.enums](SampleToDocument.enums__kvtjog.md#n-sampletodocument.enums__kvtjog)           
 Assembly: SampleToDocument           
-Type: [TestEnum2](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.testenum2__ledoun)</small>
+Type: [TestEnum2](SampleToDocument.enums__kvtjog.md#t-sampletodocument.enums.testenum2__ledoun)           
+Sources: enums\Samples.cs</small>
 
 
 Rot value =Red

@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddOns\IAddOn.cs" />
+    <Compile Include="AddOns\SourceOnlyPackages\SourceOnlyPackagesAddOn.cs" />
     <Compile Include="Application.cs" />
     <Compile Include="CodeModel\AssemblyMember.cs" />
     <Compile Include="CodeModel\Builder\AssemblyMemberBuilder.cs" />
@@ -55,6 +57,7 @@
     <Compile Include="CodeModel\Builder\MethodParameterBuilder.cs" />
     <Compile Include="CodeModel\Builder\ModelBuilder.cs" />
     <Compile Include="CodeModel\Builder\NamespaceMemberBuilder.cs" />
+    <Compile Include="AddOns\SourceOnlyPackages\Model\NuProps.cs" />
     <Compile Include="CodeModel\Builder\PropertyMemberBuilder.cs" />
     <Compile Include="CodeModel\Builder\RootMemberBuilder.cs" />
     <Compile Include="CodeModel\Builder\TypeContentMemberBuilder.cs" />
@@ -102,6 +105,7 @@
     <Compile Include="XmlDocumentation\Documentation.cs" />
     <Compile Include="XmlDocumentation\Example.cs" />
     <Compile Include="XmlDocumentation\ExceptionDoc.cs" />
+    <Compile Include="XmlDocumentation\Inheritdoc.cs" />
     <Compile Include="XmlDocumentation\List.cs" />
     <Compile Include="XmlDocumentation\ListItem.cs" />
     <Compile Include="XmlDocumentation\ModelElement.cs" />

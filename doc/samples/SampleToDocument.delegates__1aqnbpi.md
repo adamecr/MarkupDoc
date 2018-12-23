@@ -53,7 +53,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegateinclass__ik325e" />  TestDelegateInClass Class ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Class containing the delegates
@@ -65,6 +66,7 @@ public class TestDelegateInClass
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Derived: [SampleToDocument.delegates.TestDelegateInClass2](SampleToDocument.delegates__1aqnbpi.md#t-sampletodocument.delegates.testdelegateinclass2__1bh1pe8)           
 
 
 
@@ -76,7 +78,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegateinclass2__1bh1pe8" />  TestDelegateInClass2 Class ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Another class containing the delegates
@@ -99,7 +102,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegate1__1p4m3ec" />  TestDelegate1 Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Delegate with attribute
@@ -128,7 +132,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegate2-1__zt7wey" />  TestDelegate2&lt;T&gt; Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Generic delegate
@@ -156,7 +161,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegate3__9bsv6y" />  TestDelegate3 Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Void delegate
@@ -183,7 +189,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegate4-1__1dthiig" />  TestDelegate4&lt;T&gt; Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Generic delegate with constraint
@@ -211,7 +218,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegate5-2__1wprbke" />  TestDelegate5&lt;T,U&gt; Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Generic delegate with multiple type parameters
@@ -241,7 +249,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegate6__1vspvqb" />  TestDelegate6 Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Delegate returning <a href="https://docs.microsoft.com/en-us/dotnet/api/system.nullable-1" target="_blank" >System.Nullable`1</a> , resp. <a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" target="_blank" >System.Boolean</a>
@@ -268,7 +277,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegate7__15wb9mm" />  TestDelegate7 Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Delegate returning [TestDelegate2&lt;T&gt;](SampleToDocument.delegates__1aqnbpi.md#t-sampletodocument.delegates.testdelegate2-1__zt7wey) with &quot;static&quot; type parameter
@@ -295,7 +305,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegate8-1__lsyabg" />  TestDelegate8&lt;T&gt; Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Generic delegate returning [TestDelegate2&lt;T&gt;](SampleToDocument.delegates__1aqnbpi.md#t-sampletodocument.delegates.testdelegate2-1__zt7wey) with generic type parameter
@@ -323,7 +334,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegate9__1v0pci4" />  TestDelegate9 Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Delegate having the optional parameter
@@ -350,7 +362,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegatea__1d0ekh0" />  TestDelegateA Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Delegate with `params` parameter array
@@ -377,7 +390,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegateb__n3zydb" />  TestDelegateB Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Delegate with out parameter
@@ -404,7 +418,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegatec__1w8pe8q" />  TestDelegateC Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Delegate with ref parameter
@@ -431,7 +446,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegated__10g7j19" />  TestDelegateD Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Delegate without parameters
@@ -457,7 +473,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegateinclass.testdelegate1__mdsqzy" />  TestDelegateInClass.TestDelegate1 Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Simple delegated
@@ -484,7 +501,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegateinclass.testdelegate2-1__bvyhjo" />  TestDelegateInClass.TestDelegate2&lt;T&gt; Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Public generic delegate with variance
@@ -512,7 +530,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegateinclass.testdelegate3__15m3kro" />  TestDelegateInClass.TestDelegate3 Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Another simple delegated
@@ -539,7 +558,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegateinclass.testdelegate4-1__77va6i" />  TestDelegateInClass.TestDelegate4&lt;T&gt; Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Internal generic delegate
@@ -567,7 +587,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegateinclass.testdelegate5-2__2vt3j4" />  TestDelegateInClass.TestDelegate5&lt;T,U&gt; Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Generic delegate - bit complex one
@@ -597,7 +618,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegateinclass.testdelegate6__yxzsfp" />  TestDelegateInClass.TestDelegate6 Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Protected delegate
@@ -624,7 +646,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegateinclass.testdelegate7__91l6c0" />  TestDelegateInClass.TestDelegate7 Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Delegate returning the generic delegate
@@ -651,7 +674,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegateinclass.testdelegate8-1__1wwsxfa" />  TestDelegateInClass.TestDelegate8&lt;T&gt; Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Generic delegate returning the generic delegate
@@ -679,7 +703,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegateinclass2.testdelegate2-1__z2kc2e" />  TestDelegateInClass2.TestDelegate2&lt;T&gt; Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Public generic delegate with new
@@ -707,7 +732,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegateinclass2.testdelegate4-1__z2kbww" />  TestDelegateInClass2.TestDelegate4&lt;T&gt; Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Internal generic delegate with new
@@ -735,7 +761,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.delegates.testdelegateinclass2.testdelegate6__zhpgkj" />  TestDelegateInClass2.TestDelegate6 Delegate ##
 <small>Namespace: [SampleToDocument.delegates](SampleToDocument.delegates__1aqnbpi.md#n-sampletodocument.delegates__1aqnbpi)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: delegates\Samples.cs</small>
 
 
 Protected delegate with new

@@ -17,7 +17,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.generic.test.testattribute__5t0lwl" />  TestAttribute Class ##
 <small>Namespace: [SampleToDocument.classes.generic.test](SampleToDocument.classes.generic.test__1nlg3jz.md#n-sampletodocument.classes.generic.test__1nlg3jz)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\generic\Samples.cs</small>
 
 
 Just the test attribute to used in samples
@@ -54,10 +55,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.classes.generic.test.testattribute.-ctor__1w7buwz" />  TestAttribute.TestAttribute() Title ##
+##  <a id="m-sampletodocument.classes.generic.test.testattribute.-ctor__1w7buwz" />  TestAttribute.TestAttribute() Constructor ##
 <small>Namespace: [SampleToDocument.classes.generic.test](SampleToDocument.classes.generic.test__1nlg3jz.md#n-sampletodocument.classes.generic.test__1nlg3jz)           
 Assembly: SampleToDocument           
-Type: [TestAttribute](SampleToDocument.classes.generic.test__1nlg3jz.md#t-sampletodocument.classes.generic.test.testattribute__5t0lwl)</small>
+Type: [TestAttribute](SampleToDocument.classes.generic.test__1nlg3jz.md#t-sampletodocument.classes.generic.test.testattribute__5t0lwl)           
+Sources: classes\generic\Samples.cs</small>
 
 
 
@@ -71,10 +73,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.classes.generic.test.testattribute.-ctor_system.string___1smwu4u" />  TestAttribute.TestAttribute(string) Title ##
+##  <a id="m-sampletodocument.classes.generic.test.testattribute.-ctor_system.string___1smwu4u" />  TestAttribute.TestAttribute(string) Constructor ##
 <small>Namespace: [SampleToDocument.classes.generic.test](SampleToDocument.classes.generic.test__1nlg3jz.md#n-sampletodocument.classes.generic.test__1nlg3jz)           
 Assembly: SampleToDocument           
-Type: [TestAttribute](SampleToDocument.classes.generic.test__1nlg3jz.md#t-sampletodocument.classes.generic.test.testattribute__5t0lwl)</small>
+Type: [TestAttribute](SampleToDocument.classes.generic.test__1nlg3jz.md#t-sampletodocument.classes.generic.test.testattribute__5t0lwl)           
+Sources: classes\generic\Samples.cs</small>
 
 
 

@@ -34,6 +34,16 @@ namespace net.adamec.dev.markupdoc.CodeModel.Builder
         public string BaseMainFile { get; set; }
 
         /// <summary>
+        /// Full path to the project root directory
+        /// </summary>
+        public string ProjectRootDir { get; set; }
+
+        /// <summary>
+        /// List of all source files in compilation
+        /// </summary>
+        public List<string> CompilationFiles { get; set; }
+
+        /// <summary>
         /// CTOR - sets the name to <c>&lt;ROOT&gt;</c>
         /// </summary>
         public RootMemberBuilder()

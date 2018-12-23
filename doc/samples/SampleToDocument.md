@@ -15,6 +15,7 @@
  | [SampleToDocument.property](SampleToDocument.property__izv70z.md#n-sampletodocument.property__izv70z) | Namespace for checking the property documentation | 
  | [SampleToDocument.structs](SampleToDocument.structs__10bh11k.md#n-sampletodocument.structs__10bh11k) | Namespace for checking the struct documentation | 
  | [SampleToDocument.x_complex](SampleToDocument.x_complex__updp6r.md#n-sampletodocument.x_complex__updp6r) | A bit more samples | 
+ | [SampleToDocument.x_inheritdoc](SampleToDocument.x_inheritdoc__1xsxpbs.md#n-sampletodocument.x_inheritdoc__1xsxpbs) | &lt;inheritdoc /&gt; samples | 
 
 ##  <a id="type-list" />  Types ##
 
@@ -53,6 +54,19 @@
  | [PropertyContainer3](SampleToDocument.property__izv70z.md#t-sampletodocument.property.propertycontainer3__36bqt0) | public abstract | Class | Another class with properties, inheriting from [PropertyContainer1](SampleToDocument.property__izv70z.md#t-sampletodocument.property.propertycontainer1__memkkq) | 
  | [PropertyContainer4](SampleToDocument.property__izv70z.md#t-sampletodocument.property.propertycontainer4__9ufj4z) | public abstract | Class | Basic indexers here | 
  | [PropertyContainer5&lt;T,U&gt;](SampleToDocument.property__izv70z.md#t-sampletodocument.property.propertycontainer5-2__uzmee0) | public | Class | Generic class containing the properties | 
+ | [SampleClassInheritingFromClsAndIface](SampleToDocument.x_inheritdoc__1xsxpbs.md#t-sampletodocument.x_inheritdoc.sampleclassinheritingfromclsandiface__1ptta4o) | public | Class | This is the class with documentation | 
+ | [SampleClassInheritingFromClsAndIface2](SampleToDocument.x_inheritdoc__1xsxpbs.md#t-sampletodocument.x_inheritdoc.sampleclassinheritingfromclsandiface2__180a94m) | public | Class | This is the class with documentation | 
+ | [SampleClassInheritingFromClsAndIface3](SampleToDocument.x_inheritdoc__1xsxpbs.md#t-sampletodocument.x_inheritdoc.sampleclassinheritingfromclsandiface3__180a94l) | public | Class | This is IInterfaceWithDocumentation documentation | 
+ | [SampleClassInheritingFromClsAndIface4](SampleToDocument.x_inheritdoc__1xsxpbs.md#t-sampletodocument.x_inheritdoc.sampleclassinheritingfromclsandiface4__180a94s) | public | Class | This is IInterfaceWithDocumentation2 documentation | 
+ | [SampleClassInheritingFromIface](SampleToDocument.x_inheritdoc__1xsxpbs.md#t-sampletodocument.x_inheritdoc.sampleclassinheritingfromiface__g6cput) | public | Class | This is IInterfaceWithDocumentation documentation | 
+ | [SampleClassInheritingFromIface2](SampleToDocument.x_inheritdoc__1xsxpbs.md#t-sampletodocument.x_inheritdoc.sampleclassinheritingfromiface2__bl3prn) | public | Class | This is IInterfaceWithDocumentation documentation | 
+ | [SampleClassWithInheritDoc](SampleToDocument.x_inheritdoc__1xsxpbs.md#t-sampletodocument.x_inheritdoc.sampleclasswithinheritdoc__1n03rkl) | public | Class | This is the class with documentation | 
+ | [SampleClassWithInheritDoc2](SampleToDocument.x_inheritdoc__1xsxpbs.md#t-sampletodocument.x_inheritdoc.sampleclasswithinheritdoc2__8hti4v) | public | Class | This is the class with documentation | 
+ | [SampleClassWithInheritDoc3](SampleToDocument.x_inheritdoc__1xsxpbs.md#t-sampletodocument.x_inheritdoc.sampleclasswithinheritdoc3__1hmiy0a) | public | Class |  | 
+ | [SampleClassWithInheritDocEmptySummary](SampleToDocument.x_inheritdoc__1xsxpbs.md#t-sampletodocument.x_inheritdoc.sampleclasswithinheritdocemptysummary__j0wcwi) | public | Class |  | 
+ | [SampleClassWithInheritDocNonEmptySummary](SampleToDocument.x_inheritdoc__1xsxpbs.md#t-sampletodocument.x_inheritdoc.sampleclasswithinheritdocnonemptysummary__qksay7) | public | Class | This is SampleClassWithInheritDocNonEmptySummary | 
+ | [SampleInheritedClassWithoutInheritDoc](SampleToDocument.x_inheritdoc__1xsxpbs.md#t-sampletodocument.x_inheritdoc.sampleinheritedclasswithoutinheritdoc__qd0ghr) | public | Class |  | 
+ | [SampleWithDoc](SampleToDocument.x_inheritdoc__1xsxpbs.md#t-sampletodocument.x_inheritdoc.samplewithdoc__orxgbs) | public | Class | This is the class with documentation | 
  | [Struct5.Struct5InnerClass](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct5.struct5innerclass__1qw38xi) | public | Class | Inner class implementing [IInterface3](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface3__yh7ord) | 
  | [StructContainer](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.structcontainer__164zcao) | public | Class | Class containing structures | 
  | [StructContainer2](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.structcontainer2__16k210y) | public | Class | Class containing structures with members hiding | 
@@ -109,6 +123,8 @@
  | [IInterface5&lt;X,Y,Z&gt;](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface5-3__1m9u5i) | public abstract | Interface | Generic interface  with variant type parameters &quot;inheriting&quot; from [IInterface4&lt;X,Y,Z&gt;](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface4-3__1m9u4l) . The interface also has the attributes | 
  | [IInterface6](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface6__yh7ora) | internal abstract | Interface | Interface &quot;inheriting&quot; from [IInterface1](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface1__yh7orf) and [IInterface2](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface2__yh7ore) . It declares property [Name](SampleToDocument.interfaces__jede6.md#p-sampletodocument.interfaces.iinterface6.name__10x4aa5) and method [SetName(string)](SampleToDocument.interfaces__jede6.md#m-sampletodocument.interfaces.iinterface6.setname_system.string___1nc7icd) | 
  | [IInterface7](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface7__yh7or9) | internal abstract | Interface | Interface declares property [Name](SampleToDocument.interfaces__jede6.md#p-sampletodocument.interfaces.iinterface7.name__10x49ce) and methods [SetName(string)](SampleToDocument.interfaces__jede6.md#m-sampletodocument.interfaces.iinterface7.setname_system.string___28gg5a) and [ClearName(string)](SampleToDocument.interfaces__jede6.md#m-sampletodocument.interfaces.iinterface7.clearname_system.string___12s0437) | 
+ | [IInterfaceWithDocumentation](SampleToDocument.x_inheritdoc__1xsxpbs.md#t-sampletodocument.x_inheritdoc.iinterfacewithdocumentation__14y5cew) | public abstract | Interface | This is IInterfaceWithDocumentation documentation | 
+ | [IInterfaceWithDocumentation2](SampleToDocument.x_inheritdoc__1xsxpbs.md#t-sampletodocument.x_inheritdoc.iinterfacewithdocumentation2__16213q6) | public abstract | Interface | This is IInterfaceWithDocumentation2 documentation | 
  | [InterfaceContainer.INestedInterface1](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.interfacecontainer.inestedinterface1__60nqlw) | private abstract | Interface | Private nested interface | 
  | [InterfaceContainer.INestedInterface2](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.interfacecontainer.inestedinterface2__1ydo091) | protected abstract | Interface | Protected nested interface | 
  | [InterfaceContainer.INestedInterface3](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.interfacecontainer.inestedinterface3__p8ykdm) | public abstract | Interface | Public nested interface | 
@@ -117,6 +133,7 @@
  | [InterfaceContainer2.INestedInterface2](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.interfacecontainer2.inestedinterface2__1xr0rtn) | protected abstract | Interface | Protected nested interface with new | 
  | [InterfaceContainer2.INestedInterface3](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.interfacecontainer2.inestedinterface3__1xr0rto) | public abstract | Interface | Public nested interface with new | 
  | [InterfaceContainer2.INestedInterface4](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.interfacecontainer2.inestedinterface4__1xr0rth) | internal abstract | Interface | Internal nested interface with new | 
+ | [D](SampleToDocument.x_inheritdoc__1xsxpbs.md#t-sampletodocument.x_inheritdoc.d__1ap42uw) | public | Delegate |  | 
  | [Dummy2.Dummy2Delegate](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy2.dummy2delegate__5swm14) | public | Delegate | Class level delegate, looks like event handler | 
  | [Dummy2.NsDelegate3](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.dummy2.nsdelegate3__15qyzy) | private | Delegate | Private class level delegate. | 
  | [NsDelegate1](SampleToDocument.x_complex__updp6r.md#t-sampletodocument.x_complex.nsdelegate1__14pgxym) | public | Delegate | Void returning public delegate within the namespace | 

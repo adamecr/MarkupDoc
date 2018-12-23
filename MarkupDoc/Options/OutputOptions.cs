@@ -1,4 +1,6 @@
-﻿namespace net.adamec.dev.markupdoc.Options
+﻿using System.Dynamic;
+
+namespace net.adamec.dev.markupdoc.Options
 {
     /// <summary>
     /// Output configuration
@@ -37,5 +39,10 @@
         /// Flag whether to split the output per type. In this case, the split per namespace will also be applied.
         /// </summary>
         public bool SplitType { get; set; } = false;
+
+        /// <summary>
+        /// Flag whether to enable AddOns (false by default)
+        /// </summary>
+        public bool EnableAddOns { get; set; } = false;
     }
 }

@@ -45,7 +45,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.interfaces.interfacecontainer__131wgyo" />  InterfaceContainer Class ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: interfaces\Samples.cs</small>
 
 
 Class containing nested interfaces
@@ -57,6 +58,7 @@ public class InterfaceContainer
 ```
 
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Derived: [SampleToDocument.interfaces.InterfaceContainer2](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.interfacecontainer2__1hzrrci)           
 
 
 
@@ -68,7 +70,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.interfaces.interfacecontainer2__1hzrrci" />  InterfaceContainer2 Class ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: interfaces\Samples.cs</small>
 
 
 Class containing nested interfaces with hiding
@@ -91,7 +94,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.interfaces.withi6and7__t2wi77" />  WithI6And7 Class ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: interfaces\Samples.cs</small>
 
 
 Class implementing [IInterface6](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface6__yh7ora) and [IInterface7](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface7__yh7or9) . As there are the members with same signature, the explicit implementation must be used.
@@ -127,6 +131,18 @@ Implements: [SampleToDocument.interfaces.IInterface6](SampleToDocument.interface
  
 
 
+###  Explicit Interface Implementations ###
+
+ | Name | Modifier | Summary | 
+ | ------ | ---------- | --------- | 
+ | [SampleToDocument.interfaces.IInterface6.Name](SampleToDocument.interfaces__jede6.md#p-sampletodocument.interfaces.withi6and7.sampletodocument-interfaces-iinterface6-name__9npr8j) | private | Explicit implementation of [Name](SampleToDocument.interfaces__jede6.md#p-sampletodocument.interfaces.iinterface6.name__10x4aa5) | 
+ | [SampleToDocument.interfaces.IInterface6.SetName(string)](SampleToDocument.interfaces__jede6.md#m-sampletodocument.interfaces.withi6and7.sampletodocument-interfaces-iinterface6-setname_system.string___1oc7c13) | private | Explicit implementation of [SetName(string)](SampleToDocument.interfaces__jede6.md#m-sampletodocument.interfaces.iinterface6.setname_system.string___1nc7icd) | 
+ | [SampleToDocument.interfaces.IInterface7.Name](SampleToDocument.interfaces__jede6.md#p-sampletodocument.interfaces.withi6and7.sampletodocument-interfaces-iinterface7-name__1ax31oo) | private | Explicit implementation of [Name](SampleToDocument.interfaces__jede6.md#p-sampletodocument.interfaces.iinterface7.name__10x49ce) | 
+ | [SampleToDocument.interfaces.IInterface7.SetName(string)](SampleToDocument.interfaces__jede6.md#m-sampletodocument.interfaces.withi6and7.sampletodocument-interfaces-iinterface7-setname_system.string___1l4bcte) | private | Explicit implementation of [SetName(string)](SampleToDocument.interfaces__jede6.md#m-sampletodocument.interfaces.iinterface7.setname_system.string___28gg5a) | 
+
+ 
+
+
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
 
 
@@ -136,7 +152,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.interfaces.withi6and7.sampletodocument-interfaces-iinterface6-name__9npr8j" />  WithI6And7.SampleToDocument.interfaces.IInterface6.Name Property ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
 Assembly: SampleToDocument           
-Type: [WithI6And7](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.withi6and7__t2wi77)</small>
+Type: [WithI6And7](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.withi6and7__t2wi77)           
+Sources: interfaces\Samples.cs</small>
 
 
 Explicit implementation of [Name](SampleToDocument.interfaces__jede6.md#p-sampletodocument.interfaces.iinterface6.name__10x4aa5)
@@ -147,7 +164,7 @@ Explicit implementation of [Name](SampleToDocument.interfaces__jede6.md#p-sample
 private string SampleToDocument.interfaces.IInterface6.Name { get; }
 ```
 
-<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>Implements: [IInterface6.Name](SampleToDocument.interfaces__jede6.md#p-sampletodocument.interfaces.iinterface6.name__10x4aa5)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -159,7 +176,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.interfaces.withi6and7.sampletodocument-interfaces-iinterface7-name__1ax31oo" />  WithI6And7.SampleToDocument.interfaces.IInterface7.Name Property ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
 Assembly: SampleToDocument           
-Type: [WithI6And7](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.withi6and7__t2wi77)</small>
+Type: [WithI6And7](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.withi6and7__t2wi77)           
+Sources: interfaces\Samples.cs</small>
 
 
 Explicit implementation of [Name](SampleToDocument.interfaces__jede6.md#p-sampletodocument.interfaces.iinterface7.name__10x49ce)
@@ -170,7 +188,7 @@ Explicit implementation of [Name](SampleToDocument.interfaces__jede6.md#p-sample
 private string SampleToDocument.interfaces.IInterface7.Name { get; }
 ```
 
-<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>
+<strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd></dd></dl>Implements: [IInterface7.Name](SampleToDocument.interfaces__jede6.md#p-sampletodocument.interfaces.iinterface7.name__10x49ce)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -179,10 +197,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.interfaces.withi6and7.clearname_system.string___8os06p" />  WithI6And7.ClearName(string) Title ##
+##  <a id="m-sampletodocument.interfaces.withi6and7.clearname_system.string___8os06p" />  WithI6And7.ClearName(string) Method ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
 Assembly: SampleToDocument           
-Type: [WithI6And7](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.withi6and7__t2wi77)</small>
+Type: [WithI6And7](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.withi6and7__t2wi77)           
+Sources: interfaces\Samples.cs</small>
 
 
 Implicit implementation of [ClearName(string)](SampleToDocument.interfaces__jede6.md#m-sampletodocument.interfaces.iinterface7.clearname_system.string___12s0437)
@@ -194,7 +213,7 @@ public void ClearName(string name)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>name</strong></dt><dd></dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" target="_blank" >void</a></dt><dd></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" target="_blank" >void</a></dt><dd></dd></dl>Implements: [IInterface7.ClearName(string)](SampleToDocument.interfaces__jede6.md#m-sampletodocument.interfaces.iinterface7.clearname_system.string___12s0437)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -203,10 +222,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.interfaces.withi6and7.sampletodocument-interfaces-iinterface6-setname_system.string___1oc7c13" />  WithI6And7.SampleToDocument.interfaces.IInterface6.SetName(string) Title ##
+##  <a id="m-sampletodocument.interfaces.withi6and7.sampletodocument-interfaces-iinterface6-setname_system.string___1oc7c13" />  WithI6And7.SampleToDocument.interfaces.IInterface6.SetName(string) Method ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
 Assembly: SampleToDocument           
-Type: [WithI6And7](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.withi6and7__t2wi77)</small>
+Type: [WithI6And7](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.withi6and7__t2wi77)           
+Sources: interfaces\Samples.cs</small>
 
 
 Explicit implementation of [SetName(string)](SampleToDocument.interfaces__jede6.md#m-sampletodocument.interfaces.iinterface6.setname_system.string___1nc7icd)
@@ -218,7 +238,7 @@ private void SampleToDocument.interfaces.IInterface6.SetName(string name)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>name</strong></dt><dd></dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" target="_blank" >void</a></dt><dd></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" target="_blank" >void</a></dt><dd></dd></dl>Implements: [IInterface6.SetName(string)](SampleToDocument.interfaces__jede6.md#m-sampletodocument.interfaces.iinterface6.setname_system.string___1nc7icd)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -227,10 +247,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.interfaces.withi6and7.sampletodocument-interfaces-iinterface7-setname_system.string___1l4bcte" />  WithI6And7.SampleToDocument.interfaces.IInterface7.SetName(string) Title ##
+##  <a id="m-sampletodocument.interfaces.withi6and7.sampletodocument-interfaces-iinterface7-setname_system.string___1l4bcte" />  WithI6And7.SampleToDocument.interfaces.IInterface7.SetName(string) Method ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
 Assembly: SampleToDocument           
-Type: [WithI6And7](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.withi6and7__t2wi77)</small>
+Type: [WithI6And7](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.withi6and7__t2wi77)           
+Sources: interfaces\Samples.cs</small>
 
 
 Explicit implementation of [SetName(string)](SampleToDocument.interfaces__jede6.md#m-sampletodocument.interfaces.iinterface7.setname_system.string___28gg5a)
@@ -242,7 +263,7 @@ private void SampleToDocument.interfaces.IInterface7.SetName(string name)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>name</strong></dt><dd></dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" target="_blank" >void</a></dt><dd></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" target="_blank" >void</a></dt><dd></dd></dl>Implements: [IInterface7.SetName(string)](SampleToDocument.interfaces__jede6.md#m-sampletodocument.interfaces.iinterface7.setname_system.string___28gg5a)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -253,7 +274,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.interfaces.iinterface1__yh7orf" />  IInterface1 Interface ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: interfaces\Samples.cs</small>
 
 
 Empty interface to be &quot;inherited&quot; elsewhere
@@ -264,6 +286,10 @@ Empty interface to be &quot;inherited&quot; elsewhere
 internal interface IInterface1
 ```
 
+Implemented by: [SampleToDocument.interfaces.IInterface3](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface3__yh7ord), [SampleToDocument.interfaces.IInterface6](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface6__yh7ora), [SampleToDocument.interfaces.WithI6And7](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.withi6and7__t2wi77), [SampleToDocument.structs.Struct2](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct2__5jfuh), [SampleToDocument.structs.Struct3](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct3__q1y1y6), [SampleToDocument.structs.Struct5.Struct5Inner1](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct5.struct5inner1__10qyyxd), [SampleToDocument.structs.Struct5.Struct5InnerClass](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct5.struct5innerclass__1qw38xi)           
+
+
+
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
 
 
@@ -272,7 +298,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.interfaces.iinterface2__yh7ore" />  IInterface2 Interface ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: interfaces\Samples.cs</small>
 
 
 Another empty interface to be &quot;inherited&quot; elsewhere
@@ -283,6 +310,10 @@ Another empty interface to be &quot;inherited&quot; elsewhere
 internal interface IInterface2
 ```
 
+Implemented by: [SampleToDocument.interfaces.IInterface6](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface6__yh7ora), [SampleToDocument.interfaces.WithI6And7](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.withi6and7__t2wi77), [SampleToDocument.structs.Struct3](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct3__q1y1y6)           
+
+
+
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
 
 
@@ -291,7 +322,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.interfaces.iinterface3__yh7ord" />  IInterface3 Interface ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: interfaces\Samples.cs</small>
 
 
 Interface &quot;inheriting&quot; [IInterface1](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface1__yh7orf)
@@ -302,6 +334,7 @@ Interface &quot;inheriting&quot; [IInterface1](SampleToDocument.interfaces__jede
 internal interface IInterface3 : IInterface1
 ```
 
+Implemented by: [SampleToDocument.structs.Struct3](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct3__q1y1y6), [SampleToDocument.structs.Struct5.Struct5Inner1](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct5.struct5inner1__10qyyxd), [SampleToDocument.structs.Struct5.Struct5InnerClass](SampleToDocument.structs__10bh11k.md#t-sampletodocument.structs.struct5.struct5innerclass__1qw38xi)           
 Implements: [SampleToDocument.interfaces.IInterface1](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface1__yh7orf)
 
 
@@ -313,7 +346,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.interfaces.iinterface4-3__1m9u4l" />  IInterface4&lt;X,Y,Z&gt; Interface ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: interfaces\Samples.cs</small>
 
 
 Generic interface with variant type parameters
@@ -325,6 +359,10 @@ public interface IInterface4<out X, in Y, Z>
 ```
 
 <strong>Type parameters</strong><dl><dt><strong>X</strong></dt><dd>This is the &quot;out&quot; type parameter</dd><dt><strong>Y</strong></dt><dd>This is the &quot;in&quot; type parameter</dd><dt><strong>Z</strong></dt><dd>This is the type parameter without variance</dd></dl>
+Implemented by: [SampleToDocument.interfaces.IInterface5&lt;X,Y,Z&gt;](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface5-3__1m9u5i)           
+
+
+
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
 
 
@@ -333,7 +371,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.interfaces.iinterface5-3__1m9u5i" />  IInterface5&lt;X,Y,Z&gt; Interface ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: interfaces\Samples.cs</small>
 
 
 Generic interface  with variant type parameters &quot;inheriting&quot; from [IInterface4&lt;X,Y,Z&gt;](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface4-3__1m9u4l) . The interface also has the attributes
@@ -364,7 +403,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.interfaces.iinterface6__yh7ora" />  IInterface6 Interface ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: interfaces\Samples.cs</small>
 
 
 Interface &quot;inheriting&quot; from [IInterface1](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface1__yh7orf) and [IInterface2](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface2__yh7ore) . It declares property [Name](SampleToDocument.interfaces__jede6.md#p-sampletodocument.interfaces.iinterface6.name__10x4aa5) and method [SetName(string)](SampleToDocument.interfaces__jede6.md#m-sampletodocument.interfaces.iinterface6.setname_system.string___1nc7icd)
@@ -375,6 +415,7 @@ Interface &quot;inheriting&quot; from [IInterface1](SampleToDocument.interfaces_
 internal interface IInterface6 : IInterface1, IInterface2
 ```
 
+Implemented by: [SampleToDocument.interfaces.WithI6And7](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.withi6and7__t2wi77)           
 Implements: [SampleToDocument.interfaces.IInterface1](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface1__yh7orf), [SampleToDocument.interfaces.IInterface2](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface2__yh7ore)
 
 
@@ -405,7 +446,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.interfaces.iinterface6.name__10x4aa5" />  IInterface6.Name Property ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
 Assembly: SampleToDocument           
-Type: [IInterface6](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface6__yh7ora)</small>
+Type: [IInterface6](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface6__yh7ora)           
+Sources: interfaces\Samples.cs</small>
 
 
 
@@ -422,10 +464,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.interfaces.iinterface6.setname_system.string___1nc7icd" />  IInterface6.SetName(string) Title ##
+##  <a id="m-sampletodocument.interfaces.iinterface6.setname_system.string___1nc7icd" />  IInterface6.SetName(string) Method ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
 Assembly: SampleToDocument           
-Type: [IInterface6](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface6__yh7ora)</small>
+Type: [IInterface6](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface6__yh7ora)           
+Sources: interfaces\Samples.cs</small>
 
 
 
@@ -445,7 +488,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.interfaces.iinterface7__yh7or9" />  IInterface7 Interface ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: interfaces\Samples.cs</small>
 
 
 Interface declares property [Name](SampleToDocument.interfaces__jede6.md#p-sampletodocument.interfaces.iinterface7.name__10x49ce) and methods [SetName(string)](SampleToDocument.interfaces__jede6.md#m-sampletodocument.interfaces.iinterface7.setname_system.string___28gg5a) and [ClearName(string)](SampleToDocument.interfaces__jede6.md#m-sampletodocument.interfaces.iinterface7.clearname_system.string___12s0437)
@@ -455,6 +499,10 @@ Interface declares property [Name](SampleToDocument.interfaces__jede6.md#p-sampl
 ```csharp
 internal interface IInterface7
 ```
+
+Implemented by: [SampleToDocument.interfaces.WithI6And7](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.withi6and7__t2wi77)           
+
+
 
 ###  Properties ###
 
@@ -484,7 +532,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.interfaces.iinterface7.name__10x49ce" />  IInterface7.Name Property ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
 Assembly: SampleToDocument           
-Type: [IInterface7](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface7__yh7or9)</small>
+Type: [IInterface7](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface7__yh7or9)           
+Sources: interfaces\Samples.cs</small>
 
 
 
@@ -501,10 +550,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.interfaces.iinterface7.clearname_system.string___12s0437" />  IInterface7.ClearName(string) Title ##
+##  <a id="m-sampletodocument.interfaces.iinterface7.clearname_system.string___12s0437" />  IInterface7.ClearName(string) Method ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
 Assembly: SampleToDocument           
-Type: [IInterface7](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface7__yh7or9)</small>
+Type: [IInterface7](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface7__yh7or9)           
+Sources: interfaces\Samples.cs</small>
 
 
 
@@ -522,10 +572,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.interfaces.iinterface7.setname_system.string___28gg5a" />  IInterface7.SetName(string) Title ##
+##  <a id="m-sampletodocument.interfaces.iinterface7.setname_system.string___28gg5a" />  IInterface7.SetName(string) Method ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
 Assembly: SampleToDocument           
-Type: [IInterface7](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface7__yh7or9)</small>
+Type: [IInterface7](SampleToDocument.interfaces__jede6.md#t-sampletodocument.interfaces.iinterface7__yh7or9)           
+Sources: interfaces\Samples.cs</small>
 
 
 
@@ -545,7 +596,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.interfaces.interfacecontainer.inestedinterface1__60nqlw" />  InterfaceContainer.INestedInterface1 Interface ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: interfaces\Samples.cs</small>
 
 
 Private nested interface
@@ -564,7 +616,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.interfaces.interfacecontainer.inestedinterface2__1ydo091" />  InterfaceContainer.INestedInterface2 Interface ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: interfaces\Samples.cs</small>
 
 
 Protected nested interface
@@ -583,7 +636,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.interfaces.interfacecontainer.inestedinterface3__p8ykdm" />  InterfaceContainer.INestedInterface3 Interface ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: interfaces\Samples.cs</small>
 
 
 Public nested interface
@@ -602,7 +656,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.interfaces.interfacecontainer.inestedinterface4__ikus1n" />  InterfaceContainer.INestedInterface4 Interface ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: interfaces\Samples.cs</small>
 
 
 Internal nested interface
@@ -621,7 +676,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.interfaces.interfacecontainer2.inestedinterface1__1xr0rtm" />  InterfaceContainer2.INestedInterface1 Interface ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: interfaces\Samples.cs</small>
 
 
 Private nested interface
@@ -640,7 +696,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.interfaces.interfacecontainer2.inestedinterface2__1xr0rtn" />  InterfaceContainer2.INestedInterface2 Interface ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: interfaces\Samples.cs</small>
 
 
 Protected nested interface with new
@@ -659,7 +716,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.interfaces.interfacecontainer2.inestedinterface3__1xr0rto" />  InterfaceContainer2.INestedInterface3 Interface ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: interfaces\Samples.cs</small>
 
 
 Public nested interface with new
@@ -678,7 +736,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.interfaces.interfacecontainer2.inestedinterface4__1xr0rth" />  InterfaceContainer2.INestedInterface4 Interface ##
 <small>Namespace: [SampleToDocument.interfaces](SampleToDocument.interfaces__jede6.md#n-sampletodocument.interfaces__jede6)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: interfaces\Samples.cs</small>
 
 
 Internal nested interface with new

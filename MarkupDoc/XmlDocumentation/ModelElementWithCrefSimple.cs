@@ -52,8 +52,11 @@ namespace net.adamec.dev.markupdoc.XmlDocumentation
         /// <seealso cref="MsApiDocOptions"/>
         protected override string RenderElement(IMarkupProvider markupProvider, Member member, bool trim = true) //used  for links
         {
+            
             // ReSharper disable once RedundantArgumentDefaultValue
             var content = base.RenderElement(markupProvider, member, true); //always trim content for links
+            if (string.IsNullOrEmpty(Ref)) return content;
+
             //Return Ref to existing member as link, if available. If no content provided, use the member's name
             if (member.Root.AllMembersByDocId.TryGetValue(Ref, out var refMember))
             {

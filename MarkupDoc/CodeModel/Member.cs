@@ -27,6 +27,10 @@ namespace net.adamec.dev.markupdoc.CodeModel
         /// </remarks>
         public string Id { get; }
         /// <summary>
+        /// Source file defining the member
+        /// </summary>
+        public IReadOnlyList<string> SourceFiles { get; }
+        /// <summary>
         /// Name of the member as presented in generated output
         /// </summary>
         public string Name { get; }
@@ -133,6 +137,7 @@ namespace net.adamec.dev.markupdoc.CodeModel
         protected Member(MemberBuilder builder)
         {
             if (builder == null) throw new ArgumentNullException(nameof(builder));
+            SourceFiles = builder.SourceFiles;
             Name = builder.Name;
             NameBase = builder.NameBase;
             MemberKind = builder.MemberKind;

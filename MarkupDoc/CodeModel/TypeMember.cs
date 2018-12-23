@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Microsoft.CodeAnalysis;
 using net.adamec.dev.markupdoc.CodeModel.Builder;
 using net.adamec.dev.markupdoc.Utils.Extensions;
 
@@ -102,6 +103,15 @@ namespace net.adamec.dev.markupdoc.CodeModel
         public IReadOnlyList<EventMember> Events => AllMembers.OfType<EventMember>().ToList();
 
         /// <summary>
+        /// Dictionary of  interface member implementation by interface member (key=interface member symbol, value=implementation member symbol)
+        /// </summary>
+        public IReadOnlyDictionary<ISymbol, ISymbol> InterfaceImplementationsByInterfaceMember { get; } 
+
+        /// <summary>
+        /// Dictionary of implemented interface members by implementation member (key=implementation member symbol, value=interface member symbol)
+        /// </summary>
+        public IReadOnlyDictionary<ISymbol, IReadOnlyList<ISymbol>> InterfaceMembersByInterfaceImplementation { get; } 
+        /// <summary>
         /// File name (without extension !!!) where the type should be generated to (aka split name) in case that the output splitting is allowed, otherwise the empty string.
         /// This is used when building the links to the member (FileName.extension#Anchor)
         /// </summary>
@@ -123,6 +133,8 @@ namespace net.adamec.dev.markupdoc.CodeModel
             DelegateReturnType = builder.DelegateReturnType;
             InterfacesTypeRefs = builder.InterfacesTypeRefs;
             AllInterfacesTypeRefs = builder.AllInterfacesTypeRefs;
+            InterfaceImplementationsByInterfaceMember = builder.InterfaceImplementationsByInterfaceMember;
+            InterfaceMembersByInterfaceImplementation = builder.InterfaceMembersByInterfaceImplementation;
 
             var members = new List<Member>();
             foreach (var typeContentBuilder in builder.ContentMembers)

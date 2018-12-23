@@ -33,7 +33,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.generic.testgenclass1-1__idm867" />  TestGenClass1&lt;T&gt; Class ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\generic\Samples.cs</small>
 
 
 Simple generic class
@@ -46,6 +47,7 @@ public class TestGenClass1<T> where T: class, new()
 
 <strong>Type parameters</strong><dl><dt><strong>T</strong></dt><dd>Type parameter with constraint class, new()</dd></dl>
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Derived: [SampleToDocument.classes.generic.TestGenClass3&lt;T,U&gt;.TestGenClass3Inner](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass3-2.testgenclass3inner__1fxuu35)           
 
 
 
@@ -77,7 +79,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.classes.generic.testgenclass1-1.prop1__1fhlxud" />  TestGenClass1&lt;T&gt;.Prop1 Property ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
 Assembly: SampleToDocument           
-Type: [TestGenClass1&lt;T&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass1-1__idm867)</small>
+Type: [TestGenClass1&lt;T&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass1-1__idm867)           
+Sources: classes\generic\Samples.cs</small>
 
 
 Generic property
@@ -97,10 +100,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.classes.generic.testgenclass1-1.genmethod--1_--0-system.string___1eh4lrx" />  TestGenClass1&lt;T&gt;.GenMethod&lt;T&gt;(TestGenClass1&lt;T&gt;.T, string) Title ##
+##  <a id="m-sampletodocument.classes.generic.testgenclass1-1.genmethod--1_--0-system.string___1eh4lrx" />  TestGenClass1&lt;T&gt;.GenMethod&lt;T&gt;(TestGenClass1&lt;T&gt;.T, string) Method ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
 Assembly: SampleToDocument           
-Type: [TestGenClass1&lt;T&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass1-1__idm867)</small>
+Type: [TestGenClass1&lt;T&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass1-1__idm867)           
+Sources: classes\generic\Samples.cs</small>
 
 
 Virtual generic method
@@ -122,10 +126,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.classes.generic.testgenclass1-1.genmethod2_-0-system.string___46xuxk" />  TestGenClass1&lt;T&gt;.GenMethod2(TestGenClass1&lt;T&gt;.T, string) Title ##
+##  <a id="m-sampletodocument.classes.generic.testgenclass1-1.genmethod2_-0-system.string___46xuxk" />  TestGenClass1&lt;T&gt;.GenMethod2(TestGenClass1&lt;T&gt;.T, string) Method ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
 Assembly: SampleToDocument           
-Type: [TestGenClass1&lt;T&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass1-1__idm867)</small>
+Type: [TestGenClass1&lt;T&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass1-1__idm867)           
+Sources: classes\generic\Samples.cs</small>
 
 
 Virtual method returning generic type
@@ -148,7 +153,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.generic.testgenclass10-2__1yiv7o2" />  TestGenClass10&lt;K,V&gt; Class ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\generic\Samples.cs</small>
 
 
 Internal generic class with complex constraints
@@ -174,7 +180,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.generic.testgenclass2__14ihr7d" />  TestGenClass2 Class ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\generic\Samples.cs</small>
 
 
 Non generic class with the same name as generic one
@@ -197,7 +204,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.generic.testgenclass2-2__15xz8lb" />  TestGenClass2&lt;T,U&gt; Class ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\generic\Samples.cs</small>
 
 
 Empty generic class
@@ -210,6 +218,7 @@ public class TestGenClass2<T, [Test] [Test("a")] [Test] U>
 
 <strong>Type parameters</strong><dl><dt><strong>T</strong></dt><dd>Type parameter</dd><dt><strong>U</strong></dt><dd>Type parameter with custom attributes. Multiple same attributes - 2x w/o param, once with param</dd></dl>
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Derived: [SampleToDocument.classes.generic.TestGenClass2A&lt;T,U&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass2a-2__1cyipd2), [SampleToDocument.classes.generic.TestGenClass2B&lt;X,Y&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass2b-2__1cyipah)           
 
 
 
@@ -221,7 +230,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.generic.testgenclass2a-2__1cyipd2" />  TestGenClass2A&lt;T,U&gt; Class ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\generic\Samples.cs</small>
 
 
 Empty generic class inheriting from [TestGenClass2&lt;T,U&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass2-2__15xz8lb)
@@ -245,7 +255,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.generic.testgenclass2b-2__1cyipah" />  TestGenClass2B&lt;X,Y&gt; Class ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\generic\Samples.cs</small>
 
 
 Empty generic class inheriting from [TestGenClass2&lt;T,U&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass2-2__15xz8lb) using different type parameter names
@@ -269,7 +280,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.generic.testgenclass3-2__1w6eves" />  TestGenClass3&lt;T,U&gt; Class ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\generic\Samples.cs</small>
 
 
 Generic class with multiple constraints
@@ -284,6 +296,7 @@ public class TestGenClass3<T, U>
 
 <strong>Type parameters</strong><dl><dt><strong>T</strong></dt><dd>Type parameter with struct constraint</dd><dt><strong>U</strong></dt><dd>Type parameter with Attribute and  new() constraints</dd></dl>
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Derived: [SampleToDocument.classes.generic.TestGenClass5&lt;T,U&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass5-2__fpjlru), [SampleToDocument.classes.generic.TestGenClass4&lt;X&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass4-1__yltets)           
 
 
 
@@ -316,7 +329,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.classes.generic.testgenclass3-2.prop1__f317a2" />  TestGenClass3&lt;T,U&gt;.Prop1 Property ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
 Assembly: SampleToDocument           
-Type: [TestGenClass3&lt;T,U&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass3-2__1w6eves)</small>
+Type: [TestGenClass3&lt;T,U&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass3-2__1w6eves)           
+Sources: classes\generic\Samples.cs</small>
 
 
 
@@ -336,7 +350,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 ##  <a id="p-sampletodocument.classes.generic.testgenclass3-2.prop2__8exey3" />  TestGenClass3&lt;T,U&gt;.Prop2 Property ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
 Assembly: SampleToDocument           
-Type: [TestGenClass3&lt;T,U&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass3-2__1w6eves)</small>
+Type: [TestGenClass3&lt;T,U&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass3-2__1w6eves)           
+Sources: classes\generic\Samples.cs</small>
 
 
 
@@ -353,10 +368,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.classes.generic.testgenclass3-2.genmethod_-0-system.string___mcatch" />  TestGenClass3&lt;T,U&gt;.GenMethod(TestGenClass3&lt;T,U&gt;.T, string) Title ##
+##  <a id="m-sampletodocument.classes.generic.testgenclass3-2.genmethod_-0-system.string___mcatch" />  TestGenClass3&lt;T,U&gt;.GenMethod(TestGenClass3&lt;T,U&gt;.T, string) Method ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
 Assembly: SampleToDocument           
-Type: [TestGenClass3&lt;T,U&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass3-2__1w6eves)</small>
+Type: [TestGenClass3&lt;T,U&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass3-2__1w6eves)           
+Sources: classes\generic\Samples.cs</small>
 
 
 Simple method
@@ -377,10 +393,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.classes.generic.testgenclass3-2.genmethod--1_--0-system.string___k4m4v6" />  TestGenClass3&lt;T,U&gt;.GenMethod&lt;T&gt;(TestGenClass3&lt;T,U&gt;.T, string) Title ##
+##  <a id="m-sampletodocument.classes.generic.testgenclass3-2.genmethod--1_--0-system.string___k4m4v6" />  TestGenClass3&lt;T,U&gt;.GenMethod&lt;T&gt;(TestGenClass3&lt;T,U&gt;.T, string) Method ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
 Assembly: SampleToDocument           
-Type: [TestGenClass3&lt;T,U&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass3-2__1w6eves)</small>
+Type: [TestGenClass3&lt;T,U&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass3-2__1w6eves)           
+Sources: classes\generic\Samples.cs</small>
 
 
 Generic method with constraints
@@ -404,7 +421,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.generic.testgenclass3-2.testgenclass3inner__1fxuu35" />  TestGenClass3&lt;T,U&gt;.TestGenClass3Inner Class ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\generic\Samples.cs</small>
 
 
 Nested class inheriting from [TestGenClass1&lt;T&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass1-1__idm867)
@@ -436,10 +454,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.classes.generic.testgenclass3-2.testgenclass3inner.genmethod--1_--0-system.boolean___8ah7um" />  TestGenClass3&lt;T,U&gt;.TestGenClass3Inner.GenMethod&lt;T&gt;(TestGenClass3&lt;T,U&gt;.TestGenClass3Inner.T, bool) Title ##
+##  <a id="m-sampletodocument.classes.generic.testgenclass3-2.testgenclass3inner.genmethod--1_--0-system.boolean___8ah7um" />  TestGenClass3&lt;T,U&gt;.TestGenClass3Inner.GenMethod&lt;T&gt;(TestGenClass3&lt;T,U&gt;.TestGenClass3Inner.T, bool) Method ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
 Assembly: SampleToDocument           
-Type: [TestGenClass3&lt;T,U&gt;.TestGenClass3Inner](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass3-2.testgenclass3inner__1fxuu35)</small>
+Type: [TestGenClass3&lt;T,U&gt;.TestGenClass3Inner](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass3-2.testgenclass3inner__1fxuu35)           
+Sources: classes\generic\Samples.cs</small>
 
 
 Generic methods with constraint
@@ -461,10 +480,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.classes.generic.testgenclass3-2.testgenclass3inner.genmethod--1_--0-system.string___adtacz" />  TestGenClass3&lt;T,U&gt;.TestGenClass3Inner.GenMethod&lt;U&gt;(TestGenClass3&lt;T,U&gt;.TestGenClass3Inner.U, string) Title ##
+##  <a id="m-sampletodocument.classes.generic.testgenclass3-2.testgenclass3inner.genmethod--1_--0-system.string___adtacz" />  TestGenClass3&lt;T,U&gt;.TestGenClass3Inner.GenMethod&lt;U&gt;(TestGenClass3&lt;T,U&gt;.TestGenClass3Inner.U, string) Method ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
 Assembly: SampleToDocument           
-Type: [TestGenClass3&lt;T,U&gt;.TestGenClass3Inner](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass3-2.testgenclass3inner__1fxuu35)</small>
+Type: [TestGenClass3&lt;T,U&gt;.TestGenClass3Inner](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass3-2.testgenclass3inner__1fxuu35)           
+Sources: classes\generic\Samples.cs</small>
 
 
 Override generic method with different type parameter names
@@ -477,7 +497,7 @@ public override TestGenClass3<T,U>.TestGenClass3Inner.U GenMethod<U>(TestGenClas
 
 <strong>Type parameters</strong><dl><dt><strong>U</strong></dt><dd></dd></dl>
 <strong>Method parameters</strong><dl><dt>SampleToDocument.classes.generic.TestGenClass3&lt;T,U&gt;.TestGenClass3Inner.U <strong>v</strong></dt><dd></dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>a</strong></dt><dd></dd></dl>
-<strong>Return value</strong><dl><dt>SampleToDocument.classes.generic.TestGenClass3&lt;T,U&gt;.TestGenClass3Inner.U</dt><dd></dd></dl>
+<strong>Return value</strong><dl><dt>SampleToDocument.classes.generic.TestGenClass3&lt;T,U&gt;.TestGenClass3Inner.U</dt><dd></dd></dl>Overrides: [TestGenClass1&lt;T&gt;.GenMethod&lt;T&gt;(TestGenClass1&lt;T&gt;.T, string)](SampleToDocument.classes.generic__1rg3wn7.md#m-sampletodocument.classes.generic.testgenclass1-1.genmethod--1_--0-system.string___1eh4lrx)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -486,10 +506,11 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
  
 
 
-##  <a id="m-sampletodocument.classes.generic.testgenclass3-2.testgenclass3inner.genmethod2_system.object-system.string___1tqzgbe" />  TestGenClass3&lt;T,U&gt;.TestGenClass3Inner.GenMethod2(object, string) Title ##
+##  <a id="m-sampletodocument.classes.generic.testgenclass3-2.testgenclass3inner.genmethod2_system.object-system.string___1tqzgbe" />  TestGenClass3&lt;T,U&gt;.TestGenClass3Inner.GenMethod2(object, string) Method ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
 Assembly: SampleToDocument           
-Type: [TestGenClass3&lt;T,U&gt;.TestGenClass3Inner](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass3-2.testgenclass3inner__1fxuu35)</small>
+Type: [TestGenClass3&lt;T,U&gt;.TestGenClass3Inner](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass3-2.testgenclass3inner__1fxuu35)           
+Sources: classes\generic\Samples.cs</small>
 
 
 Override the method where the type parameter is assigned by concrete type (the same as in class inheritance)
@@ -501,7 +522,7 @@ public override object GenMethod2(object v, string a)
 ```
 
 <strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a> <strong>v</strong></dt><dd></dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>a</strong></dt><dd></dd></dl>
-<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a></dt><dd></dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a></dt><dd></dd></dl>Overrides: [TestGenClass1&lt;T&gt;.GenMethod2(TestGenClass1&lt;T&gt;.T, string)](SampleToDocument.classes.generic__1rg3wn7.md#m-sampletodocument.classes.generic.testgenclass1-1.genmethod2_-0-system.string___46xuxk)
 
 
 Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocument.md#type-list)
@@ -512,7 +533,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.generic.testgenclass4-1__yltets" />  TestGenClass4&lt;X&gt; Class ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\generic\Samples.cs</small>
 
 
 Empty generic class inheriting from [TestGenClass3&lt;T,U&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass3-2__1w6eves) where one type is kept generic with different type name, the other type is assigned with the concrete type
@@ -536,7 +558,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.generic.testgenclass5-2__fpjlru" />  TestGenClass5&lt;T,U&gt; Class ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\generic\Samples.cs</small>
 
 
 Generic class with simple inheritance
@@ -562,7 +585,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.generic.testgenclass6-2__wlstuz" />  TestGenClass6&lt;U,V&gt; Class ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\generic\Samples.cs</small>
 
 
 Test generic class with two type parameters: <strong>U</strong> and <strong>V</strong>
@@ -575,6 +599,7 @@ public class TestGenClass6<U, V>
 
 <strong>Type parameters</strong><dl><dt><strong>U</strong></dt><dd>The first type parameter</dd><dt><strong>V</strong></dt><dd>The second type parameter</dd></dl>
 Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+Derived: [SampleToDocument.classes.generic.TestGenClass7&lt;T&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass7-1__dpj0t1), [SampleToDocument.classes.generic.TestGenClass8&lt;T&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass8-1__1qmcn0s), [SampleToDocument.classes.generic.TestGenClass9&lt;T&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass9-1__111z1mv)           
 
 
 
@@ -586,7 +611,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.generic.testgenclass7-1__dpj0t1" />  TestGenClass7&lt;T&gt; Class ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\generic\Samples.cs</small>
 
 
 Internal generic class inheriting from [TestGenClass6&lt;U,V&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass6-2__wlstuz) with bit complex type parameter assignment
@@ -610,7 +636,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.generic.testgenclass8-1__1qmcn0s" />  TestGenClass8&lt;T&gt; Class ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\generic\Samples.cs</small>
 
 
 Another internal generic class inheriting from [TestGenClass6&lt;U,V&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass6-2__wlstuz) with bit complex type parameter assignment
@@ -634,7 +661,8 @@ Go to [namespaces](SampleToDocument.md#namespace-list) or [types](SampleToDocume
 
 ##  <a id="t-sampletodocument.classes.generic.testgenclass9-1__111z1mv" />  TestGenClass9&lt;T&gt; Class ##
 <small>Namespace: [SampleToDocument.classes.generic](SampleToDocument.classes.generic__1rg3wn7.md#n-sampletodocument.classes.generic__1rg3wn7)           
-Assembly: SampleToDocument</small>
+Assembly: SampleToDocument           
+Sources: classes\generic\Samples.cs</small>
 
 
 Third internal generic class inheriting from [TestGenClass6&lt;U,V&gt;](SampleToDocument.classes.generic__1rg3wn7.md#t-sampletodocument.classes.generic.testgenclass6-2__wlstuz) with bit complex type parameter assignment

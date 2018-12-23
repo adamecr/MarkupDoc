@@ -8,6 +8,7 @@ using net.adamec.dev.markupdoc.Utils;
 
 namespace net.adamec.dev.markupdoc
 {
+    //TODO remove Todo file
     /// <summary>
     /// Main program entry class
     /// </summary>
@@ -148,6 +149,9 @@ namespace net.adamec.dev.markupdoc
             Console.WriteLine("   Flag whether to split the output per type. When splitting per file,");
             Console.WriteLine("   the namespace splits will be also generated.");
             Console.WriteLine("   When not provided, type splits will not be generated.");
+            Console.WriteLine("");
+            Console.WriteLine("  Output.EnableAddOns[=true] | Output.EnableAddOns=false");
+            Console.WriteLine("   Flag whether to enable the add-ons for output generator.");
             Console.WriteLine("");
             Console.WriteLine("  MicrosoftApi.LinkToApi[=true] | MicrosoftApi.LinkToApi=false");
             Console.WriteLine("   Set to true, to allow the links to MS API to be generated to the output.");

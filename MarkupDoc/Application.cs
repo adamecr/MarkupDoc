@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
+using net.adamec.dev.markupdoc.AddOns;
+using net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages;
 using net.adamec.dev.markupdoc.CodeModel;
 using net.adamec.dev.markupdoc.CodeModel.Builder;
 using net.adamec.dev.markupdoc.Markup;
@@ -44,8 +47,11 @@ namespace net.adamec.dev.markupdoc
             //Read MS API local documentation to get the links to MS API online documentation
             MsApiDocEngine.ReadLocalDoc();
 
+            //Prepare add-ons
+            var addOns = GetAddOns();
+
             //Build code model
-            var root = await ModelBuilder.BuildFromProjectSourcesAsync(projectFile);
+            var root = await ModelBuilder.BuildFromProjectSourcesAsync(projectFile,addOns);
 
             //Prepare for the output
             var targetBase = OutputOptions.Target; //full name w/o extension
@@ -78,6 +84,15 @@ namespace net.adamec.dev.markupdoc
 
                 await writer.WriteModelAsync(OutputOptions.Title);
             }
+        }
+
+        /// <summary>
+        /// Initialize add-ons
+        /// </summary>
+        /// <returns>List of add-ons to be used</returns>
+        protected virtual IEnumerable<IAddOn> GetAddOns()
+        {
+            return !OutputOptions.EnableAddOns ? null : new List<IAddOn> {new SourceOnlyPackagesAddOn(OutputOptions)};
         }
     }
 }

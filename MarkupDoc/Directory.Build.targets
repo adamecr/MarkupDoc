@@ -16,7 +16,7 @@
     </PropertyGroup>
     <Message Text="Generating the markup documentation..." />
     <Exec Command='"$(MarkupDocPath)" "$(MSBuildProjectFullPath)" -p:Output.Target="$(MarkupDocTarget)" -p:MicrosoftApi.LocalDocDir="$(MarkupDocLocalMsDocDir)"'
-          EchoOff="false" StandardErrorImportance="low" StandardOutputImportance="low"
+          EchoOff="false" StandardErrorImportance="high" StandardOutputImportance="low"
           ConsoleToMSBuild="false" ContinueOnError="true" WorkingDirectory="$(MSBuildProjectDirectory)">
       <Output TaskParameter="ExitCode" PropertyName="_MarkupDocLastExitCode" />
     </Exec>

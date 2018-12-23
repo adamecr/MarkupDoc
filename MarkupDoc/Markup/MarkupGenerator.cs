@@ -44,7 +44,7 @@ namespace net.adamec.dev.markupdoc.Markup
         /// <summary>
         /// Output configuration
         /// </summary>
-        protected OutputOptions Options { get; }
+        public OutputOptions Options { get; }
         /// <summary>
         /// Documentation title shown at the top of each page
         /// </summary>
@@ -80,7 +80,7 @@ namespace net.adamec.dev.markupdoc.Markup
         {
             Console.WriteLine($"Writing markup to {FileName}...");
             Title = title ?? "API Reference";
-            var writer = Options.SplitNs||Options.SplitType? new MarkupMultiFileWriter() : new MarkupFileWriter();
+            var writer = Options.SplitNs || Options.SplitType ? new MarkupMultiFileWriter() : new MarkupFileWriter();
             writer.SetTarget(FileName);
             Markup.MarkupWriter = writer;
             Writer = writer;
@@ -104,7 +104,20 @@ namespace net.adamec.dev.markupdoc.Markup
             await WriteNamespacesListAsync();
             await WriteTypesListAsync();
 
+            //Add-ons indexes
+            foreach (var addOn in Model.AddOnsSelector(a => a.PriorityIndexPage))
+            {
+                if(await addOn.WriteIndexAsync(Model, Markup))
+                    await WritePageFooterAsync();
+            }
+
             await WriteNamespacesAsync();
+
+            //Add-ons pages
+            foreach (var addOn in Model.AddOnsSelector(a => a.PriorityOwnPages))
+            {
+                await addOn.WriteOwnPagesAsync(Model, Markup, this);
+            }
         }
 
         /// <summary>
@@ -118,10 +131,12 @@ namespace net.adamec.dev.markupdoc.Markup
             foreach (var namespaceMember in Model.AllNamespaces.OrderBy(t => t.Name))
             {
                 await Markup.WriteTableColsAsync(Markup.Link(namespaceMember.Name, namespaceMember),
-                    namespaceMember.Documentation?.Summary?.Render(Markup, namespaceMember) ?? string.Empty);
+                    namespaceMember.Documentation?.GetSummary(namespaceMember)?.Render(Markup, namespaceMember) ?? string.Empty);
             }
             await Markup.WriteTableFooterAsync();
         }
+
+
 
         /// <summary>
         /// Writes the table of all types within the code model into the output
@@ -137,11 +152,11 @@ namespace net.adamec.dev.markupdoc.Markup
                     Markup.Link(typeMember.Name, typeMember),
                     $"{typeMember.Modifier.ToModifierString()}{(typeMember.IsStatic ? " static" : "")}{(typeMember.IsAbstract ? " abstract" : "")}",
                     typeMember.TypeKind.ToString(),
-                    typeMember.Documentation?.Summary?.Render(Markup, typeMember) ?? string.Empty);
+                    typeMember.Documentation?.GetSummary(typeMember)?.Render(Markup, typeMember) ?? string.Empty);
             }
             await Markup.WriteTableFooterAsync();
 
-            await WritePageFooter();
+            await WritePageFooterAsync();
         }
 
         /// <summary>
@@ -177,11 +192,11 @@ namespace net.adamec.dev.markupdoc.Markup
         {
             if (Options.SplitNs || Options.SplitType)
             {
-                await Split(ns.FileName);
+                await SplitAsync(ns.FileName);
             }
 
             await Markup.WriteH2Async($"{ns.Name} Namespace", ns.Anchor);
-            await Markup.WriteParaAsync(ns.Documentation?.Summary?.Render(Markup, ns));
+            await Markup.WriteParaAsync(ns.Documentation?.GetSummary(ns)?.Render(Markup, ns));
 
             await WriteDocumentationExampleAsync(ns);  //Example
             await WriteDocumentationRemarksAsync(ns);  //Remarks
@@ -194,10 +209,13 @@ namespace net.adamec.dev.markupdoc.Markup
             await WriteMembersTableAsync("Enums", ns.Types.Where(t => t.TypeKind == TypeKindEnum.Enum).OrderBy(t => t.Name).Cast<Member>().ToList());
             await WriteMembersTableAsync("Delegates", ns.Types.Where(t => t.TypeKind == TypeKindEnum.Delegate).OrderBy(t => t.Name).Cast<Member>().ToList());
 
+            //AddOns
+            await WriteAddOnsBodyAsync(ns);
+
             //SeeAlso
             await WriteDocumentationSeeAlsoAsync(ns);
 
-            await WritePageFooter();
+            await WritePageFooterAsync();
 
         }
 
@@ -237,7 +255,7 @@ namespace net.adamec.dev.markupdoc.Markup
                 }
 
                 //Destructor - "page"
-                if(type.Destructor!=null)
+                if (type.Destructor != null)
                 {
                     await WriteMethodAsync(type.Destructor);
                 }
@@ -271,18 +289,16 @@ namespace net.adamec.dev.markupdoc.Markup
         {
             if (Options.SplitType)
             {
-                await Split(type.FileName);
+                await SplitAsync(type.FileName);
             }
             await WriteTypeHeaderAsync(type);
-            await Markup.WriteParaAsync(type.Documentation?.Summary?.Render(Markup, type));
-            if (type.Name.Contains("IInterface5"))
-            {
-            }
+            await Markup.WriteParaAsync(type.Documentation?.GetSummary(type)?.Render(Markup, type));
+
             await Markup.WriteCodeAsync(new Txt()
                     .AddEach(a => $"[{a}]", type.Attributes, Environment.NewLine) //attributes
                     .AddIf(Environment.NewLine, type.Attributes != null)
                     .Add(type.Modifier.ToModifierString()) //modifiers
-                    .AddIf(" new", type.IsNew) 
+                    .AddIf(" new", type.IsNew)
                     .AddIf(" abstract", type.IsAbstract && type.TypeKind == TypeKindEnum.Class)
                     .AddIf(" sealed", type.IsSealed && type.TypeKind == TypeKindEnum.Class)
                     .AddIf(" static", type.IsStatic && type.TypeKind == TypeKindEnum.Class)
@@ -324,13 +340,13 @@ namespace net.adamec.dev.markupdoc.Markup
                     .Add(Markup.Bold("Type parameters"))
                     .Add(Markup.DescriptionList(
                         tp => $"{Markup.Bold(tp.Name)}",
-                        tp => $"{type.Documentation?.TypeParam(tp.Name)?.Render(Markup, type)}",
+                        tp => $"{type.Documentation?.GetTypeParam(type, tp.Name)?.Render(Markup, type)}",
                         type.TypeParameters)));
             }
 
             if (type.IsDelegate)
             {
-                var returnsDocumentation = type.Documentation?.Returns?.Render(Markup, type);
+                var returnsDocumentation = type.Documentation?.GetReturns(type)?.Render(Markup, type);
                 await Markup.WriteParaAsync(new Txt()
                     .Add(Markup.Bold("Return value"))
                     .Add(Markup.DescriptionList(
@@ -339,26 +355,36 @@ namespace net.adamec.dev.markupdoc.Markup
                             new (string Link, string Doc)[] { (TypeRefWithLink(type.DelegateReturnType), returnsDocumentation) }))
                 );
 
-                if (type.DelegateParameters!=null && type.DelegateParameters.Count>0)
+                if (type.DelegateParameters != null && type.DelegateParameters.Count > 0)
                 {
                     await Markup.WriteTextAsync(new Txt()
                         .Add(Markup.Bold("Delegate parameters"))
                         .Add(Markup.DescriptionList(
                             tp => $"{TypeRefWithLink(tp.TypeRef)} {Markup.Bold(tp.Name)}",
-                            tp => $"{type.Documentation?.Param(tp.Name)?.Render(Markup, type)}",
+                            tp => $"{type.Documentation?.GetParam(type, tp.Name)?.Render(Markup, type)}",
                             type.DelegateParameters))
                     );
                 }
             }
 
             var inheritanceText = TypRefHierarchyWithLinks(type.TypeRef, " -&gt; ")?.Trim();
+            var derivedText = DerivedInfo(type);
+            var implementedByText = ImplementedByInfo(type);
             await Markup.WriteParaAsync(Txt
                 .Start("")
                 .AddIf("Inheritance: " + inheritanceText, !string.IsNullOrEmpty(inheritanceText))
                 .AddIf(Markup.LineBreak(), !string.IsNullOrEmpty(inheritanceText))
+                
+                .AddIf(derivedText, derivedText!=null)
+                .AddIf(Markup.LineBreak(), derivedText != null)
+                
+                .AddIf(implementedByText, implementedByText != null)
+                .AddIf(Markup.LineBreak(), implementedByText != null)
+                
                 .AddIf("Attributes: ", type.AttributeTypeRefs != null)
                 .AddEach(tr => TypeRefWithLink(tr), type.AttributeTypeRefs?.Distinct(), ", ")
                 .AddIf(Markup.LineBreak(), type.AttributeTypeRefs != null)
+                
                 .AddIf("Implements: ", type.AllInterfacesTypeRefs != null)
                 .AddEach(i => TypeRefWithLink(i), type.AllInterfacesTypeRefs?.Distinct(), ", ")
                 );
@@ -377,14 +403,23 @@ namespace net.adamec.dev.markupdoc.Markup
             await WriteMembersTableAsync("Indexers", type.Properties?.Where(p => p.IsIndexer).OrderBy(p => p.Name).Cast<Member>().ToList());
             await WriteMembersTableAsync("Events", type.Events?.OrderBy(p => p.Name).Cast<Member>().ToList());
             await WriteMembersTableAsync("Constructors", type.Constructors?.OrderBy(m => m.Name).Cast<Member>().ToList());
-            if(type.Destructor!=null) await WriteMembersTableAsync("Destructor", new []{type.Destructor});
+            if (type.Destructor != null) await WriteMembersTableAsync("Destructor", new[] { type.Destructor });
             await WriteMembersTableAsync("Methods", type.Methods?.OrderBy(m => m.Name).Cast<Member>().ToList());
             await WriteMembersTableAsync("Operators and Conversions", type.OperatorsAndConversions?.OrderBy(m => m.IsConversion).ThenBy(m => m.Name).Cast<Member>().ToList());
+            await WriteMembersTableAsync(
+                "Explicit Interface Implementations",
+                type.AllMembers
+                    .Where(m=>m is TypeContentMember typeContentMember && typeContentMember.ExplicitInterfaceImplementationMemberSymbol!=null)
+                    .OrderBy(p => p.Name)
+                    .ToList());
+
+            //AddOns
+            await WriteAddOnsBodyAsync(type);
 
             //SeeAlso
             await WriteDocumentationSeeAlsoAsync(type);
 
-            await WritePageFooter();
+            await WritePageFooterAsync();
 
         }
 
@@ -396,7 +431,7 @@ namespace net.adamec.dev.markupdoc.Markup
         protected virtual async Task WriteFieldAsync(FieldMember field)
         {
             await WriteTypeContentMemberHeaderAsync(field, field.IsConst ? "Constant" : "Field");
-            await Markup.WriteParaAsync(field.Documentation?.Summary?.Render(Markup, field));
+            await Markup.WriteParaAsync(field.Documentation?.GetSummary(field)?.Render(Markup, field));
 
             await Markup.WriteCodeAsync(new Txt()
                 .AddEach(a => $"[{a}]", field.Attributes, Environment.NewLine) //attributes
@@ -412,13 +447,14 @@ namespace net.adamec.dev.markupdoc.Markup
                 .AddIf($" = {field.GetConstantValueString()}", field.IsConst), //constants
                 true); //encode here
 
-            var valueDocumentation = field.Documentation?.Value?.Render(Markup, field);
+            var valueDocumentation = field.Documentation?.GetValue(field)?.Render(Markup, field);
             await Markup.WriteParaAsync(Txt
                  .Start(Markup.Bold("Field value"))
                  .Add(Markup.DescriptionList(
                      tp => tp.Link,
                      tp => tp.Doc,
                      new (string Link, string Doc)[] { (TypeRefWithLink(field.TypeRef), valueDocumentation) }))
+                 
                  .AddIf("Attributes: ", field.AttributeTypeRefs != null)
                  .AddEach(tr => TypeRefWithLink(tr), field.AttributeTypeRefs?.Distinct(), ", "));
 
@@ -426,9 +462,10 @@ namespace net.adamec.dev.markupdoc.Markup
             await WriteDocumentationExampleAsync(field); //Example
             await WriteDocumentationRemarksAsync(field); //Remarks
             await WriteDocumentationExceptionsAsync(field); //Exceptions
+            await WriteAddOnsBodyAsync(field); //AddOns
             await WriteDocumentationSeeAlsoAsync(field); //SeeAlso
 
-            await WritePageFooter();
+            await WritePageFooterAsync();
         }
 
         /// <summary>
@@ -439,7 +476,7 @@ namespace net.adamec.dev.markupdoc.Markup
         protected virtual async Task WritePropertyAsync(PropertyMember property)
         {
             await WriteTypeContentMemberHeaderAsync(property, property.IsIndexer ? "Indexer" : "Property");
-            await Markup.WriteParaAsync(property.Documentation?.Summary?.Render(Markup, property));
+            await Markup.WriteParaAsync(property.Documentation?.GetSummary(property)?.Render(Markup, property));
 
             await Markup.WriteCodeAsync(new Txt()
                 .AddEach(a => $"[{a}]", property.Attributes, Environment.NewLine) //attributes
@@ -461,7 +498,7 @@ namespace net.adamec.dev.markupdoc.Markup
                 .AddIf(" ", property.IsWriteOnly)
                 .AddIf($"{property.SetterModifier} ", !property.IsReadOnly && !string.IsNullOrEmpty(property.SetterModifier))
                 .AddIf("set; ", !property.IsReadOnly)
-                .Add("}"),true); //encode here
+                .Add("}"), true); //encode here
 
             if (property.IsIndexer)
             {
@@ -469,28 +506,34 @@ namespace net.adamec.dev.markupdoc.Markup
                     .Add(Markup.Bold("Indexer parameters"))
                     .Add(Markup.DescriptionList(
                         tp => $"{TypeRefWithLink(tp.TypeRef)} {Markup.Italic(tp.Name)}",
-                        tp => $"{property.Documentation?.Param(tp.Name)?.Render(Markup, property)}",
+                        tp => $"{property.Documentation?.GetParam(property, tp.Name)?.Render(Markup, property)}",
                         property.Parameters)));
             }
 
-            var valueDocumentation = property.Documentation?.Value?.Render(Markup, property);
-            var returnsDocumentation = property.Documentation?.Returns?.Render(Markup, property);
+            var valueDocumentation = property.Documentation?.GetValue(property)?.Render(Markup, property);
+            var returnsDocumentation = property.Documentation?.GetReturns(property)?.Render(Markup, property);
             await Markup.WriteParaAsync(Txt
                 .Start(Markup.Bold($"{(property.IsIndexer ? "Indexer" : "Property")} value"))
                 .Add(Markup.DescriptionList(
                     tp => tp.Link,
                     tp => tp.Doc,
                     new (string Link, string Doc)[] { (TypeRefWithLink(property.TypeRef), valueDocumentation) }))
-                 .AddIf($"Returns: {returnsDocumentation}{Markup.LineBreak()}", !string.IsNullOrEmpty(returnsDocumentation))
+                
+                .AddIf($"Returns: {returnsDocumentation}{Markup.LineBreak()}", !string.IsNullOrEmpty(returnsDocumentation))
+                
+                .AddIf(() => OverrideInfo(property), property.OverridesSymbol != null)
+                .AddIf(() => ImplementsInfo(property), property.ImplementsSymbols != null)
+                
                 .AddIf("Attributes: ", property.AttributeTypeRefs != null)
                 .AddEach(tr => TypeRefWithLink(tr), property.AttributeTypeRefs?.Distinct(), ", "));
 
             await WriteDocumentationExampleAsync(property); //Example
             await WriteDocumentationRemarksAsync(property); //Remarks
             await WriteDocumentationExceptionsAsync(property); //Exceptions
+            await WriteAddOnsBodyAsync(property); //AddOns
             await WriteDocumentationSeeAlsoAsync(property); //SeeAlso
 
-            await WritePageFooter();
+            await WritePageFooterAsync();
         }
 
         /// <summary>
@@ -505,9 +548,9 @@ namespace net.adamec.dev.markupdoc.Markup
             if (method.IsDestructor) title = "Destructor";
             if (method.IsOperator) title = "Operator";
             if (method.IsConversion) title = "Conversion";
-            await WriteTypeContentMemberHeaderAsync(method, "Title");
+            await WriteTypeContentMemberHeaderAsync(method, title);
 
-            await Markup.WriteParaAsync(method.Documentation?.Summary?.Render(Markup, method));
+            await Markup.WriteParaAsync(method.Documentation?.GetSummary(method)?.Render(Markup, method));
 
             await Markup.WriteCodeAsync(new Txt()
                     .AddEach(a => $"[{a}]", method.Attributes, Environment.NewLine) //attributes
@@ -556,7 +599,7 @@ namespace net.adamec.dev.markupdoc.Markup
                     .Add(Markup.Bold("Type parameters"))
                     .Add(Markup.DescriptionList(
                         tp => $"{Markup.Bold(tp.Name)}",
-                        tp => $"{method.Documentation?.TypeParam(tp.Name)?.Render(Markup, method)}",
+                        tp => $"{method.Documentation?.GetTypeParam(method, tp.Name)?.Render(Markup, method)}",
                         method.TypeParameters))
                     );
             }
@@ -566,12 +609,12 @@ namespace net.adamec.dev.markupdoc.Markup
                     .Add(Markup.Bold($"{title} parameters"))
                     .Add(Markup.DescriptionList(
                         tp => $"{TypeRefWithLink(tp.TypeRef)} {Markup.Bold(tp.Name)}",
-                        tp => $"{method.Documentation?.Param(tp.Name)?.Render(Markup, method)}",
+                        tp => $"{method.Documentation?.GetParam(method, tp.Name)?.Render(Markup, method)}",
                         method.Parameters))
                     );
             }
 
-            var returnsDocumentation = method.Documentation?.Returns?.Render(Markup, method);
+            var returnsDocumentation = method.Documentation?.GetReturns(method)?.Render(Markup, method);
             await Markup.WriteParaAsync(new Txt()
                 .AddIf(Markup.Bold("Return value"), !method.IsConstructor && !method.IsDestructor) //exclude ctor and dtor
                 .AddIf(Markup.DescriptionList(
@@ -579,16 +622,21 @@ namespace net.adamec.dev.markupdoc.Markup
                     tp => tp.Doc,
                     new (string Link, string Doc)[] { (TypeRefWithLink(method.ReturnTypeRef), returnsDocumentation) }),
                     !method.IsConstructor && !method.IsDestructor)
-                 .AddIf("Attributes: ", method.AttributeTypeRefs != null)
+                
+                .AddIf(() => OverrideInfo(method), method.OverridesSymbol != null)
+                .AddIf(() => ImplementsInfo(method), method.ImplementsSymbols != null)
+                
+                .AddIf("Attributes: ", method.AttributeTypeRefs != null)
                 .AddEach(tr => TypeRefWithLink(tr), method.AttributeTypeRefs?.Distinct(), ", ")
                 );
 
             await WriteDocumentationExampleAsync(method); //Example
             await WriteDocumentationRemarksAsync(method); //Remarks
             await WriteDocumentationExceptionsAsync(method); //Exceptions
+            await WriteAddOnsBodyAsync(method); //AddOns
             await WriteDocumentationSeeAlsoAsync(method); //SeeAlso
 
-            await WritePageFooter();
+            await WritePageFooterAsync();
         }
 
         /// <summary>
@@ -599,7 +647,7 @@ namespace net.adamec.dev.markupdoc.Markup
         protected virtual async Task WriteEventAsync(EventMember evt)
         {
             await WriteTypeContentMemberHeaderAsync(evt, "Event");
-            await Markup.WriteParaAsync(evt.Documentation?.Summary?.Render(Markup, evt));
+            await Markup.WriteParaAsync(evt.Documentation?.GetSummary(evt)?.Render(Markup, evt));
 
             await Markup.WriteCodeAsync(new Txt()
                 .AddEach(a => $"[{a}]", evt.Attributes, Environment.NewLine) //attributes
@@ -614,15 +662,19 @@ namespace net.adamec.dev.markupdoc.Markup
                 .AddIf(" extern", evt.IsExtern)
                 .Add($" {evt.TypeRef.ApplySpecialName(false)}") //type
                 .Add($" {evt.NameBase}") //name
-                .AddIf(" { add; remove; }", evt.HasExplicitAddAndRemove),true); //encode here
+                .AddIf(" { add; remove; }", evt.HasExplicitAddAndRemove), true); //encode here
 
-            var valueDocumentation = evt.Documentation?.Value?.Render(Markup, evt);
+            var valueDocumentation = evt.Documentation?.GetValue(evt)?.Render(Markup, evt);
             await Markup.WriteParaAsync(Txt
                 .Start(Markup.Bold("Event handler"))
                 .Add(Markup.DescriptionList(
                     tp => tp.Link,
                     tp => tp.Doc,
                     new (string Link, string Doc)[] { (TypeRefWithLink(evt.TypeRef), valueDocumentation) }))
+                
+                .AddIf(() => OverrideInfo(evt), evt.OverridesSymbol != null)
+                .AddIf(() => ImplementsInfo(evt), evt.ImplementsSymbols != null)
+                
                 .AddIf("Attributes: ", evt.AttributeTypeRefs != null)
                 .AddEach(tr => TypeRefWithLink(tr), evt.AttributeTypeRefs?.Distinct(), ", "));
 
@@ -630,9 +682,10 @@ namespace net.adamec.dev.markupdoc.Markup
             await WriteDocumentationExampleAsync(evt); //Example
             await WriteDocumentationRemarksAsync(evt); //Remarks
             await WriteDocumentationExceptionsAsync(evt); //Exceptions
+            await WriteAddOnsBodyAsync(evt); //AddOns
             await WriteDocumentationSeeAlsoAsync(evt); //SeeAlso
 
-            await WritePageFooter();
+            await WritePageFooterAsync();
         }
 
         #region Macros
@@ -646,6 +699,8 @@ namespace net.adamec.dev.markupdoc.Markup
         /// <returns>Async task</returns>
         protected virtual async Task WriteTypeContentMemberHeaderAsync(TypeContentMember member, string title)
         {
+            var addOns = Model.AddOnsSelector(a => a.PriorityPageHeader);
+
             await Markup.WriteH2Async($"{member.Type.Name}.{member.Name} {title}", member.Anchor);
             await Markup.WriteParaAsync(
                 Markup.Small(
@@ -654,7 +709,11 @@ namespace net.adamec.dev.markupdoc.Markup
                         .Add(Markup.LineBreak())
                         .Add($"Assembly: {member.Assembly.Name}")
                         .Add(Markup.LineBreak())
-                        .Add($"Type: {Markup.Link(member.Type.Name, member.Type)}")));
+                        .Add($"Type: {Markup.Link(member.Type.Name, member.Type)}")
+                        .AddIf(Markup.LineBreak(), member.SourceFiles != null && member.SourceFiles.Count > 0)
+                        .AddIf(() => "Sources: " + string.Join(", ", member.SourceFiles.Select(s => s.Substring(member.Root.ProjectRootDir.Length + 1))),
+                            member.SourceFiles != null && member.SourceFiles.Count > 0)
+                        .AddEachIf(a => a.WritePageHeader(member, Markup), addOns, addOns.Count > 0)));
         }
 
         /// <summary>
@@ -665,13 +724,19 @@ namespace net.adamec.dev.markupdoc.Markup
         /// <returns>Async task</returns>
         protected virtual async Task WriteTypeHeaderAsync(TypeMember type)
         {
+            var addOns = Model.AddOnsSelector(a => a.PriorityPageHeader);
+
             await Markup.WriteH2Async($"{type.Name} {type.TypeKind}", type.Anchor);
             await Markup.WriteParaAsync(
                 Markup.Small(
                     Txt
                         .Start($"Namespace: {Markup.Link(type.Namespace.Name, type.Namespace)}")
                         .Add(Markup.LineBreak())
-                        .Add($"Assembly: {type.Assembly.Name}")));
+                        .Add($"Assembly: {type.Assembly.Name}")
+                        .AddIf(Markup.LineBreak(), type.SourceFiles != null && type.SourceFiles.Count > 0)
+                        .AddIf(() => "Sources: " + string.Join(", ", type.SourceFiles.Select(s => s.Substring(type.Root.ProjectRootDir.Length + 1))),
+                            type.SourceFiles != null && type.SourceFiles.Count > 0)
+                        .AddEachIf(a => a.WritePageHeader(type, Markup), addOns, addOns.Count > 0)));
         }
 
         /// <summary>
@@ -681,7 +746,7 @@ namespace net.adamec.dev.markupdoc.Markup
         /// <returns>Async task</returns>
         protected virtual async Task WriteDocumentationExampleAsync(Member member)
         {
-            var exampleDocumentation = member.Documentation?.Example?.Render(Markup, member);
+            var exampleDocumentation = member.Documentation?.GetExample(member)?.Render(Markup, member);
             if (!string.IsNullOrEmpty(exampleDocumentation))
             {
                 await Markup.WriteH3Async("Example");
@@ -696,7 +761,7 @@ namespace net.adamec.dev.markupdoc.Markup
         /// <returns>Async task</returns>
         protected virtual async Task WriteDocumentationRemarksAsync(Member member)
         {
-            var remarksDocumentation = member.Documentation?.Remarks?.Render(Markup, member);
+            var remarksDocumentation = member.Documentation?.GetRemarks(member)?.Render(Markup, member);
             if (!string.IsNullOrEmpty(remarksDocumentation))
             {
                 await Markup.WriteH3Async("Remarks");
@@ -711,7 +776,7 @@ namespace net.adamec.dev.markupdoc.Markup
         /// <returns>Async task</returns>
         protected virtual async Task WriteDocumentationExceptionsAsync(Member member)
         {
-            var exceptionsDocumentation = member.Documentation?.Exceptions;
+            var exceptionsDocumentation = member.Documentation?.GetExceptions(member);
             if (exceptionsDocumentation != null && exceptionsDocumentation.Count > 0)
             {
                 await Markup.WriteH3Async("Exceptions");
@@ -729,7 +794,7 @@ namespace net.adamec.dev.markupdoc.Markup
         /// <returns>Async task</returns>
         protected virtual async Task WriteDocumentationSeeAlsoAsync(Member member)
         {
-            var seeAlsoDocumentation = member.Documentation?.SeeAlso;
+            var seeAlsoDocumentation = member.Documentation?.GetSeeAlso(member);
             if (seeAlsoDocumentation != null && seeAlsoDocumentation.Count > 0)
             {
                 await Markup.WriteH3Async("See Also");
@@ -740,13 +805,50 @@ namespace net.adamec.dev.markupdoc.Markup
         }
 
         /// <summary>
+        /// Writes the add-on page bodies (if provided)
+        /// </summary>
+        /// <returns>Async task</returns>
+        protected virtual async Task WriteAddOnsBodyAsync(Member member)
+        {
+            var addOns = Model.AddOnsSelector(a => a.PriorityPageBody);
+            foreach (var addOn in addOns)
+            {
+                await addOn.WritePageBodyAsync(member, Markup);
+            }
+        }
+
+        /// <summary>
+        /// [Deprecated] Writes the page footer.
+        /// WritePageFooter is deprecated, please use WritePageFooterAsync instead.
+        /// </summary>
+        /// <remarks>The functionality of <see cref="WritePageFooterAsync"/> remains the same, just the name of the method has been corrected</remarks>
+        /// <returns>Async task</returns>
+        [Obsolete("WritePageFooter is deprecated, please use WritePageFooterAsync instead.")]
+        public virtual async Task WritePageFooter()
+        {
+            await WritePageFooterAsync();
+        }
+
+        /// <summary>
         /// Writes the page footer
         /// </summary>
         /// <remarks>Go to namespace or types links to namespaces list and types list are rendered here</remarks>
         /// <returns>Async task</returns>
-        protected virtual async Task WritePageFooter()
+        public virtual async Task WritePageFooterAsync()
         {
-            await Markup.WriteParaAsync($"Go to {Markup.Link("namespaces", BaseFileName, "namespace-list")} or {Markup.Link("types", BaseFileName, "type-list")}");
+            var footerItems = new List<string>
+            {
+                Markup.Link("namespaces", BaseFileName, "namespace-list"),
+                Markup.Link("types", BaseFileName, "type-list")
+            };
+
+            var addOns = Model.AddOnsSelector(a => a.PriorityPageFooter);
+            if (addOns.Count > 0)
+            {
+                footerItems.AddRange(addOns.Select(a => a.WritePageFooter(BaseFileName, Markup)));
+            }
+
+            await Markup.WriteParaAsync($"Go to {string.Join(" or ", footerItems.Where(i=>!string.IsNullOrEmpty(i)))}");
             await Markup.WriteParaAsync(" ");
         }
 
@@ -758,7 +860,7 @@ namespace net.adamec.dev.markupdoc.Markup
         /// When the link can't be built, just member's name is returned as a plain text.</remarks>
         /// <param name="typeRef">Type reference to render</param>
         /// <param name="includeNamespace">Flag whether to include the namespace in the member name shown</param>
-        /// <returns>Async task</returns>
+        /// <returns>Rendered type reference (<see cref="TypeRef"/>) with link if available</returns>
         protected virtual string TypeRefWithLink(TypeRef typeRef, bool includeNamespace = true)
         {
             var txt = typeRef.ApplySpecialName(includeNamespace);
@@ -776,6 +878,92 @@ namespace net.adamec.dev.markupdoc.Markup
             //If got the MS link, return the external link. Otherwise, no idea about the link, so return just the text
             return msLink != null ? Markup.ExternalLink(txt, msLink) : Markup.Text(txt);
         }
+        /// <summary>
+        /// Renders the info about the overriden member/symbol with link if available
+        /// </summary>
+        /// <param name="member">Member to document</param>
+        /// <returns>Info about the overriden member/symbol with link if available</returns>
+        protected virtual string OverrideInfo(TypeContentMember member)
+        {
+            if (member.OverridesSymbol == null) return "";
+            if (member.OverridesMember != null)
+            {
+                return
+                    $"Overrides: {Markup.Link(member.OverridesMember.Type.Name + "." + member.OverridesMember.Name, member.OverridesMember)}";
+            }
+
+            //Try to resolve link to MS if available and applicable
+            var txt = TypeRef.ApplySpecialName(member.OverridesSymbol.ContainingType) + "." + member.OverridesSymbol.Name;
+            var msLink = MsApiDocEngine.GetLink(member.OverridesSymbol.GetDocumentationCommentId());
+            if (msLink == null && member.OverridesSymbol.OriginalDefinition != null)
+            {
+                //try also this - for generic members
+                msLink = MsApiDocEngine.GetLink(member.OverridesSymbol.OriginalDefinition.GetDocumentationCommentId());
+            }
+            return "Overrides: " + (msLink != null ? Markup.ExternalLink(txt, msLink) : Markup.Text(txt));
+
+        }
+
+        /// <summary>
+        /// Renders the info about the implemented members/symbols with link if available
+        /// </summary>
+        /// <param name="member">Member to document</param>
+        /// <returns>Info about the overriden members/symbols with link if available</returns>
+        protected virtual string ImplementsInfo(TypeContentMember member)
+        {
+            if (member.ImplementsSymbols == null) return "";
+            var items = new List<string>();
+            for (var idx = 0; idx < member.ImplementsSymbols.Count; idx++)
+            {
+                var implementsSymbol = member.ImplementsSymbols[idx];
+                var implementsMember = member.ImplementsMembers[idx];
+                if (implementsMember != null)
+                {
+                    items.Add(Markup.Link(implementsMember.Type.Name + "." + implementsMember.Name, implementsMember));
+                    continue;
+                }
+
+                //Try to resolve link to MS if available and applicable
+                var txt = TypeRef.ApplySpecialName(implementsSymbol.ContainingType) + "." + implementsSymbol.Name;
+                var msLink = MsApiDocEngine.GetLink(implementsSymbol.GetDocumentationCommentId());
+                if (msLink == null && implementsSymbol.OriginalDefinition != null)
+                {
+                    //try also this - for generic members
+                    msLink = MsApiDocEngine.GetLink(implementsSymbol.OriginalDefinition.GetDocumentationCommentId());
+                }
+                items.Add(msLink != null ? Markup.ExternalLink(txt, msLink) : Markup.Text(txt));
+            }
+
+            return items.Count > 0 ? "Implements: " + string.Join(", ", items) : "";
+        }
+
+        /// <summary>
+        /// Renders the info about the type members that directly inherits from the type member if available
+        /// </summary>
+        /// <param name="type">Type to document</param>
+        /// <returns>info about the type members with links that directly inherits from the type member or null when not available</returns>
+        protected virtual string DerivedInfo(TypeMember type)
+        {
+            var derived = Model.GetDerivedTypeMembers(type);
+            if (derived == null || derived.Count == 0) return null;
+
+            return "Derived: " + string.Join(", ", derived.Select(t => Markup.Link($"{t.Namespace.Name}.{t.Name}", t)));
+        }
+
+        /// <summary>
+        /// Renders the info about the type members that implements the given <paramref name="type"/> (interface) if available
+        /// </summary>
+        /// <param name="type">Type (interface) to document</param>
+        /// <returns>info about the type members with links that implements the given <paramref name="type"/> (interface) or null when not available</returns>
+        protected virtual string ImplementedByInfo(TypeMember type)
+        {
+            if (type.TypeKind != TypeKindEnum.Interface) return null;
+
+            var implementedBy = Model.GetTypeMembersImplementingInterface(type);
+            if (implementedBy == null || implementedBy.Count == 0) return null;
+
+            return "Implemented by: " + string.Join(", ", implementedBy.Select(t => Markup.Link($"{t.Namespace.Name}.{t.Name}", t)));
+        }
 
         /// <summary>
         /// Renders the type hierarchy from the "very base type" to the type represented by given <paramref name="typeRef"/>
@@ -784,7 +972,7 @@ namespace net.adamec.dev.markupdoc.Markup
         /// <param name="typeRef">Type reference to render the type hierarchy for</param>
         /// <param name="separator">Inheritance separator</param>
         /// <param name="includeNamespace">Flag whether to include the namespace in the member name shown</param>
-        /// <returns>Async task</returns>
+        /// <returns>Rendered type hierarchy from the "very base type" to the type represented by given <paramref name="typeRef"/></returns>
         protected virtual string TypRefHierarchyWithLinks(TypeRef typeRef, string separator, bool includeNamespace = true)
         {
             if (typeRef.Base == null) return null;
@@ -801,7 +989,7 @@ namespace net.adamec.dev.markupdoc.Markup
 
             return output;
         }
-       
+
         /// <summary>
         /// Writes the table with given list of members
         /// </summary>
@@ -820,7 +1008,7 @@ namespace net.adamec.dev.markupdoc.Markup
                 await Markup.WriteTableColsAsync(
                     Markup.Link(member.Name, member),
                     $"{member.Modifier.ToModifierString()}{(member.IsStatic ? " static" : "")}{(member.IsAbstract ? " abstract" : "")}",
-                    member.Documentation?.Summary?.Render(Markup, member) ?? string.Empty);
+                    member.Documentation?.GetSummary(member)?.Render(Markup, member) ?? string.Empty);
             }
             await Markup.WriteTableFooterAsync();
             await Markup.WriteParaAsync(" ");
@@ -844,7 +1032,7 @@ namespace net.adamec.dev.markupdoc.Markup
                 await Markup.WriteTableColsAsync(
                     Markup.Link(member.Name, member),
                     member.ConstantValue?.ToString() ?? "null",
-                    member.Documentation?.Summary?.Render(Markup, member) ?? string.Empty);
+                    member.Documentation?.GetSummary(member)?.Render(Markup, member) ?? string.Empty);
             }
             await Markup.WriteTableFooterAsync();
             await Markup.WriteParaAsync(" ");
@@ -852,16 +1040,28 @@ namespace net.adamec.dev.markupdoc.Markup
         #endregion
 
         /// <summary>
+        /// [Deprecated] Initializes a new split.
+        /// Split is deprecated, please use SplitAsync instead.
+        /// </summary>
+        /// <remarks>The functionality of <see cref="SplitAsync"/> remains the same, just the name of the method has been corrected</remarks>
+        /// <returns>Async task</returns>
+        [Obsolete("Split is deprecated, please use SplitAsync instead.")]
+        public virtual async Task Split(string splitName)
+        {
+            await SplitAsync(splitName);
+        }
+
+        /// <summary>
         /// Initializes a new split. When splitting is not required, it's ignored (no split generated)
         /// </summary>
         /// <seealso cref="MarkupMultiFileWriter"/>
         /// <param name="splitName">Name of the split</param>
         /// <returns>Async task</returns>
-        public virtual async Task Split(string splitName)
+        public virtual async Task SplitAsync(string splitName)
         {
-            if(!Options.SplitNs && !Options.SplitType) return;
-            
-            await Markup.WriteDocumentEndAsync(); 
+            if (!Options.SplitNs && !Options.SplitType) return;
+
+            await Markup.WriteDocumentEndAsync();
             Writer.Split(splitName);
             await Markup.WriteDocumentStartAsync(Title);
         }
