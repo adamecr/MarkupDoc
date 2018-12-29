@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MarkupDoc Documentation</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css" >
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js" ></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<style>
+body { color: #24292e;font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;font-size: 16px;line-height: 1.5; word-wrap: break-word;margin: 20px;}
+h1 {font-size: 2em;}
+h2 {font-size: 1.5em;}
+h2 {font-size: 1.25em;}
+h4 {font-size: 1.25em;}
+h1, h2 {border-bottom: 1px solid #eaecef; padding-bottom: .3em;}
+h1, h2, h3,  h4{font-weight: 600;line-height: 1.25;margin-bottom: 16px;margin-top: 24px;}
+blockquote, ol, p, pre, table, ul {margin-bottom: 16px;margin-top: 0;}
+a{color: #0366d6;text-decoration: none;}
+a:hover{text-decoration: underline;}
+a.link-external:hover{text-decoration: underline; color:gray;}
+pre code {border: 0;display: inline;line-height: inherit;margin: 2px;overflow: visible;padding: 5px ;word-wrap: normal;}
+pre>code {font-size: 100%;white-space: pre;word-break: normal;padding: 0px}
+code {border-radius: 3px;}
+code, pre {font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;}
+pre {background-color: #f6f8fa;border-radius: 3px;font-size: 85%;line-height: 1.45;overflow: auto;padding: 0px;word-wrap: normal;}
+table {display: block;overflow: auto;width: 100%;border-collapse: collapse;border-spacing: 0;border-color: grey;}
+table tr {background-color: #fff;border-top: 1px solid #c6cbd1;}
+table tr:nth-child(2n) {background-color: #f6f8fa;}
+table td, table th {border: 1px solid #dfe2e5;padding: 6px 13px;}
+dl {display: grid; grid-template-columns: max-content auto; margin: 5px;}
+p+dl {margin-top: -15px;}
+dt {grid-column-start: 1;}
+dd {grid-column-start: 2;}
+</style>
+</head>
+<body>
+
+<h1>  MarkupDoc Documentation </h1>
+<h2>  <a id="n-net.adamec.dev.markupdoc.msapidoc__4u9w4l" ></a>  net.adamec.dev.markupdoc.MsApiDoc Namespace </h2>
+<p>MS online API links helper classes</p>
+<h3>  Classes </h3>
+<table><tr><th>Name</th><th>Modifier</th><th>Summary</th></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx" >MsApiDocEngine</a></td><td>public</td><td>Provides the links to MS API browser (https://docs.microsoft.com/en-us/dotnet/api/) for .NET API types and their members.</td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#t-net.adamec.dev.markupdoc.msapidoc.msapidocoptions__19hrssn" >MsApiDocOptions</a></td><td>public</td><td>Configuration class for <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx" >MsApiDocEngine</a></td></tr>
+</table>
+<p> </p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx" ></a>  MsApiDocEngine Class </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l" >net.adamec.dev.markupdoc.MsApiDoc</a><br />
+Assembly: MarkupDoc<br />
+Sources: MsApiDoc\MsApiDocEngine.cs</small></p>
+<p>Provides the links to MS API browser (https://docs.microsoft.com/en-us/dotnet/api/) for .NET API types and their members.</p>
+<pre><code class="csharp">public class MsApiDocEngine</code></pre>
+<p>Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" class="link-external" target="_blank" >object</a><br />
+</p>
+<h3>  Remarks </h3>
+<p>The Roslyn compiler uses the member ID in <em>Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentId</em> , (even if there is no documentation), so it&#39;s possible to use such ID as member identifier for types, properties, methods, etc. Method <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#m-net.adamec.dev.markupdoc.msapidoc.msapidocengine.readlocaldoc__ned6d5" >ReadLocalDoc()</a> uses  the local clone of .NET API documentation (https://github.com/dotnet/dotnet-api-docs) and checks for the framework index file containing the list of available IDs. It generates the links for each ID and store it in the internal dictionary(ID,link) telling &quot;these IDs are documented at MS site and these are the links&quot; . <p>The links can be retrieved using the static methods <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#m-net.adamec.dev.markupdoc.msapidoc.msapidocengine.getlink_system.string___c42uyj" >GetLink(string)</a> by ID or <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#m-net.adamec.dev.markupdoc.msapidoc.msapidocengine.getlink_net.adamec.dev.markupdoc.codemodel.typeref___iigjs7" >GetLink(TypeRef)</a> by <a href="net.adamec.dev.markupdoc.CodeModel__1f8sg55.html#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm" >TypeRef</a> . It checks, whether the ID exists in local MS documentation clone and if positive, it uses the generated link stored in internal dictionary. When the local clone is not available (or it&#39;s use is suppressed), the engine will try to build the links based on the namespace and name of member for limited set of members.</p> <p>Note: The links are created based on the &quot;observation&quot; how they are composed at the MS API site, so it&#39;s best effort approach and the links are not granted to be hundred percent correct. Also the API Browser don&#39;t have the pages/anchors for constants (including the enum items), so the generated links will not work in this case.</p> <p>The behavior of engine can be configured using the <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#t-net.adamec.dev.markupdoc.msapidoc.msapidocoptions__19hrssn" >MsApiDocOptions</a> configuration class</p> <p>To get the best results, clone the .NET API documentation from https://github.com/dotnet/dotnet-api-docs to local directory. And configure the engine</p> 
+
+<ul><li><strong>LinkToApi</strong> - Set to <code class="csharp">true</code> , to allow the links to MS Api (if false, no links will be created at all)</li><li><strong>ApiBaseUrl</strong> - It&#39;s set to https://docs.microsoft.com/en-us/dotnet/api/. As far as there is no change at MS side, no need to configure. Note: The URL must end with &quot;/&quot;.</li><li><strong>RequireLocalDoc</strong> - Set to <code class="csharp">true</code> to minimize the false links. Note: set to <code class="csharp">false</code> allowing the engine to try to create the links even if not found in local documentation</li><li><strong>LocalDocDir</strong> - Path to the local clone of MS documentation (directory must contain <code class="csharp">xml\FrameworksIndex</code> subdirectory</li></ul>
+
+</p>
+<h3>  Properties </h3>
+<table><tr><th>Name</th><th>Modifier</th><th>Summary</th></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#p-net.adamec.dev.markupdoc.msapidoc.msapidocengine.baseurl__mfwodh" >BaseUrl</a></td><td>public static</td><td></td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#p-net.adamec.dev.markupdoc.msapidoc.msapidocengine.idtolinkdictionary__ij5vc1" >IdToLinkDictionary</a></td><td>public static</td><td>ID to Link read-only dictionary for items read from local clone of MS .NET API documentation</td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#p-net.adamec.dev.markupdoc.msapidoc.msapidocengine.idtolinkdictionaryprivate__1qh58ay" >IdToLinkDictionaryPrivate</a></td><td>private static</td><td>Internal ID to Link dictionary for items read from local clone of MS .NET API documentation</td></tr>
+</table>
+<p> </p>
+<h3>  Methods </h3>
+<table><tr><th>Name</th><th>Modifier</th><th>Summary</th></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#m-net.adamec.dev.markupdoc.msapidoc.msapidocengine.getlink_system.string___c42uyj" >GetLink(string)</a></td><td>public static</td><td>Retrieves the link to MS API online documentation based on the member <strong>id</strong> (documentation ID)</td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#m-net.adamec.dev.markupdoc.msapidoc.msapidocengine.getlink_net.adamec.dev.markupdoc.codemodel.typeref___iigjs7" >GetLink(TypeRef)</a></td><td>public static</td><td>Retrieves the link to MS API online documentation based on the <strong>typeRef</strong> .</td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#m-net.adamec.dev.markupdoc.msapidoc.msapidocengine.readlocaldoc__ned6d5" >ReadLocalDoc()</a></td><td>public static</td><td>Reads the local clone of MS .NET API documentation and builds the internal dictionary of member IDs and links to MS online API documentation</td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#m-net.adamec.dev.markupdoc.msapidoc.msapidocengine.typememberbasename_system.string___1akr6b7" >TypeMemberBaseName(string)</a></td><td>private static</td><td>Extracts the base name for the type member.</td></tr>
+</table>
+<p> </p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="p-net.adamec.dev.markupdoc.msapidoc.msapidocengine.baseurl__mfwodh" ></a>  MsApiDocEngine.BaseUrl Property </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l" >net.adamec.dev.markupdoc.MsApiDoc</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx" >MsApiDocEngine</a><br />
+Sources: MsApiDoc\MsApiDocEngine.cs</small></p>
+<pre><code class="csharp">public static string BaseUrl { get; private set; }</code></pre>
+<p><strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a></dt><dd></dd></dl></p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="p-net.adamec.dev.markupdoc.msapidoc.msapidocengine.idtolinkdictionary__ij5vc1" ></a>  MsApiDocEngine.IdToLinkDictionary Property </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l" >net.adamec.dev.markupdoc.MsApiDoc</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx" >MsApiDocEngine</a><br />
+Sources: MsApiDoc\MsApiDocEngine.cs</small></p>
+<p>ID to Link read-only dictionary for items read from local clone of MS .NET API documentation</p>
+<pre><code class="csharp">public static IReadOnlyDictionary&lt;string,string&gt; IdToLinkDictionary { get; }</code></pre>
+<p><strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlydictionary-2" class="link-external" target="_blank" >System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt;</a></dt><dd></dd></dl></p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="p-net.adamec.dev.markupdoc.msapidoc.msapidocengine.idtolinkdictionaryprivate__1qh58ay" ></a>  MsApiDocEngine.IdToLinkDictionaryPrivate Property </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l" >net.adamec.dev.markupdoc.MsApiDoc</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx" >MsApiDocEngine</a><br />
+Sources: MsApiDoc\MsApiDocEngine.cs</small></p>
+<p>Internal ID to Link dictionary for items read from local clone of MS .NET API documentation</p>
+<pre><code class="csharp">private static Dictionary&lt;string,string&gt; IdToLinkDictionaryPrivate { get; }</code></pre>
+<p><strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2" class="link-external" target="_blank" >Dictionary&lt;string,string&gt;</a></dt><dd></dd></dl></p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="m-net.adamec.dev.markupdoc.msapidoc.msapidocengine.getlink_system.string___c42uyj" ></a>  MsApiDocEngine.GetLink(string) Method </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l" >net.adamec.dev.markupdoc.MsApiDoc</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx" >MsApiDocEngine</a><br />
+Sources: MsApiDoc\MsApiDocEngine.cs</small></p>
+<p>Retrieves the link to MS API online documentation based on the member <strong>id</strong> (documentation ID)</p>
+<pre><code class="csharp">public static string GetLink(string id)</code></pre>
+<strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a> <strong>id</strong></dt><dd>Member (type, method, property, etc.) ID as used in documentation comments</dd></dl>
+<p><strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a></dt><dd>The link to online MS documentation when the link is available and such links are allowed in configuration. Otherwise, return null</dd></dl></p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="m-net.adamec.dev.markupdoc.msapidoc.msapidocengine.getlink_net.adamec.dev.markupdoc.codemodel.typeref___iigjs7" ></a>  MsApiDocEngine.GetLink(TypeRef) Method </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l" >net.adamec.dev.markupdoc.MsApiDoc</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx" >MsApiDocEngine</a><br />
+Sources: MsApiDoc\MsApiDocEngine.cs</small></p>
+<p>Retrieves the link to MS API online documentation based on the <strong>typeRef</strong> .</p>
+<pre><code class="csharp">public static string GetLink(TypeRef typeRef)</code></pre>
+<strong>Method parameters</strong><dl><dt><a href="net.adamec.dev.markupdoc.CodeModel__1f8sg55.html#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm" >net.adamec.dev.markupdoc.CodeModel.TypeRef</a> <strong>typeRef</strong></dt><dd>Type reference to get the link for</dd></dl>
+<p><strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a></dt><dd>The link to online MS documentation when the link is available and such links are allowed in configuration. Otherwise, return null</dd></dl></p>
+<h3>  Remarks </h3>
+<p>As the query is based on the <a href="net.adamec.dev.markupdoc.CodeModel__1f8sg55.html#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm" >TypeRef</a> , it&#39;s applicable to types only (the meaning of &quot;type&quot; includes interfaces, structures, delegates, etc.). In this case, the links can be also created based on the namespace and name when the local doc is not available or the item has not been found  in the internal dictionary. This can be suppressed by setting the configuration option <code class="csharp">RequireLocalDoc</code> to true.</p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="m-net.adamec.dev.markupdoc.msapidoc.msapidocengine.readlocaldoc__ned6d5" ></a>  MsApiDocEngine.ReadLocalDoc() Method </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l" >net.adamec.dev.markupdoc.MsApiDoc</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx" >MsApiDocEngine</a><br />
+Sources: MsApiDoc\MsApiDocEngine.cs</small></p>
+<p>Reads the local clone of MS .NET API documentation and builds the internal dictionary of member IDs and links to MS online API documentation</p>
+<pre><code class="csharp">public static bool ReadLocalDoc()</code></pre>
+<p><strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" class="link-external" target="_blank" >bool</a></dt><dd>True when the local documentation has been read, otherwise false (the errors are &quot;soft&quot; - provided to console standard output as warnings)</dd></dl></p>
+<h3>  Remarks </h3>
+<p>Path to the local clone od MS documentation is taken from configuration <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#p-net.adamec.dev.markupdoc.msapidoc.msapidocoptions.localdocdir__1lcfz8f" >LocalDocDir</a> . Directory must contain <code class="csharp">xml\FrameworksIndex</code> subdirectory. This directory contains the indexes for different frameworks (.NET frameworks, .NET standard, ...). For the simplicity, the biggest index (XML) file is used as a source. The index file contains records like <pre><code class="csharp">     &lt;Namespace Name=&quot;Microsoft.CSharp&quot;&gt;
+         &lt;Type Name = &quot;Microsoft.CSharp.CSharpCodeProvider&quot; Id=&quot;T:Microsoft.CSharp.CSharpCodeProvider&quot;&gt;
+            &lt;Member Id = &quot;M:Microsoft.CSharp.CSharpCodeProvider.#ctor&quot; /&gt;
+            &lt;Member Id=&quot;M:Microsoft.CSharp.CSharpCodeProvider.#ctor(System.Collections.Generic.IDictionary{System.String,System.String})&quot; /&gt;
+            &lt;Member Id = &quot;M:Microsoft.CSharp.CSharpCodeProvider.CreateCompiler&quot; /&gt;
+            &lt;Member Id=&quot;M:Microsoft.CSharp.CSharpCodeProvider.CreateGenerator&quot; /&gt;
+            &lt;Member Id = &quot;M:Microsoft.CSharp.CSharpCodeProvider.GenerateCodeFromMember(System.CodeDom.CodeTypeMember,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)&quot; /&gt;
+            &lt;Member Id=&quot;M:Microsoft.CSharp.CSharpCodeProvider.GetConverter(System.Type)&quot; /&gt;
+            &lt;Member Id = &quot;P:Microsoft.CSharp.CSharpCodeProvider.FileExtension&quot; /&gt;
+         &lt;/Type &gt;
+     &lt;/Namespace &gt;</code></pre> The method gets all type and (type) member ID and generates the links for them. The links are created based on the &quot;observation&quot; how they are composed at the MS API site, so it&#39;s best effort approach and the links are not granted to be hundred percent correct. The base URL is set in <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#p-net.adamec.dev.markupdoc.msapidoc.msapidocoptions.apibaseurl__p6wemb" >ApiBaseUrl</a> (the base URL must end with &quot;/&quot;).</p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="m-net.adamec.dev.markupdoc.msapidoc.msapidocengine.typememberbasename_system.string___1akr6b7" ></a>  MsApiDocEngine.TypeMemberBaseName(string) Method </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l" >net.adamec.dev.markupdoc.MsApiDoc</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx" >MsApiDocEngine</a><br />
+Sources: MsApiDoc\MsApiDocEngine.cs</small></p>
+<p>Extracts the base name for the type member.</p>
+<pre><code class="csharp">private static string TypeMemberBaseName(string str)</code></pre>
+<strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a> <strong>str</strong></dt><dd>Name of the type member</dd></dl>
+<p><strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a></dt><dd>Base name for the type member</dd></dl></p>
+<h3>  Remarks </h3>
+<p>Single member page can contain multiple overloads, so it&#39;s necessary to extract the base name that will be used as a part of the link. The particular overload is then identified by anchor.</p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="t-net.adamec.dev.markupdoc.msapidoc.msapidocoptions__19hrssn" ></a>  MsApiDocOptions Class </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l" >net.adamec.dev.markupdoc.MsApiDoc</a><br />
+Assembly: MarkupDoc<br />
+Sources: MsApiDoc\MsApiDocOptions.cs</small></p>
+<p>Configuration class for <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx" >MsApiDocEngine</a></p>
+<pre><code class="csharp">public class MsApiDocOptions</code></pre>
+<p>Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" class="link-external" target="_blank" >object</a><br />
+</p>
+<h3>  Properties </h3>
+<table><tr><th>Name</th><th>Modifier</th><th>Summary</th></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#p-net.adamec.dev.markupdoc.msapidoc.msapidocoptions.apibaseurl__p6wemb" >ApiBaseUrl</a></td><td>public</td><td>Base URL of MS .NET API Browser (must end with &quot;/&quot;) If <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#p-net.adamec.dev.markupdoc.msapidoc.msapidocoptions.linktoapi__1tvqqu4" >LinkToApi</a> is set, missing <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#p-net.adamec.dev.markupdoc.msapidoc.msapidocoptions.apibaseurl__p6wemb" >ApiBaseUrl</a> throws the exception while building the link</td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#p-net.adamec.dev.markupdoc.msapidoc.msapidocoptions.linktoapi__1tvqqu4" >LinkToApi</a></td><td>public</td><td>Flag whether to generate the links to MS .NET API Browser</td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#p-net.adamec.dev.markupdoc.msapidoc.msapidocoptions.localdocdir__1lcfz8f" >LocalDocDir</a></td><td>public</td><td>Local clone of .NET API Documentation root directory</td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#p-net.adamec.dev.markupdoc.msapidoc.msapidocoptions.requirelocaldoc__10og155" >RequireLocalDoc</a></td><td>public</td><td>Flag whether to build the links based on the local close of .NET API Documentation only.</td></tr>
+</table>
+<p> </p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="p-net.adamec.dev.markupdoc.msapidoc.msapidocoptions.apibaseurl__p6wemb" ></a>  MsApiDocOptions.ApiBaseUrl Property </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l" >net.adamec.dev.markupdoc.MsApiDoc</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#t-net.adamec.dev.markupdoc.msapidoc.msapidocoptions__19hrssn" >MsApiDocOptions</a><br />
+Sources: MsApiDoc\MsApiDocOptions.cs</small></p>
+<p>Base URL of MS .NET API Browser (must end with &quot;/&quot;) If <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#p-net.adamec.dev.markupdoc.msapidoc.msapidocoptions.linktoapi__1tvqqu4" >LinkToApi</a> is set, missing <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#p-net.adamec.dev.markupdoc.msapidoc.msapidocoptions.apibaseurl__p6wemb" >ApiBaseUrl</a> throws the exception while building the link</p>
+<pre><code class="csharp">public string ApiBaseUrl { get; set; }</code></pre>
+<p><strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a></dt><dd></dd></dl></p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="p-net.adamec.dev.markupdoc.msapidoc.msapidocoptions.linktoapi__1tvqqu4" ></a>  MsApiDocOptions.LinkToApi Property </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l" >net.adamec.dev.markupdoc.MsApiDoc</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#t-net.adamec.dev.markupdoc.msapidoc.msapidocoptions__19hrssn" >MsApiDocOptions</a><br />
+Sources: MsApiDoc\MsApiDocOptions.cs</small></p>
+<p>Flag whether to generate the links to MS .NET API Browser</p>
+<pre><code class="csharp">public bool LinkToApi { get; set; }</code></pre>
+<p><strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" class="link-external" target="_blank" >bool</a></dt><dd></dd></dl></p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="p-net.adamec.dev.markupdoc.msapidoc.msapidocoptions.localdocdir__1lcfz8f" ></a>  MsApiDocOptions.LocalDocDir Property </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l" >net.adamec.dev.markupdoc.MsApiDoc</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#t-net.adamec.dev.markupdoc.msapidoc.msapidocoptions__19hrssn" >MsApiDocOptions</a><br />
+Sources: MsApiDoc\MsApiDocOptions.cs</small></p>
+<p>Local clone of .NET API Documentation root directory</p>
+<pre><code class="csharp">public string LocalDocDir { get; set; }</code></pre>
+<p><strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a></dt><dd></dd></dl></p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="p-net.adamec.dev.markupdoc.msapidoc.msapidocoptions.requirelocaldoc__10og155" ></a>  MsApiDocOptions.RequireLocalDoc Property </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#n-net.adamec.dev.markupdoc.msapidoc__4u9w4l" >net.adamec.dev.markupdoc.MsApiDoc</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#t-net.adamec.dev.markupdoc.msapidoc.msapidocoptions__19hrssn" >MsApiDocOptions</a><br />
+Sources: MsApiDoc\MsApiDocOptions.cs</small></p>
+<p>Flag whether to build the links based on the local close of .NET API Documentation only.</p>
+<pre><code class="csharp">public bool RequireLocalDoc { get; set; }</code></pre>
+<p><strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" class="link-external" target="_blank" >bool</a></dt><dd></dd></dl></p>
+<h3>  Remarks </h3>
+<p><p>If not set (is false), <a href="net.adamec.dev.markupdoc.MsApiDoc__4u9w4l.html#t-net.adamec.dev.markupdoc.msapidoc.msapidocengine__kprqgx" >MsApiDocEngine</a> will try to build the links for <a href="net.adamec.dev.markupdoc.CodeModel__1f8sg55.html#t-net.adamec.dev.markupdoc.codemodel.typeref__u09wkm" >TypeRef</a> , the links based on documentation ID will not be created</p> <p>Note: This will not suppress reading/using the links based on the local clone of the documentation, just the &quot;fallback&quot; will be disabled</p></p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+</body></html>

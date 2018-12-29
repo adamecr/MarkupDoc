@@ -5,7 +5,7 @@
     "Markdown": true,
     "HtmlExtension": "html",
     "MarkdownExtension": "md",
-    "SplitNs": false,
+    "SplitNs": true,
     "SplitType": false
   },
   "MicrosoftApi": {

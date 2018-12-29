@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MarkupDoc Documentation</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css" >
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js" ></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<style>
+body { color: #24292e;font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;font-size: 16px;line-height: 1.5; word-wrap: break-word;margin: 20px;}
+h1 {font-size: 2em;}
+h2 {font-size: 1.5em;}
+h2 {font-size: 1.25em;}
+h4 {font-size: 1.25em;}
+h1, h2 {border-bottom: 1px solid #eaecef; padding-bottom: .3em;}
+h1, h2, h3,  h4{font-weight: 600;line-height: 1.25;margin-bottom: 16px;margin-top: 24px;}
+blockquote, ol, p, pre, table, ul {margin-bottom: 16px;margin-top: 0;}
+a{color: #0366d6;text-decoration: none;}
+a:hover{text-decoration: underline;}
+a.link-external:hover{text-decoration: underline; color:gray;}
+pre code {border: 0;display: inline;line-height: inherit;margin: 2px;overflow: visible;padding: 5px ;word-wrap: normal;}
+pre>code {font-size: 100%;white-space: pre;word-break: normal;padding: 0px}
+code {border-radius: 3px;}
+code, pre {font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;}
+pre {background-color: #f6f8fa;border-radius: 3px;font-size: 85%;line-height: 1.45;overflow: auto;padding: 0px;word-wrap: normal;}
+table {display: block;overflow: auto;width: 100%;border-collapse: collapse;border-spacing: 0;border-color: grey;}
+table tr {background-color: #fff;border-top: 1px solid #c6cbd1;}
+table tr:nth-child(2n) {background-color: #f6f8fa;}
+table td, table th {border: 1px solid #dfe2e5;padding: 6px 13px;}
+dl {display: grid; grid-template-columns: max-content auto; margin: 5px;}
+p+dl {margin-top: -15px;}
+dt {grid-column-start: 1;}
+dd {grid-column-start: 2;}
+</style>
+</head>
+<body>
+
+<h1>  MarkupDoc Documentation </h1>
+<h2>  <a id="n-net.adamec.dev.markupdoc.addons__16pxlok" ></a>  net.adamec.dev.markupdoc.AddOns Namespace </h2>
+<h3>  Interfaces </h3>
+<table><tr><th>Name</th><th>Modifier</th><th>Summary</th></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt" >IAddOn</a></td><td>public abstract</td><td>Output add-on interface. Add-on is a functionality extending the output generator at defined extension points. Implementing class must have a constructor with single <a href="net.adamec.dev.markupdoc.Options__g1tahn.html#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6" >OutputOptions</a> parameter.</td></tr>
+</table>
+<p> </p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt" ></a>  IAddOn Interface </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#n-net.adamec.dev.markupdoc.addons__16pxlok" >net.adamec.dev.markupdoc.AddOns</a><br />
+Assembly: MarkupDoc<br />
+Sources: AddOns\IAddOn.cs</small></p>
+<p>Output add-on interface. Add-on is a functionality extending the output generator at defined extension points. Implementing class must have a constructor with single <a href="net.adamec.dev.markupdoc.Options__g1tahn.html#t-net.adamec.dev.markupdoc.options.outputoptions__kezzp6" >OutputOptions</a> parameter.</p>
+<pre><code class="csharp">public interface IAddOn</code></pre>
+<p>Implemented by: <a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages__vacqgc.html#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.sourceonlypackagesaddon__1yu43nc" >net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.SourceOnlyPackagesAddOn</a><br />
+</p>
+<h3>  Remarks </h3>
+<p>One instance per application run is created at <a href="net.adamec.dev.markupdoc__1d9f9qh.html#m-net.adamec.dev.markupdoc.application.getaddons__koi41d" >GetAddOns()</a> when a master switch in configuration <code class="csharp">Output.EnableAddOns</code> is on (false by default) Add-on: 
+
+<ul><li><strong>Can extend the code model root data</strong> - when <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#p-net.adamec.dev.markupdoc.addons.iaddon.priorityrootdata__4lkjzb" >PriorityRootData</a> &gt; 0</li><li><strong>Can extend the index page</strong> - when <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#p-net.adamec.dev.markupdoc.addons.iaddon.priorityindexpage__fkoqdy" >PriorityIndexPage</a> &gt; 0</li><li><strong>Can generate own pages</strong> - when <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#p-net.adamec.dev.markupdoc.addons.iaddon.priorityownpages__1169buv" >PriorityOwnPages</a> &gt; 0</li><li><strong>Can extend &quot;standard&quot; pages&#39; header</strong> - when <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#p-net.adamec.dev.markupdoc.addons.iaddon.prioritypageheader__szfdw1" >PriorityPageHeader</a> &gt; 0</li><li><strong>Can extend &quot;standard&quot; pages&#39; body</strong> - when <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#p-net.adamec.dev.markupdoc.addons.iaddon.prioritypagebody__18im5wk" >PriorityPageBody</a> &gt; 0</li><li><strong>Can extend &quot;standard&quot; pages&#39; footer</strong> - when <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#p-net.adamec.dev.markupdoc.addons.iaddon.prioritypagefooter__1l39gdz" >PriorityPageFooter</a> &gt; 0</li></ul>
+
+ The add-ons are applied in the order given by priority defined for each extension point within the add-on.</p>
+<h3>  Properties </h3>
+<table><tr><th>Name</th><th>Modifier</th><th>Summary</th></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#p-net.adamec.dev.markupdoc.addons.iaddon.priorityindexpage__fkoqdy" >PriorityIndexPage</a></td><td>public abstract</td><td>Add-on priority for generating the add-on output to the (main) index page. Value &lt;1 means no output generated by add-on</td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#p-net.adamec.dev.markupdoc.addons.iaddon.priorityownpages__1169buv" >PriorityOwnPages</a></td><td>public abstract</td><td>Add-on priority for generating the add-on output pages. Value &lt;1 means no output generated by add-on</td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#p-net.adamec.dev.markupdoc.addons.iaddon.prioritypagebody__18im5wk" >PriorityPageBody</a></td><td>public abstract</td><td>Add-on priority for generating the add-on output to header of code model member page body. Value &lt;1 means no output generated by add-on</td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#p-net.adamec.dev.markupdoc.addons.iaddon.prioritypagefooter__1l39gdz" >PriorityPageFooter</a></td><td>public abstract</td><td>Add-on priority for generating the add-on output to header of code model member page footer. Value &lt;1 means no output generated by add-on</td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#p-net.adamec.dev.markupdoc.addons.iaddon.prioritypageheader__szfdw1" >PriorityPageHeader</a></td><td>public abstract</td><td>Add-on priority for generating the add-on output to header of code model member page header. Value &lt;1 means no output generated by add-on</td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#p-net.adamec.dev.markupdoc.addons.iaddon.priorityrootdata__4lkjzb" >PriorityRootData</a></td><td>public abstract</td><td>Add-on priority for processing the add-on data as a part of <a href="net.adamec.dev.markupdoc.CodeModel__1f8sg55.html#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj" >RootMember</a> constructor. Value &lt;1 means no processing</td></tr>
+</table>
+<p> </p>
+<h3>  Methods </h3>
+<table><tr><th>Name</th><th>Modifier</th><th>Summary</th></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#m-net.adamec.dev.markupdoc.addons.iaddon.processrootdata_net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder___1jgzllk" >ProcessRootData(RootMember, RootMemberBuilder)</a></td><td>public abstract</td><td>Let the add-on to prepare it&#39;s own data as a part of <a href="net.adamec.dev.markupdoc.CodeModel__1f8sg55.html#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj" >RootMember</a> constructor.</td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#m-net.adamec.dev.markupdoc.addons.iaddon.writeindexasync_net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.markup.imarkupprovider___14kxt04" >WriteIndexAsync(RootMember, IMarkupProvider)</a></td><td>public abstract</td><td>Writes to the index (main) page of the code model</td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#m-net.adamec.dev.markupdoc.addons.iaddon.writeownpagesasync_net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.markup.markupgenerator___ybiauk" >WriteOwnPagesAsync(RootMember, IMarkupProvider, MarkupGenerator)</a></td><td>public abstract</td><td>Writes the add-on pages into the output</td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#m-net.adamec.dev.markupdoc.addons.iaddon.writepagebodyasync_net.adamec.dev.markupdoc.codemodel.member-net.adamec.dev.markupdoc.markup.imarkupprovider___2dwln1" >WritePageBodyAsync(Member, IMarkupProvider)</a></td><td>public abstract</td><td>Writes the body fro the code model member</td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#m-net.adamec.dev.markupdoc.addons.iaddon.writepagefooter_system.string-net.adamec.dev.markupdoc.markup.imarkupprovider___osl86z" >WritePageFooter(string, IMarkupProvider)</a></td><td>public abstract</td><td>Writes the footer for the code model member page</td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#m-net.adamec.dev.markupdoc.addons.iaddon.writepageheader_net.adamec.dev.markupdoc.codemodel.member-net.adamec.dev.markupdoc.markup.imarkupprovider___1ml9iti" >WritePageHeader(Member, IMarkupProvider)</a></td><td>public abstract</td><td>Writes the header for the code model member page</td></tr>
+</table>
+<p> </p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="p-net.adamec.dev.markupdoc.addons.iaddon.priorityindexpage__fkoqdy" ></a>  IAddOn.PriorityIndexPage Property </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#n-net.adamec.dev.markupdoc.addons__16pxlok" >net.adamec.dev.markupdoc.AddOns</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt" >IAddOn</a><br />
+Sources: AddOns\IAddOn.cs</small></p>
+<p>Add-on priority for generating the add-on output to the (main) index page. Value &lt;1 means no output generated by add-on</p>
+<pre><code class="csharp">public abstract int PriorityIndexPage { get; }</code></pre>
+<p><strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" class="link-external" target="_blank" >int</a></dt><dd></dd></dl></p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="p-net.adamec.dev.markupdoc.addons.iaddon.priorityownpages__1169buv" ></a>  IAddOn.PriorityOwnPages Property </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#n-net.adamec.dev.markupdoc.addons__16pxlok" >net.adamec.dev.markupdoc.AddOns</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt" >IAddOn</a><br />
+Sources: AddOns\IAddOn.cs</small></p>
+<p>Add-on priority for generating the add-on output pages. Value &lt;1 means no output generated by add-on</p>
+<pre><code class="csharp">public abstract int PriorityOwnPages { get; }</code></pre>
+<p><strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" class="link-external" target="_blank" >int</a></dt><dd></dd></dl></p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="p-net.adamec.dev.markupdoc.addons.iaddon.prioritypagebody__18im5wk" ></a>  IAddOn.PriorityPageBody Property </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#n-net.adamec.dev.markupdoc.addons__16pxlok" >net.adamec.dev.markupdoc.AddOns</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt" >IAddOn</a><br />
+Sources: AddOns\IAddOn.cs</small></p>
+<p>Add-on priority for generating the add-on output to header of code model member page body. Value &lt;1 means no output generated by add-on</p>
+<pre><code class="csharp">public abstract int PriorityPageBody { get; }</code></pre>
+<p><strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" class="link-external" target="_blank" >int</a></dt><dd></dd></dl></p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="p-net.adamec.dev.markupdoc.addons.iaddon.prioritypagefooter__1l39gdz" ></a>  IAddOn.PriorityPageFooter Property </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#n-net.adamec.dev.markupdoc.addons__16pxlok" >net.adamec.dev.markupdoc.AddOns</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt" >IAddOn</a><br />
+Sources: AddOns\IAddOn.cs</small></p>
+<p>Add-on priority for generating the add-on output to header of code model member page footer. Value &lt;1 means no output generated by add-on</p>
+<pre><code class="csharp">public abstract int PriorityPageFooter { get; }</code></pre>
+<p><strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" class="link-external" target="_blank" >int</a></dt><dd></dd></dl></p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="p-net.adamec.dev.markupdoc.addons.iaddon.prioritypageheader__szfdw1" ></a>  IAddOn.PriorityPageHeader Property </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#n-net.adamec.dev.markupdoc.addons__16pxlok" >net.adamec.dev.markupdoc.AddOns</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt" >IAddOn</a><br />
+Sources: AddOns\IAddOn.cs</small></p>
+<p>Add-on priority for generating the add-on output to header of code model member page header. Value &lt;1 means no output generated by add-on</p>
+<pre><code class="csharp">public abstract int PriorityPageHeader { get; }</code></pre>
+<p><strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" class="link-external" target="_blank" >int</a></dt><dd></dd></dl></p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="p-net.adamec.dev.markupdoc.addons.iaddon.priorityrootdata__4lkjzb" ></a>  IAddOn.PriorityRootData Property </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#n-net.adamec.dev.markupdoc.addons__16pxlok" >net.adamec.dev.markupdoc.AddOns</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt" >IAddOn</a><br />
+Sources: AddOns\IAddOn.cs</small></p>
+<p>Add-on priority for processing the add-on data as a part of <a href="net.adamec.dev.markupdoc.CodeModel__1f8sg55.html#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj" >RootMember</a> constructor. Value &lt;1 means no processing</p>
+<pre><code class="csharp">public abstract int PriorityRootData { get; }</code></pre>
+<p><strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.int32" class="link-external" target="_blank" >int</a></dt><dd></dd></dl></p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="m-net.adamec.dev.markupdoc.addons.iaddon.processrootdata_net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder___1jgzllk" ></a>  IAddOn.ProcessRootData(RootMember, RootMemberBuilder) Method </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#n-net.adamec.dev.markupdoc.addons__16pxlok" >net.adamec.dev.markupdoc.AddOns</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt" >IAddOn</a><br />
+Sources: AddOns\IAddOn.cs</small></p>
+<p>Let the add-on to prepare it&#39;s own data as a part of <a href="net.adamec.dev.markupdoc.CodeModel__1f8sg55.html#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj" >RootMember</a> constructor.</p>
+<pre><code class="csharp">public abstract void ProcessRootData(RootMember root, RootMemberBuilder builder)</code></pre>
+<strong>Method parameters</strong><dl><dt><a href="net.adamec.dev.markupdoc.CodeModel__1f8sg55.html#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj" >net.adamec.dev.markupdoc.CodeModel.RootMember</a> <strong>root</strong></dt><dd>Code model root</dd><dt><a href="net.adamec.dev.markupdoc.CodeModel.Builder__w36mxa.html#t-net.adamec.dev.markupdoc.codemodel.builder.rootmemberbuilder__19g2xad" >net.adamec.dev.markupdoc.CodeModel.Builder.RootMemberBuilder</a> <strong>builder</strong></dt><dd>Code model buildel root</dd></dl>
+<p><strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.void" class="link-external" target="_blank" >void</a></dt><dd></dd></dl></p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="m-net.adamec.dev.markupdoc.addons.iaddon.writeindexasync_net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.markup.imarkupprovider___14kxt04" ></a>  IAddOn.WriteIndexAsync(RootMember, IMarkupProvider) Method </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#n-net.adamec.dev.markupdoc.addons__16pxlok" >net.adamec.dev.markupdoc.AddOns</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt" >IAddOn</a><br />
+Sources: AddOns\IAddOn.cs</small></p>
+<p>Writes to the index (main) page of the code model</p>
+<pre><code class="csharp">public abstract Task&lt;bool&gt; WriteIndexAsync(RootMember root, IMarkupProvider markup)</code></pre>
+<strong>Method parameters</strong><dl><dt><a href="net.adamec.dev.markupdoc.CodeModel__1f8sg55.html#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj" >net.adamec.dev.markupdoc.CodeModel.RootMember</a> <strong>root</strong></dt><dd>Code model root</dd><dt><a href="net.adamec.dev.markupdoc.Markup__1918uiv.html#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr" >net.adamec.dev.markupdoc.Markup.IMarkupProvider</a> <strong>markup</strong></dt><dd>Markup provider</dd></dl>
+<p><strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1" class="link-external" target="_blank" >System.Threading.Tasks.Task&lt;bool&gt;</a></dt><dd>True when any output has been generated</dd></dl></p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="m-net.adamec.dev.markupdoc.addons.iaddon.writeownpagesasync_net.adamec.dev.markupdoc.codemodel.rootmember-net.adamec.dev.markupdoc.markup.imarkupprovider-net.adamec.dev.markupdoc.markup.markupgenerator___ybiauk" ></a>  IAddOn.WriteOwnPagesAsync(RootMember, IMarkupProvider, MarkupGenerator) Method </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#n-net.adamec.dev.markupdoc.addons__16pxlok" >net.adamec.dev.markupdoc.AddOns</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt" >IAddOn</a><br />
+Sources: AddOns\IAddOn.cs</small></p>
+<p>Writes the add-on pages into the output</p>
+<pre><code class="csharp">public abstract Task WriteOwnPagesAsync(RootMember root, IMarkupProvider markup, MarkupGenerator generator)</code></pre>
+<strong>Method parameters</strong><dl><dt><a href="net.adamec.dev.markupdoc.CodeModel__1f8sg55.html#t-net.adamec.dev.markupdoc.codemodel.rootmember__mwa6pj" >net.adamec.dev.markupdoc.CodeModel.RootMember</a> <strong>root</strong></dt><dd>Code model root</dd><dt><a href="net.adamec.dev.markupdoc.Markup__1918uiv.html#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr" >net.adamec.dev.markupdoc.Markup.IMarkupProvider</a> <strong>markup</strong></dt><dd>Markup provider</dd><dt><a href="net.adamec.dev.markupdoc.Markup__1918uiv.html#t-net.adamec.dev.markupdoc.markup.markupgenerator__t0fm36" >net.adamec.dev.markupdoc.Markup.MarkupGenerator</a> <strong>generator</strong></dt><dd>Markup generator</dd></dl>
+<p><strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" class="link-external" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl></p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="m-net.adamec.dev.markupdoc.addons.iaddon.writepagebodyasync_net.adamec.dev.markupdoc.codemodel.member-net.adamec.dev.markupdoc.markup.imarkupprovider___2dwln1" ></a>  IAddOn.WritePageBodyAsync(Member, IMarkupProvider) Method </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#n-net.adamec.dev.markupdoc.addons__16pxlok" >net.adamec.dev.markupdoc.AddOns</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt" >IAddOn</a><br />
+Sources: AddOns\IAddOn.cs</small></p>
+<p>Writes the body fro the code model member</p>
+<pre><code class="csharp">public abstract Task WritePageBodyAsync(Member member, IMarkupProvider markup)</code></pre>
+<strong>Method parameters</strong><dl><dt><a href="net.adamec.dev.markupdoc.CodeModel__1f8sg55.html#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh" >net.adamec.dev.markupdoc.CodeModel.Member</a> <strong>member</strong></dt><dd>Member being documented</dd><dt><a href="net.adamec.dev.markupdoc.Markup__1918uiv.html#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr" >net.adamec.dev.markupdoc.Markup.IMarkupProvider</a> <strong>markup</strong></dt><dd>Markup provider</dd></dl>
+<p><strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task" class="link-external" target="_blank" >System.Threading.Tasks.Task</a></dt><dd>Async task</dd></dl></p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="m-net.adamec.dev.markupdoc.addons.iaddon.writepagefooter_system.string-net.adamec.dev.markupdoc.markup.imarkupprovider___osl86z" ></a>  IAddOn.WritePageFooter(string, IMarkupProvider) Method </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#n-net.adamec.dev.markupdoc.addons__16pxlok" >net.adamec.dev.markupdoc.AddOns</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt" >IAddOn</a><br />
+Sources: AddOns\IAddOn.cs</small></p>
+<p>Writes the footer for the code model member page</p>
+<pre><code class="csharp">public abstract string WritePageFooter(string baseFileName, IMarkupProvider markup)</code></pre>
+<strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a> <strong>baseFileName</strong></dt><dd>Name of the main file</dd><dt><a href="net.adamec.dev.markupdoc.Markup__1918uiv.html#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr" >net.adamec.dev.markupdoc.Markup.IMarkupProvider</a> <strong>markup</strong></dt><dd>Markup provider</dd></dl>
+<p><strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a></dt><dd>String to be added to the footer</dd></dl></p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="m-net.adamec.dev.markupdoc.addons.iaddon.writepageheader_net.adamec.dev.markupdoc.codemodel.member-net.adamec.dev.markupdoc.markup.imarkupprovider___1ml9iti" ></a>  IAddOn.WritePageHeader(Member, IMarkupProvider) Method </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#n-net.adamec.dev.markupdoc.addons__16pxlok" >net.adamec.dev.markupdoc.AddOns</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.AddOns__16pxlok.html#t-net.adamec.dev.markupdoc.addons.iaddon__1hardyt" >IAddOn</a><br />
+Sources: AddOns\IAddOn.cs</small></p>
+<p>Writes the header for the code model member page</p>
+<pre><code class="csharp">public abstract string WritePageHeader(Member member, IMarkupProvider markup)</code></pre>
+<strong>Method parameters</strong><dl><dt><a href="net.adamec.dev.markupdoc.CodeModel__1f8sg55.html#t-net.adamec.dev.markupdoc.codemodel.member__rd8rqh" >net.adamec.dev.markupdoc.CodeModel.Member</a> <strong>member</strong></dt><dd>Member being documented</dd><dt><a href="net.adamec.dev.markupdoc.Markup__1918uiv.html#t-net.adamec.dev.markupdoc.markup.imarkupprovider__kb3njr" >net.adamec.dev.markupdoc.Markup.IMarkupProvider</a> <strong>markup</strong></dt><dd>Markup provider</dd></dl>
+<p><strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a></dt><dd>String to be added to the header text builder</dd></dl></p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+</body></html>

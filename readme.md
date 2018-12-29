@@ -231,7 +231,8 @@ Roslyn provides the XML documentation for symbols via [ISymbol.GetDocumentationC
 ### Output generator add-ons ###
 Add-on is a functionality extending the output generator at defined extension points. One instance per application run is created at `Application.GetAddOns` when a master switch in configuration `Output.EnableAddOns` is on (false by default). Implementing class must have a constructor with single `net.adamec.dev.markupdoc.Options.OutputOptions` parameter.
 
-Output generator add-on implemented the `IAddOn` interface
+Output generator add-on must implement the `IAddOn` interface and have a constructor with single parameter of `OutputOptions` type.
+
 ```csharp
 public interface IAddOn
 {

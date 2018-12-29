@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 using net.adamec.dev.markupdoc.AddOns;
-using net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages;
 using net.adamec.dev.markupdoc.CodeModel;
 using net.adamec.dev.markupdoc.CodeModel.Builder;
 using net.adamec.dev.markupdoc.Markup;
 using net.adamec.dev.markupdoc.MsApiDoc;
 using net.adamec.dev.markupdoc.Options;
+using net.adamec.dev.markupdoc.Utils;
 
 namespace net.adamec.dev.markupdoc
 {
@@ -92,7 +93,44 @@ namespace net.adamec.dev.markupdoc
         /// <returns>List of add-ons to be used</returns>
         protected virtual IEnumerable<IAddOn> GetAddOns()
         {
-            return !OutputOptions.EnableAddOns ? null : new List<IAddOn> {new SourceOnlyPackagesAddOn(OutputOptions)};
+            if (!OutputOptions.EnableAddOns) return null;
+
+            var addOnInterface = typeof(IAddOn);
+            var addOnClasses =
+                AppDomain.CurrentDomain
+                    .GetAssemblies()
+                    .SelectMany(x => x.GetTypes())
+                    .Where(t => 
+                        t.IsClass &&
+                        !t.IsAbstract &&
+                        addOnInterface.IsAssignableFrom(t) && 
+                        t.GetInterfaces().Contains(addOnInterface))
+                    .ToList();
+            if (addOnClasses.Count == 0) return null;
+
+            var addOns = new List<IAddOn>();
+            foreach (var addOnClass in addOnClasses)
+            {
+                var ctor = addOnClass.GetConstructor(new[] {typeof(OutputOptions)});
+                if (ctor == null)
+                {
+                    ConsoleUtils.WriteErrWarn($"Can't find the add-on CTOR for {addOnClass.Name} having single OutputOptions parameter");
+                    continue;
+                }
+
+                try
+                {
+                    var addOn = (IAddOn)Activator.CreateInstance(addOnClass, OutputOptions);
+                    addOns.Add(addOn);
+                }
+                catch (Exception ex)
+                {
+                    ConsoleUtils.WriteErrWarn($"Can't create instance of add-on {addOnClass.Name} - {ex.Message}");
+                }
+            }
+
+            return addOns.Count > 0 ? addOns : null;
+
         }
     }
 }

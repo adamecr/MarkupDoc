@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [2.0.1] - 2018-12-29 ##
+### Changed ###
+- Output generator add-on instances are created automatically.
+- Own code documentation is split by namespace
+
 ## [2.0.0] - 2018-12-23 ##
 ### Added ###
 - Added `<see langword="xxxx" />` support.
@@ -34,5 +39,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Added ###
 - Initial release
 
+[2.0.1]: https://github.com/adamecr/MarkupDoc/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/adamecr/MarkupDoc/compare/v1.0.0...v2.0.0
 [1.0.0]: https://github.com/adamecr/MarkupDoc/releases/tag/v1.0.0
