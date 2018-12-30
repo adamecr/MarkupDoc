@@ -168,7 +168,7 @@ namespace net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages
                             .AddIf(markup.LineBreak(), !string.IsNullOrEmpty(nuProps.PackageTags))
                             .Add($"Includes: {nuProps.IncludesType}")
                             .Add(markup.LineBreak())
-                            .Add($"Declaring file: {nuProps.DeclaringFile.Substring(root.ProjectRootDir.Length + 1)}")
+                            .Add($"Declaring file: { PathUtils.GetRelativeSourceFile(nuProps.DeclaringFile,root.ProjectRootDir)}")
                             ));
 
                 await markup.WriteParaAsync(nuProps.PackageDescription);
@@ -209,7 +209,7 @@ namespace net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages
                 await markup.WriteParaAsync(new Txt()
                     .Add(markup.Bold("Sources"))
                     .Add(markup.DescriptionList(
-                        f => $"{f.Substring(root.ProjectRootDir.Length + 1)}",
+                        f => $"{PathUtils.GetRelativeSourceFile(f,root.ProjectRootDir)}",
                         f => string.Empty,
                         nuProps.PackageFiles)));
 

@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [2.0.2] - 2018-12-30 ##
+### Fixed ###
+- Relative paths to source files from source-only packages corrected in output
+- Fixed Extension returned by MarkdownMarkupProvider
+
 ## [2.0.1] - 2018-12-29 ##
 ### Changed ###
 - Output generator add-on instances are created automatically.
@@ -39,6 +44,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Added ###
 - Initial release
 
+[2.0.2]: https://github.com/adamecr/MarkupDoc/compare/v2.0.1...v2.0.2
 [2.0.1]: https://github.com/adamecr/MarkupDoc/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/adamecr/MarkupDoc/compare/v1.0.0...v2.0.0
 [1.0.0]: https://github.com/adamecr/MarkupDoc/releases/tag/v1.0.0

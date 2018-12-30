@@ -10,6 +10,7 @@ Utility classes
  | [BaseDisposable](net.adamec.dev.markupdoc.Utils__m327rs.md#t-net.adamec.dev.markupdoc.utils.basedisposable__1niv1i9) | public abstract | Helper class for implementation of <a href="https://docs.microsoft.com/en-us/dotnet/api/system.idisposable" target="_blank" >System.IDisposable</a> types | 
  | [ConsoleUtils](net.adamec.dev.markupdoc.Utils__m327rs.md#t-net.adamec.dev.markupdoc.utils.consoleutils__xyngj2) | public static | Console output helpers | 
  | [IsNewUtils](net.adamec.dev.markupdoc.Utils__m327rs.md#t-net.adamec.dev.markupdoc.utils.isnewutils__slf3x) | public static | Helpers to get the access to internal ISymbol.IsNew property | 
+ | [PathUtils](net.adamec.dev.markupdoc.Utils__m327rs.md#t-net.adamec.dev.markupdoc.utils.pathutils__ueq8cw) | public | File path utilities | 
  | [Txt](net.adamec.dev.markupdoc.Utils__m327rs.md#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s) | public | Text builder | 
 
  
@@ -598,6 +599,68 @@ public static bool GetIsNew(this ISymbol symbol)
 
 ###  Remarks ###
 Uses the reflection to get the access to the internal property IsNew. The retrieved <a href="https://docs.microsoft.com/en-us/dotnet/api/system.reflection.propertyinfo" target="_blank" >System.Reflection.PropertyInfo</a> is cached in [IsNewPropertyCache](net.adamec.dev.markupdoc.Utils__m327rs.md#f-net.adamec.dev.markupdoc.utils.isnewutils.isnewpropertycache__fi6gva) to minimize the performance impacts.
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="t-net.adamec.dev.markupdoc.utils.pathutils__ueq8cw" />  PathUtils Class ##
+<small>Namespace: [net.adamec.dev.markupdoc.Utils](net.adamec.dev.markupdoc.Utils__m327rs.md#n-net.adamec.dev.markupdoc.utils__m327rs)           
+Assembly: MarkupDoc           
+Sources: Utils\PathUtils.cs</small>
+
+
+File path utilities
+
+
+
+```csharp
+public class PathUtils
+```
+
+Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" target="_blank" >object</a>           
+
+
+
+###  Methods ###
+
+ | Name | Modifier | Summary | 
+ | ------ | ---------- | --------- | 
+ | [GetRelativeSourceFile(string, string)](net.adamec.dev.markupdoc.Utils__m327rs.md#m-net.adamec.dev.markupdoc.utils.pathutils.getrelativesourcefile_system.string-system.string___1t61qb1) | public static | Gets the relative path of the source file with the project root as a base | 
+
+ 
+
+
+Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)
+
+
+ 
+
+
+##  <a id="m-net.adamec.dev.markupdoc.utils.pathutils.getrelativesourcefile_system.string-system.string___1t61qb1" />  PathUtils.GetRelativeSourceFile(string, string) Method ##
+<small>Namespace: [net.adamec.dev.markupdoc.Utils](net.adamec.dev.markupdoc.Utils__m327rs.md#n-net.adamec.dev.markupdoc.utils__m327rs)           
+Assembly: MarkupDoc           
+Type: [PathUtils](net.adamec.dev.markupdoc.Utils__m327rs.md#t-net.adamec.dev.markupdoc.utils.pathutils__ueq8cw)           
+Sources: Utils\PathUtils.cs</small>
+
+
+Gets the relative path of the source file with the project root as a base
+
+
+
+```csharp
+public static string GetRelativeSourceFile(string sourceFile, string projectRoot)
+```
+
+<strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>sourceFile</strong></dt><dd>Full path to the source file</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a> <strong>projectRoot</strong></dt><dd>Full path to the project root directory</dd></dl>
+<strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" target="_blank" >string</a></dt><dd>Relative path of the source file with the project root as a base</dd></dl>
+
+
+###  Remarks ###
+Returns substring of the <strong>sourceFile</strong> with removed starting part of <strong>projectRoot</strong> for standard source files within the project. When a source-only package is consumed, the source file is physically in .nuget package dir and in `App_Packages` virtual dir in project. It looks for the &quot;signature&quot; `contentFiles\\cs\\any\\App_Packages\\` of the source-only package, get&#39;s the path relative to package and prefixes it with `App_Packages` . For any other files (not really have a case for it), just the file name is returned.
 
 
 Go to [namespaces](MarkupDoc.md#namespace-list) or [types](MarkupDoc.md#type-list)

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using net.adamec.dev.markupdoc.CodeModel;
 using net.adamec.dev.markupdoc.MsApiDoc;
@@ -711,7 +712,7 @@ namespace net.adamec.dev.markupdoc.Markup
                         .Add(Markup.LineBreak())
                         .Add($"Type: {Markup.Link(member.Type.Name, member.Type)}")
                         .AddIf(Markup.LineBreak(), member.SourceFiles != null && member.SourceFiles.Count > 0)
-                        .AddIf(() => "Sources: " + string.Join(", ", member.SourceFiles.Select(s => s.Substring(member.Root.ProjectRootDir.Length + 1))),
+                        .AddIf(() => "Sources: " + string.Join(", ", member.SourceFiles.Select(s => PathUtils.GetRelativeSourceFile(s,member.Root.ProjectRootDir))),
                             member.SourceFiles != null && member.SourceFiles.Count > 0)
                         .AddEachIf(a => a.WritePageHeader(member, Markup), addOns, addOns.Count > 0)));
         }
@@ -734,10 +735,12 @@ namespace net.adamec.dev.markupdoc.Markup
                         .Add(Markup.LineBreak())
                         .Add($"Assembly: {type.Assembly.Name}")
                         .AddIf(Markup.LineBreak(), type.SourceFiles != null && type.SourceFiles.Count > 0)
-                        .AddIf(() => "Sources: " + string.Join(", ", type.SourceFiles.Select(s => s.Substring(type.Root.ProjectRootDir.Length + 1))),
+                        .AddIf(() => "Sources: " + string.Join(", ", type.SourceFiles.Select(s => PathUtils.GetRelativeSourceFile(s,type.Root.ProjectRootDir))),
                             type.SourceFiles != null && type.SourceFiles.Count > 0)
                         .AddEachIf(a => a.WritePageHeader(type, Markup), addOns, addOns.Count > 0)));
         }
+
+        
 
         /// <summary>
         /// Writes the Example documentation section for given <paramref name="member"/> if available

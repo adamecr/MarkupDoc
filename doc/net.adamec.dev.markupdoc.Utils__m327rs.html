@@ -42,6 +42,7 @@ dd {grid-column-start: 2;}
 <tr><td><a href="net.adamec.dev.markupdoc.Utils__m327rs.html#t-net.adamec.dev.markupdoc.utils.basedisposable__1niv1i9" >BaseDisposable</a></td><td>public abstract</td><td>Helper class for implementation of <a href="https://docs.microsoft.com/en-us/dotnet/api/system.idisposable" class="link-external" target="_blank" >System.IDisposable</a> types</td></tr>
 <tr><td><a href="net.adamec.dev.markupdoc.Utils__m327rs.html#t-net.adamec.dev.markupdoc.utils.consoleutils__xyngj2" >ConsoleUtils</a></td><td>public static</td><td>Console output helpers</td></tr>
 <tr><td><a href="net.adamec.dev.markupdoc.Utils__m327rs.html#t-net.adamec.dev.markupdoc.utils.isnewutils__slf3x" >IsNewUtils</a></td><td>public static</td><td>Helpers to get the access to internal ISymbol.IsNew property</td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.Utils__m327rs.html#t-net.adamec.dev.markupdoc.utils.pathutils__ueq8cw" >PathUtils</a></td><td>public</td><td>File path utilities</td></tr>
 <tr><td><a href="net.adamec.dev.markupdoc.Utils__m327rs.html#t-net.adamec.dev.markupdoc.utils.txt__ptyt6s" >Txt</a></td><td>public</td><td>Text builder</td></tr>
 </table>
 <p> </p>
@@ -310,6 +311,34 @@ Sources: Utils\IsNewUtils.cs</small></p>
 <p><strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" class="link-external" target="_blank" >bool</a></dt><dd>Value of internal IsNew property of given <strong>symbol</strong> or <code class="csharp">false</code> when the property can&#39;t be retrieved</dd></dl></p>
 <h3>  Remarks </h3>
 <p>Uses the reflection to get the access to the internal property IsNew. The retrieved <a href="https://docs.microsoft.com/en-us/dotnet/api/system.reflection.propertyinfo" class="link-external" target="_blank" >System.Reflection.PropertyInfo</a> is cached in <a href="net.adamec.dev.markupdoc.Utils__m327rs.html#f-net.adamec.dev.markupdoc.utils.isnewutils.isnewpropertycache__fi6gva" >IsNewPropertyCache</a> to minimize the performance impacts.</p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="t-net.adamec.dev.markupdoc.utils.pathutils__ueq8cw" ></a>  PathUtils Class </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.Utils__m327rs.html#n-net.adamec.dev.markupdoc.utils__m327rs" >net.adamec.dev.markupdoc.Utils</a><br />
+Assembly: MarkupDoc<br />
+Sources: Utils\PathUtils.cs</small></p>
+<p>File path utilities</p>
+<pre><code class="csharp">public class PathUtils</code></pre>
+<p>Inheritance: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object" class="link-external" target="_blank" >object</a><br />
+</p>
+<h3>  Methods </h3>
+<table><tr><th>Name</th><th>Modifier</th><th>Summary</th></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.Utils__m327rs.html#m-net.adamec.dev.markupdoc.utils.pathutils.getrelativesourcefile_system.string-system.string___1t61qb1" >GetRelativeSourceFile(string, string)</a></td><td>public static</td><td>Gets the relative path of the source file with the project root as a base</td></tr>
+</table>
+<p> </p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="m-net.adamec.dev.markupdoc.utils.pathutils.getrelativesourcefile_system.string-system.string___1t61qb1" ></a>  PathUtils.GetRelativeSourceFile(string, string) Method </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.Utils__m327rs.html#n-net.adamec.dev.markupdoc.utils__m327rs" >net.adamec.dev.markupdoc.Utils</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.Utils__m327rs.html#t-net.adamec.dev.markupdoc.utils.pathutils__ueq8cw" >PathUtils</a><br />
+Sources: Utils\PathUtils.cs</small></p>
+<p>Gets the relative path of the source file with the project root as a base</p>
+<pre><code class="csharp">public static string GetRelativeSourceFile(string sourceFile, string projectRoot)</code></pre>
+<strong>Method parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a> <strong>sourceFile</strong></dt><dd>Full path to the source file</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a> <strong>projectRoot</strong></dt><dd>Full path to the project root directory</dd></dl>
+<p><strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a></dt><dd>Relative path of the source file with the project root as a base</dd></dl></p>
+<h3>  Remarks </h3>
+<p>Returns substring of the <strong>sourceFile</strong> with removed starting part of <strong>projectRoot</strong> for standard source files within the project. When a source-only package is consumed, the source file is physically in .nuget package dir and in <code class="csharp">App_Packages</code> virtual dir in project. It looks for the &quot;signature&quot; <code class="csharp">contentFiles\\cs\\any\\App_Packages\\</code> of the source-only package, get&#39;s the path relative to package and prefixes it with <code class="csharp">App_Packages</code> . For any other files (not really have a case for it), just the file name is returned.</p>
 <p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
 <p> </p>
 <h2>  <a id="t-net.adamec.dev.markupdoc.utils.txt__ptyt6s" ></a>  Txt Class </h2>

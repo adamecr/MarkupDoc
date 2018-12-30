@@ -70,6 +70,7 @@
  | [Para](net.adamec.dev.markupdoc.XmlDocumentation__1ter1y6.md#t-net.adamec.dev.markupdoc.xmldocumentation.para__1no80es) | public | Class | Class representing &lt;para&gt; element of XML Documentation Comments | 
  | [Param](net.adamec.dev.markupdoc.XmlDocumentation__1ter1y6.md#t-net.adamec.dev.markupdoc.xmldocumentation.param__7q99qf) | public | Class | Class representing &lt;param&gt; element of XML Documentation  Comments | 
  | [ParamRef](net.adamec.dev.markupdoc.XmlDocumentation__1ter1y6.md#t-net.adamec.dev.markupdoc.xmldocumentation.paramref__1goure8) | public | Class | Class representing &lt;paramref&gt; element of XML Documentation Comments | 
+ | [PathUtils](net.adamec.dev.markupdoc.Utils__m327rs.md#t-net.adamec.dev.markupdoc.utils.pathutils__ueq8cw) | public | Class | File path utilities | 
  | [Program](net.adamec.dev.markupdoc__1d9f9qh.md#t-net.adamec.dev.markupdoc.program__cagybt) | internal | Class | Main program entry class | 
  | [PropertyMember](net.adamec.dev.markupdoc.CodeModel__1f8sg55.md#t-net.adamec.dev.markupdoc.codemodel.propertymember__m06mbu) | public | Class | Represents a property within the code model | 
  | [PropertyMemberBuilder](net.adamec.dev.markupdoc.CodeModel.Builder__w36mxa.md#t-net.adamec.dev.markupdoc.codemodel.builder.propertymemberbuilder__k8fr6c) | public | Class | Builder for [PropertyMember](net.adamec.dev.markupdoc.CodeModel__1f8sg55.md#t-net.adamec.dev.markupdoc.codemodel.propertymember__m06mbu) | 

@@ -99,6 +99,7 @@
     <Compile Include="Utils\Extensions\StringExtensions.cs" />
     <Compile Include="Utils\Extensions\TypeKindExtensions.cs" />
     <Compile Include="Utils\IsNewUtils.cs" />
+    <Compile Include="Utils\PathUtils.cs" />
     <Compile Include="Utils\Txt.cs" />
     <Compile Include="XmlDocumentation\C.cs" />
     <Compile Include="XmlDocumentation\Code.cs" />
