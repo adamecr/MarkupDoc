@@ -60,26 +60,32 @@ Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small></p>
 <h3>  Remarks </h3>
 <p>Source-only NuGet packages contain just the source code that is added to the project the package is added to. The package is created from the (partial) class or classes in the project folder based on the metadata provided as special XML Documentation Comments. 
 
-<ul><li><strong>&lt;NuProp.Id&gt;&lt;/NuProp.Id&gt;</strong> - package ID (mandatory)</li><li><strong>&lt;NuProp.Version&gt;&lt;/NuProp.Version&gt;</strong> - package version base (major.minor.patch) - optional</li><li><strong>&lt;NuProp.Description&gt;&lt;/NuProp.Description&gt;</strong> - package description (optional)</li><li><strong>&lt;NuProp.Tags&gt;&lt;/NuProp.Tags&gt;</strong> - package tags (optional)</li><li><strong>&lt;NuProp.Includes type = &quot;&quot;  /&gt;</strong> - file includes (optional). If type=&quot;Folder&quot;, the package will include all compile files in folder, if type=&quot;FolderRecursive&quot; the subfolders will be also included</li><li><strong>&lt;NuProp.Using id = &quot;&quot; version=&quot;&quot;/&gt;</strong> - package imports (optional). Version is optional</li><li><strong>&lt;NuProp.Needs id=&quot;&quot; /&gt;</strong> - &quot;external&quot; imports needed (optional) - not included in package, just info when consuming!!!</li></ul>
+<ul><li><strong>&lt;NuProp.Id&gt;&lt;/NuProp.Id&gt;</strong> - package ID (mandatory)</li><li><strong>&lt;NuProp.Version&gt;&lt;/NuProp.Version&gt;</strong> - package version base (major.minor.patch) - optional</li><li><strong>&lt;NuProp.Description&gt;&lt;/NuProp.Description&gt;</strong> - package description (optional)</li><li><strong>&lt;NuProp.Tags&gt;&lt;/NuProp.Tags&gt;</strong> - package tags (optional)</li><li><strong>&lt;NuProp.Includes type = &quot;&quot;  /&gt;</strong> - file includes (optional). If type=&quot;Folder&quot;, the package will include all compile files in folder, if type=&quot;FolderRecursive&quot; the subfolders will be also included</li><li><strong>&lt;NuProp.Using id = &quot;&quot; version=&quot;&quot;/&gt;</strong> - package imports (optional). Version is optional</li><li><strong>&lt;NuProp.Needs id=&quot;&quot; /&gt;</strong> - &quot;external&quot; imports needed (optional) - not included in package, just info when consuming!!!</li><li><strong>&lt;NuProp.Remarks cref=&quot;&quot; /&gt;</strong> - type to get the XML Documentation remarks from to document the source only package.</li></ul>
 
 </p>
 <h3>  Properties </h3>
 <table><tr><th>Name</th><th>Modifier</th><th>Summary</th></tr>
 <tr><td><a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.declaringfile__11s348v" >DeclaringFile</a></td><td>public</td><td>Full path to the file declaring the source-only package (containing the package metadata as &lt;NuProp.xxxx/&gt; XML documentation comments</td></tr>
 <tr><td><a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.externalreferences__1cpn3h1" >ExternalReferences</a></td><td>public</td><td>List of external references (NuGet package dependencies) that are not declared in the package, but the consumer has to include</td></tr>
-<tr><td><a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.hasnuprops__17gaag3" >HasNuProps</a></td><td>public</td><td>Master flag whether the <a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni" >NuProps</a> class containts the valid metadata for source-only package</td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.hasnuprops__17gaag3" >HasNuProps</a></td><td>public</td><td>Master flag whether the <a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni" >NuProps</a> class contains the valid metadata for source-only package</td></tr>
 <tr><td><a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.includestype__zb9t6r" >IncludesType</a></td><td>public</td><td>Definition of the additional files to include into the source-only package</td></tr>
 <tr><td><a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.packagedescription__o0pb0m" >PackageDescription</a></td><td>public</td><td>Optional description of the package</td></tr>
 <tr><td><a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.packagefiles__deuupz" >PackageFiles</a></td><td>public</td><td>List of all files to be included into the source-only package</td></tr>
 <tr><td><a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.packageid__4tnxdb" >PackageId</a></td><td>public</td><td>Unique ID of the package</td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.packageremarkssource__1irywj4" >PackageRemarksSource</a></td><td>public</td><td>Type to get the XML Documentation remarks from to document the source only package</td></tr>
 <tr><td><a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.packagetags__ioqk03" >PackageTags</a></td><td>public</td><td>Optional package tags divided by space</td></tr>
 <tr><td><a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.packageversion__fcxdho" >PackageVersion</a></td><td>public</td><td>Optional version of the package.</td></tr>
-<tr><td><a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.usings__f9kpil" >Usings</a></td><td>public</td><td>List of the dependencied that are to be declared within the package</td></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.usings__f9kpil" >Usings</a></td><td>public</td><td>List of the dependencies that are to be declared within the package</td></tr>
 </table>
 <p> </p>
 <h3>  Constructors </h3>
 <table><tr><th>Name</th><th>Modifier</th><th>Summary</th></tr>
 <tr><td><a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#m-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.-ctor_system.string-system.collections.generic.ireadonlycollection_system.string____c21w85" >NuProps(string, IReadOnlyCollection&lt;string&gt;)</a></td><td>public</td><td>CTOR - Checks the compilation file with given <strong>fileName</strong> for the source-only package metadata. When the metadata are present and valid, the <a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni" >NuProps</a> object is initialized and <a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.hasnuprops__17gaag3" >HasNuProps</a> property is set to true</td></tr>
+</table>
+<p> </p>
+<h3>  Methods </h3>
+<table><tr><th>Name</th><th>Modifier</th><th>Summary</th></tr>
+<tr><td><a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#m-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.tostring__1gffuz7" >ToString()</a></td><td>public</td><td>Returns the string representation of current object</td></tr>
 </table>
 <p> </p>
 <p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
@@ -109,7 +115,7 @@ Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small></p>
 Assembly: MarkupDoc<br />
 Type: <a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni" >NuProps</a><br />
 Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small></p>
-<p>Master flag whether the <a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni" >NuProps</a> class containts the valid metadata for source-only package</p>
+<p>Master flag whether the <a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni" >NuProps</a> class contains the valid metadata for source-only package</p>
 <pre><code class="csharp">public bool HasNuProps { get; }</code></pre>
 <p><strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean" class="link-external" target="_blank" >bool</a></dt><dd></dd></dl></p>
 <p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
@@ -156,6 +162,16 @@ Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small></p>
 <p><strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a></dt><dd></dd></dl></p>
 <p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
 <p> </p>
+<h2>  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.packageremarkssource__1irywj4" ></a>  NuProps.PackageRemarksSource Property </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb" >net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni" >NuProps</a><br />
+Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small></p>
+<p>Type to get the XML Documentation remarks from to document the source only package</p>
+<pre><code class="csharp">public string PackageRemarksSource { get; }</code></pre>
+<p><strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a></dt><dd></dd></dl></p>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
 <h2>  <a id="p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.packagetags__ioqk03" ></a>  NuProps.PackageTags Property </h2>
 <p><small>Namespace: <a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb" >net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model</a><br />
 Assembly: MarkupDoc<br />
@@ -183,7 +199,7 @@ Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small></p>
 Assembly: MarkupDoc<br />
 Type: <a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni" >NuProps</a><br />
 Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small></p>
-<p>List of the dependencied that are to be declared within the package</p>
+<p>List of the dependencies that are to be declared within the package</p>
 <pre><code class="csharp">public IReadOnlyList&lt;net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model.NuProps.NuPropUsing&gt; Usings { get; }</code></pre>
 <p><strong>Property value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlylist-1" class="link-external" target="_blank" >IReadOnlyList&lt;net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model.NuProps.NuPropUsing&gt;</a></dt><dd></dd></dl></p>
 <p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
@@ -196,6 +212,16 @@ Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small></p>
 <p>CTOR - Checks the compilation file with given <strong>fileName</strong> for the source-only package metadata. When the metadata are present and valid, the <a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni" >NuProps</a> object is initialized and <a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.hasnuprops__17gaag3" >HasNuProps</a> property is set to true</p>
 <pre><code class="csharp">public NuProps(string fileName, IReadOnlyCollection&lt;string&gt; allFiles)</code></pre>
 <strong>Constructor parameters</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a> <strong>fileName</strong></dt><dd>Full path to the compliation file</dd><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlycollection-1" class="link-external" target="_blank" >IReadOnlyCollection&lt;string&gt;</a> <strong>allFiles</strong></dt><dd>List of all files in compilation, used to resolve the includes (Folder, FolderRecursive) when needed</dd></dl>
+<p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
+<p> </p>
+<h2>  <a id="m-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.tostring__1gffuz7" ></a>  NuProps.ToString() Method </h2>
+<p><small>Namespace: <a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#n-net.adamec.dev.markupdoc.addons.sourceonlypackages.model__gb4dfb" >net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model</a><br />
+Assembly: MarkupDoc<br />
+Type: <a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops__4yj5ni" >NuProps</a><br />
+Sources: AddOns\SourceOnlyPackages\Model\NuProps.cs</small></p>
+<p>Returns the string representation of current object</p>
+<pre><code class="csharp">public override string ToString()</code></pre>
+<p><strong>Return value</strong><dl><dt><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string" class="link-external" target="_blank" >string</a></dt><dd><a href="net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model__gb4dfb.html#p-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.packageid__4tnxdb" >PackageId</a></dd></dl>Overrides: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring#System_Object_ToString" class="link-external" target="_blank" >object.ToString</a></p>
 <p>Go to <a href="MarkupDoc.html#namespace-list" >namespaces</a> or <a href="MarkupDoc.html#type-list" >types</a></p>
 <p> </p>
 <h2>  <a id="t-net.adamec.dev.markupdoc.addons.sourceonlypackages.model.nuprops.nupropusing__oshg6w" ></a>  NuProps.NuPropUsing Class </h2>

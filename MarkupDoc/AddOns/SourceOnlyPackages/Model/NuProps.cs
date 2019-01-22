@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Xml.Linq;
 using net.adamec.dev.markupdoc.Utils;
+using net.adamec.dev.markupdoc.XmlDocumentation;
 
 namespace net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model
 {
@@ -21,7 +22,8 @@ namespace net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model
     /// <item><term>&lt;NuProp.Tags&gt;&lt;/NuProp.Tags&gt;</term><description>package tags (optional)</description></item> 
     /// <item><term>&lt;NuProp.Includes type = ""  /&gt;</term><description>file includes (optional). If type="Folder", the package will include all compile files in folder, if type="FolderRecursive" the subfolders will be also included</description></item>       
     /// <item><term>&lt;NuProp.Using id = "" version=""/&gt;</term><description>package imports (optional). Version is optional</description></item>     
-    /// <item><term>&lt;NuProp.Needs id="" /&gt;</term><description>"external" imports needed (optional) - not included in package, just info when consuming!!!</description></item>     
+    /// <item><term>&lt;NuProp.Needs id="" /&gt;</term><description>"external" imports needed (optional) - not included in package, just info when consuming!!!</description></item>
+    /// <item><term>&lt;NuProp.Remarks cref="" /&gt;</term><description> type to get the XML Documentation remarks from to document the source only package.</description></item>     
     /// </list>
     /// </remarks>
     public class NuProps
@@ -72,7 +74,7 @@ namespace net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model
         }
 
         /// <summary>
-        /// Master flag whether the <see cref="NuProps"/> class containts the valid metadata for source-only package
+        /// Master flag whether the <see cref="NuProps"/> class contains the valid metadata for source-only package
         /// </summary>
         public bool HasNuProps { get; }
         /// <summary>
@@ -107,9 +109,14 @@ namespace net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model
         public IncludesTypeEnum IncludesType { get; } = IncludesTypeEnum.None;
 
         /// <summary>
-        /// List of the dependencied that are to be declared within the package
+        /// List of the dependencies that are to be declared within the package
         /// </summary>
         public IReadOnlyList<NuPropUsing> Usings { get; }
+
+        /// <summary>
+        /// Type to get the XML Documentation remarks from to document the source only package
+        /// </summary>
+        public string PackageRemarksSource { get; }
 
         /// <summary>
         /// List of external references (NuGet package dependencies) that are not declared in the package, but the consumer has to include
@@ -204,6 +211,12 @@ namespace net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model
                 }
             }
 
+            PackageRemarksSource = nuPropElements
+                .FirstOrDefault(e => e.Name.LocalName == "NuProp.Remarks" && e.Attribute("cref")?.Value != null)?
+                .Attribute("cref")?
+                .Value;
+                
+
             //Get all package files (processing the includes when applicable)
             var packageFiles = new List<string>();
             PackageFiles = packageFiles;
@@ -231,6 +244,15 @@ namespace net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages.Model
             DeclaringFile = fileName;
             //It's valid source-only package definition (metadata)
             HasNuProps = true;
+        }
+
+        /// <summary>
+        /// Returns the string representation of current object
+        /// </summary>
+        /// <returns><see cref="PackageId"/></returns>
+        public override string ToString()
+        {
+            return PackageId;
         }
     }
 }

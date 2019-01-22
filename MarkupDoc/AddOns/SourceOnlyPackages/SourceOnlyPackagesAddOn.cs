@@ -197,6 +197,17 @@ namespace net.adamec.dev.markupdoc.AddOns.SourceOnlyPackages
                             nuProps.ExternalReferences)));
                 }
 
+                if (nuProps.PackageRemarksSource != null &&
+                    root.AllMembersByDocId.TryGetValue(nuProps.PackageRemarksSource, out var member))
+                {
+                    var remarksDocumentation = member.Documentation?.GetRemarks(member)?.Render(markup, member);
+                    if (!string.IsNullOrEmpty(remarksDocumentation))
+                    {
+                        await markup.WriteH3Async("Remarks");
+                        await markup.WriteParaAsync(remarksDocumentation);
+                    }
+                }
+
                 if (MembersBySourceOnlyPackage.TryGetValue(nuProps, out var members) && members.Count > 0)
                 {
                     await markup.WriteParaAsync(new Txt()
